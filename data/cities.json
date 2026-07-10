@@ -1,0 +1,18 @@
+[
+    {
+    "name": "Floureton",
+    "x": 602,
+    "y": 411,
+    "IconType": "Small_City",
+    "type": "A large trade and artisan city",
+    "description": "A city world renown for its artists and artisans. The city has a large openess for wierness, this has attracted many eccentric talents. This in turn has sent the city in to a sort of renessiance."
+    },
+    {
+    "name": "Summerborn",
+    "x": 838,
+    "y": 564,
+    "IconType": "Large_City_Stone_Wall_Towers",
+    "type": "A newly developed city with a lot of talents",
+    "description": "A city born out of conflict and wilderness Summerborn is a city which has perservered a lot of troubles. It has become known as a hub for people looking for new lives and oppurtunities."
+    }
+]
