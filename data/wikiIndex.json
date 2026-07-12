@@ -1,0 +1,269 @@
+[
+    {
+        "id": "transmuters_rest",
+        "name": "Transmuter´s Rest",
+        "category": "settlement",
+        "file": "Settlements/Transmuter´s rest.md",
+        "map": {
+            "x": 700,
+            "y": 585,
+            "icon": "Small_City_Stone_Wall_Towers"
+        }
+    },
+    {
+        "id": "summerborn",
+        "name": "Summerborn",
+        "category": "settlement",
+        "file": "Settlements/Summerborn.md",
+        "map": {
+            "x": 838,
+            "y": 566,
+            "icon": "Small_City_Stone_Wall_Towers"
+        }
+    },
+    {
+        "id": "southhost",
+        "name": "Southhost",
+        "category": "settlement",
+        "file": "Settlements/Southhost.md",
+        "map": {
+            "x": 896,
+            "y": 685,
+            "icon": "Small_City"
+        }
+    },
+    {
+        "id": "roughen_fort",
+        "name": "Roughen Fort",
+        "category": "settlement",
+        "file": "Settlements/Roughen Fort.md",
+        "map": {
+            "x": 815,
+            "y": 746,
+            "icon": "Keep"
+        }
+    },
+    {
+        "id": "pitax_city",
+        "name": "Pitax City",
+        "category": "settlement",
+        "file": "Settlements/Pitax City.md",
+        "map": {
+            "x": 666,
+            "y": 637,
+            "icon": "Large_City"
+        }
+    },
+    {
+        "id": "garent",
+        "name": "Garent",
+        "category": "settlement",
+        "file": "Settlements/Garent.md",
+        "map": {
+            "x": 600,
+            "y": 257,
+            "icon": "Large_City_Stone_Wall_Towers"
+        }
+    },
+    {
+        "id": "floureton",
+        "name": "Floureton",
+        "category": "settlement",
+        "file": "Settlements/Floureton.md",
+        "map": {
+            "x": 602,
+            "y": 411,
+            "icon": "Small_City"
+        }
+    },
+    {
+        "id": "cornstalk",
+        "name": "Cornstalk",
+        "category": "settlement",
+        "file": "Settlements/Cornstalk.md",
+        "map": {
+            "x": 606,
+            "y": 453,
+            "icon": "Town"
+        }
+    },
+    {
+        "id": "avendale",
+        "name": "Avendale",
+        "category": "settlement",
+        "file": "Settlements/Avendale.md",
+        "map": {
+            "x": 595,
+            "y": 498,
+            "icon": "Small_City"
+        }
+    },
+    {
+        "id": null,
+        "name": "Manchu Tribes",
+        "category": "Unknown",
+        "file": "Nations/Manchu Tribes.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Embeth",
+        "category": "Unknown",
+        "file": "Nations/Embeth.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Dwarven Keeps",
+        "category": "Unknown",
+        "file": "Nations/Dwarven Keeps.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Brevoy",
+        "category": "Unknown",
+        "file": "Nations/Brevoy.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "War of the beards",
+        "category": "Unknown",
+        "file": "History/War of the beards.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "The Rill War",
+        "category": "Unknown",
+        "file": "History/The Rill War.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "The Manchu Conquests",
+        "category": "Unknown",
+        "file": "History/The Manchu Conquests.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Dieties Summary",
+        "category": "Unknown",
+        "file": "Dieties/Dities Summary.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Xia",
+        "category": "Unknown",
+        "file": "Dieties/Minor Dieties/Xia.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Wyndee",
+        "category": "Unknown",
+        "file": "Dieties/Minor Dieties/Wyndee.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Ruzhee",
+        "category": "Unknown",
+        "file": "Dieties/Minor Dieties/Ruzhee.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Nunree",
+        "category": "Unknown",
+        "file": "Dieties/Minor Dieties/Nunree.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Luxy",
+        "category": "Unknown",
+        "file": "Dieties/Minor Dieties/Luxy.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Ebus",
+        "category": "Unknown",
+        "file": "Dieties/Minor Dieties/Ebus.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Arie",
+        "category": "Unknown",
+        "file": "Dieties/Minor Dieties/Arie.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Xiander",
+        "category": "Unknown",
+        "file": "Dieties/Major Dieties/Xiander.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Vanee",
+        "category": "Unknown",
+        "file": "Dieties/Major Dieties/Vanee.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Thirdenlin",
+        "category": "Unknown",
+        "file": "Dieties/Major Dieties/Thirdenlin.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Sandor",
+        "category": "Unknown",
+        "file": "Dieties/Major Dieties/Sandor.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Rendeen",
+        "category": "Unknown",
+        "file": "Dieties/Major Dieties/Rendeen.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Erven",
+        "category": "Unknown",
+        "file": "Dieties/Major Dieties/Erven.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Dunden",
+        "category": "Unknown",
+        "file": "Dieties/Major Dieties/Dunden.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Bann",
+        "category": "Unknown",
+        "file": "Dieties/Major Dieties/Bann.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Divine Artifacts",
+        "category": "Unknown",
+        "file": "Artifacts, Relics, Items/Divine Artifacts.md",
+        "map": null
+    }
+]

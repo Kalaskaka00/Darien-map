@@ -10,6 +10,88 @@ html, body {
 
 
 
+html, body {
+    margin:0;
+    height:100%;
+}
+
+#app{
+    display:flex;
+    height:100vh;
+}
+
+#map{
+    flex:1;
+}
+
+#sidebar{
+
+    width:420px;
+
+    background: url("Backgrounds/Parchment.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    overflow-y:auto;
+
+    border-left:3px solid #6f5328;
+
+    padding:20px;
+
+    box-sizing:border-box;
+
+    font-family:Georgia, serif;
+
+}
+
+
+
+#search-container{
+    position: relative;
+    margin-bottom:0px;
+}
+
+#search{
+    width:100%;
+    padding:10px;
+    font-size:16px;
+    box-sizing:border-box;
+    background:#ddd0a5;
+}
+
+#search-results{
+    display: none;
+
+    position:absolute;
+    width:100%;
+    background:#f3ead1;
+    border:1px solid #8b6f47;
+
+    max-height:250px;
+    overflow-y:auto;
+
+    z-index:1000;
+}
+
+.search-result{
+
+    padding:10px;
+    cursor:pointer;
+}
+
+.search-result:hover{
+
+    background:#ddd0a5;
+}
+
+.search-result.selected {
+    background: #b89b67;
+    color: #2d2417;
+}
+
+
+
 .leaflet-popup-content-wrapper {
     background: url("Backgrounds/Parchment.avif");
     background-size: cover;
@@ -49,4 +131,19 @@ html, body {
 
 .city-popup p {
     line-height: 1.4;
+}
+
+.city-label {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #a77d5b;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow:
+        -1px -1px 0 black,
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
 }

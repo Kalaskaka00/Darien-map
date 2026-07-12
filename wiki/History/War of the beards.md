@@ -1,0 +1,5 @@
+When speaking of the dwarven keeps the most significant thing to mention is the war of the beards. The war of the beards were a series of wars fought over 900 years ago between many of the [[dwarven keeps]] and the at the time elven phoenix king [[Golarion]]. 
+
+The wars started for many underlying reasons but the triggering spark was when the eleven phoenix king claimed that his beard was more precious than any dwarf could hope to match. Not only did the eleven phoenix king claim this in public, but he claimed it in front of the Dwarven Warrior King [[Runsbar Kraghammer]]. The dwarves who take much pride and place much cultural significance in the appearance and lengths of their beards could not let this stand.
+
+The war lasted for about 50 years with truces and lesser conflicts strewn throughout. The war ended with both kings dead, the devastation of [[Daggerfall]], many demolished keeps and the deaths of many dwarves and elves.
