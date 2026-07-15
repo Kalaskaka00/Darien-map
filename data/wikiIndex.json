@@ -1,5 +1,12 @@
 [
     {
+        "id": null,
+        "name": "Greenskin",
+        "category": "Unknown",
+        "file": "Greenskin.md",
+        "map": null
+    },
+    {
         "id": "transmuters_rest",
         "name": "Transmuter´s Rest",
         "category": "settlement",
@@ -55,6 +62,17 @@
         }
     },
     {
+        "id": "new_steveten",
+        "name": "New Steveten",
+        "category": "settlement",
+        "file": "Settlements/New Steveten.md",
+        "map": {
+            "x": 966,
+            "y": 689,
+            "icon": "Small_City_Stone_Wall_Towers"
+        }
+    },
+    {
         "id": "garent",
         "name": "Garent",
         "category": "settlement",
@@ -100,6 +118,111 @@
     },
     {
         "id": null,
+        "name": "Viine family",
+        "category": "Unknown",
+        "file": "Organisations/Viine family.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Vaegarian host",
+        "category": "Unknown",
+        "file": "Organisations/Vaegarian host.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Udoon family",
+        "category": "Unknown",
+        "file": "Organisations/Udoon family.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Swordlords of Brevoy",
+        "category": "Unknown",
+        "file": "Organisations/Swordlords of Brevoy.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Drowen Daggers",
+        "category": "Unknown",
+        "file": "Organisations/Drowen Daggers.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Doves",
+        "category": "Unknown",
+        "file": "Organisations/Doves.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Brass Wheels",
+        "category": "Unknown",
+        "file": "Organisations/Brass Wheels.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Black Mantles",
+        "category": "Unknown",
+        "file": "Organisations/Black Mantles.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Beeret family",
+        "category": "Unknown",
+        "file": "Organisations/Beeret family.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Aldori family",
+        "category": "Unknown",
+        "file": "Organisations/Aldori family.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Touvette",
+        "category": "Unknown",
+        "file": "Nations/Touvette.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "The Wastes",
+        "category": "Unknown",
+        "file": "Nations/The Wastes.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Pitax",
+        "category": "Unknown",
+        "file": "Nations/Pitax.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Numeria",
+        "category": "Unknown",
+        "file": "Nations/Numeria.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Mivon",
+        "category": "Unknown",
+        "file": "Nations/Mivon.md",
+        "map": null
+    },
+    {
+        "id": null,
         "name": "Manchu Tribes",
         "category": "Unknown",
         "file": "Nations/Manchu Tribes.md",
@@ -124,6 +247,13 @@
         "name": "Brevoy",
         "category": "Unknown",
         "file": "Nations/Brevoy.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "King Road",
+        "category": "Unknown",
+        "file": "Infrastructure/Kings Road.md",
         "map": null
     },
     {
@@ -257,6 +387,13 @@
         "name": "Bann",
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Bann.md",
+        "map": null
+    },
+    {
+        "id": null,
+        "name": "Material Plane",
+        "category": "Unknown",
+        "file": "Cosmoligy/Matieral Plane.md",
         "map": null
     },
     {

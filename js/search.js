@@ -63,7 +63,6 @@ document.addEventListener("click", function(e) {
 });
 
 function openEntry(article){
-
     loadArticle(article.file);
 
     if(article.map){
@@ -74,9 +73,7 @@ function openEntry(article){
         );
 
         markers[article.id].openPopup();
-
     }
-
 }
 
 function clearSearch() {

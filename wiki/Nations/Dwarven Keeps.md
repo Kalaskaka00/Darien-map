@@ -8,7 +8,7 @@
 
 *Many of the keeps nowadays are however abandoned or in a state of decline. There exist keeps not even inhabited anymore, often instead taken up by other creatures.*
 ## Terrain & Geography
-The Keeps are almost always built into mountainsides, ravines or large caves expanding into large underground networks. Many of the keeps go down into the [[underdark]] and some say that in days past dwarves even traveled through the [[underdark]] between keeps.
+The Keeps are almost always built into mountainsides, ravines or large caves expanding into large underground networks. Many of the keeps go down into the [[Underdark]] and some say that in days past dwarves even traveled through the [[Underdark]] between keeps.
 
 It is generally dark and cold inside the keep meaning that it makes poor living for anyone who does not posses darkvision or other means to see in the dark.
 ## Economy
@@ -17,7 +17,7 @@ It is generally dark and cold inside the keep meaning that it makes poor living 
 ## Politics
 Many of the dwarven keeps are ruled by a council or a prince who rules the area. There is however no unifying figure who holds power over all keeps and each keep is unique.
 
-There is a general distrust towards outsiders, especially [[greenskins]], elves and humans, that said the keeps often trade a great deal with close villages and cities for food and other supplies.
+There is a general distrust towards outsiders, especially [[Greenskin]]s, elves and humans, that said the keeps often trade a great deal with close villages and cities for food and other supplies.
 ## Culture
 Many of the keeps hold a strong culture of crafting whether it be weapons, art or alloys. One can become famous in the city based on the quality of ones work.
 
@@ -40,4 +40,4 @@ While each keep is unique the following is general rule (With exceptions):
 The reason for the abandonment are mostly:
 - The [[War of the beards]] reduced the dwarven, dueregars and gnomish populations notably. This combined with their slow reproduction means the population is far from recovering.
 - The increased centralisation of power have ment that there are an increasing number of kingdoms not comfortable with "independent" keeps in their lands.
-- The  [[greenskins]] have ment that many of the more forward outposts have been abandoned due to the continuous raids.
+- The  [[Greenskin]]s have ment that many of the more forward outposts have been abandoned due to the continuous raids.

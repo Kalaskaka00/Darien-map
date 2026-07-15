@@ -17,7 +17,7 @@ Southhost is known as a friendly city with many good inns and public facilities 
 ## Economy 
 Due to its proximity to the [[Kings Road]] and agriculturally productive lands the city has a fledgling economy even if its not necessarily an advanced economy.
 ## Important NPCs 
-- [[Name]] 
+- 
 ## Organizations/Groups
 - The [[Viine family]] rule Southhost, they are very popular among the people.
 ## Notable Locations 

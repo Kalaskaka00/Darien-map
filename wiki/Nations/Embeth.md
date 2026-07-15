@@ -26,6 +26,6 @@ Outsiders are generally viewed suspiciously unless they show great care for the 
 ## Relations
 **[[Mivon]]:** The lands of Embeth has continual skirmishes as [[Mivon]] continually try to cut down forests to gain more lands.
 ## History
-**Ancient History:** Embeth is claimed by some to be one of the oldest forest in the worlds. Some believe it is directly linked to the [[dream realm]] or even originally is from the [[Dream realm]]. The forest has however stood for longer than any living memory. It should however be mentioned that the woods have shrank as civilization has encroached.
+**Ancient History:** Embeth is claimed by some to be one of the oldest forest in the worlds. Some believe it is directly linked to the [[Dream realm]] or even originally is from the [[Dream realm]]. The forest has however stood for longer than any living memory. It should however be mentioned that the woods have shrank as civilization has encroached.
 
 There have over the latest centuries been attempts by many civilizations to burn, chop down or in other way encroach on the forest. There has however been very limited succes to any encroachment as the forest has a tendency to push or even fight back.
