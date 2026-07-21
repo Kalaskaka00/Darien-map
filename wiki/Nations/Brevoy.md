@@ -1,3 +1,32 @@
+---
+id: brevoy
+name: Brevoy
+category: nation
+
+color: "#8F1A2C"
+
+border:
+  - [837, 970]
+  - [801, 925]
+  - [770, 853]
+  - [735, 760]
+  - [717, 798]
+  - [710, 855]
+  - [679, 870]
+  - [675, 926]
+  - [666, 977]
+  - [672, 994]
+  - [655, 1020]
+  - [672, 1047]
+  - [662, 1064]
+  - [676, 1090]
+  - [653, 1119]
+  - [667, 1133]
+  - [781, 1143]
+  - [808, 1124]
+  - [845, 1100]
+  - [860, 1053]
+---
 # Brevoy
 **Capital:** [[New Steveten]]
 
@@ -15,7 +44,7 @@ Brevoy has a temperate climate with a lot of plains to the south, colder tundras
 ## Politics
 Brevoy is ruled by a monarchy. The monarchy is currently head by queen [[Talia Andureen]], a human in her 60s. She is known to be a relatively weak ruler who cares a lot by prestige.
 
-Behind the throne the true power are noble aristocratic families. Each family rules their local province, and due to the weak monarchy they have quite a lot of local power. The largest families are: The [[Aldori Family]], The [[Beeret family]], The [[Viine family]] and The [[Udoon family]]. There are many additional noble families with varying amounts of influence and power.
+Behind the throne the true power are noble aristocratic families. Each family rules their local province, and due to the weak monarchy they have quite a lot of local power. The largest families are: The [[Aldori family]], The [[Beeret family]], The [[Viine family]] and The [[Udoon family]]. There are many additional noble families with varying amounts of influence and power.
 ## Culture
 Due to the size of the nation there is a notable local variation in culture, especially between the northern tundras, the eastern forests and southern plains.
 

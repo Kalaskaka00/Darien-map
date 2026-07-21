@@ -1,3 +1,11 @@
-loadWorld();
+function initializeApplication(){
 
-L.control.layers(null, overlays).addTo(map);
+    initializeMap();
+
+    initializeLayers();
+
+    loadWorld();
+
+}
+
+initializeApplication();

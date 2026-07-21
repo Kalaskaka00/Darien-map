@@ -2,9 +2,11 @@
 id: pitax_city
 name: Pitax City
 category: settlement
-x: 666
-y: 637
-IconType: Large_City
+
+map:
+  x: 666
+  y: 637
+  icon: Large_City
 ---
 # Pitax City
 *Pitax City is the capital of [[Pitax]] and is often called the city of mages*

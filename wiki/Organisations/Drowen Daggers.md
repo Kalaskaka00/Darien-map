@@ -1,9 +1,9 @@
 # Drowen Daggers
-**Locations:** [[Daggerfall]]
+**Locations:** [[Daggermark]]
 **Main office:** 
 **Type:** Military, Religious
 
-*The Drowen daggers serves directly under the [[Daggerfall]] Queen as an elongation of the state and assassinates opponents to the state.*
+*The Drowen daggers serves directly under the [[Daggermark]] Queen as an elongation of the state and assassinates opponents to the state.*
 
 *Outside their direct service to the Queen they lend their services for payment in gold, slaves, artifacts or other sufficient payment. Except for assasinations they also perform maiming, intimidation and ocassionally thefts.*
 

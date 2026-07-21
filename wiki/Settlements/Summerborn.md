@@ -2,9 +2,11 @@
 id: summerborn
 name: Summerborn
 category: settlement
-x: 838
-y: 566
-IconType: Small_City_Stone_Wall_Towers
+
+map:
+  x: 838
+  y: 566
+  icon: Small_City_Stone_Wall_Towers
 ---
 # Summerborn
 *Summerborn is the bustling city in the [[Golden Lands]]*, deep within the [[Stolen Lands]]

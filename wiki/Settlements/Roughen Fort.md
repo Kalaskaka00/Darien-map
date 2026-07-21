@@ -2,9 +2,11 @@
 id: roughen_fort
 name: Roughen Fort
 category: settlement
-x: 815
-y: 746
-IconType: Keep
+
+map:
+  x: 815
+  y: 746
+  icon: Keep
 ---
 # Roughen Fort 
 *A small but important fort on the border between [[Brevoy]] and [[Numeria]].*
@@ -21,8 +23,8 @@ Due to its large influx om merchants and presence to many nations as well as the
 
 Except for the banking and general trade Roughen fort has a small farming and lumber industry.
 ## Important NPCs 
-- Name 
+- [[Keldithas Beeret]] is in charge of the city and its banks.
 ## Organizations/Groups
 - The [[Beeret family]] are the rulers of Roughen Fort and know just about anything happening in and around Roughen Fort as well as having many debts they can call on.
 ## Notable Locations 
-- Rill memorial. Outside Roughen Fort, a large field of plaques and small statues to remember those who died in [[the Rill war]] and specifically commemorating the [[Battle of Fingers]]. At the edge of the fields two statues depicting a locathah beserker and an elven mage stand to the west facing down one of the [[Swordlords of Brevoy]] and a priestess in the east.
+- Rill memorial. Outside Roughen Fort, a large field of plaques and small statues to remember those who died in [[The Rill War]] and specifically commemorating the [[Battle of Fingers]]. At the edge of the fields two statues depicting a locathah beserker and an elven mage stand to the west facing down one of the [[Swordlords of Brevoy]] and a priestess in the east.

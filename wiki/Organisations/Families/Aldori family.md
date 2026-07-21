@@ -8,3 +8,12 @@ The Aldori make for many of [[Brevoy]]s generals and some incredible duelists as
 The Aldori are known to be aggressive and proud.
 
 The Aldori power base mostly consists in southern [[Brevoy]] around [[Restov]].
+
+**Known members**
+- Family head [[Raisan Aldori]]
+- Family heir [[Jamandi Aldori]]
+- Family member [[Kassil Aldori]]
+
+**Associated:**
+- Court mage [[Iandri Flukeflow]]
+- Former guard captain [[Kesten Garess]]

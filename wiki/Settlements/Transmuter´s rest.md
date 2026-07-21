@@ -2,9 +2,11 @@
 id: transmuters_rest
 name: Transmuter´s Rest
 category: settlement
-x: 700
-y: 585
-IconType: Small_City_Stone_Wall_Towers
+
+map:
+  x: 700
+  y: 585
+  icon: Small_City_Stone_Wall_Towers
 ---
 # Transmuter´s rest
 *The world leading city of alchemists and magical devices in [[Pitax]]*

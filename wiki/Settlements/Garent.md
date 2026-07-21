@@ -2,9 +2,11 @@
 id: garent
 name: Garent
 category: settlement
-x: 600
-y: 257
-IconType: Large_City_Stone_Wall_Towers
+
+map:
+  x: 600
+  y: 257
+  icon: Large_City_Stone_Wall_Towers
 ---
 # Garent
 *The city of Guilds and trade, the capital of [[Gralton]]*

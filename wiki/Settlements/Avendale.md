@@ -2,9 +2,11 @@
 id: avendale
 name: Avendale
 category: settlement
-x: 595
-y: 498
-IconType: Small_City
+
+map:
+  x: 595
+  y: 498
+  icon: Small_City
 ---
 # Avendale
 *The bountiful bustling capital of [[Touvette]]*

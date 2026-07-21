@@ -4,7 +4,10 @@ const matter = require("gray-matter");
 const { globSync } = require("glob");
 
 // Hitta alla Markdown-filer under wiki/
-const files = globSync("wiki/**/*.md");
+const files = globSync("wiki/**/*.md").filter(file =>
+    !file.includes("Templates/") &&
+    !file.includes("Templates\\")
+);
 
 const wikiIndex = [];
 const names = new Set();
@@ -31,20 +34,18 @@ for (const file of files) {
 
     names.add(title);
 
-    wikiIndex.push({
-        id: data.id || null,
-        name: title,
-        category: data.category || "Unknown",
-        file: file.replace(/^wiki[\\/]/, "").replace(/\\/g, "/"),
-map:
-    (data.x !== undefined && data.y !== undefined)
-        ? {
-            x: data.x,
-            y: data.y,
-            icon: data.IconType
-        }
-        : null
-    });
+    const map = data.map || null;
+    const border = data.border || null;
+
+wikiIndex.push({
+    id: data.id || null,
+    name: title,
+    category: data.category || "Unknown",
+    file: file.replace(/^wiki[\\/]/, "").replace(/\\/g, "/"),
+    map: data.map || null,
+    border: data.border || null,
+    color: data.color || null
+});
 }
 
 // Skapa data-mappen om den inte finns

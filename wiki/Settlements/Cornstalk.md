@@ -2,9 +2,11 @@
 id: cornstalk
 name: Cornstalk
 category: settlement
-x: 606
-y: 453
-IconType: Town
+
+map:
+  x: 606
+  y: 453
+  icon: Town
 ---
 # Cornstalk
 *One of the richest places in [[Touvette]] with lands said to be blessed*

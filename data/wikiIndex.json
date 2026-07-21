@@ -1,12 +1,5 @@
 [
     {
-        "id": null,
-        "name": "Greenskin",
-        "category": "Unknown",
-        "file": "Greenskin.md",
-        "map": null
-    },
-    {
         "id": "transmuters_rest",
         "name": "Transmuter´s Rest",
         "category": "settlement",
@@ -15,7 +8,9 @@
             "x": 700,
             "y": 585,
             "icon": "Small_City_Stone_Wall_Towers"
-        }
+        },
+        "border": null,
+        "color": null
     },
     {
         "id": "summerborn",
@@ -26,7 +21,9 @@
             "x": 838,
             "y": 566,
             "icon": "Small_City_Stone_Wall_Towers"
-        }
+        },
+        "border": null,
+        "color": null
     },
     {
         "id": "southhost",
@@ -37,7 +34,9 @@
             "x": 896,
             "y": 685,
             "icon": "Small_City"
-        }
+        },
+        "border": null,
+        "color": null
     },
     {
         "id": "roughen_fort",
@@ -48,7 +47,22 @@
             "x": 815,
             "y": 746,
             "icon": "Keep"
-        }
+        },
+        "border": null,
+        "color": null
+    },
+    {
+        "id": "restov",
+        "name": "Restov",
+        "category": "settlement",
+        "file": "Settlements/Restov.md",
+        "map": {
+            "x": 1065,
+            "y": 690,
+            "icon": "Small_City_Stone_Wall_Towers"
+        },
+        "border": null,
+        "color": null
     },
     {
         "id": "pitax_city",
@@ -59,7 +73,9 @@
             "x": 666,
             "y": 637,
             "icon": "Large_City"
-        }
+        },
+        "border": null,
+        "color": null
     },
     {
         "id": "new_steveten",
@@ -70,7 +86,22 @@
             "x": 966,
             "y": 689,
             "icon": "Small_City_Stone_Wall_Towers"
-        }
+        },
+        "border": null,
+        "color": null
+    },
+    {
+        "id": "great_gate",
+        "name": "Great Gate",
+        "category": "settlement",
+        "file": "Settlements/Great Gate.md",
+        "map": {
+            "x": 670,
+            "y": 730,
+            "icon": "Castle"
+        },
+        "border": null,
+        "color": null
     },
     {
         "id": "garent",
@@ -81,7 +112,9 @@
             "x": 600,
             "y": 257,
             "icon": "Large_City_Stone_Wall_Towers"
-        }
+        },
+        "border": null,
+        "color": null
     },
     {
         "id": "floureton",
@@ -92,7 +125,9 @@
             "x": 602,
             "y": 411,
             "icon": "Small_City"
-        }
+        },
+        "border": null,
+        "color": null
     },
     {
         "id": "cornstalk",
@@ -103,7 +138,9 @@
             "x": 606,
             "y": 453,
             "icon": "Town"
-        }
+        },
+        "border": null,
+        "color": null
     },
     {
         "id": "avendale",
@@ -114,293 +151,1524 @@
             "x": 595,
             "y": 498,
             "icon": "Small_City"
-        }
-    },
-    {
-        "id": null,
-        "name": "Viine family",
-        "category": "Unknown",
-        "file": "Organisations/Viine family.md",
-        "map": null
+        },
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Vaegarian host",
         "category": "Unknown",
         "file": "Organisations/Vaegarian host.md",
-        "map": null
-    },
-    {
-        "id": null,
-        "name": "Udoon family",
-        "category": "Unknown",
-        "file": "Organisations/Udoon family.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Swordlords of Brevoy",
         "category": "Unknown",
         "file": "Organisations/Swordlords of Brevoy.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Drowen Daggers",
         "category": "Unknown",
         "file": "Organisations/Drowen Daggers.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Doves",
         "category": "Unknown",
         "file": "Organisations/Doves.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Brass Wheels",
         "category": "Unknown",
         "file": "Organisations/Brass Wheels.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Black Mantles",
         "category": "Unknown",
         "file": "Organisations/Black Mantles.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
+    },
+    {
+        "id": null,
+        "name": "Viine family",
+        "category": "Unknown",
+        "file": "Organisations/Families/Viine family.md",
+        "map": null,
+        "border": null,
+        "color": null
+    },
+    {
+        "id": null,
+        "name": "Udoon family",
+        "category": "Unknown",
+        "file": "Organisations/Families/Udoon family.md",
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Beeret family",
         "category": "Unknown",
-        "file": "Organisations/Beeret family.md",
-        "map": null
+        "file": "Organisations/Families/Beeret family.md",
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Aldori family",
         "category": "Unknown",
-        "file": "Organisations/Aldori family.md",
-        "map": null
+        "file": "Organisations/Families/Aldori family.md",
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
-        "id": null,
+        "id": "stag_lord",
+        "name": "Durie Allseer, The Stag Lord, Ruler of the Stolen Lands",
+        "category": "npc",
+        "file": "NPCs/Stag Lord.md",
+        "map": null,
+        "border": null,
+        "color": "#B01313"
+    },
+    {
+        "id": "maegar_varn",
+        "name": "Maegar Varn",
+        "category": "npc",
+        "file": "NPCs/Maegar Varn.md",
+        "map": null,
+        "border": null,
+        "color": "#BF902E"
+    },
+    {
+        "id": "kesten_garess",
+        "name": "Kesten Garess",
+        "category": "npc",
+        "file": "NPCs/Kesten Garess.md",
+        "map": null,
+        "border": null,
+        "color": "#B01313"
+    },
+    {
+        "id": "kassil_aldori",
+        "name": "Kassil Aldori",
+        "category": "npc",
+        "file": "NPCs/Kassil Aldori.md",
+        "map": null,
+        "border": null,
+        "color": "#B01313"
+    },
+    {
+        "id": "jamandi_aldori",
+        "name": "Jamandi Aldori",
+        "category": "npc",
+        "file": "NPCs/Jamandi Aldori.md",
+        "map": null,
+        "border": null,
+        "color": "#5C0BB5"
+    },
+    {
+        "id": "cephal_lorentus",
+        "name": "Cephal Lorentus",
+        "category": "npc",
+        "file": "NPCs/Cephal Lorentus.md",
+        "map": null,
+        "border": null,
+        "color": "#BF902E"
+    },
+    {
+        "id": "touvette",
         "name": "Touvette",
-        "category": "Unknown",
+        "category": "nation",
         "file": "Nations/Touvette.md",
-        "map": null
+        "map": null,
+        "border": [
+            [
+                548,
+                684
+            ],
+            [
+                550,
+                664
+            ],
+            [
+                569,
+                617
+            ],
+            [
+                551,
+                601
+            ],
+            [
+                542,
+                567
+            ],
+            [
+                518,
+                546
+            ],
+            [
+                512,
+                515
+            ],
+            [
+                485,
+                499
+            ],
+            [
+                479,
+                520
+            ],
+            [
+                446,
+                540
+            ],
+            [
+                435,
+                558
+            ],
+            [
+                422,
+                570
+            ],
+            [
+                425,
+                599
+            ],
+            [
+                428,
+                634
+            ],
+            [
+                488,
+                684
+            ],
+            [
+                505,
+                682
+            ],
+            [
+                528,
+                691
+            ]
+        ],
+        "color": "#27872A"
     },
     {
-        "id": null,
+        "id": "the_wastes",
         "name": "The Wastes",
-        "category": "Unknown",
+        "category": "nation",
         "file": "Nations/The Wastes.md",
-        "map": null
+        "map": null,
+        "border": [
+            [
+                401,
+                1490
+            ],
+            [
+                418,
+                1412
+            ],
+            [
+                395,
+                1308
+            ],
+            [
+                433,
+                1305
+            ],
+            [
+                456,
+                1278
+            ],
+            [
+                497,
+                1265
+            ],
+            [
+                544,
+                1279
+            ],
+            [
+                589,
+                1266
+            ],
+            [
+                622,
+                1246
+            ],
+            [
+                651,
+                1194
+            ],
+            [
+                657,
+                1144
+            ],
+            [
+                772,
+                1148
+            ],
+            [
+                804,
+                1185
+            ],
+            [
+                807,
+                1222
+            ],
+            [
+                785,
+                1260
+            ],
+            [
+                755,
+                1279
+            ],
+            [
+                740,
+                1344
+            ],
+            [
+                755,
+                1416
+            ],
+            [
+                776,
+                1420
+            ],
+            [
+                776,
+                1455
+            ],
+            [
+                782,
+                1490
+            ]
+        ],
+        "color": "#CFCED6"
     },
     {
-        "id": null,
+        "id": "pitax",
         "name": "Pitax",
-        "category": "Unknown",
+        "category": "nation",
         "file": "Nations/Pitax.md",
-        "map": null
+        "map": null,
+        "border": [
+            [
+                633,
+                715
+            ],
+            [
+                661,
+                728
+            ],
+            [
+                682,
+                737
+            ],
+            [
+                721,
+                701
+            ],
+            [
+                706,
+                638
+            ],
+            [
+                711,
+                608
+            ],
+            [
+                693,
+                598
+            ],
+            [
+                649,
+                601
+            ],
+            [
+                618,
+                609
+            ],
+            [
+                594,
+                596
+            ],
+            [
+                582,
+                578
+            ],
+            [
+                552,
+                567
+            ],
+            [
+                552,
+                590
+            ],
+            [
+                579,
+                613
+            ],
+            [
+                552,
+                668
+            ],
+            [
+                554,
+                686
+            ],
+            [
+                580,
+                692
+            ],
+            [
+                589,
+                719
+            ]
+        ],
+        "color": "#241E96"
     },
     {
-        "id": null,
+        "id": "numeria",
         "name": "Numeria",
-        "category": "Unknown",
+        "category": "nation",
         "file": "Nations/Numeria.md",
-        "map": null
+        "map": null,
+        "border": [
+            [
+                863,
+                1045
+            ],
+            [
+                845,
+                970
+            ],
+            [
+                798,
+                897
+            ],
+            [
+                742,
+                766
+            ],
+            [
+                725,
+                722
+            ],
+            [
+                752,
+                671
+            ],
+            [
+                717,
+                617
+            ],
+            [
+                737,
+                566
+            ],
+            [
+                740,
+                516
+            ],
+            [
+                761,
+                471
+            ],
+            [
+                738,
+                426
+            ],
+            [
+                750,
+                381
+            ],
+            [
+                748,
+                347
+            ],
+            [
+                733,
+                325
+            ],
+            [
+                721,
+                307
+            ],
+            [
+                741,
+                275
+            ],
+            [
+                720,
+                262
+            ],
+            [
+                721,
+                226
+            ],
+            [
+                703,
+                213
+            ],
+            [
+                727,
+                153
+            ],
+            [
+                790,
+                155
+            ],
+            [
+                817,
+                183
+            ],
+            [
+                849,
+                145
+            ],
+            [
+                865,
+                161
+            ],
+            [
+                886,
+                144
+            ],
+            [
+                888,
+                109
+            ],
+            [
+                932,
+                85
+            ],
+            [
+                965,
+                84
+            ],
+            [
+                969,
+                119
+            ],
+            [
+                984,
+                134
+            ],
+            [
+                993,
+                211
+            ],
+            [
+                938,
+                234
+            ],
+            [
+                972,
+                272
+            ],
+            [
+                1003,
+                340
+            ],
+            [
+                1042,
+                354
+            ],
+            [
+                1035,
+                388
+            ],
+            [
+                984,
+                441
+            ],
+            [
+                959,
+                451
+            ],
+            [
+                944,
+                548
+            ],
+            [
+                940,
+                604
+            ],
+            [
+                899,
+                629
+            ],
+            [
+                953,
+                643
+            ],
+            [
+                970,
+                628
+            ],
+            [
+                968,
+                604
+            ],
+            [
+                990,
+                594
+            ],
+            [
+                996,
+                569
+            ],
+            [
+                1012,
+                530
+            ],
+            [
+                1025,
+                527
+            ],
+            [
+                1032,
+                548
+            ],
+            [
+                1042,
+                589
+            ],
+            [
+                1034,
+                649
+            ],
+            [
+                1037,
+                793
+            ],
+            [
+                997,
+                866
+            ],
+            [
+                994,
+                894
+            ],
+            [
+                965,
+                929
+            ],
+            [
+                951,
+                933
+            ],
+            [
+                945,
+                950
+            ],
+            [
+                976,
+                954
+            ],
+            [
+                990,
+                1024
+            ],
+            [
+                961,
+                1076
+            ],
+            [
+                933,
+                1089
+            ],
+            [
+                899,
+                1087
+            ]
+        ],
+        "color": "#22D6D0"
     },
     {
-        "id": null,
+        "id": "mivon",
         "name": "Mivon",
-        "category": "Unknown",
+        "category": "nation",
         "file": "Nations/Mivon.md",
-        "map": null
+        "map": null,
+        "border": [
+            [
+                446,
+                1281
+            ],
+            [
+                432,
+                1254
+            ],
+            [
+                434,
+                1238
+            ],
+            [
+                404,
+                1210
+            ],
+            [
+                401,
+                1183
+            ],
+            [
+                409,
+                1156
+            ],
+            [
+                387,
+                1140
+            ],
+            [
+                372,
+                1126
+            ],
+            [
+                360,
+                1145
+            ],
+            [
+                357,
+                1167
+            ],
+            [
+                336,
+                1174
+            ],
+            [
+                306,
+                1176
+            ],
+            [
+                281,
+                1185
+            ],
+            [
+                272,
+                1216
+            ],
+            [
+                271,
+                1233
+            ],
+            [
+                303,
+                1238
+            ],
+            [
+                315,
+                1249
+            ],
+            [
+                331,
+                1250
+            ],
+            [
+                366,
+                1291
+            ],
+            [
+                421,
+                1301
+            ]
+        ],
+        "color": "#F3FF21"
     },
     {
-        "id": null,
+        "id": "manchu_tribes",
         "name": "Manchu Tribes",
-        "category": "Unknown",
+        "category": "nation",
         "file": "Nations/Manchu Tribes.md",
-        "map": null
+        "map": null,
+        "border": [
+            [
+                549,
+                427
+            ],
+            [
+                545,
+                438
+            ],
+            [
+                536,
+                442
+            ],
+            [
+                548,
+                460
+            ],
+            [
+                549,
+                485
+            ],
+            [
+                551,
+                514
+            ],
+            [
+                514,
+                526
+            ],
+            [
+                544,
+                560
+            ],
+            [
+                587,
+                569
+            ],
+            [
+                600,
+                593
+            ],
+            [
+                619,
+                601
+            ],
+            [
+                646,
+                594
+            ],
+            [
+                652,
+                581
+            ],
+            [
+                672,
+                572
+            ],
+            [
+                687,
+                547
+            ],
+            [
+                713,
+                546
+            ],
+            [
+                712,
+                521
+            ],
+            [
+                705,
+                499
+            ],
+            [
+                730,
+                479
+            ],
+            [
+                719,
+                441
+            ],
+            [
+                717,
+                406
+            ],
+            [
+                735,
+                372
+            ],
+            [
+                731,
+                369
+            ],
+            [
+                713,
+                348
+            ],
+            [
+                723,
+                328
+            ],
+            [
+                710,
+                310
+            ],
+            [
+                724,
+                289
+            ],
+            [
+                728,
+                278
+            ],
+            [
+                724,
+                278
+            ],
+            [
+                710,
+                264
+            ],
+            [
+                712,
+                236
+            ],
+            [
+                694,
+                213
+            ],
+            [
+                686,
+                196
+            ],
+            [
+                666,
+                175
+            ],
+            [
+                631,
+                168
+            ],
+            [
+                606,
+                177
+            ],
+            [
+                588,
+                178
+            ],
+            [
+                582,
+                192
+            ],
+            [
+                586,
+                215
+            ],
+            [
+                583,
+                238
+            ],
+            [
+                599,
+                253
+            ],
+            [
+                582,
+                278
+            ],
+            [
+                606,
+                277
+            ],
+            [
+                639,
+                295
+            ],
+            [
+                641,
+                339
+            ],
+            [
+                653,
+                364
+            ],
+            [
+                623,
+                378
+            ],
+            [
+                597,
+                432
+            ]
+        ],
+        "color": "#B09515"
     },
     {
-        "id": null,
+        "id": "gralton",
+        "name": "Gralton",
+        "category": "nation",
+        "file": "Nations/Gralton.md",
+        "map": null,
+        "border": [
+            [
+                499,
+                692
+            ],
+            [
+                421,
+                638
+            ],
+            [
+                413,
+                582
+            ],
+            [
+                422,
+                553
+            ],
+            [
+                435,
+                526
+            ],
+            [
+                463,
+                514
+            ],
+            [
+                475,
+                498
+            ],
+            [
+                473,
+                477
+            ],
+            [
+                498,
+                441
+            ],
+            [
+                445,
+                451
+            ],
+            [
+                415,
+                469
+            ],
+            [
+                363,
+                470
+            ],
+            [
+                347,
+                440
+            ],
+            [
+                275,
+                414
+            ],
+            [
+                267,
+                449
+            ],
+            [
+                237,
+                444
+            ],
+            [
+                259,
+                557
+            ],
+            [
+                227,
+                561
+            ],
+            [
+                253,
+                631
+            ],
+            [
+                287,
+                619
+            ],
+            [
+                294,
+                650
+            ],
+            [
+                339,
+                645
+            ],
+            [
+                353,
+                686
+            ],
+            [
+                413,
+                693
+            ],
+            [
+                415,
+                723
+            ],
+            [
+                432,
+                698
+            ],
+            [
+                450,
+                692
+            ]
+        ],
+        "color": "#FA5050"
+    },
+    {
+        "id": "embeth",
         "name": "Embeth",
-        "category": "Unknown",
+        "category": "nation",
         "file": "Nations/Embeth.md",
-        "map": null
+        "map": null,
+        "border": [
+            [
+                423,
+                697
+            ],
+            [
+                476,
+                701
+            ],
+            [
+                513,
+                691
+            ],
+            [
+                513,
+                731
+            ],
+            [
+                496,
+                768
+            ],
+            [
+                501,
+                792
+            ],
+            [
+                498,
+                836
+            ],
+            [
+                486,
+                852
+            ],
+            [
+                492,
+                865
+            ],
+            [
+                482,
+                897
+            ],
+            [
+                490,
+                922
+            ],
+            [
+                467,
+                972
+            ],
+            [
+                467,
+                1015
+            ],
+            [
+                459,
+                1034
+            ],
+            [
+                422,
+                1068
+            ],
+            [
+                404,
+                1137
+            ],
+            [
+                366,
+                1118
+            ],
+            [
+                349,
+                1166
+            ],
+            [
+                308,
+                1173
+            ],
+            [
+                286,
+                1138
+            ],
+            [
+                350,
+                1081
+            ],
+            [
+                356,
+                1029
+            ],
+            [
+                410,
+                1004
+            ],
+            [
+                415,
+                971
+            ],
+            [
+                355,
+                908
+            ],
+            [
+                381,
+                835
+            ],
+            [
+                430,
+                846
+            ],
+            [
+                438,
+                797
+            ],
+            [
+                469,
+                752
+            ]
+        ],
+        "color": "#62C46A"
     },
     {
         "id": null,
         "name": "Dwarven Keeps",
         "category": "Unknown",
         "file": "Nations/Dwarven Keeps.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
-        "id": null,
+        "id": "brevoy",
         "name": "Brevoy",
-        "category": "Unknown",
+        "category": "nation",
         "file": "Nations/Brevoy.md",
-        "map": null
+        "map": null,
+        "border": [
+            [
+                837,
+                970
+            ],
+            [
+                801,
+                925
+            ],
+            [
+                770,
+                853
+            ],
+            [
+                735,
+                760
+            ],
+            [
+                717,
+                798
+            ],
+            [
+                710,
+                855
+            ],
+            [
+                679,
+                870
+            ],
+            [
+                675,
+                926
+            ],
+            [
+                666,
+                977
+            ],
+            [
+                672,
+                994
+            ],
+            [
+                655,
+                1020
+            ],
+            [
+                672,
+                1047
+            ],
+            [
+                662,
+                1064
+            ],
+            [
+                676,
+                1090
+            ],
+            [
+                653,
+                1119
+            ],
+            [
+                667,
+                1133
+            ],
+            [
+                781,
+                1143
+            ],
+            [
+                808,
+                1124
+            ],
+            [
+                845,
+                1100
+            ],
+            [
+                860,
+                1053
+            ]
+        ],
+        "color": "#8F1A2C"
     },
     {
         "id": null,
         "name": "King Road",
         "category": "Unknown",
         "file": "Infrastructure/Kings Road.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "War of the beards",
         "category": "Unknown",
         "file": "History/War of the beards.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "The Rill War",
         "category": "Unknown",
         "file": "History/The Rill War.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "The Manchu Conquests",
         "category": "Unknown",
         "file": "History/The Manchu Conquests.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
+    },
+    {
+        "id": null,
+        "name": "The Timeline",
+        "category": "Unknown",
+        "file": "History/@The Timeline.md",
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Dieties Summary",
         "category": "Unknown",
-        "file": "Dieties/Dities Summary.md",
-        "map": null
+        "file": "Dieties/@Dieties Summary.md",
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Xia",
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Xia.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Wyndee",
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Wyndee.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Ruzhee",
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Ruzhee.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Nunree",
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Nunree.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Luxy",
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Luxy.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Ebus",
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Ebus.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Arie",
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Arie.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Xiander",
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Xiander.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Vanee",
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Vanee.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Thirdenlin",
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Thirdenlin.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Sandor",
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Sandor.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Rendeen",
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Rendeen.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Erven",
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Erven.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Dunden",
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Dunden.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Bann",
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Bann.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
+    },
+    {
+        "id": null,
+        "name": "Greenskin",
+        "category": "Unknown",
+        "file": "Culture/Greenskin.md",
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Material Plane",
         "category": "Unknown",
         "file": "Cosmoligy/Matieral Plane.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
+    },
+    {
+        "id": null,
+        "name": "Dream Realm",
+        "category": "Unknown",
+        "file": "Cosmoligy/Dream Realm.md",
+        "map": null,
+        "border": null,
+        "color": null
     },
     {
         "id": null,
         "name": "Divine Artifacts",
         "category": "Unknown",
         "file": "Artifacts, Relics, Items/Divine Artifacts.md",
-        "map": null
+        "map": null,
+        "border": null,
+        "color": null
     }
 ]

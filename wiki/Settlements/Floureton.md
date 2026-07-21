@@ -2,9 +2,11 @@
 id: floureton
 name: Floureton
 category: settlement
-x: 602
-y: 411
-IconType: Small_City
+
+map:
+  x: 602
+  y: 411
+  icon: Small_City
 ---
 # Floureton
 *Floureton is the city of art and architecture, located at the edge of [[Gralton]]*

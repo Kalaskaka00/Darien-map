@@ -15,22 +15,46 @@
 
     <div id="map"></div>
 
-    <div id="sidebar">
+    <div id="wiki-sidebar">
 
-        <div id="search-container">
-            <input
-                id="search"
-                type="text"
-                placeholder="Search..."
-                autocomplete="off">
+    <div id="search-container">
+        <input
+            id="search"
+            type="text"
+            placeholder="Search..."
+            autocomplete="off">
 
-            <div id="search-results"></div>
+        <div id="search-results"></div>
+    </div>
 
-            <div id="article">
-            The land of Dungeons and Dragons, Adventurers and Blades, People and Wonder. Known from wonderous adventurers such as:<div></div>
-            * Kingmaker (2025-2026)<div></div>
-            * Vital Delviery (2026)<div></div>
-        </div>
+    <div id="article-layout">
+
+        <aside id="article-sidebar"></aside>
+
+        <main id="article"></main>
+
+    </div>
+
+    </div>
+
+</div>
+
+
+<div id="editor">
+
+    <button id="editor-toggle">🛠</button>
+
+    <div id="editor-panel">
+
+        <button id="draw-border">
+            Draw Border
+        </button>
+        <button id="edit-border">
+            Edit Border
+        </button>
+        <button id="move-settlement">
+            Move Settlement
+        </button>
 
     </div>
 
@@ -39,11 +63,27 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-    <script src="js/map.js"></script>
-    <script src="js/cities.js"></script>
-    <script src="js/wiki.js"></script>
-    <script src="js/world.js"></script>
-    <script src="js/search.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/gm.js"></script>
+    <script src="js/map/map.js"></script>
+    <script src="js/utils/frontmatter.js"></script>
+    <script src="js/editor/editMode.js"></script>
+    <script src="js/editor/drawBorder.js"></script>
+    <script src="js/editor/editBorder.js"></script>
+    <script src="js/editor/moveSettlement.js"></script>
+    <script src="js/map/layers.js"></script>
+    <script src="js/map/world.js"></script>
+    <script src="js/settlements.js"></script>
+    <script src="js/nations.js"></script>
+    <script src="js/renderers/gmNotes.js"></script>
+    <script src="js/renderers/images.js"></script>
+    <script src="js/renderers/links.js"></script>
+    <script src="js/renderers/years.js"></script>
+    <script src="js/renderers/markdown.js"></script>
+    <script src="js/ui/article.js"></script>
+    <script src="js/wiki/sidebar.js"></script>
+    <script src="js/wiki/wiki.js"></script>
+    <script src="js/wiki/search.js"></script>
     <script src="js/main.js"></script>
 
 </body>

@@ -9,3 +9,8 @@
 **Leadership:** The Vaegarian host are led by [[Maegar Varn]] and his trusty second in command [[Cephal Lorentus]].
 
 **Organisation:** Maegar acts as the compnies leader and battle commander meanwhile Cephal acts as a more strategic planer. While the two are most different people they are together an odd but successful combination.
+
+**Known members**
+- Leader [[Maegar Varn]]
+- Second in command [[Cephal Lorentus]]
+- Member [[Daedove Wildguard]]
