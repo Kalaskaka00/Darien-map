@@ -139,6 +139,32 @@ html, body {
 
 
 
+.gm-notes{
+
+    margin-top:40px;
+
+    padding:20px;
+
+    border-left:6px solid #016b18;
+
+    background:#225a3181;
+
+    color:#f2e6d5;
+
+    border-radius:10px;
+
+}
+
+.gm-notes h2{
+
+    margin-top:0;
+
+    color:#6e0707;
+
+}
+
+
+
 #search-container{
     position: relative;
     margin-bottom:0px;

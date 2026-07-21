@@ -229,6 +229,15 @@
     },
     {
         "id": null,
+        "name": "Grainseller family",
+        "category": "Unknown",
+        "file": "Organisations/Families/Grainseller family.md",
+        "map": null,
+        "border": null,
+        "color": null
+    },
+    {
+        "id": null,
         "name": "Beeret family",
         "category": "Unknown",
         "file": "Organisations/Families/Beeret family.md",
@@ -253,6 +262,15 @@
         "map": null,
         "border": null,
         "color": "#B01313"
+    },
+    {
+        "id": "magrie_beeret",
+        "name": "Magrie Beeret",
+        "category": "npc",
+        "file": "NPCs/Magrie Beeret.md",
+        "map": null,
+        "border": null,
+        "color": "#E00061"
     },
     {
         "id": "maegar_varn",
@@ -291,6 +309,15 @@
         "color": "#5C0BB5"
     },
     {
+        "id": "iandri_flukeflow",
+        "name": "Iandri Flukeflow",
+        "category": "npc",
+        "file": "NPCs/Iandri Flukeflow.md",
+        "map": null,
+        "border": null,
+        "color": "#211DA1"
+    },
+    {
         "id": "cephal_lorentus",
         "name": "Cephal Lorentus",
         "category": "npc",
@@ -298,6 +325,15 @@
         "map": null,
         "border": null,
         "color": "#BF902E"
+    },
+    {
+        "id": "bille_frostbite",
+        "name": "Bille Frostbite",
+        "category": "npc",
+        "file": "NPCs/Bille Frostbite.md",
+        "map": null,
+        "border": null,
+        "color": "#B01313"
     },
     {
         "id": "touvette",

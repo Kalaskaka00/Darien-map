@@ -36,18 +36,12 @@ document.addEventListener("click", function(e){
 
         loadArticle(wikiIndex[page].file);
 
-        if(article.map){
-
     map.flyTo(
         [article.map.y, article.map.x],
         2
     );
 
     const marker = markers[article.id];
-
-
-
-}
 
     } else {
 

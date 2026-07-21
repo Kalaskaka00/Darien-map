@@ -4,7 +4,7 @@ category: npc
 
 portrait: Kassil Aldori.webp
 
-fullname: Kassil Aldori
+fullname: Lord Kassil Aldori
 race: Half-orc
 birth: 3843
 death: 
