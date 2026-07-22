@@ -5,6 +5,11 @@ category: nation
 
 color: "#CFCED6"
 
+view: 
+  x: 1170 
+  y: 596 
+  zoom: 1
+
 border:
   - [401, 1490]
   - [418, 1412]

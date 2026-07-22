@@ -2,7 +2,14 @@
 id: touvette
 name: Touvette
 category: nation
+
 color: "#27872A"
+
+view: 
+  x: 610 
+  y: 487 
+  zoom: 1
+
 border:
   - [548, 684]
   - [550, 664]

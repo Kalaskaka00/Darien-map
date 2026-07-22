@@ -2,7 +2,14 @@
 id: gralton
 name: Gralton
 category: nation
+
 color: "#FA5050"
+
+view: 
+  x: 559 
+  y: 340 
+  zoom: 1
+
 border:
   - [499, 692]
   - [421, 638]

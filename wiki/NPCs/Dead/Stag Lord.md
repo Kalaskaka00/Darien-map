@@ -4,7 +4,7 @@ category: npc
 
 portrait: Stag Lord.jpg
 
-fullname: Stag Lord
+fullname: Durie Allseer, The Stag Lord, Ruler of the Stolen Lands
 race: Human
 birth: 3825
 death: 3861
@@ -14,7 +14,7 @@ origin: [[Stolen Lands]]
 
 color: "#B01313"
 --- 
-# Durie Allseer, The Stag Lord, Ruler of the Stolen Lands
+# The Stag Lord
 *I am the ruler of these lands, surrender now!*
 
 Durie was once a son to a shaman in the [[Stolen lands]], his father the shaman was however a bad man who continually abused his son. Duries mother was never around, maybe a fey maybe dead.

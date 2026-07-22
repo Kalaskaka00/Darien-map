@@ -1,0 +1,71 @@
+#editor{
+
+    position:absolute;
+
+    left:20px;
+    bottom:20px;
+
+    z-index:2000;
+
+}
+
+#editor-toggle{
+
+    width:48px;
+    height:48px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    background:#f3ead1;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.3);
+
+}
+
+#editor-panel{
+
+    display:none;
+
+    margin-bottom:10px;
+
+    padding:10px;
+
+    background:#f3ead1;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.3);
+
+}
+
+#editor-panel.open{
+
+    display:block;
+
+}
+
+#editor-panel button.active{
+    background:#6b8e23;
+    color:white;
+}
+
+.border-handle{
+
+    width:12px;
+    height:12px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    border:3px solid #ffd400;
+
+    box-sizing:border-box;
+
+}

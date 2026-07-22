@@ -7,7 +7,12 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/npc.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/wiki.css">
 </head>
 <body>
 
@@ -60,33 +65,47 @@
 
 </div>
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<!-- Resources -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-    <script src="js/config.js"></script>
-    <script src="js/gm.js"></script>
-    <script src="js/map/map.js"></script>
-    <script src="js/utils/frontmatter.js"></script>
-    <script src="js/editor/editMode.js"></script>
-    <script src="js/editor/drawBorder.js"></script>
-    <script src="js/editor/editBorder.js"></script>
-    <script src="js/editor/moveSettlement.js"></script>
-    <script src="js/map/layers.js"></script>
-    <script src="js/map/world.js"></script>
-    <script src="js/settlements.js"></script>
-    <script src="js/nations.js"></script>
-    <script src="js/renderers/gmNotes.js"></script>
-    <script src="js/renderers/images.js"></script>
-    <script src="js/renderers/links.js"></script>
-    <script src="js/renderers/years.js"></script>
-    <script src="js/renderers/markdown.js"></script>
-    <script src="js/ui/article.js"></script>
-    <script src="js/wiki/articleRegistry.js"></script>
-    <script src="js/wiki/sidebar.js"></script>
-    <script src="js/wiki/wiki.js"></script>
-    <script src="js/wiki/types/npc.js"></script>
-    <script src="js/wiki/search.js"></script>
-    <script src="js/main.js"></script>
+<!-- Config -->
+<script src="js/config.js"></script>
+<script src="js/gm.js"></script>
+
+<!-- Map -->
+<script src="js/map/map.js"></script>
+<script src="js/map/layers.js"></script>
+<script src="js/map/world.js"></script>
+
+<!-- Utils -->
+<script src="js/utils/frontmatter.js"></script>
+
+<!-- Renderers -->
+<script src="js/renderers/images.js"></script>
+<script src="js/renderers/links.js"></script>
+<script src="js/renderers/years.js"></script>
+<script src="js/renderers/gmNotes.js"></script>
+<script src="js/renderers/markdown.js"></script>
+
+<!-- Wiki -->
+<script src="js/wiki/articleRegistry.js"></script>
+<script src="js/wiki/articles/npc.js"></script>
+<script src="js/wiki/articles/settlements.js"></script>
+<script src="js/wiki/articles/nations.js"></script>
+<script src="js/wiki/sidebar.js"></script>
+<script src="js/ui/article.js"></script>
+<script src="js/wiki/wiki.js"></script>
+<script src="js/wiki/search.js"></script>
+
+<!-- Editor -->
+<script src="js/editor/editMode.js"></script>
+<script src="js/editor/drawBorder.js"></script>
+<script src="js/editor/editBorder.js"></script>
+<script src="js/editor/moveSettlement.js"></script>
+
+<!-- Start -->
+<script src="js/main.js"></script>
 
 </body>
 </html>

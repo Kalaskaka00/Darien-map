@@ -9,6 +9,7 @@
             "y": 585,
             "icon": "Small_City_Stone_Wall_Towers"
         },
+        "view": null,
         "border": null,
         "color": null
     },
@@ -22,6 +23,21 @@
             "y": 566,
             "icon": "Small_City_Stone_Wall_Towers"
         },
+        "view": null,
+        "border": null,
+        "color": null
+    },
+    {
+        "id": "starfall",
+        "name": "Starfall",
+        "category": "settlement",
+        "file": "Settlements/Starfall.md",
+        "map": {
+            "x": 408,
+            "y": 771,
+            "icon": "Small_City"
+        },
+        "view": null,
         "border": null,
         "color": null
     },
@@ -35,6 +51,7 @@
             "y": 685,
             "icon": "Small_City"
         },
+        "view": null,
         "border": null,
         "color": null
     },
@@ -48,6 +65,7 @@
             "y": 746,
             "icon": "Keep"
         },
+        "view": null,
         "border": null,
         "color": null
     },
@@ -61,6 +79,7 @@
             "y": 690,
             "icon": "Small_City_Stone_Wall_Towers"
         },
+        "view": null,
         "border": null,
         "color": null
     },
@@ -74,6 +93,7 @@
             "y": 637,
             "icon": "Large_City"
         },
+        "view": null,
         "border": null,
         "color": null
     },
@@ -87,6 +107,7 @@
             "y": 689,
             "icon": "Small_City_Stone_Wall_Towers"
         },
+        "view": null,
         "border": null,
         "color": null
     },
@@ -100,6 +121,7 @@
             "y": 730,
             "icon": "Castle"
         },
+        "view": null,
         "border": null,
         "color": null
     },
@@ -113,6 +135,7 @@
             "y": 257,
             "icon": "Large_City_Stone_Wall_Towers"
         },
+        "view": null,
         "border": null,
         "color": null
     },
@@ -126,6 +149,7 @@
             "y": 411,
             "icon": "Small_City"
         },
+        "view": null,
         "border": null,
         "color": null
     },
@@ -139,6 +163,7 @@
             "y": 453,
             "icon": "Town"
         },
+        "view": null,
         "border": null,
         "color": null
     },
@@ -152,6 +177,7 @@
             "y": 498,
             "icon": "Small_City"
         },
+        "view": null,
         "border": null,
         "color": null
     },
@@ -161,6 +187,7 @@
         "category": "Unknown",
         "file": "Organisations/Vaegarian host.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -170,6 +197,7 @@
         "category": "Unknown",
         "file": "Organisations/Swordlords of Brevoy.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -179,6 +207,7 @@
         "category": "Unknown",
         "file": "Organisations/Drowen Daggers.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -188,6 +217,7 @@
         "category": "Unknown",
         "file": "Organisations/Doves.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -197,6 +227,7 @@
         "category": "Unknown",
         "file": "Organisations/Brass Wheels.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -206,6 +237,7 @@
         "category": "Unknown",
         "file": "Organisations/Black Mantles.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -215,6 +247,7 @@
         "category": "Unknown",
         "file": "Organisations/Families/Viine family.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -224,6 +257,7 @@
         "category": "Unknown",
         "file": "Organisations/Families/Udoon family.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -233,6 +267,7 @@
         "category": "Unknown",
         "file": "Organisations/Families/Grainseller family.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -242,6 +277,7 @@
         "category": "Unknown",
         "file": "Organisations/Families/Beeret family.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -251,24 +287,17 @@
         "category": "Unknown",
         "file": "Organisations/Families/Aldori family.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
-    },
-    {
-        "id": "stag_lord",
-        "name": "Durie Allseer, The Stag Lord, Ruler of the Stolen Lands",
-        "category": "npc",
-        "file": "NPCs/Stag Lord.md",
-        "map": null,
-        "border": null,
-        "color": "#B01313"
     },
     {
         "id": "magrie_beeret",
         "name": "Magrie Beeret",
         "category": "npc",
-        "file": "NPCs/Magrie Beeret.md",
+        "file": "NPCs/Golden Lands/Magrie Beeret.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": "#E00061"
     },
@@ -276,8 +305,9 @@
         "id": "maegar_varn",
         "name": "Maegar Varn",
         "category": "npc",
-        "file": "NPCs/Maegar Varn.md",
+        "file": "NPCs/Golden Lands/Maegar Varn.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": "#BF902E"
     },
@@ -285,35 +315,19 @@
         "id": "kesten_garess",
         "name": "Kesten Garess",
         "category": "npc",
-        "file": "NPCs/Kesten Garess.md",
+        "file": "NPCs/Golden Lands/Kesten Garess.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": "#B01313"
-    },
-    {
-        "id": "kassil_aldori",
-        "name": "Kassil Aldori",
-        "category": "npc",
-        "file": "NPCs/Kassil Aldori.md",
-        "map": null,
-        "border": null,
-        "color": "#B01313"
-    },
-    {
-        "id": "jamandi_aldori",
-        "name": "Jamandi Aldori",
-        "category": "npc",
-        "file": "NPCs/Jamandi Aldori.md",
-        "map": null,
-        "border": null,
-        "color": "#5C0BB5"
     },
     {
         "id": "iandri_flukeflow",
         "name": "Iandri Flukeflow",
         "category": "npc",
-        "file": "NPCs/Iandri Flukeflow.md",
+        "file": "NPCs/Golden Lands/Iandri Flukeflow.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": "#211DA1"
     },
@@ -321,8 +335,9 @@
         "id": "cephal_lorentus",
         "name": "Cephal Lorentus",
         "category": "npc",
-        "file": "NPCs/Cephal Lorentus.md",
+        "file": "NPCs/Golden Lands/Cephal Lorentus.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": "#BF902E"
     },
@@ -330,8 +345,59 @@
         "id": "bille_frostbite",
         "name": "Bille Frostbite",
         "category": "npc",
-        "file": "NPCs/Bille Frostbite.md",
+        "file": "NPCs/Golden Lands/Bille Frostbite.md",
         "map": null,
+        "view": null,
+        "border": null,
+        "color": "#B01313"
+    },
+    {
+        "id": "annj_bearer",
+        "name": "Annj Bearer",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Annj Bearer.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1"
+    },
+    {
+        "id": "stag_lord",
+        "name": "The Stag Lord",
+        "category": "npc",
+        "file": "NPCs/Dead/Stag Lord.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#B01313"
+    },
+    {
+        "id": "keldithas_beeret",
+        "name": "Keldithas Beeret",
+        "category": "npc",
+        "file": "NPCs/Brevoy/Keldithas Beeret.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1"
+    },
+    {
+        "id": "kassil_aldori",
+        "name": "Kassil Aldori",
+        "category": "npc",
+        "file": "NPCs/Brevoy/Kassil Aldori.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#B01313"
+    },
+    {
+        "id": "jamandi_aldori",
+        "name": "Jamandi Aldori",
+        "category": "npc",
+        "file": "NPCs/Brevoy/Jamandi Aldori.md",
+        "map": null,
+        "view": null,
         "border": null,
         "color": "#B01313"
     },
@@ -341,6 +407,11 @@
         "category": "nation",
         "file": "Nations/Touvette.md",
         "map": null,
+        "view": {
+            "x": 610,
+            "y": 487,
+            "zoom": 1
+        },
         "border": [
             [
                 548,
@@ -419,6 +490,11 @@
         "category": "nation",
         "file": "Nations/The Wastes.md",
         "map": null,
+        "view": {
+            "x": 1170,
+            "y": 596,
+            "zoom": 1
+        },
         "border": [
             [
                 401,
@@ -513,6 +589,11 @@
         "category": "nation",
         "file": "Nations/Pitax.md",
         "map": null,
+        "view": {
+            "x": 655,
+            "y": 631,
+            "zoom": 1
+        },
         "border": [
             [
                 633,
@@ -595,6 +676,11 @@
         "category": "nation",
         "file": "Nations/Numeria.md",
         "map": null,
+        "view": {
+            "x": 656,
+            "y": 600,
+            "zoom": 0
+        },
         "border": [
             [
                 863,
@@ -853,6 +939,11 @@
         "category": "nation",
         "file": "Nations/Mivon.md",
         "map": null,
+        "view": {
+            "x": 1150,
+            "y": 356,
+            "zoom": 1
+        },
         "border": [
             [
                 446,
@@ -943,6 +1034,11 @@
         "category": "nation",
         "file": "Nations/Manchu Tribes.md",
         "map": null,
+        "view": {
+            "x": 397,
+            "y": 642,
+            "zoom": 1
+        },
         "border": [
             [
                 549,
@@ -1145,6 +1241,11 @@
         "category": "nation",
         "file": "Nations/Gralton.md",
         "map": null,
+        "view": {
+            "x": 559,
+            "y": 340,
+            "zoom": 1
+        },
         "border": [
             [
                 499,
@@ -1263,6 +1364,11 @@
         "category": "nation",
         "file": "Nations/Embeth.md",
         "map": null,
+        "view": {
+            "x": 948,
+            "y": 427,
+            "zoom": 1
+        },
         "border": [
             [
                 423,
@@ -1389,6 +1495,7 @@
         "category": "Unknown",
         "file": "Nations/Dwarven Keeps.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1398,6 +1505,11 @@
         "category": "nation",
         "file": "Nations/Brevoy.md",
         "map": null,
+        "view": {
+            "x": 999,
+            "y": 742,
+            "zoom": 1
+        },
         "border": [
             [
                 837,
@@ -1488,6 +1600,7 @@
         "category": "Unknown",
         "file": "Infrastructure/Kings Road.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1497,6 +1610,7 @@
         "category": "Unknown",
         "file": "History/War of the beards.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1506,6 +1620,11 @@
         "category": "Unknown",
         "file": "History/The Rill War.md",
         "map": null,
+        "view": {
+            "x": 785,
+            "y": 764,
+            "zoom": 2
+        },
         "border": null,
         "color": null
     },
@@ -1515,6 +1634,25 @@
         "category": "Unknown",
         "file": "History/The Manchu Conquests.md",
         "map": null,
+        "view": {
+            "x": 282,
+            "y": 773,
+            "zoom": 2
+        },
+        "border": null,
+        "color": null
+    },
+    {
+        "id": null,
+        "name": "Battle of Fingers",
+        "category": "Unknown",
+        "file": "History/Battle of Fingers.md",
+        "map": null,
+        "view": {
+            "x": 785,
+            "y": 764,
+            "zoom": 2
+        },
         "border": null,
         "color": null
     },
@@ -1524,6 +1662,7 @@
         "category": "Unknown",
         "file": "History/@The Timeline.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1533,6 +1672,7 @@
         "category": "Unknown",
         "file": "Dieties/@Dieties Summary.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1542,6 +1682,7 @@
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Xia.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1551,6 +1692,7 @@
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Wyndee.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1560,6 +1702,7 @@
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Ruzhee.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1569,6 +1712,7 @@
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Nunree.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1578,6 +1722,7 @@
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Luxy.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1587,6 +1732,7 @@
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Ebus.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1596,6 +1742,7 @@
         "category": "Unknown",
         "file": "Dieties/Minor Dieties/Arie.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1605,6 +1752,7 @@
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Xiander.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1614,6 +1762,7 @@
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Vanee.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1623,6 +1772,7 @@
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Thirdenlin.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1632,6 +1782,7 @@
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Sandor.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1641,6 +1792,7 @@
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Rendeen.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1650,6 +1802,7 @@
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Erven.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1659,6 +1812,7 @@
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Dunden.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1668,6 +1822,7 @@
         "category": "Unknown",
         "file": "Dieties/Major Dieties/Bann.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1677,6 +1832,7 @@
         "category": "Unknown",
         "file": "Culture/Greenskin.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1686,6 +1842,7 @@
         "category": "Unknown",
         "file": "Cosmoligy/Matieral Plane.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1695,6 +1852,7 @@
         "category": "Unknown",
         "file": "Cosmoligy/Dream Realm.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     },
@@ -1704,6 +1862,7 @@
         "category": "Unknown",
         "file": "Artifacts, Relics, Items/Divine Artifacts.md",
         "map": null,
+        "view": null,
         "border": null,
         "color": null
     }

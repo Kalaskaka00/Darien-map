@@ -43,6 +43,7 @@ wikiIndex.push({
     category: data.category || "Unknown",
     file: file.replace(/^wiki[\\/]/, "").replace(/\\/g, "/"),
     map: data.map || null,
+    view: data.view || null,
     border: data.border || null,
     color: data.color || null
 });

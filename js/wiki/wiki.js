@@ -33,25 +33,42 @@ document.addEventListener("click", function(e){
     e.preventDefault();
 
     const page = e.target.dataset.page;
-
     const article = wikiIndex[page];
 
     if (wikiIndex[page]){
-
-        loadArticle(wikiIndex[page].file);
-
-        if(article.map){
-
-    map.flyTo(
-        [article.map.y, article.map.x],
-        2
-    );
-
-    const marker = markers[article.id];
-    }
+        openArticle(article);
+    
     } else {
 
         console.warn("Ingen artikel hittades:", page);
 
     }
 });
+
+function focusArticle(article){
+
+    if(article.view){
+
+    map.flyTo(
+        [article.view.y, article.view.x],
+        article.view.zoom
+    );
+
+    }else if(article.map){
+
+    map.flyTo(
+        [article.map.y, article.map.x],
+        2
+    );
+
+    }
+
+}
+
+function openArticle(article){
+
+    loadArticle(article.file);
+
+    focusArticle(article);
+
+}

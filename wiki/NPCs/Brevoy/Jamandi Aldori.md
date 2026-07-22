@@ -12,7 +12,7 @@ family: [[Aldori family]]
 organisations: [[Swordlords of Brevoy]]
 origin: [[Brevoy]]
 
-color: "#5C0BB5"
+color: "#B01313"
 --- 
 # Jamandi Aldori
 *I would far rather fight a dragon than speak with politicians.*

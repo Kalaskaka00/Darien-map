@@ -1,4 +1,9 @@
-
+---
+view: 
+  x: 785 
+  y: 764 
+  zoom: 2
+---
 # The Rill War
 *[[@The Timeline]] Year {{year:3843}}-{{year:3847}}*
 

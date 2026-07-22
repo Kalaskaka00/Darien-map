@@ -62,19 +62,7 @@ document.addEventListener("click", function(e) {
 
 });
 
-function openEntry(article){
-    loadArticle(article.file);
 
-    if(article.map){
-
-        map.flyTo(
-            [article.map.y, article.map.x],
-            1
-        );
-
-        markers[article.id].openPopup();
-    }
-}
 
 function clearSearch() {
 

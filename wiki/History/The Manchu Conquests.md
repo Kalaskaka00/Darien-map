@@ -1,3 +1,9 @@
+---
+view: 
+  x: 282 
+  y: 773 
+  zoom: 2
+---
 # The Manchu Conquests
 *[[@The Timeline]] Year {{year:3657}} - {{year:3702}}*
 

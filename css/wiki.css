@@ -1,0 +1,102 @@
+#wiki-sidebar{
+
+    width:32%;
+    min-width:480px;
+    max-width:650px;
+
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+
+    background: url("Backgrounds/Parchment.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    overflow-y:auto;
+
+    border-left:3px solid #6f5328;
+
+    padding:20px;
+
+    box-sizing:border-box;
+
+    font-family:Georgia, serif;
+
+}
+
+.article img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+    margin:1em auto;
+
+    border-radius:8px;
+
+}
+
+.gm-notes{
+
+    margin-top:40px;
+
+    padding:20px;
+
+    border-left:6px solid #016b18;
+
+    background:#225a3181;
+
+    color:#f2e6d5;
+
+    border-radius:10px;
+
+}
+
+.gm-notes h2{
+
+    margin-top:0;
+
+    color:#6e0707;
+
+}
+
+.leaflet-popup-content-wrapper {
+    background: url("Backgrounds/Parchment.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: #2d2417;
+}
+
+.leaflet-popup-tip {
+    background: #f3ecd2;
+    border: 2px solid #7b5a2b;
+}
+
+.leaflet-popup-content {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.5;
+}
+
+#article-layout{
+
+    overflow-y:auto;
+
+}
+
+#article-sidebar{
+
+    width:100%;
+    margin-bottom:25px;
+
+}
+
+#article{
+
+    width:100%;
+
+}

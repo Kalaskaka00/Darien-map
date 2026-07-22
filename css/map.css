@@ -1,0 +1,56 @@
+.city-popup {
+    width: 280px;
+    font-family: Georgia, serif;
+}
+
+.city-popup h2 {
+    margin: 0;
+    color: #3a1d06;
+}
+
+.city-type {
+    color: #5a5757;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.city-popup p {
+    line-height: 1.4;
+}
+
+.city-label {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #a77d5b;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow:
+        -1px -1px 0 black,
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
+}
+
+.nation-label{
+    background: transparent;
+    border: none;
+
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #222;
+
+    white-space: nowrap;
+    width:200px;
+    text-align:center;
+
+    transform: translateX(-50%);
+
+text-shadow:
+0 0 1px #000,
+0 0 2px #000,
+0 0 3px #fff;
+}

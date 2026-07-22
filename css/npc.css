@@ -1,0 +1,122 @@
+.npc-card{
+
+    border:3px solid var(--npc-color);
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    margin-bottom:25px;
+
+    background:rgba(255,255,255,.45);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+
+}
+
+.npc-banner{
+
+    background:var(--npc-color);
+
+    color:white;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    padding:12px 20px;
+
+}
+
+.npc-content{
+
+    display:flex;
+
+    gap:25px;
+
+    padding:20px;
+
+}
+
+.npc-left{
+
+    flex-shrink:0;
+
+}
+
+.npc-portrait{
+
+    width:240px;
+
+    border-radius:8px;
+
+    border:3px solid var(--npc-color);
+
+}
+
+.npc-right{
+
+    flex:1;
+
+}
+
+.npc-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:10px 0;
+
+    border-bottom:1px solid rgba(0,0,0,.15);
+
+}
+
+.npc-row span:first-child{
+
+    font-weight:bold;
+
+}
+
+.npc-row span:last-child{
+
+    text-align:right;
+
+}
+
+.npc-sidebar{
+
+    position:sticky;
+
+    top:20px;
+
+}
+
+
+
+.npc-deceased{
+
+    background: url("Backgrounds/Gravestone.jpg");
+
+    color:#ddd;
+
+}
+
+.npc-deceased .npc-banner{
+
+    background:var(--npc-color);
+    filter:grayscale(50%);
+
+}
+
+.npc-deceased .npc-portrait{
+
+    filter:grayscale(50%);
+
+}
+
+.npc-deceased .npc-row{
+
+    border-color:#555;
+
+}

@@ -5,6 +5,11 @@ category: nation
 
 color: "#8F1A2C"
 
+view: 
+  x: 999 
+  y: 742 
+  zoom: 1
+
 border:
   - [837, 970]
   - [801, 925]

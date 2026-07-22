@@ -5,6 +5,11 @@ category: nation
 
 color: "#B09515"
 
+view: 
+  x: 397 
+  y: 642 
+  zoom: 1
+
 border:
   - [549, 427]
   - [545, 438]
