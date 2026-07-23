@@ -112,6 +112,20 @@
         "color": null
     },
     {
+        "id": "lonelywood",
+        "name": "Lonelywood",
+        "category": "settlement",
+        "file": "Settlements/Lonelywood.md",
+        "map": {
+            "x": 1119,
+            "y": 810,
+            "icon": "Town"
+        },
+        "view": null,
+        "border": null,
+        "color": null
+    },
+    {
         "id": "great_gate",
         "name": "Great Gate",
         "category": "settlement",
@@ -290,6 +304,26 @@
         "view": null,
         "border": null,
         "color": null
+    },
+    {
+        "id": "siphon",
+        "name": "Siphon",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Siphon.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#9C9C9C"
+    },
+    {
+        "id": "milo_grainseller",
+        "name": "Milo Grainseller",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Milo Grainseller.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#E00061"
     },
     {
         "id": "magrie_beeret",
@@ -1639,6 +1673,16 @@
             "y": 773,
             "zoom": 2
         },
+        "border": null,
+        "color": null
+    },
+    {
+        "id": null,
+        "name": "The Magical Anorchrism",
+        "category": "Unknown",
+        "file": "History/The Magical Anorchrism.md",
+        "map": null,
+        "view": null,
         "border": null,
         "color": null
     },

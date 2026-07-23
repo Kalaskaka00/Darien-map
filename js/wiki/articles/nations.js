@@ -165,3 +165,15 @@ function polygonCentroid(points) {
         x / (6 * area)
     );
 }
+
+registerArticleType("nation",{
+
+    focus: focusArticle,
+
+    onOpen(article){},
+
+    onClose(article){},
+
+    icon:"🏳️"
+
+});

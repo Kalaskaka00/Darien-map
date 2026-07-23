@@ -17,6 +17,21 @@ document.getElementById("editor-toggle").onclick = function(){
 };
 
 function updateEditorButtons(){
+    cameraToolButton.classList.toggle(
+    "active",
+    editorMode === "camera-tool"
+    );
+    
+    if(editorMode === "camera-tool"){
+
+    enableCameraTool();
+
+    }else{
+
+    disableCameraTool();
+
+    }
+
     drawBorderButton.classList.toggle(
         "active",
         editorMode === "draw-border"

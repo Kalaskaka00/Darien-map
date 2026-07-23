@@ -154,3 +154,15 @@ function updateLabels() {
 }
 
 map.on("zoomend", updateLabels);
+
+registerArticleType("settlement",{
+
+    focus: focusArticle,
+
+    onOpen(article){},
+
+    onClose(article){},
+
+    icon:"🏰"
+
+});

@@ -21,9 +21,6 @@ L.imageOverlay('map/Darien map.png', bounds).addTo(map);
 map.fitBounds(bounds);
 map.setMaxBounds(bounds);
 map.dragging.enable();
-map.on("click", function(e) {
-    console.log(e.latlng);
-});
 
 function initializeMap(){
 

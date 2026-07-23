@@ -69,3 +69,26 @@
     box-sizing:border-box;
 
 }
+
+#camera-info{
+
+    position:absolute;
+
+    top:20px;
+    left:20px;
+
+    background:rgba(0,0,0,.75);
+
+    color:white;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    font-family:monospace;
+
+    display:none;
+
+    z-index:1000;
+
+}

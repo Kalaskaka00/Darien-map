@@ -28,7 +28,7 @@ He was eventually killed by a delegation of [[Brevoy]] led by the to be barons o
 ## Relations
 - [[Myron]] was once a friend of the Stag Lord but he eventually locked her in an amulett to use her powers for himself.
 - [[Ox]] was The Stag lords right hand man.
-- [[Bille Frostbite]], [[Xer]] and [[Crash]] were a lieutenants of the Stag Lord.
+- [[Bille Frostbite]], [[Xer]] and [[Crash]] were  lieutenants of the Stag Lord.
 
 <!--GM
 ## GM info

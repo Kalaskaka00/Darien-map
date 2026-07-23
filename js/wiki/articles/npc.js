@@ -67,6 +67,12 @@ function buildNPCSidebar(article){
 
 registerArticleType("npc",{
 
-    sidebar: buildNPCSidebar
+    sidebar: buildNPCSidebar,
+
+    onOpen(article){},
+
+    onClose(article){},
+
+    icon:"👤"
 
 });

@@ -44,31 +44,3 @@ document.addEventListener("click", function(e){
 
     }
 });
-
-function focusArticle(article){
-
-    if(article.view){
-
-    map.flyTo(
-        [article.view.y, article.view.x],
-        article.view.zoom
-    );
-
-    }else if(article.map){
-
-    map.flyTo(
-        [article.map.y, article.map.x],
-        2
-    );
-
-    }
-
-}
-
-function openArticle(article){
-
-    loadArticle(article.file);
-
-    focusArticle(article);
-
-}

@@ -5,11 +5,9 @@ const articleSidebar =
 
 function renderSidebar(article){
 
-    const sidebar = document.getElementById("article-sidebar");
+    const type = getArticleType(article.category);
 
-    const renderer = getArticleRenderer(article.category);
-
-    if(!renderer){
+    if(!type?.sidebar){
 
         articleSidebar.innerHTML = "";
 
@@ -17,7 +15,7 @@ function renderSidebar(article){
 
     }
 
-    articleSidebar.innerHTML = renderer.sidebar(article);
+    articleSidebar.innerHTML = type.sidebar(article);
 
 }
 

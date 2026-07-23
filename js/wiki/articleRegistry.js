@@ -1,12 +1,12 @@
 const articleTypes = {};
 
-function registerArticleType(category, renderer){
+function registerArticleType(category, type){
 
-    articleTypes[category] = renderer;
+    articleTypes[category] = type;
 
 }
 
-function getArticleRenderer(category){
+function getArticleType(category){
 
     return articleTypes[category];
 
