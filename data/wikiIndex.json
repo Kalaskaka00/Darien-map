@@ -1,5 +1,15 @@
 [
     {
+        "id": null,
+        "name": "Roadmap",
+        "category": "Unknown",
+        "file": "Roadmap.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null
+    },
+    {
         "id": "transmuters_rest",
         "name": "Transmuter´s Rest",
         "category": "settlement",
@@ -306,6 +316,16 @@
         "color": null
     },
     {
+        "id": "vein_grainseller",
+        "name": "Vein Grainseller",
+        "category": "npc",
+        "file": "NPCs/Touvette/Vein Grainseller.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057"
+    },
+    {
         "id": "siphon",
         "name": "Siphon",
         "category": "npc",
@@ -320,6 +340,16 @@
         "name": "Milo Grainseller",
         "category": "npc",
         "file": "NPCs/Golden Lands/Milo Grainseller.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#E00061"
+    },
+    {
+        "id": "malora_grainseller",
+        "name": "Malora Grainseller",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Malora Grainseller.md",
         "map": null,
         "view": null,
         "border": null,
@@ -406,6 +436,16 @@
         "color": "#B01313"
     },
     {
+        "id": "sandak_viine",
+        "name": "Sandak Viine",
+        "category": "npc",
+        "file": "NPCs/Brevoy/Sandak Viine.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#E00061"
+    },
+    {
         "id": "keldithas_beeret",
         "name": "Keldithas Beeret",
         "category": "npc",
@@ -430,6 +470,16 @@
         "name": "Jamandi Aldori",
         "category": "npc",
         "file": "NPCs/Brevoy/Jamandi Aldori.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#B01313"
+    },
+    {
+        "id": "calsys_viine",
+        "name": "Calsys Viine",
+        "category": "npc",
+        "file": "NPCs/Brevoy/Calsys Viine.md",
         "map": null,
         "view": null,
         "border": null,
@@ -1884,7 +1934,7 @@
         "id": null,
         "name": "Material Plane",
         "category": "Unknown",
-        "file": "Cosmoligy/Matieral Plane.md",
+        "file": "Cosmoligy/Material Plane.md",
         "map": null,
         "view": null,
         "border": null,

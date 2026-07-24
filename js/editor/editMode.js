@@ -22,13 +22,17 @@ function updateEditorButtons(){
     editorMode === "camera-tool"
     );
     
-    if(editorMode === "camera-tool"){
+    for(const tool of getEditorTools()){
 
-    enableCameraTool();
+    if(tool.id === editorMode){
+
+        tool.activate();
 
     }else{
 
-    disableCameraTool();
+        tool.deactivate();
+
+    }
 
     }
 

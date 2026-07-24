@@ -6,6 +6,8 @@ function initializeApplication(){
 
     loadWorld();
 
+    initializeToolbar();
+
 }
 
 initializeApplication();

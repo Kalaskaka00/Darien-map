@@ -51,13 +51,13 @@ The temples of Mivon chose their divine protector who serves for life or til ret
 
 The current divine protector is named [[Deven Sunderer]] an aasimar around 70 years of age.
 ## Culture
-Faith permeates the entire culture, all citizens and visitors are expected to pray every day and atend the temples every sunday and any holiday. Anyone who does not follow the faiths are strictly punished and may be banished.
+Faith permeates the entire culture, all citizens and visitors are expected to pray every day and attend the temples every sunday and any holiday. Anyone who does not follow the faiths are strictly punished and may be banished.
 
-All citizens are expected to make a pilgrimage to [[Milor]] temple at 13 years of age to be judged and guided by the bishops and judged by their divine incense. Here ones path in life is determined and may be anything from religious service to the army or a simple farmers life. Once one has been deemed for a path in life only another bishop may overturn that path.
+All citizens are expected to make a pilgrimage to [[Milor temple]] at 13 years of age to be judged and guided by the bishops and judged by their divine incense. Here ones path in life is determined and may be anything from religious service to the army or a simple farmers life. Once one has been deemed for a path in life only another bishop may overturn that path.
 
 There is a general disdain toward godless and "unclean" races, especially tieflings. Similarly aasimars are revered and are generally given a higher status in society.
 ## Faith
-In Mivon all dieties are worshiped to a large extent and one is expected to pray to all dieties depending on where they are in life. Furthermore there is a great monument dedicated to each of the Gods.
+In Mivon all deities are worshiped to a large extent and one is expected to pray to all deities depending on where they are in life. Furthermore there is a great monument dedicated to each of the Gods.
 ## Relations
 **[[Galt]]:** Mivon is dependent on your definition a revolter nation from [[Galt]]. While [[Galt]] has this far been to divided to do anything about it there's a constant fear the [[Galt]] will come back to annex Mivon.
 

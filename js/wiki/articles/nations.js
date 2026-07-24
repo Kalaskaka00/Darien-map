@@ -67,17 +67,18 @@ function addNation(country){
     nationPolygons[country.id] = outline;
 
     // Klick på landet + edit border
-outline.on("click",()=>{
+outline.on("click", ()=>{
 
-    if(editorMode==="edit-border"){
+    if(editorMode === "edit-border"){
 
-        showBorderHandles(country);
+        selectCountryForEditing(country);
 
         return;
 
     }
 
     openEntry(country);
+
 });
 
     // Hover-effekt

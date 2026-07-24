@@ -1,5 +1,3 @@
-const editBorderButton = document.getElementById("edit-border");
-
 let borderPoints = [];
 
 let borderPreview = null;
@@ -8,26 +6,23 @@ let editingCountry = null;
 
 let editMarkers = [];
 
-map.on("click", function(e){
+function enableEditBorder(){
 
+    editingCountry = null;
 
-    if(editorMode !== "edit-border"){
+}
+
+function selectCountryForEditing(country){
 
     clearBorderHandles();
 
-    }
+    editingCountry = country;
 
-});
+    showBorderHandles(country);
 
-map.on("contextmenu", function(){
-    if(editorMode === "edit-border"){
+}
 
-        if(!editingCountry)
-            return;
-
-        editorMode = null;
-        updateEditorButtons();
-
+function editingCountry(country){
         let yaml = "border:\n";
 
         editingCountry.border.forEach(point => {
@@ -41,36 +36,11 @@ map.on("contextmenu", function(){
         alert("Border copied!");
 
         return;
-    }
-});
-
-document.getElementById("edit-border").onclick = function(){
-
-    if(editorMode==="edit-border"){
-
-        editorMode=null;
-
-    }else{
-
-        editorMode="edit-border";
-
-    }
-
-    if(editorMode !== "edit-border"){
-
-    clearBorderHandles();
-
-    }
-
-    updateEditorButtons();
-
-};
+    };
 
 function showBorderHandles(country){
 
     editingCountry = country;
-
-    clearBorderHandles();
 
     country.border.forEach((point,index)=>{
 
@@ -80,20 +50,6 @@ function showBorderHandles(country){
         className:"border-handle"
     })
     }).addTo(map);
-
-    marker.on("drag", function(){
-
-    const pos = marker.getLatLng();
-
-    country.border[index] = [
-
-        Math.round(pos.lat),
-
-        Math.round(pos.lng)
-
-    ];
-
-    });
 
     marker.on("drag", function(){
 
@@ -120,14 +76,22 @@ function showBorderHandles(country){
 
 })};
 
-function clearBorderHandles(){
+function disableEditBorder(){
 
-    editMarkers.forEach(marker => {
-
-        map.removeLayer(marker);
-
-    });
-
-    editMarkers = [];
+    clearBorderHandles();
 
 }
+
+registerEditorTool({
+
+    id: "edit-border",
+
+    group: "build",
+
+    button: editBorderButton,
+
+    activate: enableEditBorder,
+
+    deactivate: disableEditBorder
+
+});

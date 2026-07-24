@@ -9,17 +9,6 @@ let zoom2Rect = null;
 const cameraInfo = document.getElementById("camera-info");
 const cameraToolButton = document.getElementById("camera-tool");
 
-cameraToolButton.onclick = function(){
-
-    editorMode =
-        editorMode === "camera-tool"
-        ? null
-        : "camera-tool";
-
-    updateEditorButtons();
-
-}
-
 function enableCameraTool(){
 
     cameraLayer.addTo(map);
@@ -148,3 +137,17 @@ function getViewBounds(zoom){
 
 map.on("move", updateCameraTool);
 map.on("zoom", updateCameraTool);
+
+registerEditorTool({
+
+    id: "camera-tool",
+
+    group: "build",
+
+    button: cameraToolButton,
+
+    activate: enableCameraTool,
+
+    deactivate: disableCameraTool
+
+});
