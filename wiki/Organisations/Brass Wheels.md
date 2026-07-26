@@ -23,3 +23,4 @@ Memberships in order:
 
 **Known members**
 - Gold [[Milo Grainseller]]
+- Silver [[Emily Viine]]

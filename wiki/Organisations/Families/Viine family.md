@@ -1,3 +1,9 @@
+---
+view: 
+  x: 896
+  y: 685
+  zoom: 2
+---
 # Viine family
 **Locations:** [[Brevoy]]
 **Charges:** [[Southhost]]

@@ -1,3 +1,13 @@
+---
+name: Aldori family
+id: aldori_family
+category: family
+
+view: 
+  x: 1065
+  y: 690
+  zoom: 2
+---
 # Aldori family
 **Locations:** [[Brevoy]]
 **Charges:** [[Restov]]

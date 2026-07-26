@@ -10,6 +10,89 @@
         "color": null
     },
     {
+        "id": "daggermark",
+        "name": "Daggermark",
+        "category": "nation",
+        "file": "Daggermark.md",
+        "map": null,
+        "view": {
+            "x": 422,
+            "y": 483,
+            "zoom": 1
+        },
+        "border": [
+            [
+                542,
+                414
+            ],
+            [
+                570,
+                409
+            ],
+            [
+                578,
+                394
+            ],
+            [
+                594,
+                387
+            ],
+            [
+                604,
+                372
+            ],
+            [
+                583,
+                347
+            ],
+            [
+                585,
+                327
+            ],
+            [
+                564,
+                305
+            ],
+            [
+                544,
+                272
+            ],
+            [
+                474,
+                268
+            ],
+            [
+                373,
+                279
+            ],
+            [
+                295,
+                313
+            ],
+            [
+                299,
+                338
+            ],
+            [
+                361,
+                360
+            ],
+            [
+                408,
+                407
+            ],
+            [
+                472,
+                415
+            ],
+            [
+                524,
+                402
+            ]
+        ],
+        "color": "#591773"
+    },
+    {
         "id": "transmuters_rest",
         "name": "Transmuter´s Rest",
         "category": "settlement",
@@ -271,7 +354,11 @@
         "category": "Unknown",
         "file": "Organisations/Families/Viine family.md",
         "map": null,
-        "view": null,
+        "view": {
+            "x": 896,
+            "y": 685,
+            "zoom": 2
+        },
         "border": null,
         "color": null
     },
@@ -281,7 +368,11 @@
         "category": "Unknown",
         "file": "Organisations/Families/Udoon family.md",
         "map": null,
-        "view": null,
+        "view": {
+            "x": 1119,
+            "y": 810,
+            "zoom": 2
+        },
         "border": null,
         "color": null
     },
@@ -291,7 +382,11 @@
         "category": "Unknown",
         "file": "Organisations/Families/Grainseller family.md",
         "map": null,
-        "view": null,
+        "view": {
+            "x": 606,
+            "y": 453,
+            "zoom": 2
+        },
         "border": null,
         "color": null
     },
@@ -301,17 +396,25 @@
         "category": "Unknown",
         "file": "Organisations/Families/Beeret family.md",
         "map": null,
-        "view": null,
+        "view": {
+            "x": 815,
+            "y": 746,
+            "zoom": 2
+        },
         "border": null,
         "color": null
     },
     {
-        "id": null,
+        "id": "aldori_family",
         "name": "Aldori family",
-        "category": "Unknown",
+        "category": "family",
         "file": "Organisations/Families/Aldori family.md",
         "map": null,
-        "view": null,
+        "view": {
+            "x": 1065,
+            "y": 690,
+            "zoom": 2
+        },
         "border": null,
         "color": null
     },
@@ -436,6 +539,16 @@
         "color": "#B01313"
     },
     {
+        "id": "thorin_udoon",
+        "name": "Thorin Udoon",
+        "category": "npc",
+        "file": "NPCs/Brevoy/Thorin Udoon.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057"
+    },
+    {
         "id": "sandak_viine",
         "name": "Sandak Viine",
         "category": "npc",
@@ -444,6 +557,26 @@
         "view": null,
         "border": null,
         "color": "#E00061"
+    },
+    {
+        "id": "maameo_udoon",
+        "name": "Maameo Udoon",
+        "category": "npc",
+        "file": "NPCs/Brevoy/Maameo Udoon.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#B01313"
+    },
+    {
+        "id": "kiri_udoon",
+        "name": "Kiri Udoon",
+        "category": "npc",
+        "file": "NPCs/Brevoy/Kiri Udoon.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1"
     },
     {
         "id": "keldithas_beeret",
@@ -474,6 +607,26 @@
         "view": null,
         "border": null,
         "color": "#B01313"
+    },
+    {
+        "id": "emily_viine",
+        "name": "Emily Viine",
+        "category": "npc",
+        "file": "NPCs/Brevoy/Emily Viine.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#E00061"
+    },
+    {
+        "id": "ekon_udoon",
+        "name": "Ekon Udoon",
+        "category": "npc",
+        "file": "NPCs/Brevoy/Ekon Udoon.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#BF902E"
     },
     {
         "id": "calsys_viine",

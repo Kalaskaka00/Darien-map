@@ -17,7 +17,7 @@ color: "#B01313"
 # Jamandi Aldori
 *I would far rather fight a dragon than speak with politicians.*
 
-Jamandi Aldori is somewhat of a living legend having fought and commanded in countless battles. She is told to have singlehandedly fought a dragon and won. Maybe even more than her martial prowess she is known as a skilled and capable commander.
+Jamandi Aldori is somewhat of a living legend having fought and commanded in countless battles. She is told to have single handedly fought a dragon and won. Maybe even more than her martial prowess she is known as a skilled and capable commander.
 
 She is Lord Protector of [[Restov]] meaning she serves as head of state for [[Restov]] and the surrounding area. She is in her role seen as just and fair, she has a rumor as an effective leader. She is not necessarily known as either kind of cruel being known to care for the people as well as severely punishing wrongdoers and traitors.
 
@@ -28,7 +28,7 @@ Except for her role as Lord Protector she is one of the highest heads among the 
 ## Relations
 - [[Raisan Aldori]] is Jamandis father.
 - [[Kassil Aldori]] is Jamandis adopted son whom is thought to be her designated heir.
-- [[Kesten Garess]] was promoted by Jamandi and seen for his talent.
+- [[Kesten Garess]] was promoted by Jamandi and seen for his talent and served her loyally for many years.[[Maameo Udoon]] is a friend since [[The Rill War]]
 
 <!--GM
 ## GM info

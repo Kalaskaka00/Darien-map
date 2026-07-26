@@ -1,11 +1,5 @@
 let cameraLayer = L.layerGroup();
 
-let cameraHorizontal = null;
-let cameraVertical = null;
-
-let zoom1Rect = null;
-let zoom2Rect = null;
-
 const cameraInfo = document.getElementById("camera-info");
 const cameraToolButton = document.getElementById("camera-tool");
 

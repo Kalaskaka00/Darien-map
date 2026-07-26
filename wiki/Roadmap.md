@@ -1,6 +1,6 @@
 ## Details
-- Remove /div from GM notes
 - Pretty up NPC quotes
+- Several NPC organisations (Ekon)
 ## Map
 - Roads
 - Streams
@@ -12,10 +12,8 @@
 ## Tools
 - Ping
 - Laser pointer 
-- Measure
+- **Measure**
 - Travel calculator
-- Draw Line
-- Edit Border - Add/Remove point
 ## UI
 - Map border
 - Wiki Pop out

@@ -1,3 +1,9 @@
+---
+view: 
+  x: 1119
+  y: 810
+  zoom: 2
+---
 # Udoon family
 **Locations:** [[Brevoy]]
 **Charges:** [[Lonelywood]]

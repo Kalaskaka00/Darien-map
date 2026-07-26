@@ -55,18 +55,29 @@
     color:white;
 }
 
-.border-handle{
+.shape-handle{
 
     width:12px;
     height:12px;
 
     border-radius:50%;
 
-    background:#fff;
+    background:white;
 
-    border:3px solid #ffd400;
+    border:2px solid #2979ff;
 
-    box-sizing:border-box;
+}
+
+.edge-handle{
+
+    width:4px;
+    height:4px;
+
+    border-radius:50%;
+
+    background:#2979ff;
+
+    border:2px solid white;
 
 }
 

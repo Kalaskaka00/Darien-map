@@ -24,6 +24,7 @@ She is known to be fearless and optimistic.
 ## Relations
 - [[Sandak Viine]] is Calsys father and the head of the [[Viine family]]
 - [[Emily Viine]] is Calsys younger sister.
+- [[Ekon Udoon]] is a friend of Calsys as he have went on a few quests together.
 
 <!--GM
 ## GM info

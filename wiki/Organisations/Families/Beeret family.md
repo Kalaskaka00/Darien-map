@@ -1,3 +1,9 @@
+---
+view: 
+  x: 815
+  y: 746
+  zoom: 2
+---
 # Beeret family
 **Locations:** [[Brevoy]]
 **Charges:** [[Roughen Fort]]

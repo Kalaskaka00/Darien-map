@@ -1,23 +1,26 @@
 function renderGMNotes(markdown){
+
     if(isGM){
 
-    markdown = markdown.replace(
-        /<!--GM([\s\S]*?)-->/g,
-        (_,content)=>
-        `<div class="gm-notes">
-        ${marked.parse(content)}
-        </div>`
+        return markdown.replace(
+
+            /<!--GM([\s\S]*?)-->/g,
+
+            (_, content) =>
+
+`<div class="gm-notes">
+
+${content}
+
+</div>`
+
         );
 
-    }else{
+    }
 
-    markdown = markdown.replace(
+    return markdown.replace(
         /<!--GM[\s\S]*?-->/g,
         ""
     );
-
-}
-
-    return markdown;
 
 }

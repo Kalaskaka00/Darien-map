@@ -6,8 +6,6 @@ if(editor){
 
 }
 
-let editorMode = null;
-
 const panel = document.getElementById("editor-panel");
 
 document.getElementById("editor-toggle").onclick = function(){
@@ -17,11 +15,7 @@ document.getElementById("editor-toggle").onclick = function(){
 };
 
 function updateEditorButtons(){
-    cameraToolButton.classList.toggle(
-    "active",
-    editorMode === "camera-tool"
-    );
-    
+
     for(const tool of getEditorTools()){
 
     if(tool.id === editorMode){
@@ -36,24 +30,9 @@ function updateEditorButtons(){
 
     }
 
-    drawBorderButton.classList.toggle(
-        "active",
-        editorMode === "draw-border"
-    );
+    if(editorMode !== "edit-shape"){
 
-    moveSettlementButton.classList.toggle(
-        "active",
-        editorMode === "move-settlement"
-    );
-
-    editBorderButton.classList.toggle(
-    "active",
-    editorMode === "edit-border"
-    );
-
-    if(editorMode !== "edit-border"){
-
-    clearBorderHandles();
+    clearShapeHandles();
 
     }
 }

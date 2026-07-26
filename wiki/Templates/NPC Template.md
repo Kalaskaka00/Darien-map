@@ -2,7 +2,7 @@
 id: <% tp.file.title.toLowerCase().replace(/ /g,"_") %>
 category: npc 
 
-portrait: <% tp.file.title %>.webp
+portrait: <% tp.file.title %>.png
 
 fullname: <% tp.file.title %>
 race: 

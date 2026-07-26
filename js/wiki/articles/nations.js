@@ -69,20 +69,34 @@ function addNation(country){
     // Klick på landet + edit border
 outline.on("click", ()=>{
 
-    if(editorMode === "edit-border"){
+    if(editorMode==="edit-shape"){
 
-        selectCountryForEditing(country);
+        selectShape({
+
+    object: country,
+
+    points: country.border,
+
+    refresh(){
+
+        nationPolygons[country.id].setLatLngs(
+            smoothPolygon(country.border,2)
+        );
+
+    }
+
+    });
 
         return;
 
     }
 
-    openEntry(country);
+    openArticle(country);
 
 });
 
-    // Hover-effekt
-    outline.on("mouseover", () => {
+// Hover-effekt
+outline.on("mouseover", () => {
         outline.setStyle({ weight: 5 });
     });
 

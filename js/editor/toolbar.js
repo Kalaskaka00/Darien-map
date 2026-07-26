@@ -1,4 +1,4 @@
-/*/function updateEditorButtons(){
+function updateEditorButtons(){
 
     for(const tool of getEditorTools()){
 
@@ -7,7 +7,7 @@
             editorMode === tool.id
         );
 
-        if(editorMode === tool.id){
+        if(tool.id === editorMode){
 
             tool.activate();
 
@@ -19,7 +19,7 @@
 
     }
 
-}/*/
+}
 
 for(const tool of getEditorTools()){
 
@@ -49,5 +49,13 @@ function initializeToolbar(){
         };
 
     }
+
+}
+
+function closeEditorTool(){
+
+    editorMode = null;
+
+    updateEditorButtons();
 
 }

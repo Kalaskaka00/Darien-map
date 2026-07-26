@@ -16,6 +16,8 @@ async function loadArticle(file){
     ""
 );
 
+    markdown = renderGMNotes(markdown);
+
     document.getElementById("article").innerHTML =
     marked.parse(markdown);
 

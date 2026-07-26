@@ -109,33 +109,17 @@ function addCity(city) {
 
         marker.on("click", function(){
 
-        if(editorMode !== "move-settlement")
+        if(editorMode === "move-settlement"){
+
+        selectSettlementForMoving(city, marker);
+
         return;
 
-        marker.dragging.enable();
+        }
+
+        openArticle(city);
 
         });
-
-        marker.on("dragend", function(){
-
-    marker.dragging.disable();
-
-    const pos = marker.getLatLng();
-
-    const yaml =
-`map:
-  x: ${Math.round(pos.lng)}
-  y: ${Math.round(pos.lat)}
-  icon: ${city.map.icon}`;
-
-    navigator.clipboard.writeText(yaml);
-
-    console.log(yaml);
-
-    alert("Coordinates copied!");
-
-});
-
 };
 
 //Labels Zoom

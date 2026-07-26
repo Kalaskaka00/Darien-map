@@ -4,7 +4,7 @@ category: npc
 
 portrait: Siphon.avif
 
-fullname: Sylthana Wolxaris "Siphon"
+fullname: Sylthana Wolxaris, "Siphon"
 race: Half-elf
 birth: 3845
 death: 

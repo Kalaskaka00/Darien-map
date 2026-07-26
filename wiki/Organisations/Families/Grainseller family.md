@@ -1,3 +1,9 @@
+---
+view: 
+  x: 606
+  y: 453
+  zoom: 2
+---
 # Grainseller family
 **Locations:** [[Touvette]]
 **Home:** [[Cornstalk]]
