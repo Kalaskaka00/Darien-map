@@ -81,6 +81,8 @@ Gralton has no noble classes or other high society, the status in Gralton is mor
 **[[Manchu Tribes]]:** The [[Manchu Tribes]] are viewed with great distrust. There is often a fear that the [[Manchu Tribes]] may invade Gralton if given the chance.
 
 **[[Galt]]:** [[Galt]] are strategic adversaries of Gralton. The nation represent everything which people in Gralton see as wrong in culture and politics. Furthermore there is a general fear that their fledgling navy might come to challenge Graltons one day.
+
+**[[Daggermark]]:** Gralton has a limited relationship with [[Daggermark]] being the only nation allowed to trade with [[Daggermark]]. The trading is however severely limited to the port of [[Nerrez]].
 ## History
 **Founding History:** Gralton was once many independent cities vying for power and influence and fighting with one another. It was however guilds that started operating throughout the cities that slowly unified the cities and created commonality.
 

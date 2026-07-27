@@ -19,7 +19,7 @@ async function loadArticle(file){
 
     renderSidebar(article);
 
-    renderArticle(markdown);
+    renderArticle(article, markdown);
 
 }
 

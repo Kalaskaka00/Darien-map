@@ -15,7 +15,7 @@ origin: [[Brevoy]]
 color: "#211DA1"
 --- 
 # Kiri Udoon
-*It´s totally saf- **BOOM**...it was meant to do that.*
+*It´s totally saf- BOOM...it was meant to do that.*
 
 Kiri is the second in line of the [[Udoon family]]. She is a skilled inventor and also oversees the [[Udoon family]] mining operations. She is known to be quite odd and somewhat particular but is generally appreciated as a competent leader.
 

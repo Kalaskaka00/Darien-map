@@ -1,18 +1,18 @@
 ## Details
-- Pretty up NPC quotes
-- Several NPC organisations (Ekon)
+
 ## Map
-- Roads
+- **Roads**
 - Streams
-- Trade Routes
+- **Trade Routes**
 - Region names
+- Landmark names
 - Organisation HQs
 - Weather
 - Party marker
 ## Tools
 - Ping
 - Laser pointer 
-- **Measure**
+- Measure
 - Travel calculator
 ## UI
 - Map border
@@ -21,8 +21,8 @@
 - Highlight Icons on map
 - Preview wiki article on map and link
 ## Wiki
-- Invisible articles / articles only visible to some players
-- Backwards/Forwards
+- **Invisible articles / articles only visible to some players**
+- **Hover preview**
 - Map folder structure
 - Deity article type
 - Settlement article type

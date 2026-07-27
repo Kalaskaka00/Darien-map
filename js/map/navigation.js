@@ -1,4 +1,12 @@
-function openArticle(article){
+function openArticle(article, addToHistory = true){
+
+    setCurrentArticle(article);
+
+    if(addToHistory){
+
+        pushHistory(article);
+
+    }
 
     loadArticle(article.file);
 

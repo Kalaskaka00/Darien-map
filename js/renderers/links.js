@@ -1,19 +1,35 @@
-function renderWikiLinks(text){
+function renderWikiLinks(value){
 
-    if(!text)
+    if(!value)
         return "";
 
-    return text.replace(
+    if(Array.isArray(value)){
+
+        return value
+            .map(renderWikiLinks)
+            .join(", ");
+
+    }
+
+    return value.replace(
+
         /(?<!!)\[\[(.*?)\]\]/g,
-        (match,content)=>{
 
-            const parts=content.split("|");
+        (match, content) => {
 
-            const page=parts[0].split("#")[0].trim();
+            const parts = content.split("|");
 
-            const label=(parts[1]||parts[0]).trim();
+            const page = parts[0].split("#")[0].trim();
 
-            const article=world.find(a=>a.name===page);
+            const label = (parts[1] || parts[0]).trim();
+
+            const article = getArticle(page);
+
+            if(article && !canReadArticle(article)){
+
+                return label;
+
+            }
 
             if(article){
 
@@ -21,9 +37,11 @@ function renderWikiLinks(text){
 
             }
 
+            // Ingen artikel → visa bara text
             return label;
 
         }
+
     );
 
 }

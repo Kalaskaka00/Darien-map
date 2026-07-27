@@ -36,5 +36,3 @@ function updateEditorButtons(){
 
     }
 }
-
-console.log("GM mode:", isGM);

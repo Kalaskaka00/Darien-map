@@ -20,20 +20,43 @@ function extractFrontmatter(markdown){
 
     const data = {};
 
-    yaml.split("\n").forEach(line=>{
+    const lines = yaml.split("\n");
 
-        const i = line.indexOf(":");
+let currentKey = null;
 
-        if(i===-1)
-            return;
+lines.forEach(line => {
 
-        const key = line.substring(0,i).trim();
+    // YAML-lista?
+    if(line.startsWith("  - ")){
 
-        let value = line.substring(i+1).trim();
+        if(currentKey){
 
-        value = value.replace(/^"(.*)"$/,"$1");
+            if(!Array.isArray(data[currentKey]))
+                data[currentKey] = [];
 
-        data[key]=value;
+            data[currentKey].push(
+                line.substring(4).trim()
+            );
+
+        }
+
+        return;
+    }
+
+    const i = line.indexOf(":");
+
+    if(i === -1)
+        return;
+
+    const key = line.substring(0,i).trim();
+
+    let value = line.substring(i+1).trim();
+
+    value = value.replace(/^"(.*)"$/,"$1");
+
+    currentKey = key;
+
+    data[key] = value;
 
     });
 

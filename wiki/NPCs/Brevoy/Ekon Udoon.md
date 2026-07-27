@@ -9,7 +9,9 @@ race: Goliath
 birth: 3841
 death: 
 family: [[Udoon family]]
-organisations: [[Northhall Adventure Guild]]
+organisations: 
+  - [[Northhall Adventure Guild]]
+  - [[Vorpal Shards]]
 origin: [[Brevoy]]
 
 color: "#BF902E"

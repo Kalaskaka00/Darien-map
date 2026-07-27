@@ -30,30 +30,11 @@ function buildNPCSidebar(article){
 
         <div class="npc-right">
 
-            <div class="npc-row">
-                <span>Race</span>
-                <span>${article.race}</span>
-            </div>
-
-            <div class="npc-row">
-                <span>Age</span>
-                <span>${calculateAge(article)}</span>
-            </div>
-
-            <div class="npc-row">
-                <span>Origin</span>
-                <span>${renderWikiLinks(article.origin)}</span>
-            </div>
-
-            <div class="npc-row">
-                <span>Family</span>
-                <span>${renderWikiLinks(article.family)}</span>
-            </div>
-
-            <div class="npc-row">
-                <span>Organisations</span>
-                <span>${renderWikiLinks(article.organisations)}</span>
-            </div>
+        ${sidebarRow("Race", article.race)}
+        ${sidebarRow("Age", calculateAge(article))}
+        ${sidebarRow("Origin", article.origin)}
+        ${sidebarRow("Family", article.family)}
+        ${sidebarRow("Organisations", article.organisations)}
 
         </div>
 
@@ -62,6 +43,53 @@ function buildNPCSidebar(article){
 </div>
 
 `;
+
+function sidebarRow(label, value){
+
+    if(value === undefined || value === null || value === "")
+        return "";
+
+    const display =
+        typeof value === "string" || Array.isArray(value)
+            ? renderWikiLinks(value)
+            : value;
+
+    return `
+        <div class="npc-row">
+            <span>${label}</span>
+            <span>${display}</span>
+        </div>
+    `;
+}
+
+}
+
+function renderNPCQuote(markdown){
+
+    const match = markdown.match(
+        /^(# .+\n)\*([^*]+)\*\n/m
+    );
+
+    if(!match){
+
+        return marked.parse(markdown);
+
+    }
+
+    markdown = markdown.replace(
+        /\*([^*]+)\*\n/,
+        ""
+    );
+
+    const html = marked.parse(markdown);
+
+    return html.replace(
+        "</h1>",
+        `</h1>
+        <div class="npc-quote">
+            ${match[2]}
+        </div>`
+    );
 
 }
 

@@ -1,8 +1,17 @@
-function renderArticle(markdown){
+function renderArticle(article, markdown){
 
-    markdown=markdown.replace(/^# .*?\n/, "");
+    let html;
 
-    document.getElementById("article").innerHTML=
-        marked.parse(markdown);
+    if(article.category === "npc"){
+
+        html = renderNPCQuote(markdown);
+
+    }else{
+
+        html = marked.parse(markdown);
+
+    }
+
+    document.getElementById("article").innerHTML = html;
 
 }
