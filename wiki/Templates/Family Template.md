@@ -1,3 +1,6 @@
+---
+visibility: gm
+---
 # <% tp.file.title %>
 **Locations:** 
 **Charges/Home:** 

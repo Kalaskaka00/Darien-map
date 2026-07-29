@@ -1,5 +1,10 @@
 function openArticle(article, addToHistory = true){
 
+    if(!canReadArticle(article))
+    return;
+
+    hidePreview();
+
     setCurrentArticle(article);
 
     if(addToHistory){

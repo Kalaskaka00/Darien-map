@@ -33,7 +33,7 @@ function renderWikiLinks(value){
 
             if(article){
 
-                return `<a href="#" class="wikilink" data-page="${page}">${label}</a>`;
+                return `<a href="#" class="wikilink" data-page="${page}" onmouseenter="hoverArticle(event,'${page}')" onmouseleave="hidePreview()">${label}</a>`;
 
             }
 

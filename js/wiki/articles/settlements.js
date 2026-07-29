@@ -47,6 +47,13 @@ const TownIcon = L.icon({
     popupAnchor: [0, -12]
 });
 
+const VillageWoodWallIcon = L.icon({
+    iconUrl: 'icons/Village_Wood_Wall.png',
+    iconSize: [24, 24],
+    iconAnchor: [12, 12],
+    popupAnchor: [0, -12]
+});
+
 function addCity(city) {
 
     let icon;
@@ -80,6 +87,10 @@ function addCity(city) {
             
         case "Town":
             icon = TownIcon;
+            break;
+
+        case "Village_Wood_Wall":
+            icon = VillageWoodWallIcon;
             break;
 
         default:

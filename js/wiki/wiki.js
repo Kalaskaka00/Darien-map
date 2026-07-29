@@ -8,6 +8,24 @@ async function loadArticle(file){
 
     const article = parsed.data;
 
+    console.log(article);
+
+    const worldArticle = world.find(a => a.file === file);
+
+    console.log("Frontmatter:", article);
+
+    if(worldArticle){
+
+    Object.assign(worldArticle, article);
+
+    console.log("Before:", worldArticle);
+
+    Object.assign(worldArticle, article);
+
+    console.log("After:", worldArticle);
+
+    }
+
     markdown = parsed.content;
 
     const folder = getArticleFolder(file);

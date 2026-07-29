@@ -7,90 +7,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
-    },
-    {
-        "id": "daggermark",
-        "name": "Daggermark",
-        "category": "nation",
-        "file": "Daggermark.md",
-        "map": null,
-        "view": {
-            "x": 422,
-            "y": 483,
-            "zoom": 1
-        },
-        "border": [
-            [
-                542,
-                414
-            ],
-            [
-                570,
-                409
-            ],
-            [
-                578,
-                394
-            ],
-            [
-                594,
-                387
-            ],
-            [
-                604,
-                372
-            ],
-            [
-                583,
-                347
-            ],
-            [
-                585,
-                327
-            ],
-            [
-                564,
-                305
-            ],
-            [
-                544,
-                272
-            ],
-            [
-                474,
-                268
-            ],
-            [
-                373,
-                279
-            ],
-            [
-                295,
-                313
-            ],
-            [
-                299,
-                338
-            ],
-            [
-                361,
-                360
-            ],
-            [
-                408,
-                407
-            ],
-            [
-                472,
-                415
-            ],
-            [
-                524,
-                402
-            ]
-        ],
-        "color": "#591773"
+        "color": null,
+        "visibility": null
     },
     {
         "id": "transmuters_rest",
@@ -104,7 +22,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "summerborn",
@@ -118,7 +37,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "starfall",
@@ -132,7 +52,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "southhost",
@@ -146,7 +67,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "roughen_fort",
@@ -160,7 +82,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "restov",
@@ -174,7 +97,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "pitax_city",
@@ -188,7 +112,23 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
+    },
+    {
+        "id": "oleg's_outpost",
+        "name": "Oleg's Outpost",
+        "category": "settlement",
+        "file": "Settlements/Oleg's Outpost.md",
+        "map": {
+            "x": 823,
+            "y": 703,
+            "icon": "Village_Wood_Wall"
+        },
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null
     },
     {
         "id": "new_steveten",
@@ -202,7 +142,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "lonelywood",
@@ -216,7 +157,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "great_gate",
@@ -230,7 +172,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "garent",
@@ -244,7 +187,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "floureton",
@@ -258,7 +202,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "cornstalk",
@@ -272,7 +217,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "avendale",
@@ -286,7 +232,8 @@
         },
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -296,7 +243,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -306,7 +254,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -316,7 +265,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": "gm"
     },
     {
         "id": null,
@@ -326,7 +276,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -336,7 +287,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -346,7 +298,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -360,7 +313,8 @@
             "zoom": 2
         },
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -374,7 +328,8 @@
             "zoom": 2
         },
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -388,7 +343,8 @@
             "zoom": 2
         },
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -402,7 +358,8 @@
             "zoom": 2
         },
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": "aldori_family",
@@ -416,7 +373,19 @@
             "zoom": 2
         },
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
+    },
+    {
+        "id": "joanna_tang",
+        "name": "Joanna Tang",
+        "category": "npc",
+        "file": "NPCs/Travelers/Joanna Tang.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#BF902E",
+        "visibility": null
     },
     {
         "id": "vein_grainseller",
@@ -426,7 +395,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#13B057"
+        "color": "#13B057",
+        "visibility": "gm"
     },
     {
         "id": "siphon",
@@ -436,7 +406,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#9C9C9C"
+        "color": "#9C9C9C",
+        "visibility": null
     },
     {
         "id": "milo_grainseller",
@@ -446,7 +417,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#E00061"
+        "color": "#E00061",
+        "visibility": null
     },
     {
         "id": "malora_grainseller",
@@ -456,7 +428,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#E00061"
+        "color": "#E00061",
+        "visibility": null
     },
     {
         "id": "magrie_beeret",
@@ -466,7 +439,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#E00061"
+        "color": "#E00061",
+        "visibility": null
     },
     {
         "id": "maegar_varn",
@@ -476,7 +450,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#BF902E"
+        "color": "#BF902E",
+        "visibility": null
     },
     {
         "id": "kesten_garess",
@@ -486,7 +461,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#B01313"
+        "color": "#B01313",
+        "visibility": null
     },
     {
         "id": "iandri_flukeflow",
@@ -496,7 +472,19 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#211DA1"
+        "color": "#211DA1",
+        "visibility": null
+    },
+    {
+        "id": "crash",
+        "name": "Crash",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Crash.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#B01313",
+        "visibility": null
     },
     {
         "id": "cephal_lorentus",
@@ -506,7 +494,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#BF902E"
+        "color": "#BF902E",
+        "visibility": null
     },
     {
         "id": "bille_frostbite",
@@ -516,7 +505,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#B01313"
+        "color": "#B01313",
+        "visibility": null
     },
     {
         "id": "annj_bearer",
@@ -526,7 +516,52 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#211DA1"
+        "color": "#211DA1",
+        "visibility": null
+    },
+    {
+        "id": "lukas_leafsleeper",
+        "name": "Lukas Leafsleeper",
+        "category": "npc",
+        "file": "NPCs/Embeth/Lukas Leafsleeper.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
+        "visibility": "gm"
+    },
+    {
+        "id": "xer",
+        "name": "Xer",
+        "category": "npc",
+        "file": "NPCs/Dead/Xer.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#9C9C9C",
+        "visibility": null
+    },
+    {
+        "id": "thundarak",
+        "name": "Thundarak",
+        "category": "npc",
+        "file": "NPCs/Dead/Thundarak.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#1C1B1B",
+        "visibility": null
+    },
+    {
+        "id": "tandeen_dazzlehand_'marionette'",
+        "name": "Tandeen Dazzlehand, Grand Enchanter \"Marionette\"",
+        "category": "npc",
+        "file": "NPCs/Dead/Tandeen Dazzlehand 'Marionette'.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
+        "visibility": null
     },
     {
         "id": "stag_lord",
@@ -536,7 +571,30 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#B01313"
+        "color": "#B01313",
+        "visibility": null
+    },
+    {
+        "id": "ox",
+        "name": "Ox",
+        "category": "npc",
+        "file": "NPCs/Dead/Ox.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#B01313",
+        "visibility": null
+    },
+    {
+        "id": "chorrad_troll_king",
+        "name": "Chorrad Troll King",
+        "category": "npc",
+        "file": "NPCs/Dead/Chorrad Troll King.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#5C0BB5",
+        "visibility": null
     },
     {
         "id": "thorin_udoon",
@@ -546,7 +604,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#13B057"
+        "color": "#13B057",
+        "visibility": null
     },
     {
         "id": "sandak_viine",
@@ -556,7 +615,19 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#E00061"
+        "color": "#E00061",
+        "visibility": null
+    },
+    {
+        "id": "rita_neat",
+        "name": "Rita Neat",
+        "category": "npc",
+        "file": "NPCs/Brevoy/Rita Neat.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
+        "visibility": null
     },
     {
         "id": "maameo_udoon",
@@ -566,7 +637,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#B01313"
+        "color": "#B01313",
+        "visibility": null
     },
     {
         "id": "kiri_udoon",
@@ -576,7 +648,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#211DA1"
+        "color": "#211DA1",
+        "visibility": null
     },
     {
         "id": "keldithas_beeret",
@@ -586,7 +659,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#211DA1"
+        "color": "#211DA1",
+        "visibility": null
     },
     {
         "id": "kassil_aldori",
@@ -596,7 +670,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#B01313"
+        "color": "#B01313",
+        "visibility": null
     },
     {
         "id": "jamandi_aldori",
@@ -606,7 +681,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#B01313"
+        "color": "#B01313",
+        "visibility": null
     },
     {
         "id": "emily_viine",
@@ -616,7 +692,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#E00061"
+        "color": "#E00061",
+        "visibility": null
     },
     {
         "id": "ekon_udoon",
@@ -626,7 +703,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#BF902E"
+        "color": "#BF902E",
+        "visibility": null
     },
     {
         "id": "calsys_viine",
@@ -636,7 +714,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": "#B01313"
+        "color": "#B01313",
+        "visibility": null
     },
     {
         "id": "touvette",
@@ -719,7 +798,8 @@
                 691
             ]
         ],
-        "color": "#27872A"
+        "color": "#27872A",
+        "visibility": null
     },
     {
         "id": "the_wastes",
@@ -818,7 +898,8 @@
                 1490
             ]
         ],
-        "color": "#CFCED6"
+        "color": "#CFCED6",
+        "visibility": null
     },
     {
         "id": "pitax",
@@ -905,7 +986,8 @@
                 719
             ]
         ],
-        "color": "#241E96"
+        "color": "#241E96",
+        "visibility": null
     },
     {
         "id": "numeria",
@@ -1168,7 +1250,8 @@
                 1087
             ]
         ],
-        "color": "#22D6D0"
+        "color": "#22D6D0",
+        "visibility": null
     },
     {
         "id": "mivon",
@@ -1263,7 +1346,8 @@
                 1301
             ]
         ],
-        "color": "#F3FF21"
+        "color": "#F3FF21",
+        "visibility": null
     },
     {
         "id": "manchu_tribes",
@@ -1470,7 +1554,8 @@
                 432
             ]
         ],
-        "color": "#B09515"
+        "color": "#B09515",
+        "visibility": null
     },
     {
         "id": "gralton",
@@ -1593,7 +1678,8 @@
                 692
             ]
         ],
-        "color": "#FA5050"
+        "color": "#FA5050",
+        "visibility": null
     },
     {
         "id": "embeth",
@@ -1724,7 +1810,8 @@
                 752
             ]
         ],
-        "color": "#62C46A"
+        "color": "#62C46A",
+        "visibility": null
     },
     {
         "id": null,
@@ -1734,7 +1821,92 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
+    },
+    {
+        "id": "daggermark",
+        "name": "Daggermark",
+        "category": "nation",
+        "file": "Nations/Daggermark.md",
+        "map": null,
+        "view": {
+            "x": 422,
+            "y": 483,
+            "zoom": 1
+        },
+        "border": [
+            [
+                542,
+                414
+            ],
+            [
+                570,
+                409
+            ],
+            [
+                578,
+                394
+            ],
+            [
+                594,
+                387
+            ],
+            [
+                604,
+                372
+            ],
+            [
+                583,
+                347
+            ],
+            [
+                585,
+                327
+            ],
+            [
+                564,
+                305
+            ],
+            [
+                544,
+                272
+            ],
+            [
+                474,
+                268
+            ],
+            [
+                373,
+                279
+            ],
+            [
+                295,
+                313
+            ],
+            [
+                299,
+                338
+            ],
+            [
+                361,
+                360
+            ],
+            [
+                408,
+                407
+            ],
+            [
+                472,
+                415
+            ],
+            [
+                524,
+                402
+            ]
+        ],
+        "color": "#591773",
+        "visibility": null
     },
     {
         "id": "brevoy",
@@ -1829,7 +2001,8 @@
                 1053
             ]
         ],
-        "color": "#8F1A2C"
+        "color": "#8F1A2C",
+        "visibility": null
     },
     {
         "id": null,
@@ -1839,7 +2012,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1849,7 +2023,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1863,7 +2038,8 @@
             "zoom": 2
         },
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1877,7 +2053,8 @@
             "zoom": 2
         },
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1887,7 +2064,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1901,7 +2079,8 @@
             "zoom": 2
         },
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1911,7 +2090,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1921,7 +2101,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1931,7 +2112,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1941,7 +2123,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1951,7 +2134,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": "gm"
     },
     {
         "id": null,
@@ -1961,7 +2145,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1971,7 +2156,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1981,7 +2167,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -1991,7 +2178,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -2001,7 +2189,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -2011,7 +2200,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -2021,7 +2211,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -2031,7 +2222,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -2041,7 +2233,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -2051,7 +2244,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -2061,7 +2255,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -2071,7 +2266,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -2081,7 +2277,19 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
+    },
+    {
+        "id": null,
+        "name": "Sleeping Realm",
+        "category": "Unknown",
+        "file": "Cosmoligy/Sleeping Realm.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -2091,7 +2299,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -2101,7 +2310,8 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     },
     {
         "id": null,
@@ -2111,6 +2321,7 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null
+        "color": null,
+        "visibility": null
     }
 ]

@@ -1,6 +1,7 @@
 ---
 id: vein_grainseller
 category: npc 
+visibility: gm
 
 portrait: Vein Grainseller.jpg
 

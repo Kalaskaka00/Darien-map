@@ -150,3 +150,25 @@
     cursor: default;
 
 }
+
+#wiki-preview{
+
+    position: fixed;
+
+    display: none;
+
+    z-index: 10000;
+
+    max-width: 380px;
+
+    pointer-events: none;
+
+    background: url("Backgrounds/Parchment.avif");
+
+    border: none;
+
+    box-shadow: none;
+
+    padding: 0;
+
+}

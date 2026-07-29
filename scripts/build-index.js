@@ -45,7 +45,8 @@ wikiIndex.push({
     map: data.map || null,
     view: data.view || null,
     border: data.border || null,
-    color: data.color || null
+    color: data.color || null,
+    visibility: data.visibility || null
 });
 }
 

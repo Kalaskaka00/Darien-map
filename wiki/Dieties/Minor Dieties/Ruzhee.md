@@ -1,3 +1,6 @@
+---
+visibility: gm
+---
 # Ruzhee
 
 **Other Names:** Mother of Spiders, Fate Ender, Fate Teller, Queen of Venoms

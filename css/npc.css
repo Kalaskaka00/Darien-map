@@ -142,3 +142,35 @@
     color: #444;
 
 }
+
+#wiki-preview .npc-card{
+
+    width: 280px;
+
+    margin: 0;
+
+}
+
+#wiki-preview .npc-row:nth-child(n+4){
+
+    display: none;
+
+}
+
+#wiki-preview .npc-portrait{
+
+    width: 100px;
+
+}
+
+#wiki-preview .npc-banner{
+
+    font-size: 1.0rem;
+
+}
+
+#wiki-preview .npc-content{
+
+    font-size: .8rem;
+
+}

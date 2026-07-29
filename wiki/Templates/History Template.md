@@ -1,4 +1,6 @@
 ---
+visibility: gm
+
 view: 
   x: 
   y: 

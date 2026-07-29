@@ -19,10 +19,10 @@ search.addEventListener("input", function(){
 
     }
 
-    currentMatches = world.filter(item =>
-
-        item.name.toLowerCase().includes(text)
-
+    currentMatches = world
+        .filter(canReadArticle)
+        .filter(item =>
+            item.name.toLowerCase().includes(text)
     );
 
     currentMatches.forEach(item=>{

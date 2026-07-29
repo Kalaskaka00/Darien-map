@@ -19,3 +19,6 @@ The Viine operate out of [[Southhost]].
 - Family head [[Sandak Viine]]
 - [[Calsys Viine]]
 - [[Emily Viine]]
+
+**Associated:**
+- Former administrator [[Rita Neat]]

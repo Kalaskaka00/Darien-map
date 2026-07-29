@@ -24,6 +24,7 @@ He got the name Peacemaker after acting as negotiator of the peace deal after [[
 ## Relations
 - [[Keldithas Beeret]] is a rival of Sandaks.
 - [[Calsys Viine]] and [[Emily Viine]] are Sandaks daughters.
+- [[Rita Neat]] used to be in the [[Viine family]] employ until she went to work for the [[Talia Andureen|queen]]. 
 
 <!--GM
 ## GM info

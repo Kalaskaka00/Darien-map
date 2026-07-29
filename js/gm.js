@@ -18,8 +18,9 @@ function toggleGMMode(){
 
 document.addEventListener("keydown", function(e){
 
-    if(e.shiftKey && e.key.toLowerCase() === "g"){
+    if(e.altKey && e.key.toLowerCase() === "g"){
 
+        e.preventDefault();
         toggleGMMode();
 
     }

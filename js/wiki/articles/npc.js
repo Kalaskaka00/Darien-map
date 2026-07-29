@@ -93,6 +93,14 @@ function renderNPCQuote(markdown){
 
 }
 
+function buildNPCPreview(article){
+
+        console.log(article);
+
+    return buildNPCSidebar(article);
+
+}
+
 registerArticleType("npc",{
 
     sidebar: buildNPCSidebar,
@@ -100,6 +108,8 @@ registerArticleType("npc",{
     onOpen(article){},
 
     onClose(article){},
+
+    preview: buildNPCPreview,
 
     icon:"👤"
 
