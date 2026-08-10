@@ -1,10 +1,10 @@
 ---
-id: tandeen_dazzlehand_'marionette'
+id: tandeen_dazzlehand
 category: npc 
 
 portrait: Tandeen Dazzlehand.jpg
 
-fullname: Tandeen Dazzlehand 'Marionette'
+fullname: Tandeen Dazzlehand, Grand Enchanter "Marionette"
 race: Gnome/Construct
 birth: 3721
 death: 3862
@@ -21,7 +21,7 @@ Tandeen went to the [[Stolen Lands]] with [[Brave Wish]] and [[Velmine]] on a mi
 
 In his quest Tandeen fought [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] multiple times and they eventually killed him.
 
-After his death Tandeen would be brought back in the form of a construct named Marionette, in this form his memories and sanity were greatly restricted. In this form Marionette would be an advisor to [[Chorrad Troll King]] in [[Stone Road]] before getting slayed a new by [[Silvana Ashford]], [[Bree Caley]], [[Claire Nightshield]] and [[n´Neb]].
+After his death Tandeen would be brought back in the form of a construct named Marionette, in this form his memories and sanity were greatly restricted. In this form Marionette would be an advisor to [[Chorrad Troll King]] in [[Stone Road]] before getting slayed a new by [[Silvana Ashford]], [[Bree Caley]], [[Claire Nightshield]] and [[n'Neb]].
 
 ## Relations
 - [[Brave Wish]] and [[Velmine]] were Tandeens unwilling allies for a while.

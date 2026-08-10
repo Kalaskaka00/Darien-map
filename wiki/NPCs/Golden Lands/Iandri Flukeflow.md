@@ -22,7 +22,7 @@ Iandri Flukeflow is a court mage for the [[Aldori family]] having served the kin
 Since then he mostly researches on his own and occasionally lends his services to the [[Aldori family]] and other people.
 
 ## Relations
-- [[Jelbli Flukeflow]] is my neice.
+- [[Jelbi Flukeflow]] is my neice.
 - Iandri is an advisor to [[Jamandi Aldori]]
 
 <!--GM

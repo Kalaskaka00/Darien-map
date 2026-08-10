@@ -10,7 +10,7 @@ async function loadArticle(file){
 
     console.log(article);
 
-    const worldArticle = world.find(a => a.file === file);
+    const worldArticle = getArticleByFile();
 
     console.log("Frontmatter:", article);
 
@@ -40,8 +40,6 @@ async function loadArticle(file){
     renderArticle(article, markdown);
 
 }
-
-
 
 document.addEventListener("click", function(e){
 

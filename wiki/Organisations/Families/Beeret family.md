@@ -14,7 +14,6 @@ The Beerets are known as the richest family in [[Brevoy]], and the newest of the
 The Beerets are known to be cunning and greedy.
 
 The Bereets have a lot of influence across [[Brevoy]] but has their power base at [[Roughen Fort]].
-
-**Known members**
+## Known members
 - Family head [[Keldithas Beeret]]
 - [[Magrie Beeret]]

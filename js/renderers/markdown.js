@@ -1,13 +1,23 @@
 function renderMarkdown(markdown, folder){
 
-    markdown = renderImages(markdown, folder);
+    const renderers = [
 
-    markdown = renderWikiLinks(markdown);
+        text => renderImages(text, folder),
 
-    markdown = renderYears(markdown);
+        renderWikiLinks,
 
-    markdown = renderGMNotes(markdown);
+        renderYears,
 
-    return markdown;
+        renderGMNotes
+
+    ];
+
+    return renderers.reduce(
+
+        (text, renderer) => renderer(text),
+
+        markdown
+
+    );
 
 }

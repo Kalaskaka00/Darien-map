@@ -30,6 +30,7 @@ She would later go to [[Candelmore]] to study with the [[Candle Mages]] and shar
 - [[Adsatra Sagebrook]] took care of Annj and [[Movh Bearer]] when Annj grew up.
 - [[Bille Frostbite]] has been a great mentor of Annj, he gav her her first spellbook and gave her confidence to advance in life.
 - [[Silvana Ashford]] has aided and spurred Annj greatly in her quest to become a capable mage.
+- [[Bralon Alepike]] and [[Bree Caley]] are people whom Annj has learned a lot through about their magic.
 
 <!--GM
 ## GM info

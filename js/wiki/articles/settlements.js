@@ -99,44 +99,43 @@ function addCity(city) {
     }
 
     const marker = L.marker([city.map.y, city.map.x], {
-        icon: icon,
-        draggable: false
+    icon: icon,
+    draggable: false
 })
-        .on("click", () => {
+.bindTooltip(city.name, {
+    permanent: true,
+    direction: "right",
+    offset: [15, 0],
+    className: "city-label"
+})
+.addTo(layers.settlements);
 
-        loadArticle(city.file);
-        })
+// Registrera markören
+registerMapObject(
+    "settlements",
+    city.id,
+    marker
+);
 
-        .bindTooltip(city.name, {
-            permanent: true,
-            direction: "right",
-            offset: [15, 0],
-            className: "city-label"
-        })
-        
-        .addTo(cityLayer);
+marker.on("click", function(){
 
-        markers[city.id] = marker;
-
-        marker.on("click", function(){
-
-        if(editorMode === "move-settlement"){
+    if(editorMode === "move-settlement"){
 
         selectSettlementForMoving(city, marker);
 
         return;
 
-        }
+    }
 
-        openArticle(city);
+    openArticle(city);
 
-        });
-};
+});
+}
 
 //Labels Zoom
 function updateLabels() {
 
-    cityLayer.eachLayer(layer => {
+    layers.settlements.eachLayer(layer => {
 
         if (map.getZoom() >= 1) {
             layer.openTooltip();

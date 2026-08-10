@@ -28,66 +28,53 @@ function addNation(country){
     weight: 20,
     opacity: 0.12,
     fill: false
-    }).addTo(nationLayer);
+    }).addTo(layers.nations);
 
     const glow2 = L.polygon(smoothBorder, {
     color: country.color,
     weight: 16,
     opacity: 0.12,
     fill: false
-    }).addTo(nationLayer);
+    }).addTo(layers.nations);
 
     const glow3 = L.polygon(smoothBorder, {
     color: country.color,
     weight: 12,
     opacity: 0.12,
     fill: false
-    }).addTo(nationLayer);
+    }).addTo(layers.nations);
 
     const glow4 = L.polygon(smoothBorder, {
     color: country.color,
     weight: 8,
     opacity: 0.12,
     fill: false
-    }).addTo(nationLayer);
+    }).addTo(layers.nations);
 
     const glow5 = L.polygon(smoothBorder, {
     color: country.color,
     weight: 4,
     opacity: 0.12,
     fill: false
-    }).addTo(nationLayer);
+    }).addTo(layers.nations);
 
     // Yttre gräns
     const outline = L.polygon(smoothBorder, {
         color: country.color,
         weight: 3,
         fill: false
-    }).addTo(nationLayer);
-    nationPolygons[country.id] = outline;
-
+    }).addTo(layers.nations);
+    
     // Klick på landet + edit border
 outline.on("click", ()=>{
 
     if(editorMode==="edit-shape"){
 
-        selectShape({
+    selectShape(
+        getCountryShape(country)
+    );
 
-    object: country,
-
-    points: country.border,
-
-    refresh(){
-
-        nationPolygons[country.id].setLatLngs(
-            smoothPolygon(country.border,2)
-        );
-
-    }
-
-    });
-
-        return;
+    return;
 
     }
 
@@ -115,7 +102,41 @@ outline.on("mouseover", () => {
             iconAnchor: [100, 15]
         }),
         interactive: false
-    }).addTo(nationLayer);
+    }).addTo(layers.nations);
+
+    registerMapObject(
+
+    "nations",
+
+    country.id,
+
+    outline
+
+    );
+}
+
+function getCountryShape(country){
+
+    return {
+
+        object: country,
+
+        points: country.border,
+
+        yamlKey: "border",
+
+        closed: true,
+
+        refresh(){
+
+            getMapObject("nations",country.id).setLatLngs(
+                smoothPolygon(country.border,2)
+            );
+
+        }
+
+    };
+
 }
 
 

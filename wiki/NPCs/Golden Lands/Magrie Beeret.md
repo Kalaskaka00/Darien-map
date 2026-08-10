@@ -23,7 +23,7 @@ Magrie became an envoy of [[Brevoy]] sent to the [[Golden Lands]] where she beca
 
 ## Relations
 - [[Keldithas Beeret]] is Magries father.
-- [[Shaharice Boldshard "Chirp"|Chirp]] and [[Reina Palett]] are close creative friends.
+- [[Chirp]] and [[Reina Palett]] are close creative friends.
 
 <!--GM
 ## GM info

@@ -18,7 +18,7 @@ color:
 # <% tp.file.title %>
 Regal Purple - "#5C0BB5"
 Knowledgable Blue - "#211DA1"
-Adventuring Orange - "#ABF902E"
+Adventuring Orange - "#BF902E"
 Warrior Red - "#B01313"
 Calm Green - "#13B057"
 Social Pink - "#E00061"
@@ -27,7 +27,6 @@ Ominous Black - "#1C1B1B"
 *quote*
 
 Description
-
 ## Relations
 - 
 

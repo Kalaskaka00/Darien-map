@@ -19,7 +19,7 @@ color: "#5C0BB5"
 
 Chorrad was the Troll King in the [[Stolen Lands]], he held up in [[Stone Road]] with his advisor [[Tandeen Dazzlehand|Marionette]] (formerly [[Tandeen Dazzlehand]]).
 
-Chorrads army layed waste to the [[Nalmarches]] and [[Golden Lands]], in this they destroyed [[n´Neb]]s village.
+Chorrads army layed waste to the [[Nalmarches]] and [[Golden Lands]], in this they destroyed [[n'Neb]]s village.
 
 Chorrad and [[Tandeen Dazzlehand|Marionette]] were killed in battle by [[Silvana Ashford]], [[Bree Caley]], [[Claire Nightshield]] and [[n´Neb]].
 

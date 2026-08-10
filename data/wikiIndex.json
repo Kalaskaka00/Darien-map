@@ -11,6 +11,21 @@
         "visibility": null
     },
     {
+        "id": "varnhold",
+        "name": "Varnhold",
+        "category": "settlement",
+        "file": "Settlements/Varnhold.md",
+        "map": {
+            "x": 1114,
+            "y": 574,
+            "icon": "Keep"
+        },
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null
+    },
+    {
         "id": "transmuters_rest",
         "name": "Transmuter´s Rest",
         "category": "settlement",
@@ -281,6 +296,17 @@
     },
     {
         "id": null,
+        "name": "Candle Mages",
+        "category": "Unknown",
+        "file": "Organisations/Candle Mages.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null
+    },
+    {
+        "id": null,
         "name": "Brass Wheels",
         "category": "Unknown",
         "file": "Organisations/Brass Wheels.md",
@@ -377,6 +403,17 @@
         "visibility": null
     },
     {
+        "id": "magpie",
+        "name": "Magpie",
+        "category": "npc",
+        "file": "NPCs/Travelers/Magpie.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
+        "visibility": null
+    },
+    {
         "id": "joanna_tang",
         "name": "Joanna Tang",
         "category": "npc",
@@ -399,6 +436,160 @@
         "visibility": "gm"
     },
     {
+        "id": "zara",
+        "name": "Zara",
+        "category": "npc",
+        "file": "NPCs/Stolen Lands/Zara.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#BF902E",
+        "visibility": null
+    },
+    {
+        "id": "myron",
+        "name": "Myron",
+        "category": "npc",
+        "file": "NPCs/Stolen Lands/Myron.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
+        "visibility": null
+    },
+    {
+        "id": "balrotho",
+        "name": "Balrotho",
+        "category": "npc",
+        "file": "NPCs/Stolen Lands/Balrotho.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#B01313",
+        "visibility": null
+    },
+    {
+        "id": "aelthot",
+        "name": "Aelthot",
+        "category": "npc",
+        "file": "NPCs/Stolen Lands/Aelthot.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#5C0BB5",
+        "visibility": null
+    },
+    {
+        "id": "tiv",
+        "name": "Tiv",
+        "category": "npc",
+        "file": "NPCs/Mivon/Tiv.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#BF902E",
+        "visibility": null
+    },
+    {
+        "id": "rein_stagler",
+        "name": "Rein Stagler",
+        "category": "npc",
+        "file": "NPCs/Mivon/Rein Stagler.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#5C0BB5",
+        "visibility": null
+    },
+    {
+        "id": "jonas_arc",
+        "name": "Jonas Arc",
+        "category": "npc",
+        "file": "NPCs/Mivon/Jonas Arc.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#BF902E",
+        "visibility": null
+    },
+    {
+        "id": "barnur_keenhold",
+        "name": "Barnur Keenhold",
+        "category": "npc",
+        "file": "NPCs/Mivon/Barnur Keenhold.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#B01313",
+        "visibility": null
+    },
+    {
+        "id": "zayne_copper",
+        "name": "Zayne Copper",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Zayne Copper.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
+        "visibility": null
+    },
+    {
+        "id": "wit",
+        "name": "Wit",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Wit.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#9C9C9C",
+        "visibility": null
+    },
+    {
+        "id": "vondal_sandwashed",
+        "name": "Vondal Sandwashed",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Vondal Sandwashed.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
+        "visibility": null
+    },
+    {
+        "id": "vacho",
+        "name": "Vacho",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Vacho.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#B01313",
+        "visibility": null
+    },
+    {
+        "id": "ura_clawt",
+        "name": "Ura Clawt",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Ura Clawt.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#9C9C9C",
+        "visibility": null
+    },
+    {
+        "id": "sparrow",
+        "name": "Sparrow",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Sparrow.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
+        "visibility": null
+    },
+    {
         "id": "siphon",
         "name": "Siphon",
         "category": "npc",
@@ -407,6 +598,72 @@
         "view": null,
         "border": null,
         "color": "#9C9C9C",
+        "visibility": null
+    },
+    {
+        "id": "reina_palett",
+        "name": "Reina Palett",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Reina Palett.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
+        "visibility": null
+    },
+    {
+        "id": "pixana_boldshard",
+        "name": "Pixana Boldshard",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Pixana Boldshard.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
+        "visibility": null
+    },
+    {
+        "id": "peck_arck",
+        "name": "Peck Arck",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Peck Arck.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#BF902E",
+        "visibility": null
+    },
+    {
+        "id": "oleg_crank",
+        "name": "Oleg Crank",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Oleg Crank.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
+        "visibility": null
+    },
+    {
+        "id": "n'neb",
+        "name": "n'Neb",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/n'Neb.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#B01313",
+        "visibility": null
+    },
+    {
+        "id": "movh_bearer",
+        "name": "Movh Bearer",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Movh Bearer.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
         "visibility": null
     },
     {
@@ -454,6 +711,17 @@
         "visibility": null
     },
     {
+        "id": "laura_faelamin",
+        "name": "Laura Faelamin",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Laura Faelamin.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
+        "visibility": null
+    },
+    {
         "id": "kesten_garess",
         "name": "Kesten Garess",
         "category": "npc",
@@ -462,6 +730,28 @@
         "view": null,
         "border": null,
         "color": "#B01313",
+        "visibility": null
+    },
+    {
+        "id": "karri",
+        "name": "Karri",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Karri.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
+        "visibility": null
+    },
+    {
+        "id": "jelbli_flukeflow",
+        "name": "Jelbi Flukeflow",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Jelbi Flukeflow.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
         "visibility": null
     },
     {
@@ -476,6 +766,50 @@
         "visibility": null
     },
     {
+        "id": "gildi_crank",
+        "name": "Gildi Crank",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Gildi Crank.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
+        "visibility": null
+    },
+    {
+        "id": "felrick_kindhelm",
+        "name": "Felrick Kindhelm",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Felrick Kindhelm.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
+        "visibility": null
+    },
+    {
+        "id": "drift",
+        "name": "Drift",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Drift.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
+        "visibility": null
+    },
+    {
+        "id": "daedove_wildguard",
+        "name": "Daedove Wildguard",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Daedove Wildguard.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#BF902E",
+        "visibility": null
+    },
+    {
         "id": "crash",
         "name": "Crash",
         "category": "npc",
@@ -487,6 +821,17 @@
         "visibility": null
     },
     {
+        "id": "chirp",
+        "name": "Chirp",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Chirp.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#E00061",
+        "visibility": null
+    },
+    {
         "id": "cephal_lorentus",
         "name": "Cephal Lorentus",
         "category": "npc",
@@ -495,6 +840,28 @@
         "view": null,
         "border": null,
         "color": "#BF902E",
+        "visibility": null
+    },
+    {
+        "id": "brunno_meadowmane",
+        "name": "Brunno Meadowmane",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Brunno Meadowmane.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
+        "visibility": null
+    },
+    {
+        "id": "bralon_alepike",
+        "name": "Bralon Alepike",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Bralon Alepike.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
         "visibility": null
     },
     {
@@ -517,6 +884,17 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
+        "visibility": null
+    },
+    {
+        "id": "adsatra_sagebrook",
+        "name": "Adsatra Sagebrook",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Adsatra Sagebrook.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
         "visibility": null
     },
     {
@@ -553,10 +931,10 @@
         "visibility": null
     },
     {
-        "id": "tandeen_dazzlehand_'marionette'",
+        "id": "tandeen_dazzlehand",
         "name": "Tandeen Dazzlehand, Grand Enchanter \"Marionette\"",
         "category": "npc",
-        "file": "NPCs/Dead/Tandeen Dazzlehand 'Marionette'.md",
+        "file": "NPCs/Dead/Tandeen Dazzlehand.md",
         "map": null,
         "view": null,
         "border": null,
@@ -2274,6 +2652,17 @@
         "name": "Greenskin",
         "category": "Unknown",
         "file": "Culture/Greenskin.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null
+    },
+    {
+        "id": null,
+        "name": "Waking World",
+        "category": "Unknown",
+        "file": "Cosmoligy/Waking World.md",
         "map": null,
         "view": null,
         "border": null,

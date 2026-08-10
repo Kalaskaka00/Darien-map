@@ -1,20 +1,75 @@
-const nationLayer = L.layerGroup();
-const cityLayer = L.layerGroup();
+const layers = {
 
-const markers = {};
-const nationPolygons = {};
+    nations: L.layerGroup(),
+
+    settlements: L.layerGroup(),
+
+    labels: L.layerGroup(),
+
+    roads: L.layerGroup(),
+
+    streams: L.layerGroup(),
+
+    lakes: L.layerGroup(),
+
+    tradeRoutes: L.layerGroup()
+
+};
+
+const mapObjects = {
+
+    nations: {},
+
+    settlements: {},
+
+    roads: {},
+
+    streams: {},
+
+    lakes: {},
+
+    tradeRoutes: {}
+
+};
 
 const overlays = {
-    "Nations": nationLayer,
-    "Settlements": cityLayer
+
+    "Labels": layers.labels,
+
+    "Nations": layers.nations,
+
+    "Settlements": layers.settlements,
+
+    "Roads": layers.roads,
+
+    "Streams": layers.streams,
+
+    "Lakes": layers.lakes,
+
+    "Trade Routes": layers.tradeRoutes
+
 };
 
 function initializeLayers(){
 
-    cityLayer.addTo(map);
+    Object.values(layers).forEach(layer => {
 
-    nationLayer.addTo(map);
+        layer.addTo(map);
+
+    });
 
     L.control.layers(null, overlays).addTo(map);
+
+}
+
+function registerMapObject(type, id, layer){
+
+    mapObjects[type][id] = layer;
+
+}
+
+function getMapObject(type, id){
+
+    return mapObjects[type][id];
 
 }

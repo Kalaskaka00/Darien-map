@@ -1,6 +1,8 @@
 ## Details
 - Snyggare scrollbar i artikeln
 - Gör det synligt vem som kan se en artikel
+- Edit Shape preview medan man drar
+- Användning av tools gör att man tine klickar på artiklar
 ## Map
 - **Roads**
 - **Streams**
@@ -19,6 +21,7 @@
 ## UI
 - Map border
 - Wiki Pop out
+- Picture shift (Zara, Tandeen)
 - Zoom images
 - Highlight Icons on map
 - Preview wiki article on map and link
@@ -32,3 +35,4 @@
 - History article type & Timeline
 - Article flikar
 - Articles visible to some players
+- Related articles rubrik
