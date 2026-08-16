@@ -21,5 +21,7 @@ Memberships in order:
 4. Silver
 5. Bronze
 ## Known members
+- Adamantine [[Asha Rakker]]
+- Gold [[Jarlek Grin]]
 - Gold [[Milo Grainseller]]
 - Silver [[Emily Viine]]
