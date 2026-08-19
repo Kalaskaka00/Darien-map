@@ -19,7 +19,7 @@ Garent is known for its guilds and their intense intrigue as well as being a mer
 ## Economy 
 Garent has a decent food production but mainly makes money due to its position as possibly the greatest harbor in Darien directly on the [[Kings Road]] granting it an intense throughput of trade and ships.
 ## Important NPCs 
-- 
+- [[Asha Rakker]] and [[Jarlek Grin]] are two notable merchants in Garent.
 ## Organizations/Groups
 - The [[Brass Wheels]] have their main office in Garent and is one of the most powerful factions in the city.
 ## Notable Locations 

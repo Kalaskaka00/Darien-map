@@ -8,7 +8,7 @@ fullname: Lord Maegar Varn
 race: Human
 birth: 3821
 death: 
-family: 
+family: [[Varn family]]
 organisations: [[Vaegarian host]]
 origin: [[Galt]]
 

@@ -579,6 +579,50 @@
         "visibility": null
     },
     {
+        "id": "mime",
+        "name": "Mime",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Wanderers/Mime.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#1C1B1B",
+        "visibility": null
+    },
+    {
+        "id": "lord_of_stories",
+        "name": "Lord of Stories",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Wanderers/Lord of Stories.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#1C1B1B",
+        "visibility": "gm"
+    },
+    {
+        "id": "joker",
+        "name": "Joker",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Wanderers/Joker.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#1C1B1B",
+        "visibility": null
+    },
+    {
+        "id": "harlequin",
+        "name": "Harlequin",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Wanderers/Harlequin.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#1C1B1B",
+        "visibility": null
+    },
+    {
         "id": "egizaed",
         "name": "Egiazed",
         "category": "npc",
@@ -961,6 +1005,72 @@
         "view": null,
         "border": null,
         "color": "#13B057",
+        "visibility": null
+    },
+    {
+        "id": "yarek_gray",
+        "name": "Yarek Gray",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Serenity/Yarek Gray.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#BF902E",
+        "visibility": null
+    },
+    {
+        "id": "oliveria",
+        "name": "Oliveria",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Serenity/Oliveria.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#9C9C9C",
+        "visibility": null
+    },
+    {
+        "id": "odak_one_eye",
+        "name": "Odak One Eye",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Serenity/Odak One Eye.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
+        "visibility": null
+    },
+    {
+        "id": "ninne",
+        "name": "Ninne",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Serenity/Ninne.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#13B057",
+        "visibility": null
+    },
+    {
+        "id": "beheria",
+        "name": "Beheria",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Serenity/Beheria.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#9C9C9C",
+        "visibility": null
+    },
+    {
+        "id": "artarp_rein",
+        "name": "Artarp Rein",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Serenity/Artarp Rein.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
         "visibility": null
     },
     {

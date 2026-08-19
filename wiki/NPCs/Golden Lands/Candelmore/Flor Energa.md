@@ -19,7 +19,7 @@ color: "#211DA1"
 
 Flor is the master of energy in the Candle mages. She is known for her energetic personality.
 
-Flor and the other [[Candle Mages]] were cursed by [[The Lord of Stories]] and [[Nentrah]] and fell into forgetfulness and underneath. Until [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] broke the curse (mostly) and got the [[Candle Mages]] active but stuck on [[Candelmore]].
+Flor and the other [[Candle Mages]] were cursed by [[Lord of Stories]] and [[Nentrah]] and fell into forgetfulness and underneath. Until [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] broke the curse (mostly) and got the [[Candle Mages]] active but stuck on [[Candelmore]].
 ## Relations
 - [[Deren Seere]], [[Derk]], [[Ihara Absul]], [[Magie]], [[Whirl Palett]] and [[Yarslav Crain]] are fellow [[Candle Mages]].
 - [[Annj Bearer]] is an apprentice to the [[Candle Mages]].

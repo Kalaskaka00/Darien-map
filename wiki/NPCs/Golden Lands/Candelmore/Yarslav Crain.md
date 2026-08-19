@@ -19,7 +19,7 @@ color: "#211DA1"
 
 Yarslav is the master of creation in the Candle Mages. He is renown for his quiet and unceratin demaenor.
 
-Yaraslav and the other [[Candle Mages]] were cursed by [[The Lord of Stories]] and [[Nentrah]] and fell into forgetfulness and underneath. Until [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] broke the curse (mostly) and got the [[Candle Mages]] active but stuck on [[Candelmore]].
+Yaraslav and the other [[Candle Mages]] were cursed by [[Lord of Stories]] and [[Nentrah]] and fell into forgetfulness and underneath. Until [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] broke the curse (mostly) and got the [[Candle Mages]] active but stuck on [[Candelmore]].
 ## Relations
 - [[Magie]] is a close friend of Yaraslav and they often create things together.
 - [[Deren Seere]], [[Derk]], [[Flor Energa]], [[Ihara Absul]] and [[Whirl Palett]] are fellow [[Candle Mages]].

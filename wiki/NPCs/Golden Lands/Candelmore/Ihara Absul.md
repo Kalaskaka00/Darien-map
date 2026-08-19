@@ -19,7 +19,7 @@ color: "#211DA1"
 
 Ihara is the master of the death in the Candle Mages. She is renown for her joyous demeanor and slight strange fascination with life and death. Ihara has an undead servant called Thrine.
 
-Ihara and the other [[Candle Mages]] were cursed by [[The Lord of Stories]] and [[Nentrah]] and fell into forgetfulness and underneath. Until [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] broke the curse (mostly) and got the [[Candle Mages]] active but stuck on [[Candelmore]]. Ihara is the only one keeping most of the Candle mages alive by animating them.
+Ihara and the other [[Candle Mages]] were cursed by [[Lord of Stories]] and [[Nentrah]] and fell into forgetfulness and underneath. Until [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] broke the curse (mostly) and got the [[Candle Mages]] active but stuck on [[Candelmore]]. Ihara is the only one keeping most of the Candle mages alive by animating them.
 ## Relations
 - [[Deren Seere]], [[Derk]], [[Flor Energa]], [[Magie]], [[Whirl Palett]] and [[Yarslav Crain]] are fellow [[Candle Mages]].
 - [[Annj Bearer]] is an apprentice to the [[Candle Mages]].

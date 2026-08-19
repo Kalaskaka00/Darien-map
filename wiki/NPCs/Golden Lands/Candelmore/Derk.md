@@ -19,7 +19,7 @@ color: "#211DA1"
 
 Derk is the master of protections in the Candle Mages. Derk is known to be quiet, careful and ever so slightly paranoid.
 
-Derk and the other [[Candle Mages]] were cursed by [[The Lord of Stories]] and [[Nentrah]] and fell into forgetfulness and underneath. Until [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] broke the curse (mostly).
+Derk and the other [[Candle Mages]] were cursed by [[Lord of Stories]] and [[Nentrah]] and fell into forgetfulness and underneath. Until [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] broke the curse (mostly).
 
 Derk in return would help defeat [[Thundarak]].
 ## Relations

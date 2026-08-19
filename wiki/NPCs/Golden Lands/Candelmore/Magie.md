@@ -21,7 +21,7 @@ Magie was a traveler in the [[Stolen Lands]] of few words. They do however seem 
 
 Magie is the Master of Transmutation in the [[Candle Mages]]. Magie is known to be quiet and always curious.
 
-Magie and the other [[Candle Mages]] were cursed by [[The Lord of Stories]] and [[Nentrah]] and fell into forgetfulness and underneath. Until [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] broke the curse (mostly) and got the [[Candle Mages]].
+Magie and the other [[Candle Mages]] were cursed by [[Lord of Stories]] and [[Nentrah]] and fell into forgetfulness and underneath. Until [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] broke the curse (mostly) and got the [[Candle Mages]].
 ## Relations
 - [[Yarslav Crain]] is a close friend of Magie and they often create things together.
 - [[Deren Seere]], [[Derk]], [[Flor Energa]], [[Ihara Absul]] and [[Whirl Palett]] are fellow [[Candle Mages]].
