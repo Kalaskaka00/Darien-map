@@ -26,28 +26,6 @@ const roads = [
 
     {
 
-        id:"south_road",
-
-        name:"South Road",
-
-        class:"road",
-
-        article:null,
-
-        points:[
-
-            [100,200],
-
-            [140,260],
-
-            [220,340]
-
-        ],
-    
-    },
-
-    {
-
         id:"kings_road",
 
         name:"Kings Road",
@@ -73,6 +51,32 @@ const roads = [
             [714, 868],
             [683, 901],
             [686, 964]
+
+        ]
+
+    },
+
+    {
+
+        id:"stolen_road",
+
+        name:"Stolen Road",
+
+        class:"trail",
+
+        article:null,
+
+        points:[
+
+            [728, 839],
+            [721, 818],
+            [697, 823],
+            [661, 831],
+            [633, 830],
+            [613, 822],
+            [581, 828],
+            [568, 836]
+
 
         ]
 

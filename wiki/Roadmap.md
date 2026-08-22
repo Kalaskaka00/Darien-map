@@ -2,7 +2,7 @@
 - Snyggare scrollbar i artikeln
 - Gör det synligt vem som kan se en artikel
 - Edit Shape preview medan man drar
-- Användning av tools gör att man tine klickar på artiklar
+- Användning av tools gör att man inte klickar på artiklar
 - n'Neb preview funkar inte
 ## Map
 - **Roads**

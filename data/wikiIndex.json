@@ -458,6 +458,28 @@
         "visibility": "gm"
     },
     {
+        "id": "lalne_quill",
+        "name": "Lalne Quill",
+        "category": "npc",
+        "file": "NPCs/Pitax/Lalne Quill.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
+        "visibility": null
+    },
+    {
+        "id": "farlamin_mistshaper",
+        "name": "Farlamin Mistshaper",
+        "category": "npc",
+        "file": "NPCs/Pitax/Farlamin Mistshaper.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
+        "visibility": null
+    },
+    {
         "id": "yelgolor_remoudou",
         "name": "Yelgolor Remoudou",
         "category": "npc",
@@ -1262,7 +1284,7 @@
     },
     {
         "id": "tandeen_dazzlehand",
-        "name": "Tandeen Dazzlehand, Grand Enchanter \"Marionette\"",
+        "name": "Tandeen Dazzlehand",
         "category": "npc",
         "file": "NPCs/Dead/Tandeen Dazzlehand.md",
         "map": null,

@@ -1,11 +1,49 @@
+function smoothPolyline(points, iterations = 1) {
+
+    let result = points;
+
+    for (let k = 0; k < iterations; k++) {
+
+        const newPoints = [result[0]];
+
+        for (let i = 0; i < result.length - 1; i++) {
+
+            const p0 = result[i];
+            const p1 = result[i + 1];
+
+            const Q = [
+                0.75 * p0[0] + 0.25 * p1[0],
+                0.75 * p0[1] + 0.25 * p1[1]
+            ];
+
+            const R = [
+                0.25 * p0[0] + 0.75 * p1[0],
+                0.25 * p0[1] + 0.75 * p1[1]
+            ];
+
+            newPoints.push(Q);
+            newPoints.push(R);
+
+        }
+
+        newPoints.push(result[result.length - 1]);
+
+        result = newPoints;
+    }
+
+    return result;
+}
+
 function drawLine(object, options){
 
     // Valfri skugga
     let shadow = null;
 
+    const displayPoints = smoothPolyline(object.points, 2);
+
     if(options.shadow){
 
-        shadow = L.polyline(object.points, {
+        shadow = L.polyline(displayPoints, {
             color: options.shadow.color ?? "#444343",
             weight: options.weight + (options.shadow.extraWidth ?? 4),
             opacity: options.shadow.opacity ?? 0.6,
@@ -14,7 +52,7 @@ function drawLine(object, options){
 
     }
 
-    const line = L.polyline(object.points, {
+    const line = L.polyline(displayPoints, {
         color: options.color,
         weight: options.weight,
         dashArray: options.dashArray ?? null,

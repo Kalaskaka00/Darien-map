@@ -14,7 +14,7 @@ origin: [[Pitax]]
 
 color: "#211DA1"
 --- 
-# Tandeen Dazzlehand, Grand Enchanter "Marionette"
+# Tandeen Dazzlehand
 *Just give up, it will make my job far easier.*
 
 Tandeen went to the [[Stolen Lands]] with [[Brave Wish]] and [[Velmine]] on a mission of [[Jamandi Aldori]]. In this quest he secretly worked for [[Pitax]] to sabotage the [[Brevoy]] mission. To fulfill the mission he brainwashed [[Brave Wish]] and [[Velmine]].
@@ -26,6 +26,7 @@ After his death Tandeen would be brought back in the form of a construct named M
 ## Relations
 - [[Brave Wish]] and [[Velmine]] were Tandeens unwilling allies for a while.
 - [[Chorrad Troll King]] was Marionettes commander.
+- [[Farlamin Mistshaper]] was Tandeens mentor.
 
 <!--GM
 ## GM info

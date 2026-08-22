@@ -20,6 +20,7 @@ color: "#13B057"
 Adsatra is an experienced innkeeper most recently hailing from [[Numeria]] running the Inn "Meadin". She later moved on to the [[Golden Lands]] and set up a new tavern there called "the Sleeping Dragon Inn".
 ## Relations
 - [[Movh Bearer]] and [[Annj Bearer]] are people whom Adsatra has taken in and they have helped out in her businesses.
+- [[Farlamin Mistshaper]] was for a long time Adsatras partner until they moved their different ways.
 
 <!--GM
 ## GM info
