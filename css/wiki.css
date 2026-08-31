@@ -25,6 +25,31 @@
 
 }
 
+#wiki-sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: #6f5328 rgba(111, 83, 40, 0.15);
+}
+
+#wiki-sidebar::-webkit-scrollbar {
+    width: 12px;
+}
+
+#wiki-sidebar::-webkit-scrollbar-track {
+    background: rgba(111, 83, 40, 0.15);
+    border-radius: 10px;
+}
+
+#wiki-sidebar::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #a0826d 0%, #6f5328 50%, #5a4520 100%);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#wiki-sidebar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #b8946f 0%, #7b5a2b 50%, #6a5230 100%);
+}
+
+
 .article img{
 
     display:block;
@@ -171,4 +196,24 @@
 
     padding: 0;
 
+}
+
+.visibility-info {
+    background: rgba(139, 115, 85, 0.1);
+    border-left: 4px solid #8b0000;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: Georgia, serif;
+}
+
+.visibility-label {
+    font-weight: bold;
+    color: #8b0000;
+    margin-right: 8px;
+}
+
+.visibility-list {
+    color: #6f5328;
 }

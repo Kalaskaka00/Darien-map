@@ -25,6 +25,23 @@ function addLinePoint(e){
 
 }
 
+// Allow external code to add points to the current line drawing
+function addPointToLineDrawing(lat, lng){
+
+    if(!drawingConfig || editorMode !== "draw-road" && editorMode !== "draw-polygon"){
+        return false;
+    }
+
+    drawingPoints.push([
+        Math.round(lat),
+        Math.round(lng)
+    ]);
+
+    updateLinePreview();
+    return true;
+
+}
+
 function updateLinePreview(){
 
     if(drawingLine){
@@ -40,7 +57,7 @@ function updateLinePreview(){
 
     drawingLine = L.polyline(
 
-        smoothPolyline(drawingPoints, 1),
+        catmullRomSpline(drawingPoints, 10),
 
         {
             color: drawingConfig.color ?? "#888",

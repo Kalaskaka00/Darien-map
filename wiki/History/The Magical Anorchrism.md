@@ -1,5 +1,5 @@
 # The Magical Anorchrism
-*[[@The Timeline]] Year {{year:0}}*
+*[[The Timeline]] Year {{year:0}}*
 
 In the past times the arcane magic was a domain tightly held by the major deities, give out to chosen ones much like divine magic is today.
 

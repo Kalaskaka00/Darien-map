@@ -15,7 +15,7 @@ origin: [[Pitax]]
 color: "#211DA1"
 --- 
 # Farlamin Mistshaper
-*Greetings, an auspicious day to make your acquaintance, may this encounter mean good fortunes.*
+*Greetings, an auspicious day to make your acquaintance, may this encounter bring good fortunes.*
 
 Farlamin is one of the council in [[Pitax]] representing the Illusionist School in the leading chambers. In this roll Farlamin also leads the Illusionist School deciding research grants and matters of education.
 

@@ -5,7 +5,7 @@ view:
   zoom: 2
 ---
 # The Manchu Conquests
-*[[@The Timeline]] Year {{year:3657}} - {{year:3702}}*
+*[[The Timeline]] Year {{year:3657}} - {{year:3702}}*
 
 Starting year {{year:3657}} years ago the [[Manchu Tribes]] started a large war of conquest mostly against [[Numeria]]. However after 50 years ago the [[Manchu Tribes]] looked like they might collapse in on themselves. Their domain had shrunk, their tribal hosts had shrunk with some settling in other nations and other dying in combat. The loses amongst [[Numeria]] were also siginificant.
 

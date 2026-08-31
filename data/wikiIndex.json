@@ -1,9 +1,31 @@
 [
     {
+        "id": "talia_andureen",
+        "name": "Talia Andureen",
+        "category": "npc",
+        "file": "Talia Andureen.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#5C0BB5",
+        "visibility": "gm"
+    },
+    {
         "id": null,
         "name": "Roadmap",
         "category": "Unknown",
         "file": "Roadmap.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null
+    },
+    {
+        "id": null,
+        "name": "Troll Hunt",
+        "category": "Unknown",
+        "file": "Stories/Troll Hunt (unfinished).md",
         "map": null,
         "view": null,
         "border": null,
@@ -403,6 +425,17 @@
         "visibility": null
     },
     {
+        "id": "reina_palett",
+        "name": "Reina Palett",
+        "category": "npc",
+        "file": "NPCs/Travelers/Reina Palett.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
+        "visibility": null
+    },
+    {
         "id": "magpie",
         "name": "Magpie",
         "category": "npc",
@@ -785,17 +818,6 @@
         "view": null,
         "border": null,
         "color": "#9C9C9C",
-        "visibility": null
-    },
-    {
-        "id": "reina_palett",
-        "name": "Reina Palett",
-        "category": "npc",
-        "file": "NPCs/Golden Lands/Summerborn/Reina Palett.md",
-        "map": null,
-        "view": null,
-        "border": null,
-        "color": "#211DA1",
         "visibility": null
     },
     {
@@ -1295,7 +1317,7 @@
     },
     {
         "id": "stag_lord",
-        "name": "The Stag Lord",
+        "name": "Stag Lord",
         "category": "npc",
         "file": "NPCs/Dead/Stag Lord.md",
         "map": null,
@@ -2747,6 +2769,28 @@
     },
     {
         "id": null,
+        "name": "The Timeline",
+        "category": "Unknown",
+        "file": "Home/The Timeline.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null
+    },
+    {
+        "id": null,
+        "name": "Deities Summary",
+        "category": "Unknown",
+        "file": "Home/Deities Summary.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null
+    },
+    {
+        "id": null,
         "name": "War of the beards",
         "category": "Unknown",
         "file": "History/War of the beards.md",
@@ -2808,28 +2852,6 @@
             "y": 764,
             "zoom": 2
         },
-        "border": null,
-        "color": null,
-        "visibility": null
-    },
-    {
-        "id": null,
-        "name": "The Timeline",
-        "category": "Unknown",
-        "file": "History/@The Timeline.md",
-        "map": null,
-        "view": null,
-        "border": null,
-        "color": null,
-        "visibility": null
-    },
-    {
-        "id": null,
-        "name": "Dieties Summary",
-        "category": "Unknown",
-        "file": "Dieties/@Dieties Summary.md",
-        "map": null,
-        "view": null,
         "border": null,
         "color": null,
         "visibility": null
@@ -3059,6 +3081,28 @@
         "name": "Divine Artifacts",
         "category": "Unknown",
         "file": "Artifacts, Relics, Items/Divine Artifacts.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null
+    },
+    {
+        "id": null,
+        "name": "Vital Delivery",
+        "category": "Unknown",
+        "file": "Adventures/Vital Delivery.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null
+    },
+    {
+        "id": null,
+        "name": "Kingmaker",
+        "category": "Unknown",
+        "file": "Adventures/Kingmaker.md",
         "map": null,
         "view": null,
         "border": null,

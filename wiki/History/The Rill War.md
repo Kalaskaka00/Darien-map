@@ -5,7 +5,7 @@ view:
   zoom: 2
 ---
 # The Rill War
-*[[@The Timeline]] Year {{year:3843}}-{{year:3847}}*
+*[[The Timeline]] Year {{year:3843}}-{{year:3847}}*
 
 The Rill War between [[Brevoy]] and [[Mivon]] against [[Numeria]] and [[Pitax]]. The war started year {{year:3843}} when [[Brevoy]] expanded their borders by building the [[Roughen Fort]] to the South West claiming land from [[Numeria]]. The [[Numeria]]n king raised protests and eventually an agreement was hammered out.
 

@@ -1,3 +1,48 @@
+// Find snap points for editing - checks settlements, roads, and borders
+function findSnapPoint(lat, lng, maxDistance = 10) {
+    let snapPoint = null;
+    let minDistance = maxDistance * maxDistance; // squared distance
+
+    // Check settlements
+    world.forEach(item => {
+        if(item.map && (item.category === "settlement" || item.category === "npc")) {
+            const distance = Math.pow(lat - item.map.y, 2) + Math.pow(lng - item.map.x, 2);
+            if(distance < minDistance) {
+                minDistance = distance;
+                snapPoint = [item.map.y, item.map.x];
+            }
+        }
+    });
+
+    // Check nation borders for nearest control point
+    world.forEach(item => {
+        if(item.category === "nation" && item.border) {
+            item.border.forEach(point => {
+                const distance = Math.pow(lat - point[0], 2) + Math.pow(lng - point[1], 2);
+                if(distance < minDistance) {
+                    minDistance = distance;
+                    snapPoint = point;
+                }
+            });
+        }
+    });
+
+    // Check roads/streams for nearest control point
+    world.forEach(item => {
+        if((item.category === "road" || item.category === "stream") && item.points) {
+            item.points.forEach(point => {
+                const distance = Math.pow(lat - point[0], 2) + Math.pow(lng - point[1], 2);
+                if(distance < minDistance) {
+                    minDistance = distance;
+                    snapPoint = point;
+                }
+            });
+        }
+    });
+
+    return snapPoint;
+}
+
 function showShapeHandles(){
 
     editingShape.points.forEach((point, index) => {
@@ -14,11 +59,22 @@ function showShapeHandles(){
         marker.on("drag", function(){
 
             const pos = marker.getLatLng();
-
-            editingShape.points[index] = [
+            
+            // Try to snap to nearby settlements/roads
+            const snapPoint = findSnapPoint(
                 Math.round(pos.lat),
                 Math.round(pos.lng)
-            ];
+            );
+
+            if(snapPoint) {
+                editingShape.points[index] = snapPoint;
+                marker.setLatLng(snapPoint);
+            } else {
+                editingShape.points[index] = [
+                    Math.round(pos.lat),
+                    Math.round(pos.lng)
+                ];
+            }
 
         });
 

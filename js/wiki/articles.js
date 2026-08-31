@@ -1,9 +1,18 @@
 let currentArticle = null;
 
+// Normalize apostrophe characters for consistent matching
+function normalizeArticleName(name){
+    return name
+        .toLowerCase()
+        .replace(/[''`]/g, "'"); // Convert all apostrophe variants to regular apostrophe
+}
+
 function getArticle(name){
 
+    const normalized = normalizeArticleName(name);
+
     return world.find(
-        article => article.name === name
+        article => normalizeArticleName(article.name) === normalized
     );
 
 }

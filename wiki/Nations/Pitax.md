@@ -38,7 +38,7 @@ border:
 
 *Pitax is a city state originating from the powerful and renowned city of Pitax. Pitax is known for its arcane power, research and traditions, which dictate all of society.*
 ## Terrain & Geography
-Pitax is bordered by mountains to its north. To its west is a river bordering the [[Manchu tribes]]. To the south nearer the farmlands is [[Touvette]]. Lastly to the east are the [[Nalmarches]] entering the [[Stolen Lands]].
+Pitax is bordered by mountains to its north. To its west is a river bordering the [[Manchu Tribes]]. To the south nearer the farmlands is [[Touvette]]. Lastly to the east are the [[Nalmarches]] entering the [[Stolen Lands]].
 
 Pitax is dominated by farming lands and plains across its border. Between the farming lands many rivers meander about in complex networks. In the north its slightly more wild terrain with forests and mountains. 
 
@@ -70,7 +70,7 @@ Slavery is legal in Pitax seeing as long as the slave can't show magical aptitud
 
 **[[Numeria]]:** Pitax and [[Numeria]] as a whole have quite cold relations, however Pitax has warm relations with some of the tribes in [[Numeria]] who they aided in [[The Rill War]].
 
-**[[Manchu Tribes]]:** Pitax looks on the [[Manchu tribes]] with disdain and consider them Barbarians.
+**[[Manchu Tribes]]:** Pitax looks on the [[Manchu Tribes]] with disdain and consider them Barbarians.
 
 **[[Daggermark]]:** Pitax is one of few nations who hold diplomatic relations with [[Daggermark]]. It is rumored that Pitax have at times loaned assassins and monsters from [[Daggermark]] and have in return offered magical services and expertise.
 ## History

@@ -3,6 +3,40 @@ const articleCache = {};
 const preview =
     document.getElementById("wiki-preview");
 
+// Generate visibility info HTML
+function getVisibilityInfoHTML(article) {
+    // Show nothing if public or no visibility specified
+    if(!article.visibility || article.visibility === "everyone") {
+        return "";
+    }
+
+    // Only GM can see this info
+    if(!isGM) {
+        return "";
+    }
+
+    // Build visibility info for GM view
+    let visibilityList = [];
+    
+    if(article.visibility === "gm") {
+        visibilityList = ["GM Only"];
+    } else {
+        const visibleTo = Array.isArray(article.visibility) 
+            ? article.visibility 
+            : [article.visibility];
+        visibilityList = ["GM", ...visibleTo];
+    }
+
+    const visibilityHTML = `
+        <div class="visibility-info">
+            <span class="visibility-label">Access:</span>
+            <span class="visibility-list">${visibilityList.join(", ")}</span>
+        </div>
+    `;
+    
+    return visibilityHTML;
+}
+
 function renderArticle(article, markdown){
 
     let html;
@@ -17,7 +51,10 @@ function renderArticle(article, markdown){
 
     }
 
-    document.getElementById("article").innerHTML = html;
+    // Add visibility info at top (GM only)
+    const visibilityInfo = getVisibilityInfoHTML(article);
+    
+    document.getElementById("article").innerHTML = visibilityInfo + html;
 
 }
 
@@ -46,17 +83,20 @@ async function hoverArticle(event,page){
 
     const article = getArticle(page);
 
-    if(!canReadArticle(article))
+    if(!article)
         return;
 
-    if(!article)
+    if(!canReadArticle(article))
         return;
 
     const data =
         await getArticleData(article);
 
+    // Merge frontmatter data with article metadata
+    const mergedArticle = { ...article, ...data };
+
     showPreview(
-        data,
+        mergedArticle,
         event.pageX,
         event.pageY
     );

@@ -14,7 +14,7 @@ origin: [[Stolen Lands]]
 
 color: "#B01313"
 --- 
-# The Stag Lord
+# Stag Lord
 *I am the ruler of these lands, surrender now!*
 
 Durie was once a son to a shaman in the [[Stolen Lands]], his father the shaman was however a bad man who continually abused his son. Duries mother was never around, maybe a fey maybe dead.

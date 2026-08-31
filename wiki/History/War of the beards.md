@@ -1,5 +1,5 @@
 # War of the beards
-*[[@The Timeline]] Year {{year:2923}}-{{year:2972}}*
+*[[The Timeline]] Year {{year:2923}}-{{year:2972}}*
 
 When speaking of the dwarven keeps the most significant thing to mention is the war of the beards. The war of the beards were a series of wars fought year {{year:2923}} between many of the [[dwarven keeps]] and the at the time elven phoenix king [[Golarion]]. 
 

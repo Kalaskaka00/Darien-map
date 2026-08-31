@@ -37,7 +37,7 @@ border:
 
 *Touvetee has undoubtedly the best farmland in [[Darien]] littered with small villages. Touvette has used its farmland to assemble a notable wealth and exports a lot of its agricultural output to its neighbors. It has used its position to forge a neutral and peaceful stance in the world, they also therefore negotiate many disputes.*
 ## Terrain & Geography
-Tovette has some large hills with [[Manchu tribes]] to the northwest. To the north is the land border to [[Pitax]]. To the east there's a river towards [[Embeth]]. To the south there's the rivers to Gralton.
+Tovette has some large hills with [[Manchu Tribes]] to the northwest. To the north is the land border to [[Pitax]]. To the east there's a river towards [[Embeth]]. To the south there's the rivers to Gralton.
 
 Tovette is mostly dominated by farmlands and canals through the farmlands. Many claim that the farmlands are magically enhanced since ancient times producing a lot of high quality crops.
 ## Economy
@@ -57,7 +57,7 @@ People in Touvetee are generally warm towards outsiders, but suspicious of the o
 **Notable Deities:** [[Sandor]], [[Vanee]]
 **Disliked Deities:** [[Bann]], [[Dunden]]
 ## Relations
-**[[Manchu Tribes]]:** Touvette ha warmer relations with the [[Manchu tribes]] than most other civilizations. This comes to a large part from the notable trade conducted between Touvette and the [[Manchu Tribes]]. The [[Manchu Tribes]] have historically been a protector towards Touvette at times even threatening war towards anyone who's aggressive towards the nation.
+**[[Manchu Tribes]]:** Touvette ha warmer relations with the [[Manchu Tribes]] than most other civilizations. This comes to a large part from the notable trade conducted between Touvette and the [[Manchu Tribes]]. The [[Manchu Tribes]] have historically been a protector towards Touvette at times even threatening war towards anyone who's aggressive towards the nation.
 
 **[[Pitax]]:** [[Pitax]] and Touvette have quite warm relations with the two sides trading a lot with one another. 
 

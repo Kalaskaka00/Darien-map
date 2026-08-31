@@ -15,7 +15,7 @@ Roughen Fort is quite a small settlement with a large military presence and a st
 
 Roughen Fort is more known for its memorial and banking than anything else.
 ## History 
-Roughen fort was founded quite recently during [[the Rill war]] from newly conquered [[Numeria]]n lands.
+Roughen fort was founded quite recently during [[The Rill war]] from newly conquered [[Numeria]]n lands.
 
 For their efforts during the war ruler-ship of the city was given to the [[Beeret family]].
 ## Economy 

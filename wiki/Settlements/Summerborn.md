@@ -26,7 +26,7 @@ Summerborn was founded when the three adventurers [[Claire Nightshield]], [[Silv
 - [[Adsatra Sagebrook]] and [[Movh Bearer]] run the Sleeping Dragon Inn.
 - [[Chirp]] and [[Errard Specher]] are quite loud people and have a tendency to mobilize public opinion.
 - [[Brunno Meadowmane]], [[Garbin Sunheart]] and [[Laura Faelamin]] are more typical workers who make their living in Summerborn.
-- [[n'Neb]], [[Reina Palett]] and [[Vacho]] are from other lands but currently make their home in Summerborn.
+- [[n'Neb]] and [[Vacho]] are from other lands but currently make their home in Summerborn.
 ## Organizations/Groups
 - 
 ## Notable Locations 

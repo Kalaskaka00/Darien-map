@@ -117,11 +117,24 @@ registerMapObject(
     marker
 );
 
-marker.on("click", function(){
+marker.on("click", function(e){
 
     if(editorMode === "move-settlement"){
 
         selectSettlementForMoving(city, marker);
+
+        return;
+
+    }
+
+    // If a drawing tool is active, snap to this settlement's coordinates
+    if(isLineDrawingActive()){
+
+        L.DomEvent.stopPropagation(e);
+
+        // Try to add point to the active drawing tool
+        const added = addPointToLineDrawing(city.map.y, city.map.x) || 
+                      addPointToPolygonDrawing(city.map.y, city.map.x);
 
         return;
 

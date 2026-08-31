@@ -5,7 +5,7 @@ category: npc
 portrait: Yarslav Crain.png
 
 fullname: Yarslav Crain, Master of Creation
-race: Gnome
+race: Gnome (Undead)
 birth: 3388
 death: 
 family: 

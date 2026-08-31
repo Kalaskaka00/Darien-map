@@ -7,6 +7,6 @@ view:
   zoom: 1
 ---
 # <% tp.file.title %>
-*[[@The Timeline]] Year {{year:X}}-{{year:X}}*
+*[[The Timeline]] Year {{year:X}}-{{year:X}}*
 
 Description

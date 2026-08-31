@@ -19,22 +19,15 @@ function selectShape(shape){
 
 function removeShapePoint(index){
 
-    // Förhindra polygoner med för få punkter
     const minimumPoints = editingShape.closed ? 3 : 2;
 
-if(editingShape.points.length <= minimumPoints){
+    if(editingShape.points.length <= minimumPoints){
 
-    alert(
-        editingShape.closed
-        ? "A polygon must have at least 3 points."
-        : "A line must have at least 2 points."
-    );
-
-    return;
-
-    }{
-
-        alert("A polygon must have at least 3 points.");
+        alert(
+            editingShape.closed
+                ? "A polygon must have at least 3 points."
+                : "A line must have at least 2 points."
+        );
 
         return;
 

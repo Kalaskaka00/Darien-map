@@ -33,7 +33,9 @@ function renderWikiLinks(value){
 
             if(article){
 
-                return `<a href="#" class="wikilink" data-page="${page}" onmouseenter="hoverArticle(event,'${page}')" onmouseleave="hidePreview()">${label}</a>`;
+                const escapedPage = page.replace(/'/g, "\\'");
+
+                return `<a href="#" class="wikilink" data-page="${page}" onmouseenter="hoverArticle(event,'${escapedPage}')" onmouseleave="hidePreview()">${label}</a>`;
 
             }
 

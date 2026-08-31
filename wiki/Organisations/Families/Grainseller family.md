@@ -9,7 +9,7 @@ view:
 **Home:** [[Cornstalk]]
 **Races:** Halflings
 
-The Grainseller has a long line of merchants and entreprenuers, with a great standing in [[Touvette]] and a few other nations due to their great fortune. 
+The Grainseller has a long line of merchants and entrepreneurs, with a great standing in [[Touvette]] and a few other nations due to their great fortune. 
 
 The family business is mostly grain selling, but has expanded to beekeeping, milling and animal herding, specifically sheep and goats which are used for milking and cheese making
 

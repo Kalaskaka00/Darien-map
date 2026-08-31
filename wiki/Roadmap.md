@@ -1,9 +1,5 @@
 ## Details
-- Snyggare scrollbar i artikeln
-- Gör det synligt vem som kan se en artikel
-- Edit Shape preview medan man drar
-- Användning av tools gör att man inte klickar på artiklar
-- n'Neb preview funkar inte
+- 
 ## Map
 - **Roads**
 - **Streams**
@@ -35,5 +31,5 @@
 - Campaign article type
 - History article type & Timeline
 - Article flikar
-- Articles visible to some players
-- Related articles rubrik
+- Article text visible to some players
+- Related articles
