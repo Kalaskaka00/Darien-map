@@ -9,6 +9,8 @@
 ## Details
 - Clean up and speed up code
 - Display number of articles and latest update date
+- Display current year in home article
+- Possible to show measurement
 ## Map
 - Trade Routes
 - Region names
@@ -23,6 +25,7 @@
 - Travel calculator
 - PC article - Players can edit
 - Player Notepad(s)
+- Player side map markers
 ## UI
 - Map border
 - Wiki Pop out

@@ -1,0 +1,29 @@
+.ping-marker {
+    background: transparent;
+    border: 0;
+}
+
+.ping-wave {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 3px solid var(--ping-color);
+    border-radius: 50%;
+    box-sizing: border-box;
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(0.35);
+    animation: ping-expand 1.6s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes ping-expand {
+    0% {
+        opacity: 0.9;
+        transform: translate(-50%, -50%) scale(0.35);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(4);
+    }
+}
