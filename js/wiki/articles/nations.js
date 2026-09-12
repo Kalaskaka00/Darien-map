@@ -78,6 +78,33 @@ outline.on("click", (e) => {
 
     }
 
+    if(isMeasureToolActive()){
+
+        L.DomEvent.stop(e);
+
+        const clickLat = Math.round(e.latlng.lat);
+        const clickLng = Math.round(e.latlng.lng);
+        let nearestPoint = country.border[0];
+        let minDistance = Math.pow(clickLat - nearestPoint[0], 2) + Math.pow(clickLng - nearestPoint[1], 2);
+
+        for(let i = 1; i < country.border.length; i++){
+
+            const point = country.border[i];
+            const distance = Math.pow(clickLat - point[0], 2) + Math.pow(clickLng - point[1], 2);
+
+            if(distance < minDistance){
+                minDistance = distance;
+                nearestPoint = point;
+            }
+
+        }
+
+        addMeasurementPointAt(nearestPoint[0], nearestPoint[1]);
+
+        return;
+
+    }
+
     // If a line drawing tool is active, snap to nearest control point
     if(isLineDrawingActive()){
 

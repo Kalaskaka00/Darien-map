@@ -51,6 +51,15 @@
     border-radius:8px;
 
     border:3px solid var(--npc-color);
+    grid-area:1 / 1;
+    visibility:hidden;
+    cursor:pointer;
+
+}
+
+.npc-portrait-active{
+
+    visibility:visible;
 
 }
 
@@ -60,12 +69,18 @@
 
 }
 
+.npc-portrait-group{
+
+    position:relative;
+    display:grid;
+
+}
+
 .npc-row{
 
     display:flex;
 
     justify-content:space-between;
-
     padding:10px 0;
 
     border-bottom:1px solid rgba(0,0,0,.15);
@@ -126,11 +141,6 @@
     margin: 2rem 0;
 
     padding: 1.5rem;
-
-    background: rgba(0,0,0,.05);
-
-    border-radius: 10px;
-
     text-align: center;
 
     font-style: italic;

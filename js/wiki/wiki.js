@@ -10,7 +10,7 @@ async function loadArticle(file){
 
     console.log(article);
 
-    const worldArticle = getArticleByFile();
+    const worldArticle = getArticleByFile(file);
 
     console.log("Frontmatter:", article);
 
@@ -37,7 +37,7 @@ async function loadArticle(file){
 
     renderSidebar(article);
 
-    renderArticle(article, markdown);
+    renderArticle(worldArticle || article, markdown);
 
 }
 

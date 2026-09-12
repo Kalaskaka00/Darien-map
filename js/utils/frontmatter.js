@@ -27,7 +27,7 @@ let currentKey = null;
 lines.forEach(line => {
 
     // YAML-lista?
-    if(line.startsWith("  - ")){
+    if(/^\s+-\s+/.test(line)){
 
         if(currentKey){
 
@@ -35,7 +35,7 @@ lines.forEach(line => {
                 data[currentKey] = [];
 
             data[currentKey].push(
-                line.substring(4).trim()
+                line.replace(/^\s+-\s+/, "").trim()
             );
 
         }

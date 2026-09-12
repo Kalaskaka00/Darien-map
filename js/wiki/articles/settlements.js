@@ -127,6 +127,15 @@ marker.on("click", function(e){
 
     }
 
+    if(isMeasureToolActive()){
+
+        L.DomEvent.stop(e);
+        addMeasurementPointAt(city.map.y, city.map.x);
+
+        return;
+
+    }
+
     // If a drawing tool is active, snap to this settlement's coordinates
     if(isLineDrawingActive()){
 

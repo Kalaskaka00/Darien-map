@@ -41,7 +41,7 @@ function renderArticle(article, markdown){
 
     let html;
 
-    if(article.category === "npc"){
+    if(article.category === "npc" || article.category === "pc"){
 
         html = renderNPCQuote(markdown);
 
@@ -54,7 +54,57 @@ function renderArticle(article, markdown){
     // Add visibility info at top (GM only)
     const visibilityInfo = getVisibilityInfoHTML(article);
     
-    document.getElementById("article").innerHTML = visibilityInfo + html;
+    document.getElementById("article").innerHTML =
+        visibilityInfo + html + renderRelatedArticles(article);
+
+}
+
+function escapeArticleHTML(value){
+
+    return value
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+
+}
+
+function renderRelatedArticles(article){
+
+    if(article.related === false || article.Related === false)
+        return "";
+
+    const related = new Map();
+
+    (article.references || []).forEach(name => {
+        const relatedArticle = getArticle(name);
+
+        if(relatedArticle && relatedArticle.file !== article.file && canReadArticle(relatedArticle))
+            related.set(relatedArticle.name, relatedArticle);
+    });
+
+    world.forEach(candidate => {
+        if(candidate.file !== article.file &&
+            (candidate.references || []).includes(article.name) &&
+            canReadArticle(candidate))
+            related.set(candidate.name, candidate);
+    });
+
+    const links = [...related.values()]
+        .sort((left, right) => left.name.localeCompare(right.name))
+        .map(relatedArticle => {
+            const name = escapeArticleHTML(relatedArticle.name);
+            const page = escapeArticleHTML(relatedArticle.name);
+            const handlerPage = relatedArticle.name
+                .replace(/\\/g, "\\\\")
+                .replace(/'/g, "\\'");
+
+            return `<li><a href="#" class="wikilink" data-page="${page}" onmouseenter="hoverArticle(event,'${handlerPage}')" onmouseleave="hidePreview()">${name}</a></li>`;
+        })
+        .join("");
+
+    return `<section class="related-articles"><h2>Related articles</h2><ul>${links}</ul></section>`;
 
 }
 
@@ -136,6 +186,8 @@ function showPreview(article, x, y){
     }
 
     preview.innerHTML = type.preview(article);
+
+    startPortraitRotation();
 
     preview.style.display = "block";
 

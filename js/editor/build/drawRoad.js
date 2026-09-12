@@ -59,7 +59,7 @@ function hideRoadForm(){
 
 }
 
-document.getElementById("road-create").onclick = function(){
+document.getElementById("road-create").onclick = async function(){
 
     if(!pendingRoad)
         return;
@@ -73,7 +73,15 @@ document.getElementById("road-create").onclick = function(){
     pendingRoad.article =
         document.getElementById("road-article").value.trim() || null;
 
-    addRoad(pendingRoad);
+    const road = pendingRoad;
+
+    const saved = await addRoadToFile(road);
+
+    if(!saved){
+
+        alert("Road added to the map, but the roads file was not saved.");
+
+    }
 
     hideRoadForm();
 

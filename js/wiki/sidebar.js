@@ -17,6 +17,8 @@ function renderSidebar(article){
 
     articleSidebar.innerHTML = type.sidebar(article);
 
+    startPortraitRotation();
+
 }
 
 function calculateAge(article){

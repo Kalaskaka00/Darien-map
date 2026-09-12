@@ -5,84 +5,108 @@ function addRoad(road){
         road,
 
         {
-
             ...roadStyles[road.class],
             layer: layers.roads,
             type: "roads",
+            pane: "roads",
             shadow: true,
             hover: true
-
         }
-
-        
 
     );
 
 }
 
+let roads = [];
+let roadsFileHandle = null;
+let roadsReady;
 
+async function loadRoads(){
 
-const roads = [
+    roads = await fetch("js/map/layers/roads.json")
+        .then(response => {
 
-    {
+            if(!response.ok)
+                throw new Error(`Could not load roads: ${response.status}`);
 
-        id:"kings_road",
+            return response.json();
 
-        name:"Kings Road",
+        });
 
-        class:"highway",
+    roads.forEach(addRoad);
 
-        article:null,
+}
 
-        points:[
+function downloadRoadsFile(){
 
-            [254, 603],
-            [280, 595],
-            [315, 597],
-            [408, 606],
-            [445, 606],
-            [486, 594],
-            [544, 627],
-            [632, 665],
-            [729, 673],
-            [755, 693],
-            [768, 735],
-            [746, 817],
-            [714, 868],
-            [683, 901],
-            [686, 964]
+    const file = new Blob([
+        JSON.stringify(roads, null, 4) + "\n"
+    ], { type: "application/json" });
 
-        ]
+    const url = URL.createObjectURL(file);
+    const link = document.createElement("a");
 
-    },
+    link.href = url;
+    link.download = "roads.json";
+    link.click();
 
-    {
+    URL.revokeObjectURL(url);
 
-        id:"stolen_road",
+}
 
-        name:"Stolen Road",
+async function saveRoadsFile(){
 
-        class:"trail",
+    const contents = JSON.stringify(roads, null, 4) + "\n";
 
-        article:null,
+    try {
 
-        points:[
+        if(window.showOpenFilePicker && !roadsFileHandle){
 
-            [728, 839],
-            [721, 818],
-            [697, 823],
-            [661, 831],
-            [633, 830],
-            [613, 822],
-            [581, 828],
-            [568, 836]
+            [roadsFileHandle] = await window.showOpenFilePicker({
+                types: [{
+                    description: "Road data",
+                    accept: { "application/json": [".json"] }
+                }]
+            });
 
+        }
 
-        ]
+        if(roadsFileHandle){
+
+            const writable = await roadsFileHandle.createWritable();
+            await writable.write(contents);
+            await writable.close();
+            return true;
+
+        }
+
+    } catch(error){
+
+        if(error.name === "AbortError")
+            return false;
+
+        console.error("Could not save roads file.", error);
 
     }
 
-];
+    downloadRoadsFile();
+    return true;
 
-roads.forEach(addRoad);
+}
 
+async function addRoadToFile(road){
+
+    await roadsReady;
+    roads.push(road);
+    addRoad(road);
+
+    return saveRoadsFile();
+
+}
+
+roadsReady = loadRoads().catch(error => {
+
+    console.error(error);
+    alert("Roads could not be loaded.");
+
+});

@@ -22,7 +22,7 @@ Talia is a queen whom is known to care a lot for appearances and is always force
 
 She has remain unmarried and has no legitimate heir leaving many rumors about her love life and whom may take her place next. 
 ## Relations
-- [[Rita Neat]] is Talias closest advisor.
+- [[Rita Neat]] is Talias advisor and one whom she respects highly.
 
 <!--GM
 ## GM info

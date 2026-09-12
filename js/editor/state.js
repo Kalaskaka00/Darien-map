@@ -8,7 +8,7 @@ function isEditorToolActive(){
 
 // Check if a line-drawing tool is active
 function isLineDrawingActive(){
-    return editorMode === "draw-road" || editorMode === "draw-polygon";
+    return editorMode === "draw-road" || editorMode === "draw-river" || editorMode === "draw-polygon";
 }
 
 //Camera

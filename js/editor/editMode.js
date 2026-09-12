@@ -8,9 +8,12 @@ if(editor){
 
 const panel = document.getElementById("editor-panel");
 
-document.getElementById("editor-toggle").onclick = function(){
+const editorToggle = document.getElementById("editor-toggle");
+
+editorToggle.onclick = function(){
 
     panel.classList.toggle("open");
+    editorToggle.classList.toggle("active");
 
 };
 

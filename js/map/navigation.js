@@ -3,6 +3,8 @@ function openArticle(article, addToHistory = true){
     if(!canReadArticle(article))
     return;
 
+    closeDirectory?.();
+
     hidePreview();
 
     setCurrentArticle(article);

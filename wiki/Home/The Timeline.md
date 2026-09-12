@@ -1,3 +1,6 @@
+---
+Related: false
+---
 # The Timeline
 Time in this world is defined with a year 0 at [[The Magical Anorchrism]] counting up since then. The timeline of major events can be seen below.
 

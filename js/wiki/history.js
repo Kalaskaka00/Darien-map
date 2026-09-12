@@ -1,6 +1,9 @@
 document.getElementById("wiki-back").onclick =
     goBack;
 
+document.getElementById("wiki-home").onclick =
+    goHome;
+
 document.getElementById("wiki-forward").onclick =
     goForward;
 
@@ -42,6 +45,15 @@ function canGoForward(){
 
     return articleHistory.index <
         articleHistory.entries.length - 1;
+
+}
+
+function goHome(){
+
+    const homeArticle = getHomeArticle();
+
+    if(homeArticle)
+        openArticle(homeArticle);
 
 }
 

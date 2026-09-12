@@ -25,6 +25,13 @@ function getArticleByFile(file){
 
 }
 
+function getHomeArticle(){
+
+    return getArticleByFile("Home/Home.md") ||
+        getArticle("Home");
+
+}
+
 function canReadArticle(article){
 
     if(isGM)

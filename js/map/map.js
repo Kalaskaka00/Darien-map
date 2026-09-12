@@ -8,6 +8,12 @@ const map = L.map('map', {
     minZoom: -2
 });
 
+map.createPane("rivers");
+map.getPane("rivers").style.zIndex = 410;
+
+map.createPane("roads");
+map.getPane("roads").style.zIndex = 420;
+
 // Definiera bildens hörn
 const bounds = [
     [0, 0],

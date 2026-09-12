@@ -1,9 +1,16 @@
+## Non coding work
+- PCs
+- Organisations summary -> Home
+- Nations Summary -> Home
+- Add Roads
+- Add Rivers
+- Deity stories
+- Länkar i GM notes borde tine visas i related
 ## Details
-- 
+- Clean up and speed up code
+- Display number of articles and latest update date
 ## Map
-- **Roads**
-- **Streams**
-- **Trade Routes**
+- Trade Routes
 - Region names
 - Landmark names
 - Organisation HQs
@@ -13,23 +20,19 @@
 ## Tools
 - Ping
 - Laser pointer 
-- Measure
 - Travel calculator
+- PC article - Players can edit
+- Player Notepad(s)
 ## UI
 - Map border
 - Wiki Pop out
-- Picture shift (Zara, Tandeen)
-- Zoom images
 - Highlight Icons on map
 - Preview wiki article on map and link
 ## Wiki
-- Map folder structure
 - Deity article type
 - Settlement article type
 - Organisation article type
-- PC article type
 - Campaign article type
 - History article type & Timeline
 - Article flikar
 - Article text visible to some players
-- Related articles

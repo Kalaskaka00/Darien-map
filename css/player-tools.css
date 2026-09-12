@@ -1,7 +1,7 @@
 #player-tools {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 78px;
+    left: 20px;
     z-index: 1000;
     display: flex;
     flex-direction: column;
@@ -9,18 +9,18 @@
 }
 
 #player-tools-toggle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #f0e6d2;
-    border: 2px solid #8b7355;
-    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+    background: #f3ead1;
+    font-size: 24px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.2s;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     opacity: 0.5;
 }
 
@@ -31,8 +31,7 @@
 }
 
 #player-tools-toggle.active {
-    background: #d4cdc3;
-    border-color: #6f5328;
+    background: #f3ead1;
     opacity: 1;
 }
 
@@ -50,6 +49,48 @@
 
 #player-tools-panel.open {
     display: block;
+}
+
+#measure-tool {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 8px 10px;
+    border: 1px solid #c9a87c;
+    border-radius: 4px;
+    background: #f5f0e5;
+    color: #2d2417;
+    font-family: Georgia, serif;
+    cursor: pointer;
+}
+
+#measure-tool.active {
+    background: #6b8e23;
+    border-color: #4c6719;
+    color: white;
+}
+
+.measure-readout {
+    min-width: 100px;
+    padding: 8px 10px;
+    border: 2px solid #8b7355;
+    border-radius: 6px;
+    background: #f3ead1;
+    color: #2d2417;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    line-height: 1.35;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.measurement-point {
+    width: 14px !important;
+    height: 14px !important;
+    border: 2px solid #7f1d1d;
+    border-radius: 50%;
+    background: #f7e7ce;
+    box-sizing: border-box;
+    cursor: move;
 }
 
 #player-status {

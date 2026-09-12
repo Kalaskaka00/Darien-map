@@ -11,6 +11,7 @@ const files = globSync("wiki/**/*.md").filter(file =>
 
 const wikiIndex = [];
 const names = new Set();
+const referencesByFile = new Map();
 
 for (const file of files) {
 
@@ -34,6 +35,12 @@ for (const file of files) {
 
     names.add(title);
 
+    const references = [...parsed.content.matchAll(/(?<!!)\[\[(.*?)\]\]/g)]
+        .map(match => match[1].split("|")[0].split("#")[0].trim())
+        .filter(Boolean);
+
+    referencesByFile.set(file.replace(/^wiki[\\/]/, "").replace(/\\/g, "/"), references);
+
     const map = data.map || null;
     const border = data.border || null;
 
@@ -46,9 +53,26 @@ wikiIndex.push({
     view: data.view || null,
     border: data.border || null,
     color: data.color || null,
-    visibility: data.visibility || null
+    visibility: data.visibility || null,
+    related: data.related ?? data.Related ?? null
 });
 }
+
+const articlesByName = new Map(
+    wikiIndex.map(article => [article.name.toLowerCase(), article])
+);
+
+wikiIndex.forEach(article => {
+    const references = referencesByFile.get(article.file) || [];
+
+    article.references = [...new Set(
+        references
+            .map(reference => articlesByName.get(reference.toLowerCase()))
+            .filter(Boolean)
+            .filter(reference => reference.file !== article.file)
+            .map(reference => reference.name)
+    )].sort((left, right) => left.localeCompare(right));
+});
 
 // Skapa data-mappen om den inte finns
 if (!fs.existsSync("data")) {

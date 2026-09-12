@@ -34,4 +34,9 @@ async function loadWorld() {
     "Nations:",
     world.filter(item => item.category === "nation")
     );
+
+    const homeArticle = getHomeArticle();
+
+    if(homeArticle)
+        openArticle(homeArticle);
 }

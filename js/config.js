@@ -6,6 +6,15 @@ const CONFIG = {
 
     },
 
+    map: {
+        kilometersPerMapUnit: 1,
+        snapDistance: 5
+    },
+
+    npc: {
+        portraitSwitchDelay: 5000
+    },
+
     players: {
         "Ludwig": "#EF3BF5",
         "Mallena": "#03fc73",

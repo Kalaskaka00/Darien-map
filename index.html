@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="css/editor.css">
     <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="css/npc.css">
+    <link rel="stylesheet" href="css/image-viewer.css">
     <link rel="stylesheet" href="css/search.css">
-    <link rel="stylesheet" href="css/wiki.css">
-    <link rel="stylesheet" href="css/player-tools.css">
+    <link rel="stylesheet" href="css/wiki.css?v=collapse">
+    <link rel="stylesheet" href="css/player-tools.css?v=measure-edit-3">
 </head>
 <body>
 
@@ -36,9 +37,9 @@
     <div class="wiki-navigation">
 
         <button id="wiki-back">←</button>
-
         <button id="wiki-forward">→</button>
-
+        <button id="wiki-home">⌂</button>
+        <button id="wiki-directory" title="Article directory" aria-label="Article directory">☷</button>
     </div>
 
     <div id="article-layout">
@@ -70,6 +71,9 @@
         <button id="draw-road">
             Draw Road
         </button>
+        <button id="draw-river">
+            Draw River
+        </button>
         <button id="edit-shape">
             Edit Shape
         </button>
@@ -91,11 +95,46 @@
             <div id="player-status-display">No one</div>
         </div>
 
+        <button id="measure-tool" type="button">Measure distance</button>
+
         <div id="player-login">
             <select id="player-select">
                 <option value="">No one</option>
             </select>
         </div>
+    </div>
+
+</div>
+
+<div id="river-form" class="editor-form" style="display:none;">
+
+    <div class="editor-form-title">
+        New River
+    </div>
+
+    <label>
+        Name
+        <input id="river-name" type="text">
+    </label>
+
+    <label>
+        Type
+        <select id="river-class">
+            <option value="stream" selected>Stream</option>
+            <option value="smallRiver">Small River</option>
+            <option value="river">River</option>
+            <option value="grandRiver">Grand River</option>
+        </select>
+    </label>
+
+    <label>
+        Wiki article
+        <input id="river-article" type="text">
+    </label>
+
+    <div class="editor-form-buttons">
+        <button id="river-cancel">Cancel</button>
+        <button id="river-create">Create</button>
     </div>
 
 </div>
@@ -140,7 +179,7 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 <!-- Config -->
-<script src="js/config.js"></script>
+<script src="js/config.js?v=snap"></script>
 <script src="js/gm.js"></script>
 
 <!-- Map -->
@@ -148,8 +187,10 @@
 <script src="js/map/layers.js"></script>
 <script src="js/map/world.js"></script>
 <script src="js/map/navigation.js"></script>
-<script src="js/renderers/lineRenderer.js"></script>
+<script src="js/renderers/lineRenderer.js?v=snap-2"></script>
 <script src="js/map/layers/roadStyles.js"></script>
+<script src="js/map/layers/riverStyles.js"></script>
+<script src="js/map/layers/rivers.js"></script>
 <script src="js/map/layers/roads.js"></script>
 
 <!-- Utils -->
@@ -165,16 +206,18 @@
 <!-- Wiki -->
 <script src="js/wiki/articleRegistry.js"></script>
 <script src="js/wiki/articles/npc.js"></script>
-<script src="js/wiki/articles/settlements.js"></script>
-<script src="js/wiki/articles/nations.js"></script>
+<script src="js/wiki/articles/settlements.js?v=snap-2"></script>
+<script src="js/wiki/articles/nations.js?v=snap-2"></script>
 <script src="js/wiki/articles.js"></script>
 <script src="js/wiki/sidebar.js"></script>
 <script src="js/wiki/permissions.js"></script>
+<script src="js/ui/imageViewer.js"></script>
 <script src="js/ui/article.js"></script>
-<script src="js/ui/playerTools.js"></script>
+<script src="js/ui/playerTools.js?v=snap"></script>
 <script src="js/wiki/wiki.js"></script>
 <script src="js/wiki/search.js"></script>
 <script src="js/wiki/history.js"></script>
+<script src="js/wiki/directory.js?v=preview"></script>
 
 <!-- Editor -->
 <script src="js/editor/state.js"></script>
@@ -183,10 +226,11 @@
 <script src="js/editor/toolbar.js"></script>
 <script src="js/editor/refresh.js"></script>
 <script src="js/editor/drawLineTool.js"></script>
-<script src="js/editor/shapeHandles.js"></script>
+<script src="js/editor/shapeHandles.js?v=snap"></script>
 <script src="js/editor/build/cameraTool.js"></script>
 <script src="js/editor/build/drawPolygon.js"></script>
 <script src="js/editor/build/drawRoad.js"></script>
+<script src="js/editor/build/drawRiver.js"></script>
 <script src="js/editor/build/editShape.js"></script>
 <script src="js/editor/build/moveSettlement.js"></script>
 

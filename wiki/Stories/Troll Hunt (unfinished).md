@@ -1,4 +1,4 @@
-# Troll Hunt
+# Troll Hunt (unfinished)
 ## Chapter 1 
 [[Kesten Garess]]n tightened his grip around his blade, the hilt felt firm and reassuring in his grasp. The entire blade was a reminder of his duty, the sword called the Ernest blade had been a gift from [[Jamandi Aldori]] herself for his long service to her house. Right now the blade gave him the confidence needed to continue this expedition he had been sent on by his new charge. 
 

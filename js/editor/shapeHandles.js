@@ -1,5 +1,5 @@
 // Find snap points for editing - checks settlements, roads, and borders
-function findSnapPoint(lat, lng, maxDistance = 10) {
+function findSnapPoint(lat, lng, maxDistance = CONFIG.map.snapDistance) {
     let snapPoint = null;
     let minDistance = maxDistance * maxDistance; // squared distance
 
@@ -29,7 +29,7 @@ function findSnapPoint(lat, lng, maxDistance = 10) {
 
     // Check roads/streams for nearest control point
     world.forEach(item => {
-        if((item.category === "road" || item.category === "stream") && item.points) {
+        if((item.category === "road" || item.category === "stream" || item.category === "river") && item.points) {
             item.points.forEach(point => {
                 const distance = Math.pow(lat - point[0], 2) + Math.pow(lng - point[1], 2);
                 if(distance < minDistance) {

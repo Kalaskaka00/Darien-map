@@ -2,7 +2,9 @@
 id: tandeen_dazzlehand
 category: npc 
 
-portrait: Tandeen Dazzlehand.jpg
+portrait: 
+ - Tandeen Dazzlehand.jpg
+ - Marionette.jpg
 
 fullname: Tandeen Dazzlehand, Grand Enchanter "Marionette"
 race: Gnome/Construct

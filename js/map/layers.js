@@ -6,9 +6,9 @@ const layers = {
 
     labels: L.layerGroup(),
 
-    roads: L.layerGroup(),
+    rivers: L.layerGroup(),
 
-    streams: L.layerGroup(),
+    roads: L.layerGroup(),
 
     lakes: L.layerGroup(),
 
@@ -22,9 +22,9 @@ const mapObjects = {
 
     settlements: {},
 
-    roads: {},
+    rivers: {},
 
-    streams: {},
+    roads: {},
 
     lakes: {},
 
@@ -40,9 +40,9 @@ const overlays = {
 
     "Settlements": layers.settlements,
 
-    "Roads": layers.roads,
+    "Rivers": layers.rivers,
 
-    "Streams": layers.streams,
+    "Roads": layers.roads,
 
     "Lakes": layers.lakes,
 

@@ -94,7 +94,8 @@ function drawLine(object, options){
             color: options.shadow.color ?? "#444343",
             weight: options.weight + (options.shadow.extraWidth ?? 4),
             opacity: options.shadow.opacity ?? 0.6,
-            interactive: false
+            interactive: false,
+            pane: options.pane
         }).addTo(options.layer);
 
     }
@@ -103,7 +104,8 @@ function drawLine(object, options){
         color: options.color,
         weight: options.weight,
         dashArray: options.dashArray ?? null,
-        opacity: options.opacity ?? 1
+        opacity: options.opacity ?? 1,
+        pane: options.pane
     }).addTo(options.layer);
 
     registerMapObject(
@@ -163,6 +165,33 @@ function drawLine(object, options){
                 }
 
             });
+
+            return;
+
+        }
+
+        if(isMeasureToolActive()){
+
+            L.DomEvent.stop(e);
+
+            const clickLat = Math.round(e.latlng.lat);
+            const clickLng = Math.round(e.latlng.lng);
+            let nearestPoint = object.points[0];
+            let minDistance = Math.pow(clickLat - nearestPoint[0], 2) + Math.pow(clickLng - nearestPoint[1], 2);
+
+            for(let i = 1; i < object.points.length; i++){
+
+                const point = object.points[i];
+                const distance = Math.pow(clickLat - point[0], 2) + Math.pow(clickLng - point[1], 2);
+
+                if(distance < minDistance){
+                    minDistance = distance;
+                    nearestPoint = point;
+                }
+
+            }
+
+            addMeasurementPointAt(nearestPoint[0], nearestPoint[1]);
 
             return;
 

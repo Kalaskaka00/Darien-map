@@ -1,16 +1,5 @@
 [
     {
-        "id": "talia_andureen",
-        "name": "Talia Andureen",
-        "category": "npc",
-        "file": "Talia Andureen.md",
-        "map": null,
-        "view": null,
-        "border": null,
-        "color": "#5C0BB5",
-        "visibility": "gm"
-    },
-    {
         "id": null,
         "name": "Roadmap",
         "category": "Unknown",
@@ -19,18 +8,30 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
-        "name": "Troll Hunt",
+        "name": "Troll Hunt (unfinished)",
         "category": "Unknown",
         "file": "Stories/Troll Hunt (unfinished).md",
         "map": null,
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brunno Meadowmane",
+            "Crash",
+            "Jamandi Aldori",
+            "Kesten Garess",
+            "Siphon",
+            "Summerborn",
+            "Velmine"
+        ]
     },
     {
         "id": "varnhold",
@@ -45,7 +46,25 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bree Caley",
+            "Brevoy",
+            "Cephal Lorentus",
+            "Conleth Umbra",
+            "Daedove Wildguard",
+            "Derk",
+            "Maegar Varn",
+            "Malora Grainseller",
+            "Peck Arck",
+            "Silvana Ashford",
+            "Summerborn",
+            "Thundarak",
+            "Ura Clawt",
+            "Vaegarian host",
+            "Vondal Sandwashed"
+        ]
     },
     {
         "id": "transmuters_rest",
@@ -60,7 +79,11 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Pitax"
+        ]
     },
     {
         "id": "summerborn",
@@ -75,7 +98,39 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Adsatra Sagebrook",
+            "Bille Frostbite",
+            "Bralon Alepike",
+            "Brave Wish",
+            "Bree Caley",
+            "Brunno Meadowmane",
+            "Chirp",
+            "Claire Nightshield",
+            "Conleth Umbra",
+            "Crash",
+            "Drift",
+            "Errard Specher",
+            "Felrick Kindhelm",
+            "Garbin Sunheart",
+            "Jelbi Flukeflow",
+            "Kesten Garess",
+            "Laura Faelamin",
+            "Magrie Beeret",
+            "Milo Grainseller",
+            "Movh Bearer",
+            "n'Neb",
+            "Pixana Boldshard",
+            "Rendeen",
+            "Silvana Ashford",
+            "Siphon",
+            "Stag Lord",
+            "Vacho",
+            "Velmine",
+            "Zayne Copper"
+        ]
     },
     {
         "id": "starfall",
@@ -90,7 +145,11 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Numeria"
+        ]
     },
     {
         "id": "southhost",
@@ -105,7 +164,14 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Emily Viine",
+            "Sandak Viine",
+            "Viine family"
+        ]
     },
     {
         "id": "roughen_fort",
@@ -120,7 +186,17 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Battle of Fingers",
+            "Beeret family",
+            "Brevoy",
+            "Keldithas Beeret",
+            "Numeria",
+            "Swordlords of Brevoy",
+            "The Rill War"
+        ]
     },
     {
         "id": "restov",
@@ -135,7 +211,17 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Aldori family",
+            "Brevoy",
+            "Iandri Flukeflow",
+            "Jamandi Aldori",
+            "Kassil Aldori",
+            "Swordlords of Brevoy",
+            "The Wastes"
+        ]
     },
     {
         "id": "pitax_city",
@@ -150,7 +236,12 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Darien",
+            "Pitax"
+        ]
     },
     {
         "id": "oleg's_outpost",
@@ -165,7 +256,15 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Gildi Crank",
+            "Oleg Crank",
+            "Sparrow",
+            "The Rill War"
+        ]
     },
     {
         "id": "new_steveten",
@@ -180,7 +279,14 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Rita Neat",
+            "Southhost",
+            "Talia Andureen"
+        ]
     },
     {
         "id": "lonelywood",
@@ -195,7 +301,16 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Ekon Udoon",
+            "Kiri Udoon",
+            "Maameo Udoon",
+            "Thorin Udoon",
+            "Udoon family"
+        ]
     },
     {
         "id": "great_gate",
@@ -210,7 +325,11 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Dwarven Keeps"
+        ]
     },
     {
         "id": "garent",
@@ -225,7 +344,14 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Asha Rakker",
+            "Brass Wheels",
+            "Gralton",
+            "Jarlek Grin"
+        ]
     },
     {
         "id": "floureton",
@@ -240,7 +366,11 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Gralton"
+        ]
     },
     {
         "id": "cornstalk",
@@ -255,7 +385,13 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Grainseller family",
+            "Touvette",
+            "Vein Grainseller"
+        ]
     },
     {
         "id": "avendale",
@@ -270,7 +406,102 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Touvette"
+        ]
+    },
+    {
+        "id": "turtahir",
+        "name": "Turtahir",
+        "category": "pc",
+        "file": "PCs/Turtahir.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "references": []
+    },
+    {
+        "id": "silvana_ashford",
+        "name": "Silvana Ashford",
+        "category": "pc",
+        "file": "PCs/Silvana Ashford.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "references": []
+    },
+    {
+        "id": "meel'a",
+        "name": "Meel'a",
+        "category": "pc",
+        "file": "PCs/Meel'a.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "references": []
+    },
+    {
+        "id": "conleth_umbra",
+        "name": "Conleth Umbra",
+        "category": "pc",
+        "file": "PCs/Conleth Umbra.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "references": []
+    },
+    {
+        "id": "claire_nightshield",
+        "name": "Claire Nightshield",
+        "category": "pc",
+        "file": "PCs/Claire Nightshield.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "references": []
+    },
+    {
+        "id": "bree_caley",
+        "name": "Bree Caley",
+        "category": "pc",
+        "file": "PCs/Bree Caley.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "references": []
+    },
+    {
+        "id": "agamoos_evercrown",
+        "name": "Agamoos Evercrown",
+        "category": "pc",
+        "file": "PCs/Agamoos Evercrown.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -281,7 +512,14 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Cephal Lorentus",
+            "Daedove Wildguard",
+            "Darien",
+            "Maegar Varn"
+        ]
     },
     {
         "id": null,
@@ -292,7 +530,15 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Aldori family",
+            "Brevoy",
+            "Jamandi Aldori",
+            "Kassil Aldori",
+            "Restov"
+        ]
     },
     {
         "id": null,
@@ -303,7 +549,11 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": "gm"
+        "visibility": "gm",
+        "related": null,
+        "references": [
+            "Daggermark"
+        ]
     },
     {
         "id": null,
@@ -314,7 +564,14 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Arie",
+            "Darien",
+            "Nunree",
+            "Sparrow"
+        ]
     },
     {
         "id": null,
@@ -325,7 +582,23 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Annj Bearer",
+            "Bree Caley",
+            "Claire Nightshield",
+            "Deren Seere",
+            "Derk",
+            "Flor Energa",
+            "Ihara Absul",
+            "Joker",
+            "Magie",
+            "Nentrah",
+            "Silvana Ashford",
+            "Whirl Palett",
+            "Yarslav Crain"
+        ]
     },
     {
         "id": null,
@@ -336,7 +609,19 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Asha Rakker",
+            "Brevoy",
+            "Emily Viine",
+            "Garent",
+            "Gralton",
+            "Jarlek Grin",
+            "Milo Grainseller",
+            "Pitax",
+            "Touvette"
+        ]
     },
     {
         "id": null,
@@ -347,7 +632,11 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Darien"
+        ]
     },
     {
         "id": null,
@@ -362,7 +651,16 @@
         },
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Calsys Viine",
+            "Emily Viine",
+            "Rita Neat",
+            "Sandak Viine",
+            "Southhost"
+        ]
     },
     {
         "id": null,
@@ -377,7 +675,16 @@
         },
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Ekon Udoon",
+            "Kiri Udoon",
+            "Lonelywood",
+            "Maameo Udoon",
+            "Thorin Udoon"
+        ]
     },
     {
         "id": null,
@@ -392,7 +699,15 @@
         },
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Cornstalk",
+            "Malora Grainseller",
+            "Milo Grainseller",
+            "Touvette",
+            "Vein Grainseller"
+        ]
     },
     {
         "id": null,
@@ -407,7 +722,14 @@
         },
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Keldithas Beeret",
+            "Magrie Beeret",
+            "Roughen Fort"
+        ]
     },
     {
         "id": "aldori_family",
@@ -422,7 +744,17 @@
         },
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Iandri Flukeflow",
+            "Jamandi Aldori",
+            "Kassil Aldori",
+            "Kesten Garess",
+            "Restov",
+            "Swordlords of Brevoy"
+        ]
     },
     {
         "id": "reina_palett",
@@ -433,7 +765,17 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Chirp",
+            "Magrie Beeret",
+            "Pitax",
+            "Rendeen",
+            "Tandeen Dazzlehand",
+            "Whirl Palett",
+            "Xiander"
+        ]
     },
     {
         "id": "magpie",
@@ -444,7 +786,14 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Arie",
+            "Daggermark",
+            "Doves",
+            "Sparrow"
+        ]
     },
     {
         "id": "joanna_tang",
@@ -455,7 +804,15 @@
         "view": null,
         "border": null,
         "color": "#BF902E",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Claire Nightshield",
+            "Sandor",
+            "The Rill War",
+            "Vanee"
+        ]
     },
     {
         "id": "heren_blaze",
@@ -466,7 +823,12 @@
         "view": null,
         "border": null,
         "color": "#BF902E",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bille Frostbite",
+            "Erven"
+        ]
     },
     {
         "id": "allas_dawnd",
@@ -477,7 +839,11 @@
         "view": null,
         "border": null,
         "color": "#E00061",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Vanee"
+        ]
     },
     {
         "id": "vein_grainseller",
@@ -488,7 +854,15 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": "gm"
+        "visibility": "gm",
+        "related": null,
+        "references": [
+            "Ebus",
+            "Grainseller family",
+            "Malora Grainseller",
+            "Milo Grainseller",
+            "Vanee"
+        ]
     },
     {
         "id": "lalne_quill",
@@ -499,7 +873,14 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Erven",
+            "Farlamin Mistshaper",
+            "Pitax",
+            "Thirdenlin"
+        ]
     },
     {
         "id": "farlamin_mistshaper",
@@ -510,7 +891,16 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Adsatra Sagebrook",
+            "Lalne Quill",
+            "Pitax",
+            "Tandeen Dazzlehand",
+            "The Rill War",
+            "Thirdenlin"
+        ]
     },
     {
         "id": "yelgolor_remoudou",
@@ -521,7 +911,16 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brunno Meadowmane",
+            "Claire Nightshield",
+            "Numeria",
+            "Rendeen",
+            "Shrowm",
+            "Silvana Ashford"
+        ]
     },
     {
         "id": "tiv",
@@ -532,7 +931,16 @@
         "view": null,
         "border": null,
         "color": "#BF902E",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bree Caley",
+            "Claire Nightshield",
+            "Jonas Arc",
+            "Mivon",
+            "Sandor",
+            "Silvana Ashford"
+        ]
     },
     {
         "id": "rein_stagler",
@@ -543,7 +951,11 @@
         "view": null,
         "border": null,
         "color": "#5C0BB5",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Rendeen"
+        ]
     },
     {
         "id": "jonas_arc",
@@ -554,7 +966,18 @@
         "view": null,
         "border": null,
         "color": "#BF902E",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Barnur Keenhold",
+            "Divine Artifacts",
+            "Dunden",
+            "Mivon",
+            "Sandor",
+            "Silvana Ashford",
+            "Tiv",
+            "Xiander"
+        ]
     },
     {
         "id": "barnur_keenhold",
@@ -565,7 +988,43 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Dunden",
+            "Jonas Arc",
+            "The Rill War"
+        ]
+    },
+    {
+        "id": "ichor",
+        "name": "Ichor",
+        "category": "npc",
+        "file": "NPCs/Miscellanious/Ichor.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#9C9C9C",
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Cypher"
+        ]
+    },
+    {
+        "id": "cypher",
+        "name": "Cypher",
+        "category": "npc",
+        "file": "NPCs/Miscellanious/Cypher.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#9C9C9C",
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Ichor"
+        ]
     },
     {
         "id": "jarlek_grin",
@@ -576,7 +1035,16 @@
         "view": null,
         "border": null,
         "color": "#E00061",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Agamoos Evercrown",
+            "Asha Rakker",
+            "Garent",
+            "Meel'a",
+            "Sandor",
+            "Turtahir"
+        ]
     },
     {
         "id": "asha_rakker",
@@ -587,7 +1055,16 @@
         "view": null,
         "border": null,
         "color": "#E00061",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Dunden",
+            "Gralton",
+            "Jarlek Grin",
+            "Maegar Varn",
+            "Pitax",
+            "Sandor"
+        ]
     },
     {
         "id": "zara",
@@ -598,7 +1075,16 @@
         "view": null,
         "border": null,
         "color": "#BF902E",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bann",
+            "Bree Caley",
+            "Claire Nightshield",
+            "Pitax",
+            "Silvana Ashford",
+            "Siphon"
+        ]
     },
     {
         "id": "shrowm",
@@ -609,7 +1095,14 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brunno Meadowmane",
+            "Nunree",
+            "Vacho",
+            "Yelgolor Remoudou"
+        ]
     },
     {
         "id": "nentrah",
@@ -620,7 +1113,25 @@
         "view": null,
         "border": null,
         "color": "#1C1B1B",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bree Caley",
+            "Candle Mages",
+            "Conleth Umbra",
+            "Harlequin",
+            "Joker",
+            "Lord of Stories",
+            "Mime",
+            "Myron",
+            "Pitax",
+            "Silvana Ashford",
+            "Stag Lord",
+            "Summerborn",
+            "Thundarak",
+            "Waking World",
+            "Xia"
+        ]
     },
     {
         "id": "myron",
@@ -631,7 +1142,13 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Nentrah",
+            "Stag Lord",
+            "Waking World"
+        ]
     },
     {
         "id": "mime",
@@ -642,7 +1159,16 @@
         "view": null,
         "border": null,
         "color": "#1C1B1B",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Aldori family",
+            "Conleth Umbra",
+            "Harlequin",
+            "Joker",
+            "Lord of Stories",
+            "Xia"
+        ]
     },
     {
         "id": "lord_of_stories",
@@ -653,7 +1179,19 @@
         "view": null,
         "border": null,
         "color": "#1C1B1B",
-        "visibility": "gm"
+        "visibility": "gm",
+        "related": null,
+        "references": [
+            "Claire Nightshield",
+            "Harlequin",
+            "Joker",
+            "Mime",
+            "Nentrah",
+            "The Magical Anorchrism",
+            "Wyndee",
+            "Xia",
+            "Xiander"
+        ]
     },
     {
         "id": "joker",
@@ -664,7 +1202,22 @@
         "view": null,
         "border": null,
         "color": "#1C1B1B",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Candle Mages",
+            "Deren Seere",
+            "Derk",
+            "Flor Energa",
+            "Harlequin",
+            "Ihara Absul",
+            "Lord of Stories",
+            "Magie",
+            "Mime",
+            "Whirl Palett",
+            "Xia",
+            "Yarslav Crain"
+        ]
     },
     {
         "id": "harlequin",
@@ -675,7 +1228,15 @@
         "view": null,
         "border": null,
         "color": "#1C1B1B",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Joker",
+            "Lord of Stories",
+            "Mime",
+            "Pitax",
+            "Xia"
+        ]
     },
     {
         "id": "egizaed",
@@ -686,7 +1247,17 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Aelthot",
+            "Bree Caley",
+            "Candle Mages",
+            "Dwen'zur Raincleanser",
+            "Pitax",
+            "Thirdenlin",
+            "Waaaghhh"
+        ]
     },
     {
         "id": "vondal_sandwashed",
@@ -697,7 +1268,15 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bree Caley",
+            "Ebus",
+            "Erven",
+            "The Wastes",
+            "Varnhold"
+        ]
     },
     {
         "id": "ura_clawt",
@@ -708,7 +1287,20 @@
         "view": null,
         "border": null,
         "color": "#9C9C9C",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Black Mantles",
+            "Bree Caley",
+            "Claire Nightshield",
+            "Jonas Arc",
+            "Maegar Varn",
+            "Mivon",
+            "Pixana Boldshard",
+            "Silvana Ashford",
+            "Tiv",
+            "Varnhold"
+        ]
     },
     {
         "id": "peck_arck",
@@ -719,7 +1311,18 @@
         "view": null,
         "border": null,
         "color": "#BF902E",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bree Caley",
+            "Claire Nightshield",
+            "Conleth Umbra",
+            "Erven",
+            "Silvana Ashford",
+            "Thirdenlin",
+            "Thundarak",
+            "Varnhold"
+        ]
     },
     {
         "id": "malora_grainseller",
@@ -730,7 +1333,17 @@
         "view": null,
         "border": null,
         "color": "#E00061",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Grainseller family",
+            "Luxy",
+            "Maegar Varn",
+            "Milo Grainseller",
+            "Sandor",
+            "Varnhold",
+            "Vein Grainseller"
+        ]
     },
     {
         "id": "maegar_varn",
@@ -741,7 +1354,21 @@
         "view": null,
         "border": null,
         "color": "#BF902E",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bann",
+            "Brave Wish",
+            "Brevoy",
+            "Cephal Lorentus",
+            "Daedove Wildguard",
+            "Malora Grainseller",
+            "Ura Clawt",
+            "Vaegarian host",
+            "Varnhold",
+            "Velmine",
+            "Zayne Copper"
+        ]
     },
     {
         "id": "dwen'zur_raincleanser",
@@ -752,7 +1379,15 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bree Caley",
+            "Conleth Umbra",
+            "Ebus",
+            "Silvana Ashford",
+            "Thundarak"
+        ]
     },
     {
         "id": "daedove_wildguard",
@@ -763,7 +1398,14 @@
         "view": null,
         "border": null,
         "color": "#BF902E",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Embeth",
+            "Maegar Varn",
+            "Sandor",
+            "Vaegarian host"
+        ]
     },
     {
         "id": "cephal_lorentus",
@@ -774,7 +1416,14 @@
         "view": null,
         "border": null,
         "color": "#BF902E",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Maegar Varn",
+            "Vaegarian host",
+            "Varnhold"
+        ]
     },
     {
         "id": "zayne_copper",
@@ -785,7 +1434,16 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Conleth Umbra",
+            "Dunden",
+            "Karri",
+            "Maegar Varn",
+            "Sandor",
+            "Varnhold"
+        ]
     },
     {
         "id": "wit",
@@ -796,7 +1454,14 @@
         "view": null,
         "border": null,
         "color": "#9C9C9C",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Luxy",
+            "Milo Grainseller",
+            "Pitax",
+            "Silvana Ashford"
+        ]
     },
     {
         "id": "velmine",
@@ -807,7 +1472,23 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bann",
+            "Brave Wish",
+            "Bree Caley",
+            "Claire Nightshield",
+            "Erven",
+            "Jamandi Aldori",
+            "Kesten Garess",
+            "Maegar Varn",
+            "Silvana Ashford",
+            "Stag Lord",
+            "Tandeen Dazzlehand",
+            "The Wastes",
+            "Varnhold"
+        ]
     },
     {
         "id": "siphon",
@@ -818,7 +1499,18 @@
         "view": null,
         "border": null,
         "color": "#9C9C9C",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bree Caley",
+            "Claire Nightshield",
+            "Crash",
+            "Luxy",
+            "Pitax",
+            "Silvana Ashford",
+            "Stag Lord",
+            "Zara"
+        ]
     },
     {
         "id": "pixana_boldshard",
@@ -829,7 +1521,13 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Chirp",
+            "Ebus",
+            "Ura Clawt"
+        ]
     },
     {
         "id": "n'neb",
@@ -840,7 +1538,17 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bree Caley",
+            "Chorrad Troll King",
+            "Claire Nightshield",
+            "Silvana Ashford",
+            "Summerborn",
+            "Tandeen Dazzlehand",
+            "Vacho"
+        ]
     },
     {
         "id": "movh_bearer",
@@ -851,7 +1559,15 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Adsatra Sagebrook",
+            "Annj Bearer",
+            "Brunno Meadowmane",
+            "Erven",
+            "Sandor"
+        ]
     },
     {
         "id": "milo_grainseller",
@@ -862,7 +1578,17 @@
         "view": null,
         "border": null,
         "color": "#E00061",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bree Caley",
+            "Grainseller family",
+            "Malora Grainseller",
+            "Summerborn",
+            "Touvette",
+            "Vein Grainseller",
+            "Wit"
+        ]
     },
     {
         "id": "magrie_beeret",
@@ -873,7 +1599,15 @@
         "view": null,
         "border": null,
         "color": "#E00061",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Chirp",
+            "Keldithas Beeret",
+            "Reina Palett",
+            "Xiander"
+        ]
     },
     {
         "id": "laura_faelamin",
@@ -884,7 +1618,17 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bralon Alepike",
+            "Claire Nightshield",
+            "Conleth Umbra",
+            "Garbin Sunheart",
+            "Rendeen",
+            "Summerborn",
+            "Vanee"
+        ]
     },
     {
         "id": "kesten_garess",
@@ -895,7 +1639,22 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Aldori family",
+            "Battle of Fingers",
+            "Bille Frostbite",
+            "Bree Caley",
+            "Claire Nightshield",
+            "Crash",
+            "Jamandi Aldori",
+            "Silvana Ashford",
+            "Siphon",
+            "Stag Lord",
+            "The Rill War",
+            "Xiander"
+        ]
     },
     {
         "id": "karri",
@@ -906,7 +1665,14 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Manchu Tribes",
+            "Sandor",
+            "Vanee",
+            "Zayne Copper"
+        ]
     },
     {
         "id": "jelbli_flukeflow",
@@ -917,7 +1683,17 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Annj Bearer",
+            "Erven",
+            "Felrick Kindhelm",
+            "Gralton",
+            "Iandri Flukeflow",
+            "Silvana Ashford",
+            "Thirdenlin"
+        ]
     },
     {
         "id": "iandri_flukeflow",
@@ -928,7 +1704,17 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Aldori family",
+            "Brevoy",
+            "Jamandi Aldori",
+            "Jelbi Flukeflow",
+            "The Rill War",
+            "Thirdenlin",
+            "Xiander"
+        ]
     },
     {
         "id": "garbin_sunheart",
@@ -939,7 +1725,15 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Calsys Viine",
+            "Claire Nightshield",
+            "Laura Faelamin",
+            "Restov",
+            "Vanee"
+        ]
     },
     {
         "id": "felrick_kindhelm",
@@ -950,7 +1744,17 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bralon Alepike",
+            "Dunden",
+            "Dwarven Keeps",
+            "Gralton",
+            "Jelbi Flukeflow",
+            "Silvana Ashford",
+            "Thirdenlin"
+        ]
     },
     {
         "id": "errard_specher",
@@ -961,7 +1765,13 @@
         "view": null,
         "border": null,
         "color": "#E00061",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Chirp",
+            "Erven",
+            "Gralton"
+        ]
     },
     {
         "id": "drift",
@@ -972,7 +1782,13 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Kingmaker",
+            "The Wastes",
+            "Xiander"
+        ]
     },
     {
         "id": "crash",
@@ -983,7 +1799,27 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bille Frostbite",
+            "Bree Caley",
+            "Claire Nightshield",
+            "Gildi Crank",
+            "Gralton",
+            "Kesten Garess",
+            "Oleg Crank",
+            "Oleg's Outpost",
+            "Ox",
+            "Pitax",
+            "Silvana Ashford",
+            "Siphon",
+            "Sparrow",
+            "Stag Lord",
+            "Summerborn",
+            "Xer",
+            "Xiander"
+        ]
     },
     {
         "id": "chirp",
@@ -994,7 +1830,15 @@
         "view": null,
         "border": null,
         "color": "#E00061",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Errard Specher",
+            "Luxy",
+            "Magrie Beeret",
+            "Pixana Boldshard",
+            "Reina Palett"
+        ]
     },
     {
         "id": "brunno_meadowmane",
@@ -1005,7 +1849,13 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Movh Bearer",
+            "Shrowm",
+            "Yelgolor Remoudou"
+        ]
     },
     {
         "id": "brave_wish",
@@ -1016,7 +1866,20 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bree Caley",
+            "Claire Nightshield",
+            "Jamandi Aldori",
+            "Maegar Varn",
+            "Sandor",
+            "Silvana Ashford",
+            "Stag Lord",
+            "Tandeen Dazzlehand",
+            "Varnhold",
+            "Velmine"
+        ]
     },
     {
         "id": "bralon_alepike",
@@ -1027,7 +1890,19 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Annj Bearer",
+            "Bree Caley",
+            "Claire Nightshield",
+            "Conleth Umbra",
+            "Dunden",
+            "Erven",
+            "Felrick Kindhelm",
+            "Laura Faelamin",
+            "Silvana Ashford"
+        ]
     },
     {
         "id": "bille_frostbite",
@@ -1038,7 +1913,24 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Annj Bearer",
+            "Bree Caley",
+            "Claire Nightshield",
+            "Crash",
+            "Heren Blaze",
+            "Kesten Garess",
+            "Ox",
+            "Pitax",
+            "Silvana Ashford",
+            "Siphon",
+            "Stag Lord",
+            "The Rill War",
+            "Thirdenlin",
+            "Xer"
+        ]
     },
     {
         "id": "adsatra_sagebrook",
@@ -1049,7 +1941,18 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Annj Bearer",
+            "Bann",
+            "Farlamin Mistshaper",
+            "Movh Bearer",
+            "Numeria",
+            "Thirdenlin",
+            "Vanee",
+            "Xiander"
+        ]
     },
     {
         "id": "yarek_gray",
@@ -1060,7 +1963,11 @@
         "view": null,
         "border": null,
         "color": "#BF902E",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Odak One Eye"
+        ]
     },
     {
         "id": "oliveria",
@@ -1071,7 +1978,17 @@
         "view": null,
         "border": null,
         "color": "#9C9C9C",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Beheria",
+            "Harlequin",
+            "Joker",
+            "Mime",
+            "Silvana Ashford",
+            "Wyndee",
+            "Xiander"
+        ]
     },
     {
         "id": "odak_one_eye",
@@ -1082,7 +1999,12 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Artarp Rein",
+            "Yarek Gray"
+        ]
     },
     {
         "id": "ninne",
@@ -1093,7 +2015,14 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Artarp Rein",
+            "Bree Caley",
+            "Claire Nightshield",
+            "Silvana Ashford"
+        ]
     },
     {
         "id": "beheria",
@@ -1104,7 +2033,17 @@
         "view": null,
         "border": null,
         "color": "#9C9C9C",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Harlequin",
+            "Joker",
+            "Mime",
+            "Oliveria",
+            "Silvana Ashford",
+            "Thirdenlin",
+            "Wyndee"
+        ]
     },
     {
         "id": "artarp_rein",
@@ -1115,7 +2054,12 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Ninne",
+            "Odak One Eye"
+        ]
     },
     {
         "id": "sparrow",
@@ -1126,7 +2070,18 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Arie",
+            "Crash",
+            "Doves",
+            "Gildi Crank",
+            "Magpie",
+            "Oleg Crank",
+            "Oleg's Outpost",
+            "The Wastes"
+        ]
     },
     {
         "id": "oleg_crank",
@@ -1137,7 +2092,17 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Crash",
+            "Gildi Crank",
+            "Oleg's Outpost",
+            "Sandor",
+            "Sparrow",
+            "The Rill War",
+            "Vanee"
+        ]
     },
     {
         "id": "gildi_crank",
@@ -1148,7 +2113,16 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Crash",
+            "Oleg Crank",
+            "Oleg's Outpost",
+            "Rendeen",
+            "Sparrow",
+            "The Rill War"
+        ]
     },
     {
         "id": "vacho",
@@ -1159,7 +2133,15 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Aelthot",
+            "Balrotho",
+            "n'Neb",
+            "Shrowm",
+            "Summerborn"
+        ]
     },
     {
         "id": "balrotho",
@@ -1170,7 +2152,11 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Vacho"
+        ]
     },
     {
         "id": "aelthot",
@@ -1181,7 +2167,11 @@
         "view": null,
         "border": null,
         "color": "#5C0BB5",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Vacho"
+        ]
     },
     {
         "id": "yarslav_crain",
@@ -1192,7 +2182,26 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Annj Bearer",
+            "Bree Caley",
+            "Candle Mages",
+            "Claire Nightshield",
+            "Deren Seere",
+            "Derk",
+            "Erven",
+            "Flor Energa",
+            "Ihara Absul",
+            "Joker",
+            "Lord of Stories",
+            "Magie",
+            "Nentrah",
+            "Silvana Ashford",
+            "Thirdenlin",
+            "Whirl Palett"
+        ]
     },
     {
         "id": "whirl_palett",
@@ -1203,7 +2212,27 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Annj Bearer",
+            "Bann",
+            "Bree Caley",
+            "Candle Mages",
+            "Claire Nightshield",
+            "Deren Seere",
+            "Derk",
+            "Flor Energa",
+            "Ihara Absul",
+            "Joker",
+            "Lord of Stories",
+            "Magie",
+            "Nentrah",
+            "Reina Palett",
+            "Silvana Ashford",
+            "Vanee",
+            "Yarslav Crain"
+        ]
     },
     {
         "id": "magie",
@@ -1214,7 +2243,25 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Annj Bearer",
+            "Bree Caley",
+            "Candle Mages",
+            "Claire Nightshield",
+            "Deren Seere",
+            "Derk",
+            "Flor Energa",
+            "Ihara Absul",
+            "Joker",
+            "Lord of Stories",
+            "Nentrah",
+            "Silvana Ashford",
+            "Thirdenlin",
+            "Whirl Palett",
+            "Yarslav Crain"
+        ]
     },
     {
         "id": "ihara_absul",
@@ -1225,7 +2272,26 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Annj Bearer",
+            "Bree Caley",
+            "Candle Mages",
+            "Claire Nightshield",
+            "Deren Seere",
+            "Derk",
+            "Flor Energa",
+            "Joker",
+            "Lord of Stories",
+            "Magie",
+            "Nentrah",
+            "Nunree",
+            "Silvana Ashford",
+            "Whirl Palett",
+            "Xiander",
+            "Yarslav Crain"
+        ]
     },
     {
         "id": "flor_energa",
@@ -1236,7 +2302,25 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Annj Bearer",
+            "Arie",
+            "Bree Caley",
+            "Candle Mages",
+            "Claire Nightshield",
+            "Deren Seere",
+            "Derk",
+            "Ihara Absul",
+            "Joker",
+            "Lord of Stories",
+            "Magie",
+            "Nentrah",
+            "Silvana Ashford",
+            "Whirl Palett",
+            "Yarslav Crain"
+        ]
     },
     {
         "id": "derk",
@@ -1247,7 +2331,26 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Annj Bearer",
+            "Bree Caley",
+            "Candle Mages",
+            "Claire Nightshield",
+            "Deren Seere",
+            "Erven",
+            "Flor Energa",
+            "Ihara Absul",
+            "Joker",
+            "Lord of Stories",
+            "Magie",
+            "Nentrah",
+            "Silvana Ashford",
+            "Thundarak",
+            "Whirl Palett",
+            "Yarslav Crain"
+        ]
     },
     {
         "id": "deren_seere",
@@ -1258,7 +2361,25 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Annj Bearer",
+            "Bree Caley",
+            "Candle Mages",
+            "Claire Nightshield",
+            "Derk",
+            "Flor Energa",
+            "Ihara Absul",
+            "Joker",
+            "Lord of Stories",
+            "Magie",
+            "Nentrah",
+            "Silvana Ashford",
+            "Thirdenlin",
+            "Whirl Palett",
+            "Yarslav Crain"
+        ]
     },
     {
         "id": "annj_bearer",
@@ -1269,7 +2390,20 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Adsatra Sagebrook",
+            "Bille Frostbite",
+            "Bralon Alepike",
+            "Bree Caley",
+            "Candle Mages",
+            "Claire Nightshield",
+            "Movh Bearer",
+            "Silvana Ashford",
+            "Summerborn",
+            "Thirdenlin"
+        ]
     },
     {
         "id": "lukas_leafsleeper",
@@ -1280,7 +2414,13 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": "gm"
+        "visibility": "gm",
+        "related": null,
+        "references": [
+            "Bree Caley",
+            "Sandor",
+            "Vanee"
+        ]
     },
     {
         "id": "xer",
@@ -1291,7 +2431,16 @@
         "view": null,
         "border": null,
         "color": "#9C9C9C",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bille Frostbite",
+            "Bree Caley",
+            "Crash",
+            "Nunree",
+            "Ox",
+            "Stag Lord"
+        ]
     },
     {
         "id": "thundarak",
@@ -1302,7 +2451,22 @@
         "view": null,
         "border": null,
         "color": "#1C1B1B",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bree Caley",
+            "Candle Mages",
+            "Conleth Umbra",
+            "Derk",
+            "Divine Artifacts",
+            "Nentrah",
+            "Peck Arck",
+            "Silvana Ashford",
+            "Varnhold",
+            "Wyndee",
+            "Xia",
+            "Xiander"
+        ]
     },
     {
         "id": "tandeen_dazzlehand",
@@ -1313,7 +2477,23 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brave Wish",
+            "Bree Caley",
+            "Brevoy",
+            "Chorrad Troll King",
+            "Claire Nightshield",
+            "Farlamin Mistshaper",
+            "Jamandi Aldori",
+            "n'Neb",
+            "Pitax",
+            "Silvana Ashford",
+            "Thirdenlin",
+            "Velmine",
+            "Xia"
+        ]
     },
     {
         "id": "stag_lord",
@@ -1324,7 +2504,20 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bille Frostbite",
+            "Bree Caley",
+            "Brevoy",
+            "Claire Nightshield",
+            "Crash",
+            "Myron",
+            "Ox",
+            "Silvana Ashford",
+            "Summerborn",
+            "Xer"
+        ]
     },
     {
         "id": "ox",
@@ -1335,7 +2528,19 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bann",
+            "Bille Frostbite",
+            "Bree Caley",
+            "Claire Nightshield",
+            "Crash",
+            "Silvana Ashford",
+            "Stag Lord",
+            "The Wastes",
+            "Xer"
+        ]
     },
     {
         "id": "chorrad_troll_king",
@@ -1346,18 +2551,16 @@
         "view": null,
         "border": null,
         "color": "#5C0BB5",
-        "visibility": null
-    },
-    {
-        "id": "rita_neat",
-        "name": "Rita Neat",
-        "category": "npc",
-        "file": "NPCs/Brevoy/Rita Neat.md",
-        "map": null,
-        "view": null,
-        "border": null,
-        "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bann",
+            "Bree Caley",
+            "Claire Nightshield",
+            "n'Neb",
+            "Silvana Ashford",
+            "Tandeen Dazzlehand"
+        ]
     },
     {
         "id": "sandak_viine",
@@ -1368,7 +2571,19 @@
         "view": null,
         "border": null,
         "color": "#E00061",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Calsys Viine",
+            "Emily Viine",
+            "Keldithas Beeret",
+            "Rita Neat",
+            "Talia Andureen",
+            "The Rill War",
+            "Vanee",
+            "Viine family"
+        ]
     },
     {
         "id": "emily_viine",
@@ -1379,7 +2594,16 @@
         "view": null,
         "border": null,
         "color": "#E00061",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Calsys Viine",
+            "Claire Nightshield",
+            "Luxy",
+            "Sandak Viine",
+            "Sandor",
+            "Viine family"
+        ]
     },
     {
         "id": "calsys_viine",
@@ -1390,7 +2614,17 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Dunden",
+            "Ekon Udoon",
+            "Emily Viine",
+            "Garbin Sunheart",
+            "Sandak Viine",
+            "Viine family"
+        ]
     },
     {
         "id": "thorin_udoon",
@@ -1401,7 +2635,18 @@
         "view": null,
         "border": null,
         "color": "#13B057",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Claire Nightshield",
+            "Ekon Udoon",
+            "Erven",
+            "Kiri Udoon",
+            "Maameo Udoon",
+            "Sandor",
+            "Udoon family"
+        ]
     },
     {
         "id": "maameo_udoon",
@@ -1412,7 +2657,18 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bann",
+            "Brevoy",
+            "Ekon Udoon",
+            "Jamandi Aldori",
+            "Kiri Udoon",
+            "The Rill War",
+            "Thorin Udoon",
+            "Udoon family"
+        ]
     },
     {
         "id": "kiri_udoon",
@@ -1423,7 +2679,17 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Claire Nightshield",
+            "Dunden",
+            "Ekon Udoon",
+            "Erven",
+            "Maameo Udoon",
+            "Thorin Udoon",
+            "Udoon family"
+        ]
     },
     {
         "id": "ekon_udoon",
@@ -1434,7 +2700,50 @@
         "view": null,
         "border": null,
         "color": "#BF902E",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Calsys Viine",
+            "Kiri Udoon",
+            "Maameo Udoon",
+            "Maegar Varn",
+            "Thirdenlin",
+            "Thorin Udoon",
+            "Udoon family"
+        ]
+    },
+    {
+        "id": "talia_andureen",
+        "name": "Talia Andureen",
+        "category": "npc",
+        "file": "NPCs/Brevoy/The Crown/Talia Andureen.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#5C0BB5",
+        "visibility": "gm",
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Rita Neat"
+        ]
+    },
+    {
+        "id": "rita_neat",
+        "name": "Rita Neat",
+        "category": "npc",
+        "file": "NPCs/Brevoy/The Crown/Rita Neat.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#211DA1",
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Sandak Viine",
+            "Talia Andureen",
+            "Viine family"
+        ]
     },
     {
         "id": "keldithas_beeret",
@@ -1445,7 +2754,15 @@
         "view": null,
         "border": null,
         "color": "#211DA1",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Beeret family",
+            "Brevoy",
+            "Magrie Beeret",
+            "Sandak Viine",
+            "Thirdenlin"
+        ]
     },
     {
         "id": "kassil_aldori",
@@ -1456,7 +2773,13 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Dunden",
+            "Jamandi Aldori",
+            "Swordlords of Brevoy"
+        ]
     },
     {
         "id": "jamandi_aldori",
@@ -1467,7 +2790,16 @@
         "view": null,
         "border": null,
         "color": "#B01313",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Aldori family",
+            "Kassil Aldori",
+            "Kesten Garess",
+            "Maameo Udoon",
+            "Restov",
+            "The Rill War"
+        ]
     },
     {
         "id": "touvette",
@@ -1551,7 +2883,20 @@
             ]
         ],
         "color": "#27872A",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Avendale",
+            "Bann",
+            "Darien",
+            "Dunden",
+            "Embeth",
+            "Gralton",
+            "Manchu Tribes",
+            "Pitax",
+            "Sandor",
+            "Vanee"
+        ]
     },
     {
         "id": "the_wastes",
@@ -1651,7 +2996,19 @@
             ]
         ],
         "color": "#CFCED6",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bann",
+            "Brevoy",
+            "Dunden",
+            "Erven",
+            "Greenskin",
+            "Rendeen",
+            "Thirdenlin",
+            "Vanee",
+            "Xiander"
+        ]
     },
     {
         "id": "pitax",
@@ -1739,7 +3096,20 @@
             ]
         ],
         "color": "#241E96",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Daggermark",
+            "Manchu Tribes",
+            "Mivon",
+            "Numeria",
+            "Pitax City",
+            "The Rill War",
+            "Thirdenlin",
+            "Touvette",
+            "Xiander"
+        ]
     },
     {
         "id": "numeria",
@@ -2003,7 +3373,23 @@
             ]
         ],
         "color": "#22D6D0",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Battle of Fingers",
+            "Brevoy",
+            "Dwarven Keeps",
+            "Erven",
+            "Manchu Tribes",
+            "Mivon",
+            "Pitax",
+            "Rendeen",
+            "Sandor",
+            "Starfall",
+            "The Manchu Conquests",
+            "The Rill War",
+            "Thirdenlin"
+        ]
     },
     {
         "id": "mivon",
@@ -2099,7 +3485,16 @@
             ]
         ],
         "color": "#F3FF21",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Embeth",
+            "Numeria",
+            "Pitax",
+            "The Rill War",
+            "The Wastes"
+        ]
     },
     {
         "id": "manchu_tribes",
@@ -2307,7 +3702,15 @@
             ]
         ],
         "color": "#B09515",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Daggermark",
+            "Numeria",
+            "Pitax",
+            "The Manchu Conquests",
+            "Touvette"
+        ]
     },
     {
         "id": "gralton",
@@ -2431,7 +3834,21 @@
             ]
         ],
         "color": "#FA5050",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brass Wheels",
+            "Daggermark",
+            "Darien",
+            "Dunden",
+            "Embeth",
+            "Garent",
+            "Manchu Tribes",
+            "Sandor",
+            "Touvette",
+            "Vanee",
+            "Xiander"
+        ]
     },
     {
         "id": "embeth",
@@ -2563,7 +3980,18 @@
             ]
         ],
         "color": "#62C46A",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Dream Realm",
+            "Dunden",
+            "Gralton",
+            "Mivon",
+            "Pitax",
+            "Rendeen",
+            "Touvette",
+            "Vanee"
+        ]
     },
     {
         "id": null,
@@ -2574,7 +4002,17 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bann",
+            "Dunden",
+            "Erven",
+            "Greenskin",
+            "Rendeen",
+            "Thirdenlin",
+            "War of the beards"
+        ]
     },
     {
         "id": "daggermark",
@@ -2658,7 +4096,22 @@
             ]
         ],
         "color": "#591773",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bann",
+            "Dunden",
+            "Dwarven Keeps",
+            "Gralton",
+            "Manchu Tribes",
+            "Pitax",
+            "Rendeen",
+            "Ruzhee",
+            "Sleeping Realm",
+            "Vanee",
+            "War of the beards",
+            "Xiander"
+        ]
     },
     {
         "id": "brevoy",
@@ -2754,7 +4207,27 @@
             ]
         ],
         "color": "#8F1A2C",
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Aldori family",
+            "Bann",
+            "Beeret family",
+            "Darien",
+            "Dunden",
+            "Mivon",
+            "New Steveten",
+            "Numeria",
+            "Pitax",
+            "Sandor",
+            "Swordlords of Brevoy",
+            "Talia Andureen",
+            "The Rill War",
+            "The Wastes",
+            "Udoon family",
+            "Viine family",
+            "Xiander"
+        ]
     },
     {
         "id": null,
@@ -2765,7 +4238,18 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brass Wheels",
+            "Brevoy",
+            "Garent",
+            "Gralton",
+            "New Steveten",
+            "Numeria",
+            "Pitax",
+            "Touvette"
+        ]
     },
     {
         "id": null,
@@ -2776,7 +4260,50 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": false,
+        "references": [
+            "Battle of Fingers",
+            "Brevoy",
+            "Daggermark",
+            "Dwarven Keeps",
+            "Kingmaker",
+            "Manchu Tribes",
+            "Mivon",
+            "Numeria",
+            "Pitax",
+            "Roughen Fort",
+            "The Magical Anorchrism",
+            "The Manchu Conquests",
+            "The Rill War",
+            "War of the beards"
+        ]
+    },
+    {
+        "id": null,
+        "name": "Darien",
+        "category": "Unknown",
+        "file": "Home/Home.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": false,
+        "references": [
+            "Agamoos Evercrown",
+            "Bree Caley",
+            "Claire Nightshield",
+            "Conleth Umbra",
+            "Deities Summary",
+            "Gralton",
+            "Kingmaker",
+            "Meel'a",
+            "Silvana Ashford",
+            "The Timeline",
+            "Turtahir",
+            "Vital Delivery"
+        ]
     },
     {
         "id": null,
@@ -2787,7 +4314,25 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": false,
+        "references": [
+            "Arie",
+            "Bann",
+            "Dunden",
+            "Ebus",
+            "Erven",
+            "Luxy",
+            "Nunree",
+            "Rendeen",
+            "Ruzhee",
+            "Sandor",
+            "Thirdenlin",
+            "Vanee",
+            "Wyndee",
+            "Xia",
+            "Xiander"
+        ]
     },
     {
         "id": null,
@@ -2798,7 +4343,13 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Daggermark",
+            "Dwarven Keeps",
+            "The Timeline"
+        ]
     },
     {
         "id": null,
@@ -2813,7 +4364,19 @@
         },
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Battle of Fingers",
+            "Brevoy",
+            "Great Gate",
+            "Mivon",
+            "Numeria",
+            "Pitax",
+            "Roughen Fort",
+            "Swordlords of Brevoy",
+            "The Timeline"
+        ]
     },
     {
         "id": null,
@@ -2828,7 +4391,13 @@
         },
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Manchu Tribes",
+            "Numeria",
+            "The Timeline"
+        ]
     },
     {
         "id": null,
@@ -2839,7 +4408,11 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "The Timeline"
+        ]
     },
     {
         "id": null,
@@ -2854,7 +4427,19 @@
         },
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Brevoy",
+            "Maameo Udoon",
+            "Mivon",
+            "Numeria",
+            "Pitax",
+            "Roughen Fort",
+            "Swordlords of Brevoy",
+            "The Rill War",
+            "The Timeline"
+        ]
     },
     {
         "id": null,
@@ -2865,7 +4450,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -2876,7 +4463,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -2887,7 +4476,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": "gm"
+        "visibility": "gm",
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -2898,7 +4489,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -2909,7 +4502,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -2920,7 +4515,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -2931,7 +4528,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -2942,7 +4541,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -2953,7 +4554,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -2964,7 +4567,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -2975,7 +4580,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -2986,7 +4593,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -2997,7 +4606,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -3008,7 +4619,9 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
     },
     {
         "id": null,
@@ -3019,7 +4632,24 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": []
+    },
+    {
+        "id": null,
+        "name": "Waaaghhh",
+        "category": "Unknown",
+        "file": "Culture/Waaaghhh.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Greenskin"
+        ]
     },
     {
         "id": null,
@@ -3030,7 +4660,12 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Dwarven Keeps",
+            "The Wastes"
+        ]
     },
     {
         "id": null,
@@ -3041,7 +4676,13 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Dream Realm",
+            "Material Plane",
+            "Sleeping Realm"
+        ]
     },
     {
         "id": null,
@@ -3052,7 +4693,13 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Dream Realm",
+            "Material Plane",
+            "Waking World"
+        ]
     },
     {
         "id": null,
@@ -3063,7 +4710,13 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Dream Realm",
+            "Sleeping Realm",
+            "Waking World"
+        ]
     },
     {
         "id": null,
@@ -3074,7 +4727,13 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Material Plane",
+            "Sleeping Realm",
+            "Waking World"
+        ]
     },
     {
         "id": null,
@@ -3085,7 +4744,23 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Bann",
+            "Dunden",
+            "Embeth",
+            "Erven",
+            "Mivon",
+            "Numeria",
+            "Pitax",
+            "Rendeen",
+            "Sandor",
+            "Thirdenlin",
+            "Touvette",
+            "Vanee",
+            "Xiander"
+        ]
     },
     {
         "id": null,
@@ -3096,7 +4771,26 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Agamoos Evercrown",
+            "Asha Rakker",
+            "Floureton",
+            "Great Gate",
+            "Heren Blaze",
+            "Jarlek Grin",
+            "Joanna Tang",
+            "Kingmaker",
+            "Meel'a",
+            "Numeria",
+            "Oleg Crank",
+            "Oleg's Outpost",
+            "Pitax",
+            "Summerborn",
+            "Touvette",
+            "Turtahir"
+        ]
     },
     {
         "id": null,
@@ -3107,6 +4801,112 @@
         "view": null,
         "border": null,
         "color": null,
-        "visibility": null
+        "visibility": null,
+        "related": null,
+        "references": [
+            "Adsatra Sagebrook",
+            "Aelthot",
+            "Aldori family",
+            "Allas Dawnd",
+            "Annj Bearer",
+            "Artarp Rein",
+            "Balrotho",
+            "Barnur Keenhold",
+            "Beheria",
+            "Bille Frostbite",
+            "Brave Wish",
+            "Bree Caley",
+            "Brevoy",
+            "Brunno Meadowmane",
+            "Calsys Viine",
+            "Candle Mages",
+            "Cephal Lorentus",
+            "Chirp",
+            "Chorrad Troll King",
+            "Claire Nightshield",
+            "Conleth Umbra",
+            "Crash",
+            "Daedove Wildguard",
+            "Deren Seere",
+            "Derk",
+            "Divine Artifacts",
+            "Dream Realm",
+            "Drift",
+            "Dwen'zur Raincleanser",
+            "Emily Viine",
+            "Errard Specher",
+            "Farlamin Mistshaper",
+            "Flor Energa",
+            "Garbin Sunheart",
+            "Gildi Crank",
+            "Harlequin",
+            "Iandri Flukeflow",
+            "Ihara Absul",
+            "Jamandi Aldori",
+            "Joker",
+            "Jonas Arc",
+            "Karri",
+            "Kassil Aldori",
+            "Keldithas Beeret",
+            "Kesten Garess",
+            "Kiri Udoon",
+            "Lalne Quill",
+            "Laura Faelamin",
+            "Lord of Stories",
+            "Maameo Udoon",
+            "Maegar Varn",
+            "Magie",
+            "Magpie",
+            "Magrie Beeret",
+            "Malora Grainseller",
+            "Milo Grainseller",
+            "Mime",
+            "Mivon",
+            "Movh Bearer",
+            "Myron",
+            "n'Neb",
+            "Nentrah",
+            "Ninne",
+            "Odak One Eye",
+            "Oleg Crank",
+            "Oleg's Outpost",
+            "Oliveria",
+            "Ox",
+            "Peck Arck",
+            "Pitax",
+            "Pixana Boldshard",
+            "Rein Stagler",
+            "Reina Palett",
+            "Restov",
+            "Rita Neat",
+            "Sandak Viine",
+            "Shrowm",
+            "Silvana Ashford",
+            "Siphon",
+            "Sparrow",
+            "Stag Lord",
+            "Summerborn",
+            "Tandeen Dazzlehand",
+            "The Wastes",
+            "Thorin Udoon",
+            "Thundarak",
+            "Tiv",
+            "Ura Clawt",
+            "Vacho",
+            "Vaegarian host",
+            "Varnhold",
+            "Velmine",
+            "Viine family",
+            "Vondal Sandwashed",
+            "Whirl Palett",
+            "Wit",
+            "Wyndee",
+            "Xer",
+            "Yarek Gray",
+            "Yarslav Crain",
+            "Yelgolor Remoudou",
+            "Zara",
+            "Zayne Copper"
+        ]
     }
 ]
