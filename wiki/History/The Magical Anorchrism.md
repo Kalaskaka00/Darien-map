@@ -1,6 +1,11 @@
-# The Magical Anorchrism
-*[[The Timeline]] Year {{year:0}}*
+---
+category: history
+StartYear: 0
+EndYear: 0
 
+color: "#211DA1"
+---
+# The Magical Anorchrism
 In the past times the arcane magic was a domain tightly held by the major deities, give out to chosen ones much like divine magic is today.
 
 However through rituals that are long forgotten and aided by some minor deities  the magic got wilder and wilder, and eventually the major deities could no longer contain it and the magic exploded out into the world. 

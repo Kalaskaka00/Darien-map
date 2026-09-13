@@ -3,6 +3,10 @@ id: garent
 name: Garent
 category: settlement
 
+capital: true
+nation: [[Gralton]]
+Ruler: 
+
 map:
   x: 600
   y: 257

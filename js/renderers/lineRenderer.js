@@ -81,6 +81,29 @@ function smoothPolyline(points, iterations = 1) {
     return result;
 }
 
+
+function formatLineType(type){
+
+    return type
+        .replace(/([a-z])([A-Z])/g, "$1 $2")
+        .replace(/^./, character => character.toUpperCase());
+
+}
+
+function getLineLength(points){
+
+    return points.slice(1).reduce((total, point, index) => {
+
+        const previousPoint = points[index];
+
+        return total + Math.hypot(
+            point[0] - previousPoint[0],
+            point[1] - previousPoint[1]
+        );
+
+    }, 0) * CONFIG.map.kilometersPerMapUnit;
+
+}
 function drawLine(object, options){
 
     // Valfri skugga
@@ -116,7 +139,20 @@ function drawLine(object, options){
 
     if(object.name){
 
-        line.bindTooltip(object.name);
+        const kilometers = getLineLength(displayPoints);
+        const miles = kilometers * 0.621371;
+        const tooltip = document.createElement("div");
+
+        tooltip.append(object.name);
+        tooltip.append(document.createElement("br"));
+        tooltip.append(`Type: ${formatLineType(object.class)}`);
+        tooltip.append(document.createElement("br"));
+        tooltip.append(`Length: ${kilometers.toFixed(0)} km (${miles.toFixed(0)} miles)`);
+
+        line.bindTooltip(tooltip, {
+            className: "line-tooltip",
+            sticky: true
+        });
 
     }
 

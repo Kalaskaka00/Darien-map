@@ -2,6 +2,11 @@
 id: starfall
 name: Starfall
 category: settlement
+
+capital: true
+nation: [[Numeria]]
+Ruler: 
+
 map:
   x: 408
   y: 771

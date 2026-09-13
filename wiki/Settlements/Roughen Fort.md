@@ -3,6 +3,9 @@ id: roughen_fort
 name: Roughen Fort
 category: settlement
 
+nation: [[Brevoy]]
+Ruler: [[Beeret family]]
+
 map:
   x: 815
   y: 746

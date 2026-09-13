@@ -3,6 +3,48 @@
     font-family: Georgia, serif;
 }
 
+.line-tooltip {
+    padding: 9px 12px;
+    border: 1px solid #6f5328;
+    border-radius: 4px;
+    background: #f3ecd2 !important;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, .25);
+    color: #2d2417;
+    font: 16px/1.45 Georgia, "Times New Roman", serif;
+    opacity: 1 !important;
+}
+
+.line-tooltip::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: url("Backgrounds/Parchment.avif") center / cover;
+    opacity: .35;
+    pointer-events: none;
+}
+
+.line-tooltip > div {
+    position: relative;
+    z-index: 1;
+}
+
+.line-tooltip.leaflet-tooltip-left::before {
+    border-left-color: #f3ecd2;
+}
+
+.line-tooltip.leaflet-tooltip-right::before {
+    border-right-color: #f3ecd2;
+}
+
+.line-tooltip.leaflet-tooltip-top::before {
+    border-top-color: #f3ecd2;
+}
+
+.line-tooltip.leaflet-tooltip-bottom::before {
+    border-bottom-color: #f3ecd2;
+}
+
 .city-popup h2 {
     margin: 0;
     color: #3a1d06;

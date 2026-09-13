@@ -268,3 +268,12 @@ With [[Nentrah]] captured [[Silvana Ashford]], [[Bree Caley]] and [[Conleth Umbr
 Soon after [[Rita Neat]] and [[Reina Palett]] departed a delegation from [[Pitax]] arrived to discuss a secret pact of friendship. After some quite quick discussions they ended with a pact that give [[Pitax]] a claim to part of the [[Stolen Lands]] and made a defensive pact between the parties, [[Pitax]] also agreed to send over some information about their previous research in the [[Stolen Lands]].
 
 Newly Introduced NPCs: [[Farlamin Mistshaper]], [[Lalne Quill]]
+
+**Session 47:** *The Delivery*
+[[Silvana Ashford]], [[Bree Caley]] and [[Conleth Umbra]] received [[Turtahir]], [[Meel'a]] and [[Agamoos Evercrown]] from [[Vital Delivery]]. They got a key to the Devils bargain where they got some exceptional items reserved from [[Maegar Varn]].
+
+[[Joker]], [[Harlequin]] and [[Mime]] came and informed the protagonists that their reckoning is upcoming. 
+
+A firework festival started celebrating the deal with [[Pitax]] where [[Farlamin Mistshaper]] put on some magical fireworks.
+
+Newly Introduced NPCs: [[Agamoos Evercrown]], [[Turtahir]], [[Meel'a]], [[Ichor]], [[Cypher]]

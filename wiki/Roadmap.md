@@ -2,16 +2,16 @@
 - PCs
 - Organisations summary -> Home
 - Nations Summary -> Home
-- Add Roads
 - Add Rivers
 - Deity stories
-- Länkar i GM notes borde tine visas i related
+- Thieflings
 ## Details
 - Clean up and speed up code
-- Display number of articles and latest update date
-- Display current year in home article
-- Possible to show measurement
+- Fix ping
+- Render bigger roads atop other roads.
+- Curves to style document
 ## Map
+- Lakes
 - Trade Routes
 - Region names
 - Landmark names
@@ -20,22 +20,21 @@
 - Weather
 - Party marker
 ## Tools
-- Ping
 - Laser pointer 
 - Travel calculator
 - PC article - Players can edit
-- Player Notepad(s)
+- Player & GM Notepad(s)
 - Player side map markers
+- Possible to show measurement
+- Shift ping drags screen
+- Show article
 ## UI
-- Map border
 - Wiki Pop out
 - Highlight Icons on map
 - Preview wiki article on map and link
 ## Wiki
 - Deity article type
-- Settlement article type
 - Organisation article type
+- Nation article type
 - Campaign article type
-- History article type & Timeline
-- Article flikar
 - Article text visible to some players

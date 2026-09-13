@@ -7,6 +7,17 @@ function openArticle(article, addToHistory = true){
 
     hidePreview();
 
+    const activeTab = typeof getActiveWikiTab === "function"
+        ? getActiveWikiTab()
+        : null;
+
+    if(activeTab){
+
+        activeTab.article = article;
+        activeTab.directory = false;
+
+    }
+
     setCurrentArticle(article);
 
     if(addToHistory){
@@ -22,6 +33,9 @@ function openArticle(article, addToHistory = true){
     type?.focus?.(article);
 
     type?.onOpen?.(article);
+
+    if(typeof renderWikiTabs === "function")
+        renderWikiTabs();
 
 }
 

@@ -16,13 +16,12 @@ async function loadArticle(file){
 
     if(worldArticle){
 
-    Object.assign(worldArticle, article);
+        Object.entries(article).forEach(([key, value]) => {
 
-    console.log("Before:", worldArticle);
+            if(value !== "")
+                worldArticle[key] = value;
 
-    Object.assign(worldArticle, article);
-
-    console.log("After:", worldArticle);
+        });
 
     }
 
@@ -30,12 +29,15 @@ async function loadArticle(file){
 
     const folder = getArticleFolder(file);
 
+    if(getCurrentArticle()?.file !== file)
+        return;
+
     markdown = renderMarkdown(
     markdown,
     folder
     );
 
-    renderSidebar(article);
+    renderSidebar(worldArticle || article);
 
     renderArticle(worldArticle || article, markdown);
 
@@ -43,12 +45,14 @@ async function loadArticle(file){
 
 document.addEventListener("click", function(e){
 
-    if(!e.target.classList.contains("wikilink"))
+    const wikilink = e.target.closest(".wikilink");
+
+    if(!wikilink)
         return;
 
     e.preventDefault();
 
-    const page = e.target.dataset.page;
+    const page = wikilink.dataset.page;
     const article = wikiIndex[page];
 
     if (wikiIndex[page]){

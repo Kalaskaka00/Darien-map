@@ -2,6 +2,10 @@
 id: oleg's_outpost
 name: Oleg's Outpost
 category: settlement
+
+nation: [[Golden Lands]]
+Ruler: 
+
 map:
   x: 823
   y: 703

@@ -1,4 +1,4 @@
-# King Road
+# Kings Road
 The Kings Road spans from the major harbor city of [[Garent]] in [[Gralton]] all the way to [[New Steveten]] in [[Brevoy]], going along [[Gralton]], [[Touvette]], [[Pitax]], [[Numeria]] and [[Brevoy]]. The road acts as the central trade hub for all these kingdoms.
 
 The Kings Road is arguably the safest stretch of land on the continent. It is said that a halfling could walk naked with a bar of gold in their hands from one end to another without incident. The road is wide laid with stones, lit by lanterns and with many inns and resting places along the way.

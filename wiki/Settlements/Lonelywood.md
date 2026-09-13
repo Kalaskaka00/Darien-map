@@ -2,6 +2,10 @@
 id: lonelywood
 name: Lonelywood
 category: settlement
+
+nation: [[Brevoy]]
+Ruler: [[Udoon family]]
+
 map:
   x: 1119
   y: 810

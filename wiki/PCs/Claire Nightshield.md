@@ -6,10 +6,10 @@ portrait: Claire Nightshield.png
 
 fullname: Claire Nightshield
 race: Dwarf
-birth: 3863
+birth: 3540
 player: Ludwig
 adventure: [[Kingmaker]]
-death: 
+death: 3863
 family: 
 organisations: 
 origin: [[Numeria]]

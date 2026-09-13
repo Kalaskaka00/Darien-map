@@ -3,6 +3,10 @@ id: new_steveten
 name: New Steveten
 category: settlement
 
+capital: true
+nation: [[Brevoy]]
+Ruler: [[Andureen family]]
+
 map:
   x: 966
   y: 689

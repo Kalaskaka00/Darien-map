@@ -10,7 +10,7 @@ birth: 3863
 player: Rasmus
 adventure: [[Vital Delivery]]
 death: 
-family: [[Agamoos family]]
+family: [[Evercrown family]]
 organisations: 
 origin: [[Pitax]]
 

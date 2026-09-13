@@ -1,9 +1,9 @@
 function formatYear(year){
 
-    const diff = currentYear - year;
+    const diff = CONFIG.world.currentYear - year;
 
     if(diff === 0)
-        return `${year} (this year)`;
+        return `${year} (the current year)`;
 
     if(diff > 0)
     return `${year} (${diff} years ago)`;
@@ -15,10 +15,14 @@ function formatYear(year){
 function renderYears(markdown){
 
     return markdown.replace(
-        /\{\{year:(\d+)\}\}/g,
+        /\{\{year:(\d+|current)\}\}/g,
         (match, year)=>{
 
-            return formatYear(parseInt(year));
+            const resolvedYear = year === "current"
+                ? CONFIG.world.currentYear
+                : parseInt(year);
+
+            return formatYear(resolvedYear);
 
         }
     );

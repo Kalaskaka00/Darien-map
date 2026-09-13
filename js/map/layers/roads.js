@@ -104,6 +104,21 @@ async function addRoadToFile(road){
 
 }
 
+async function saveRoadToFile(road){
+
+    await roadsReady;
+
+    const index = roads.findIndex(item => item.id === road.id);
+
+    if(index === -1)
+        return false;
+
+    roads[index] = road;
+
+    return saveRoadsFile();
+
+}
+
 roadsReady = loadRoads().catch(error => {
 
     console.error(error);

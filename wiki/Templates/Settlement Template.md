@@ -3,6 +3,10 @@ id: <% tp.file.title.toLowerCase().replace(/ /g,"_") %>
 name: <% tp.file.title %>
 category: settlement
 
+capital: true
+nation: [[]]
+Ruler: [[]]
+
 map:
   x: 
   y: 

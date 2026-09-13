@@ -5,7 +5,8 @@ const height = 1058;
 // Skapa kartan
 const map = L.map('map', {
     crs: L.CRS.Simple,
-    minZoom: -2
+    minZoom: -2,
+    zoomSnap: 0
 });
 
 map.createPane("rivers");
@@ -20,13 +21,24 @@ const bounds = [
     [height, width]
 ];
 
-// Lägg in bilden
+const parchmentOverhang = CONFIG.map.parchmentOverhang;
+const frameBounds = [
+    [-parchmentOverhang.vertical, -parchmentOverhang.horizontal],
+    [height + parchmentOverhang.vertical, width + parchmentOverhang.horizontal]
+];
+
+L.imageOverlay('map/Map.avif', frameBounds, { interactive: false }).addTo(map);
 L.imageOverlay('map/Darien map.png', bounds).addTo(map);
 
 // Anpassa kartan till bilden
-map.fitBounds(bounds);
-map.setMaxBounds(bounds);
+map.fitBounds(frameBounds);
+map.setMaxBounds(frameBounds);
 map.dragging.enable();
+
+requestAnimationFrame(() => {
+    map.invalidateSize();
+    map.fitBounds(frameBounds);
+});
 
 function initializeMap(){
 

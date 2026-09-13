@@ -39,7 +39,7 @@ function removeShapePoint(index){
 
 }
 
-function finishEditShape(){
+async function finishEditShape(){
 
     if(!editingShape)
         return;
@@ -52,11 +52,31 @@ function finishEditShape(){
 
     });
 
+    let saved = null;
+
+    if(editingShape.object?.type === "road")
+        saved = await saveRoadToFile(editingShape.object);
+
+    if(editingShape.object?.type === "river")
+        saved = await saveRiverToFile(editingShape.object);
+
     navigator.clipboard.writeText(yaml);
 
     closeEditorTool();
 
-    alert("Shape copied!");
+    if(saved === false){
+
+        alert("Shape copied, but the map file was not saved.");
+
+    }else if(saved === true){
+
+        alert("Shape saved and copied!");
+
+    }else{
+
+        alert("Shape copied!");
+
+    }
 
 }
 

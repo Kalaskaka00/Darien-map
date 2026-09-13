@@ -28,7 +28,7 @@ function addLinePoint(e){
 // Allow external code to add points to the current line drawing
 function addPointToLineDrawing(lat, lng){
 
-    if(!drawingConfig || editorMode !== "draw-road" && editorMode !== "draw-polygon"){
+    if(!drawingConfig || editorMode !== "draw-road" && editorMode !== "draw-river" && editorMode !== "draw-polygon"){
         return false;
     }
 

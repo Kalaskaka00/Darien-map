@@ -1,5 +1,10 @@
+$changeNote = Read-Host "Changes since the last upload"
+$env:WIKI_CHANGE_NOTE = $changeNote
+
 Write-Host "Building wiki..."
 node scripts/build-index.js
+
+Remove-Item Env:WIKI_CHANGE_NOTE
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host "Build failed. Aborting publish."

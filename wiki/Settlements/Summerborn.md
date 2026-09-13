@@ -3,6 +3,10 @@ id: summerborn
 name: Summerborn
 category: settlement
 
+capital: true
+nation: [[Golden Lands]]
+Ruler: 
+
 map:
   x: 838
   y: 566

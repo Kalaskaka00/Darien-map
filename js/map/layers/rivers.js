@@ -103,6 +103,21 @@ async function addRiverToFile(river){
 
 }
 
+async function saveRiverToFile(river){
+
+    await riversReady;
+
+    const index = rivers.findIndex(item => item.id === river.id);
+
+    if(index === -1)
+        return false;
+
+    rivers[index] = river;
+
+    return saveRiversFile();
+
+}
+
 riversReady = loadRivers().catch(error => {
 
     console.error(error);

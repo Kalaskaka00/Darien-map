@@ -40,6 +40,26 @@ function findSnapPoint(lat, lng, maxDistance = CONFIG.map.snapDistance) {
         }
     });
 
+    [
+        ...(typeof roads !== "undefined" ? roads : []),
+        ...(typeof rivers !== "undefined" ? rivers : [])
+    ].forEach(item => {
+
+        item.points.forEach(point => {
+
+            const distance = Math.pow(lat - point[0], 2) + Math.pow(lng - point[1], 2);
+
+            if(distance < minDistance){
+
+                minDistance = distance;
+                snapPoint = point;
+
+            }
+
+        });
+
+    });
+
     return snapPoint;
 }
 

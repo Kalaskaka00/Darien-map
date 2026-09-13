@@ -1,12 +1,18 @@
 let world = [];
 const wikiIndex = {};
+let wikiMeta = {};
 
 const currentYear = 3864;
 
 async function loadWorld() {
 
-    world = await fetch("data/wikiIndex.json")
-        .then(r => r.json());
+    const [indexResponse, metadataResponse] = await Promise.all([
+        fetch("data/wikiIndex.json"),
+        fetch("data/wikiMeta.json")
+    ]);
+
+    world = await indexResponse.json();
+    wikiMeta = await metadataResponse.json();
 
     world.forEach(item => {
         wikiIndex[item.name] = item;

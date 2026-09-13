@@ -3,6 +3,10 @@ id: avendale
 name: Avendale
 category: settlement
 
+capital: true
+nation: [[Touvette]]
+Ruler: Localy elected mayor
+
 map:
   x: 595
   y: 498

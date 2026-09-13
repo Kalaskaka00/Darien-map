@@ -31,7 +31,8 @@ function enableDrawRiver(){
 
 function disableDrawRiver(){
 
-    stopLineDrawing();
+    if(drawingConfig?.type === "river")
+        stopLineDrawing();
 
 }
 

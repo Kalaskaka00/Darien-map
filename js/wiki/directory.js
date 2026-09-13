@@ -126,6 +126,14 @@ function closeDirectory(){
 
 }
 
+function openDirectoryView(){
+
+    directoryOpen = true;
+    directoryButton.classList.add("active");
+    renderDirectory();
+
+}
+
 directoryButton.onclick = toggleDirectory;
 
 directoryContent.addEventListener("click", event => {

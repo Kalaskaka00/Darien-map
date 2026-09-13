@@ -8,7 +8,11 @@ const CONFIG = {
 
     map: {
         kilometersPerMapUnit: 1,
-        snapDistance: 5
+        snapDistance: 5,
+        parchmentOverhang: {
+            horizontal: 50,
+            vertical: 50
+        }
     },
 
     npc: {

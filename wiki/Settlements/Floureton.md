@@ -3,6 +3,9 @@ id: floureton
 name: Floureton
 category: settlement
 
+nation: [[Gralton]]
+Ruler: 
+
 map:
   x: 602
   y: 411

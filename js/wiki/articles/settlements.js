@@ -169,9 +169,86 @@ function updateLabels() {
 
 }
 
+function getSettlementNation(article){
+
+    if(!article.nation)
+        return null;
+
+    const nationName = String(article.nation)
+        .replace(/^\[\[|\]\]$/g, "");
+
+    return getArticle(nationName);
+
+}
+
+function getSettlementIcon(article){
+
+    const indexedArticle = getArticleByFile(article.file);
+    const icon = article.map?.icon || indexedArticle?.map?.icon;
+
+    if(!icon)
+        return "";
+
+    const escapedIcon = String(icon)
+        .replace(/[^a-zA-Z0-9_-]/g, "");
+
+    return `
+        <img
+            class="settlement-icon"
+            src="icons/${escapedIcon}.png"
+            alt=""
+        >
+    `;
+
+}
+
+function buildSettlementCard(article, compact = false){
+
+    const nation = getSettlementNation(article);
+    const color = nation?.color || "#4b4b4b";
+    const nationRow = article.nation
+        ? sidebarRow("Nation", article.nation)
+        : "";
+    const isCapital = article.capital === true ||
+        String(article.capital).toLowerCase() === "true";
+    const title = isCapital
+        ? `★ ${escapeArticleHTML(article.name)} ★`
+        : escapeArticleHTML(article.name);
+
+    return `
+        <section class="settlement-card${compact ? " settlement-card-compact" : ""}" style="--settlement-color:${color};">
+            <header class="settlement-banner">
+                <span>${title}</span>
+            </header>
+            <div class="settlement-content">
+                <div class="settlement-icon-container">
+                    ${getSettlementIcon(article)}
+                </div>
+                <div class="settlement-details">
+                    ${nationRow}
+                    ${sidebarRow("Ruler", article.Ruler || article.ruler)}
+                </div>
+            </div>
+        </section>
+    `;
+
+}
+
 map.on("zoomend", updateLabels);
 
 registerArticleType("settlement",{
+
+    sidebar(article){
+
+        return buildSettlementCard(article);
+
+    },
+
+    preview(article){
+
+        return buildSettlementCard(article, true);
+
+    },
 
     focus: focusArticle,
 

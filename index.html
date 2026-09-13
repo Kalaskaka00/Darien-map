@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="css/ping.css">
     <link rel="stylesheet" href="css/npc.css">
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="stylesheet" href="css/settlement.css">
     <link rel="stylesheet" href="css/image-viewer.css">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/wiki.css?v=collapse">
@@ -21,7 +23,14 @@
 
 <div id="app">
 
-    <div id="map"></div>
+    <div id="map-frame">
+        <div id="map"></div>
+    </div>
+
+    <nav id="wiki-tabs" aria-label="Open articles">
+        <button id="wiki-new-tab" type="button" title="New article tab" aria-label="New article tab">+</button>
+        <div id="wiki-tab-list"></div>
+    </nav>
 
     <div id="wiki-sidebar">
 
@@ -43,11 +52,15 @@
         <button id="wiki-directory" title="Article directory" aria-label="Article directory">☷</button>
     </div>
 
-    <div id="article-layout">
+    <div id="wiki-workspace">
 
-        <aside id="article-sidebar"></aside>
+        <div id="article-layout">
 
-        <main id="article"></main>
+            <aside id="article-sidebar"></aside>
+
+            <main id="article"></main>
+
+        </div>
 
     </div>
 
@@ -208,7 +221,8 @@
 <!-- Wiki -->
 <script src="js/wiki/articleRegistry.js"></script>
 <script src="js/wiki/articles/npc.js"></script>
-<script src="js/wiki/articles/settlements.js?v=snap-2"></script>
+<script src="js/wiki/articles/history.js"></script>
+<script src="js/wiki/articles/settlements.js?v=snap-3"></script>
 <script src="js/wiki/articles/nations.js?v=snap-2"></script>
 <script src="js/wiki/articles.js"></script>
 <script src="js/wiki/sidebar.js"></script>
@@ -220,6 +234,7 @@
 <script src="js/wiki/search.js"></script>
 <script src="js/wiki/history.js"></script>
 <script src="js/wiki/directory.js?v=preview"></script>
+<script src="js/wiki/tabs.js"></script>
 
 <!-- Editor -->
 <script src="js/editor/state.js"></script>

@@ -1,0 +1,89 @@
+.settlement-card{
+
+    border:3px solid var(--settlement-color);
+
+    margin-bottom:25px;
+
+    background:rgba(255,255,255,.45);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+
+}
+
+.settlement-banner{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    background:var(--settlement-color);
+
+    color:white;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    padding:10px 20px;
+
+}
+
+.settlement-icon{
+
+    width:80px;
+
+    height:80px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+}
+
+.settlement-content{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    padding:10px 20px 20px;
+
+}
+
+.settlement-icon-container{
+
+    flex-shrink:0;
+
+}
+
+.settlement-details{
+
+    flex:1;
+
+}
+
+.settlement-card-compact{
+
+    width:280px;
+
+    margin:0;
+
+}
+
+.settlement-card-compact .settlement-banner{
+
+    font-size:1rem;
+
+    padding:8px 12px;
+
+}
+
+.settlement-card-compact .settlement-icon{
+
+    width:80px;
+
+    height:80px;
+
+}

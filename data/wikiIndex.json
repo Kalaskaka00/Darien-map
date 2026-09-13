@@ -10,6 +10,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -23,6 +26,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brunno Meadowmane",
             "Crash",
@@ -48,6 +54,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bree Caley",
             "Brevoy",
@@ -81,6 +90,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Pitax"
         ]
@@ -100,6 +112,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Adsatra Sagebrook",
             "Bille Frostbite",
@@ -147,6 +162,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Numeria"
         ]
@@ -166,9 +184,13 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Emily Viine",
+            "Kings Road",
             "Sandak Viine",
             "Viine family"
         ]
@@ -188,6 +210,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Battle of Fingers",
             "Beeret family",
@@ -213,6 +238,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Aldori family",
             "Brevoy",
@@ -238,8 +266,12 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Darien",
+            "Kings Road",
             "Pitax"
         ]
     },
@@ -258,6 +290,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Gildi Crank",
@@ -281,8 +316,12 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
+            "Kings Road",
             "Rita Neat",
             "Southhost",
             "Talia Andureen"
@@ -303,6 +342,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Ekon Udoon",
@@ -327,8 +369,12 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
-            "Dwarven Keeps"
+            "Dwarven Keeps",
+            "Kings Road"
         ]
     },
     {
@@ -346,11 +392,15 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Asha Rakker",
             "Brass Wheels",
             "Gralton",
-            "Jarlek Grin"
+            "Jarlek Grin",
+            "Kings Road"
         ]
     },
     {
@@ -368,8 +418,12 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
-            "Gralton"
+            "Gralton",
+            "Kings Road"
         ]
     },
     {
@@ -387,8 +441,12 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Grainseller family",
+            "Kings Road",
             "Touvette",
             "Vein Grainseller"
         ]
@@ -408,6 +466,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Touvette"
         ]
@@ -423,6 +484,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -436,6 +500,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -449,6 +516,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -462,6 +532,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -475,6 +548,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -488,6 +564,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -501,6 +580,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -514,6 +596,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Cephal Lorentus",
             "Daedove Wildguard",
@@ -532,6 +617,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Aldori family",
             "Brevoy",
@@ -551,6 +639,9 @@
         "color": null,
         "visibility": "gm",
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Daggermark"
         ]
@@ -566,6 +657,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Arie",
             "Darien",
@@ -584,6 +678,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -611,6 +708,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Asha Rakker",
             "Brevoy",
@@ -618,6 +718,7 @@
             "Garent",
             "Gralton",
             "Jarlek Grin",
+            "Kings Road",
             "Milo Grainseller",
             "Pitax",
             "Touvette"
@@ -634,6 +735,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Darien"
         ]
@@ -653,6 +757,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Calsys Viine",
@@ -677,6 +784,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Ekon Udoon",
@@ -701,6 +811,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Cornstalk",
             "Malora Grainseller",
@@ -724,6 +837,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Keldithas Beeret",
@@ -746,6 +862,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Iandri Flukeflow",
@@ -767,14 +886,18 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Rendeen",
+            "Xiander"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Chirp",
             "Magrie Beeret",
             "Pitax",
-            "Rendeen",
             "Tandeen Dazzlehand",
-            "Whirl Palett",
-            "Xiander"
+            "Whirl Palett"
         ]
     },
     {
@@ -788,9 +911,13 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
-        "references": [
+        "gmReferences": [
             "Arie",
-            "Daggermark",
+            "Daggermark"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
             "Doves",
             "Sparrow"
         ]
@@ -806,12 +933,16 @@
         "color": "#BF902E",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Sandor",
+            "Vanee"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Claire Nightshield",
-            "Sandor",
-            "The Rill War",
-            "Vanee"
+            "The Rill War"
         ]
     },
     {
@@ -825,9 +956,13 @@
         "color": "#BF902E",
         "visibility": null,
         "related": null,
-        "references": [
-            "Bille Frostbite",
+        "gmReferences": [
             "Erven"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
+            "Bille Frostbite"
         ]
     },
     {
@@ -841,9 +976,12 @@
         "color": "#E00061",
         "visibility": null,
         "related": null,
-        "references": [
+        "gmReferences": [
             "Vanee"
-        ]
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": []
     },
     {
         "id": "vein_grainseller",
@@ -856,12 +994,16 @@
         "color": "#13B057",
         "visibility": "gm",
         "related": null,
-        "references": [
+        "gmReferences": [
             "Ebus",
+            "Vanee"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
             "Grainseller family",
             "Malora Grainseller",
-            "Milo Grainseller",
-            "Vanee"
+            "Milo Grainseller"
         ]
     },
     {
@@ -875,11 +1017,15 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
-        "references": [
+        "gmReferences": [
             "Erven",
-            "Farlamin Mistshaper",
-            "Pitax",
             "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
+            "Farlamin Mistshaper",
+            "Pitax"
         ]
     },
     {
@@ -893,13 +1039,17 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Adsatra Sagebrook",
             "Lalne Quill",
             "Pitax",
             "Tandeen Dazzlehand",
-            "The Rill War",
-            "Thirdenlin"
+            "The Rill War"
         ]
     },
     {
@@ -913,11 +1063,15 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Rendeen"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brunno Meadowmane",
             "Claire Nightshield",
             "Numeria",
-            "Rendeen",
             "Shrowm",
             "Silvana Ashford"
         ]
@@ -933,12 +1087,16 @@
         "color": "#BF902E",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Sandor"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bree Caley",
             "Claire Nightshield",
             "Jonas Arc",
             "Mivon",
-            "Sandor",
             "Silvana Ashford"
         ]
     },
@@ -953,6 +1111,11 @@
         "color": "#5C0BB5",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Rendeen"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Rendeen"
         ]
@@ -968,15 +1131,19 @@
         "color": "#BF902E",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Dunden",
+            "Sandor",
+            "Xiander"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Barnur Keenhold",
             "Divine Artifacts",
-            "Dunden",
             "Mivon",
-            "Sandor",
             "Silvana Ashford",
-            "Tiv",
-            "Xiander"
+            "Tiv"
         ]
     },
     {
@@ -990,6 +1157,11 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Dunden"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Dunden",
             "Jonas Arc",
@@ -1007,6 +1179,9 @@
         "color": "#9C9C9C",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Cypher"
         ]
@@ -1022,6 +1197,9 @@
         "color": "#9C9C9C",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Ichor"
         ]
@@ -1037,12 +1215,16 @@
         "color": "#E00061",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Sandor"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Agamoos Evercrown",
             "Asha Rakker",
             "Garent",
             "Meel'a",
-            "Sandor",
             "Turtahir"
         ]
     },
@@ -1057,13 +1239,17 @@
         "color": "#E00061",
         "visibility": null,
         "related": null,
-        "references": [
+        "gmReferences": [
             "Dunden",
+            "Sandor"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
             "Gralton",
             "Jarlek Grin",
             "Maegar Varn",
-            "Pitax",
-            "Sandor"
+            "Pitax"
         ]
     },
     {
@@ -1077,8 +1263,12 @@
         "color": "#BF902E",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Bann"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
-            "Bann",
             "Bree Caley",
             "Claire Nightshield",
             "Pitax",
@@ -1097,9 +1287,13 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Nunree"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brunno Meadowmane",
-            "Nunree",
             "Vacho",
             "Yelgolor Remoudou"
         ]
@@ -1115,6 +1309,11 @@
         "color": "#1C1B1B",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Xia"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bree Caley",
             "Candle Mages",
@@ -1129,8 +1328,7 @@
             "Stag Lord",
             "Summerborn",
             "Thundarak",
-            "Waking World",
-            "Xia"
+            "Waking World"
         ]
     },
     {
@@ -1144,6 +1342,9 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Nentrah",
             "Stag Lord",
@@ -1161,13 +1362,17 @@
         "color": "#1C1B1B",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Xia"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Aldori family",
             "Conleth Umbra",
             "Harlequin",
             "Joker",
-            "Lord of Stories",
-            "Xia"
+            "Lord of Stories"
         ]
     },
     {
@@ -1181,6 +1386,12 @@
         "color": "#1C1B1B",
         "visibility": "gm",
         "related": null,
+        "gmReferences": [
+            "Xia",
+            "Xiander"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Claire Nightshield",
             "Harlequin",
@@ -1204,6 +1415,11 @@
         "color": "#1C1B1B",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Xia"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Candle Mages",
             "Deren Seere",
@@ -1215,7 +1431,6 @@
             "Magie",
             "Mime",
             "Whirl Palett",
-            "Xia",
             "Yarslav Crain"
         ]
     },
@@ -1230,6 +1445,11 @@
         "color": "#1C1B1B",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Xia"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Joker",
             "Lord of Stories",
@@ -1249,13 +1469,17 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Aelthot",
             "Bree Caley",
             "Candle Mages",
             "Dwen'zur Raincleanser",
             "Pitax",
-            "Thirdenlin",
             "Waaaghhh"
         ]
     },
@@ -1270,10 +1494,15 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Ebus",
+            "Erven"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bree Caley",
             "Ebus",
-            "Erven",
             "The Wastes",
             "Varnhold"
         ]
@@ -1289,6 +1518,11 @@
         "color": "#9C9C9C",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Black Mantles"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Black Mantles",
             "Bree Caley",
@@ -1313,13 +1547,17 @@
         "color": "#BF902E",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Erven",
+            "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bree Caley",
             "Claire Nightshield",
             "Conleth Umbra",
-            "Erven",
             "Silvana Ashford",
-            "Thirdenlin",
             "Thundarak",
             "Varnhold"
         ]
@@ -1335,12 +1573,17 @@
         "color": "#E00061",
         "visibility": null,
         "related": null,
-        "references": [
+        "gmReferences": [
             "Grainseller family",
             "Luxy",
+            "Sandor"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
+            "Grainseller family",
             "Maegar Varn",
             "Milo Grainseller",
-            "Sandor",
             "Varnhold",
             "Vein Grainseller"
         ]
@@ -1356,8 +1599,12 @@
         "color": "#BF902E",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Bann"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
-            "Bann",
             "Brave Wish",
             "Brevoy",
             "Cephal Lorentus",
@@ -1381,6 +1628,11 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Ebus"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bree Caley",
             "Conleth Umbra",
@@ -1400,10 +1652,14 @@
         "color": "#BF902E",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Sandor"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Embeth",
             "Maegar Varn",
-            "Sandor",
             "Vaegarian host"
         ]
     },
@@ -1418,6 +1674,9 @@
         "color": "#BF902E",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Maegar Varn",
@@ -1436,12 +1695,16 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Dunden",
+            "Sandor"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Conleth Umbra",
-            "Dunden",
             "Karri",
             "Maegar Varn",
-            "Sandor",
             "Varnhold"
         ]
     },
@@ -1456,10 +1719,14 @@
         "color": "#9C9C9C",
         "visibility": null,
         "related": null,
-        "references": [
+        "gmReferences": [
             "Luxy",
+            "Pitax"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
             "Milo Grainseller",
-            "Pitax",
             "Silvana Ashford"
         ]
     },
@@ -1474,19 +1741,23 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
-        "references": [
+        "gmReferences": [
             "Bann",
+            "Erven",
+            "The Wastes"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
             "Brave Wish",
             "Bree Caley",
             "Claire Nightshield",
-            "Erven",
             "Jamandi Aldori",
             "Kesten Garess",
             "Maegar Varn",
             "Silvana Ashford",
             "Stag Lord",
             "Tandeen Dazzlehand",
-            "The Wastes",
             "Varnhold"
         ]
     },
@@ -1501,11 +1772,15 @@
         "color": "#9C9C9C",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Luxy"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bree Caley",
             "Claire Nightshield",
             "Crash",
-            "Luxy",
             "Pitax",
             "Silvana Ashford",
             "Stag Lord",
@@ -1523,9 +1798,13 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Ebus"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Chirp",
-            "Ebus",
             "Ura Clawt"
         ]
     },
@@ -1540,6 +1819,9 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bree Caley",
             "Chorrad Troll King",
@@ -1561,12 +1843,16 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Erven",
+            "Sandor"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Adsatra Sagebrook",
             "Annj Bearer",
-            "Brunno Meadowmane",
-            "Erven",
-            "Sandor"
+            "Brunno Meadowmane"
         ]
     },
     {
@@ -1580,9 +1866,13 @@
         "color": "#E00061",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bree Caley",
             "Grainseller family",
+            "Kings Road",
             "Malora Grainseller",
             "Summerborn",
             "Touvette",
@@ -1601,12 +1891,16 @@
         "color": "#E00061",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Xiander"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Chirp",
             "Keldithas Beeret",
-            "Reina Palett",
-            "Xiander"
+            "Reina Palett"
         ]
     },
     {
@@ -1620,14 +1914,18 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Rendeen",
+            "Vanee"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bralon Alepike",
             "Claire Nightshield",
             "Conleth Umbra",
             "Garbin Sunheart",
-            "Rendeen",
-            "Summerborn",
-            "Vanee"
+            "Summerborn"
         ]
     },
     {
@@ -1641,6 +1939,11 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Xiander"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Aldori family",
             "Battle of Fingers",
@@ -1652,8 +1955,7 @@
             "Silvana Ashford",
             "Siphon",
             "Stag Lord",
-            "The Rill War",
-            "Xiander"
+            "The Rill War"
         ]
     },
     {
@@ -1667,10 +1969,14 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Sandor",
+            "Vanee"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Manchu Tribes",
-            "Sandor",
-            "Vanee",
             "Zayne Copper"
         ]
     },
@@ -1685,14 +1991,18 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Erven",
+            "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Annj Bearer",
-            "Erven",
             "Felrick Kindhelm",
             "Gralton",
             "Iandri Flukeflow",
-            "Silvana Ashford",
-            "Thirdenlin"
+            "Silvana Ashford"
         ]
     },
     {
@@ -1706,14 +2016,18 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Thirdenlin",
+            "Xiander"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Aldori family",
             "Brevoy",
             "Jamandi Aldori",
             "Jelbi Flukeflow",
-            "The Rill War",
-            "Thirdenlin",
-            "Xiander"
+            "The Rill War"
         ]
     },
     {
@@ -1727,12 +2041,16 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Vanee"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Calsys Viine",
             "Claire Nightshield",
             "Laura Faelamin",
-            "Restov",
-            "Vanee"
+            "Restov"
         ]
     },
     {
@@ -1746,14 +2064,18 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Dunden",
+            "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bralon Alepike",
-            "Dunden",
             "Dwarven Keeps",
             "Gralton",
             "Jelbi Flukeflow",
-            "Silvana Ashford",
-            "Thirdenlin"
+            "Silvana Ashford"
         ]
     },
     {
@@ -1767,9 +2089,13 @@
         "color": "#E00061",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Erven"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Chirp",
-            "Erven",
             "Gralton"
         ]
     },
@@ -1784,6 +2110,11 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Xiander"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Kingmaker",
             "The Wastes",
@@ -1801,6 +2132,11 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Xiander"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bille Frostbite",
             "Bree Caley",
@@ -1817,8 +2153,7 @@
             "Sparrow",
             "Stag Lord",
             "Summerborn",
-            "Xer",
-            "Xiander"
+            "Xer"
         ]
     },
     {
@@ -1832,9 +2167,13 @@
         "color": "#E00061",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Luxy"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Errard Specher",
-            "Luxy",
             "Magrie Beeret",
             "Pixana Boldshard",
             "Reina Palett"
@@ -1851,6 +2190,9 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Movh Bearer",
             "Shrowm",
@@ -1868,12 +2210,16 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Sandor"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bree Caley",
             "Claire Nightshield",
             "Jamandi Aldori",
             "Maegar Varn",
-            "Sandor",
             "Silvana Ashford",
             "Stag Lord",
             "Tandeen Dazzlehand",
@@ -1892,13 +2238,17 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Dunden",
+            "Erven"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
             "Claire Nightshield",
             "Conleth Umbra",
-            "Dunden",
-            "Erven",
             "Felrick Kindhelm",
             "Laura Faelamin",
             "Silvana Ashford"
@@ -1915,6 +2265,11 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -1928,7 +2283,6 @@
             "Siphon",
             "Stag Lord",
             "The Rill War",
-            "Thirdenlin",
             "Xer"
         ]
     },
@@ -1943,15 +2297,19 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
-        "references": [
-            "Annj Bearer",
+        "gmReferences": [
             "Bann",
-            "Farlamin Mistshaper",
-            "Movh Bearer",
-            "Numeria",
             "Thirdenlin",
             "Vanee",
             "Xiander"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
+            "Annj Bearer",
+            "Farlamin Mistshaper",
+            "Movh Bearer",
+            "Numeria"
         ]
     },
     {
@@ -1965,6 +2323,9 @@
         "color": "#BF902E",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Odak One Eye"
         ]
@@ -1980,14 +2341,18 @@
         "color": "#9C9C9C",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Wyndee",
+            "Xiander"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Beheria",
             "Harlequin",
             "Joker",
             "Mime",
-            "Silvana Ashford",
-            "Wyndee",
-            "Xiander"
+            "Silvana Ashford"
         ]
     },
     {
@@ -2001,6 +2366,9 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Artarp Rein",
             "Yarek Gray"
@@ -2017,6 +2385,9 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Artarp Rein",
             "Bree Caley",
@@ -2035,14 +2406,18 @@
         "color": "#9C9C9C",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Thirdenlin",
+            "Wyndee"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Harlequin",
             "Joker",
             "Mime",
             "Oliveria",
-            "Silvana Ashford",
-            "Thirdenlin",
-            "Wyndee"
+            "Silvana Ashford"
         ]
     },
     {
@@ -2056,6 +2431,9 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Ninne",
             "Odak One Eye"
@@ -2072,15 +2450,21 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
-        "references": [
+        "gmReferences": [
             "Arie",
+            "Doves",
+            "Magpie",
+            "The Wastes"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
             "Crash",
             "Doves",
             "Gildi Crank",
             "Magpie",
             "Oleg Crank",
-            "Oleg's Outpost",
-            "The Wastes"
+            "Oleg's Outpost"
         ]
     },
     {
@@ -2094,14 +2478,18 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Sandor",
+            "Vanee"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Crash",
             "Gildi Crank",
             "Oleg's Outpost",
-            "Sandor",
             "Sparrow",
-            "The Rill War",
-            "Vanee"
+            "The Rill War"
         ]
     },
     {
@@ -2115,11 +2503,15 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Rendeen"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Crash",
             "Oleg Crank",
             "Oleg's Outpost",
-            "Rendeen",
             "Sparrow",
             "The Rill War"
         ]
@@ -2135,6 +2527,11 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Balrotho"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Aelthot",
             "Balrotho",
@@ -2154,6 +2551,11 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Vacho"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Vacho"
         ]
@@ -2169,6 +2571,9 @@
         "color": "#5C0BB5",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Vacho"
         ]
@@ -2184,6 +2589,13 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Erven",
+            "Magie",
+            "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -2191,7 +2603,6 @@
             "Claire Nightshield",
             "Deren Seere",
             "Derk",
-            "Erven",
             "Flor Energa",
             "Ihara Absul",
             "Joker",
@@ -2199,7 +2610,6 @@
             "Magie",
             "Nentrah",
             "Silvana Ashford",
-            "Thirdenlin",
             "Whirl Palett"
         ]
     },
@@ -2214,9 +2624,14 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Bann",
+            "Vanee"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Annj Bearer",
-            "Bann",
             "Bree Caley",
             "Candle Mages",
             "Claire Nightshield",
@@ -2230,7 +2645,6 @@
             "Nentrah",
             "Reina Palett",
             "Silvana Ashford",
-            "Vanee",
             "Yarslav Crain"
         ]
     },
@@ -2245,6 +2659,11 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -2258,7 +2677,6 @@
             "Lord of Stories",
             "Nentrah",
             "Silvana Ashford",
-            "Thirdenlin",
             "Whirl Palett",
             "Yarslav Crain"
         ]
@@ -2274,6 +2692,12 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Nunree",
+            "Xiander"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -2286,10 +2710,8 @@
             "Lord of Stories",
             "Magie",
             "Nentrah",
-            "Nunree",
             "Silvana Ashford",
             "Whirl Palett",
-            "Xiander",
             "Yarslav Crain"
         ]
     },
@@ -2304,9 +2726,13 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Arie"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Annj Bearer",
-            "Arie",
             "Bree Caley",
             "Candle Mages",
             "Claire Nightshield",
@@ -2333,13 +2759,17 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Erven"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
             "Candle Mages",
             "Claire Nightshield",
             "Deren Seere",
-            "Erven",
             "Flor Energa",
             "Ihara Absul",
             "Joker",
@@ -2363,6 +2793,11 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -2376,7 +2811,6 @@
             "Magie",
             "Nentrah",
             "Silvana Ashford",
-            "Thirdenlin",
             "Whirl Palett",
             "Yarslav Crain"
         ]
@@ -2392,6 +2826,12 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Bille Frostbite",
+            "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Adsatra Sagebrook",
             "Bille Frostbite",
@@ -2401,8 +2841,7 @@
             "Claire Nightshield",
             "Movh Bearer",
             "Silvana Ashford",
-            "Summerborn",
-            "Thirdenlin"
+            "Summerborn"
         ]
     },
     {
@@ -2416,10 +2855,14 @@
         "color": "#13B057",
         "visibility": "gm",
         "related": null,
-        "references": [
-            "Bree Caley",
+        "gmReferences": [
             "Sandor",
             "Vanee"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
+            "Bree Caley"
         ]
     },
     {
@@ -2433,11 +2876,15 @@
         "color": "#9C9C9C",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Nunree"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bille Frostbite",
             "Bree Caley",
             "Crash",
-            "Nunree",
             "Ox",
             "Stag Lord"
         ]
@@ -2453,18 +2900,23 @@
         "color": "#1C1B1B",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Nentrah",
+            "Wyndee",
+            "Xia",
+            "Xiander"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bree Caley",
             "Candle Mages",
             "Conleth Umbra",
             "Derk",
             "Divine Artifacts",
-            "Nentrah",
             "Peck Arck",
             "Silvana Ashford",
             "Varnhold",
-            "Wyndee",
-            "Xia",
             "Xiander"
         ]
     },
@@ -2479,6 +2931,12 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Thirdenlin",
+            "Xia"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brave Wish",
             "Bree Caley",
@@ -2490,9 +2948,7 @@
             "n'Neb",
             "Pitax",
             "Silvana Ashford",
-            "Thirdenlin",
-            "Velmine",
-            "Xia"
+            "Velmine"
         ]
     },
     {
@@ -2506,6 +2962,9 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bille Frostbite",
             "Bree Caley",
@@ -2530,15 +2989,19 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
-        "references": [
+        "gmReferences": [
             "Bann",
+            "The Wastes"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
             "Bille Frostbite",
             "Bree Caley",
             "Claire Nightshield",
             "Crash",
             "Silvana Ashford",
             "Stag Lord",
-            "The Wastes",
             "Xer"
         ]
     },
@@ -2553,8 +3016,12 @@
         "color": "#5C0BB5",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Bann"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
-            "Bann",
             "Bree Caley",
             "Claire Nightshield",
             "n'Neb",
@@ -2573,6 +3040,11 @@
         "color": "#E00061",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Vanee"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Calsys Viine",
@@ -2581,7 +3053,6 @@
             "Rita Neat",
             "Talia Andureen",
             "The Rill War",
-            "Vanee",
             "Viine family"
         ]
     },
@@ -2596,12 +3067,16 @@
         "color": "#E00061",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Luxy",
+            "Sandor"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Calsys Viine",
             "Claire Nightshield",
-            "Luxy",
             "Sandak Viine",
-            "Sandor",
             "Viine family"
         ]
     },
@@ -2616,9 +3091,13 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Dunden"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
-            "Dunden",
             "Ekon Udoon",
             "Emily Viine",
             "Garbin Sunheart",
@@ -2637,14 +3116,18 @@
         "color": "#13B057",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Erven",
+            "Sandor"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Claire Nightshield",
             "Ekon Udoon",
-            "Erven",
             "Kiri Udoon",
             "Maameo Udoon",
-            "Sandor",
             "Udoon family"
         ]
     },
@@ -2659,8 +3142,12 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Bann"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
-            "Bann",
             "Brevoy",
             "Ekon Udoon",
             "Jamandi Aldori",
@@ -2681,11 +3168,16 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Dunden",
+            "Erven",
+            "Udoon family"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Claire Nightshield",
-            "Dunden",
             "Ekon Udoon",
-            "Erven",
             "Maameo Udoon",
             "Thorin Udoon",
             "Udoon family"
@@ -2702,12 +3194,16 @@
         "color": "#BF902E",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Calsys Viine",
             "Kiri Udoon",
             "Maameo Udoon",
             "Maegar Varn",
-            "Thirdenlin",
             "Thorin Udoon",
             "Udoon family"
         ]
@@ -2723,8 +3219,12 @@
         "color": "#5C0BB5",
         "visibility": "gm",
         "related": null,
+        "gmReferences": [
+            "Brevoy"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
-            "Brevoy",
             "Rita Neat"
         ]
     },
@@ -2739,6 +3239,11 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Viine family"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Sandak Viine",
             "Talia Andureen",
@@ -2756,12 +3261,16 @@
         "color": "#211DA1",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Thirdenlin"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Beeret family",
             "Brevoy",
             "Magrie Beeret",
-            "Sandak Viine",
-            "Thirdenlin"
+            "Sandak Viine"
         ]
     },
     {
@@ -2775,8 +3284,12 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [
+            "Dunden"
+        ],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
-            "Dunden",
             "Jamandi Aldori",
             "Swordlords of Brevoy"
         ]
@@ -2792,6 +3305,9 @@
         "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Aldori family",
             "Kassil Aldori",
@@ -2814,77 +3330,76 @@
         },
         "border": [
             [
-                548,
-                684
+                545,
+                675
             ],
             [
-                550,
-                664
+                563,
+                609
             ],
             [
-                569,
-                617
+                547,
+                592
             ],
             [
-                551,
-                601
+                540,
+                562
             ],
             [
-                542,
-                567
+                513,
+                535
             ],
             [
-                518,
-                546
-            ],
-            [
-                512,
-                515
+                510,
+                510
             ],
             [
                 485,
                 499
             ],
             [
-                479,
+                466,
                 520
             ],
             [
-                446,
-                540
+                442,
+                530
             ],
             [
-                435,
-                558
+                433,
+                548
             ],
             [
-                422,
-                570
+                420,
+                565
             ],
             [
-                425,
-                599
+                421,
+                600
             ],
             [
                 428,
                 634
             ],
             [
-                488,
-                684
+                476,
+                670
             ],
             [
-                505,
-                682
+                503,
+                678
             ],
             [
-                528,
-                691
+                522,
+                683
             ]
         ],
         "color": "#27872A",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Avendale",
             "Bann",
@@ -2911,8 +3426,12 @@
         },
         "border": [
             [
-                401,
-                1490
+                422,
+                1492
+            ],
+            [
+                420,
+                1452
             ],
             [
                 418,
@@ -2923,20 +3442,16 @@
                 1308
             ],
             [
-                433,
-                1305
-            ],
-            [
-                456,
-                1278
+                446,
+                1291
             ],
             [
                 497,
                 1265
             ],
             [
-                544,
-                1279
+                547,
+                1275
             ],
             [
                 589,
@@ -2947,12 +3462,12 @@
                 1246
             ],
             [
-                651,
-                1194
+                652,
+                1146
             ],
             [
-                657,
-                1144
+                712,
+                1142
             ],
             [
                 772,
@@ -2963,20 +3478,16 @@
                 1185
             ],
             [
-                807,
-                1222
-            ],
-            [
-                785,
-                1260
-            ],
-            [
-                755,
-                1279
+                780,
+                1251
             ],
             [
                 740,
-                1344
+                1285
+            ],
+            [
+                731,
+                1347
             ],
             [
                 755,
@@ -2987,17 +3498,32 @@
                 1420
             ],
             [
-                776,
+                770,
                 1455
             ],
             [
-                782,
+                768,
+                1481
+            ],
+            [
+                771,
                 1490
+            ],
+            [
+                734,
+                1491
+            ],
+            [
+                443,
+                1492
             ]
         ],
         "color": "#CFCED6",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bann",
             "Brevoy",
@@ -3023,81 +3549,72 @@
         },
         "border": [
             [
-                633,
-                715
+                627,
+                713
             ],
             [
-                661,
-                728
+                676,
+                733
             ],
             [
-                682,
-                737
-            ],
-            [
-                721,
-                701
+                717,
+                698
             ],
             [
                 706,
                 638
             ],
             [
-                711,
-                608
+                709,
+                603
             ],
             [
-                693,
-                598
+                685,
+                592
             ],
             [
-                649,
-                601
+                620,
+                599
             ],
             [
-                618,
-                609
+                600,
+                594
             ],
             [
-                594,
-                596
+                585,
+                580
             ],
             [
-                582,
-                578
+                550,
+                562
             ],
             [
-                552,
-                567
+                557,
+                588
             ],
             [
-                552,
-                590
-            ],
-            [
-                579,
-                613
+                574,
+                612
             ],
             [
                 552,
-                668
+                673
             ],
             [
-                554,
-                686
+                577,
+                688
             ],
             [
-                580,
-                692
-            ],
-            [
-                589,
-                719
+                592,
+                715
             ]
         ],
         "color": "#241E96",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Daggermark",
@@ -3132,192 +3649,140 @@
                 970
             ],
             [
-                798,
-                897
+                804,
+                921
             ],
             [
                 742,
                 766
             ],
             [
-                725,
-                722
+                741,
+                717
             ],
             [
-                752,
-                671
-            ],
-            [
-                717,
-                617
+                745,
+                643
             ],
             [
                 737,
                 566
             ],
             [
-                740,
-                516
-            ],
-            [
                 761,
                 471
             ],
             [
-                738,
-                426
+                744,
+                407
             ],
             [
-                750,
-                381
+                744,
+                337
             ],
             [
-                748,
-                347
+                795,
+                299
             ],
             [
-                733,
-                325
+                805,
+                249
             ],
             [
-                721,
-                307
-            ],
-            [
-                741,
-                275
-            ],
-            [
-                720,
-                262
-            ],
-            [
-                721,
-                226
-            ],
-            [
-                703,
-                213
-            ],
-            [
-                727,
-                153
-            ],
-            [
-                790,
-                155
-            ],
-            [
-                817,
-                183
+                825,
+                175
             ],
             [
                 849,
                 145
             ],
             [
-                865,
-                161
+                869,
+                155
             ],
             [
                 886,
                 144
             ],
             [
-                888,
-                109
+                898,
+                99
             ],
             [
-                932,
-                85
+                928,
+                100
+            ],
+            [
+                943,
+                77
             ],
             [
                 965,
                 84
             ],
             [
-                969,
-                119
+                986,
+                129
             ],
             [
                 984,
-                134
-            ],
-            [
-                993,
-                211
+                194
             ],
             [
                 938,
                 234
             ],
             [
-                972,
-                272
-            ],
-            [
-                1003,
-                340
-            ],
-            [
-                1042,
-                354
-            ],
-            [
-                1035,
-                388
+                971,
+                267
             ],
             [
                 984,
-                441
+                303
             ],
             [
-                959,
-                451
+                1044,
+                344
             ],
             [
-                944,
-                548
+                1034,
+                378
             ],
             [
-                940,
-                604
-            ],
-            [
-                899,
-                629
+                981,
+                426
             ],
             [
                 953,
-                643
+                435
             ],
             [
-                970,
-                628
+                947,
+                485
             ],
             [
-                968,
-                604
+                940,
+                572
             ],
             [
-                990,
-                594
+                906,
+                622
+            ],
+            [
+                961,
+                633
+            ],
+            [
+                977,
+                599
             ],
             [
                 996,
                 569
             ],
             [
-                1012,
-                530
-            ],
-            [
                 1025,
-                527
-            ],
-            [
-                1032,
-                548
+                522
             ],
             [
                 1042,
@@ -3328,28 +3793,28 @@
                 649
             ],
             [
-                1037,
-                793
+                1039,
+                777
+            ],
+            [
+                1017,
+                820
             ],
             [
                 997,
-                866
+                876
             ],
             [
-                994,
-                894
+                966,
+                923
             ],
             [
-                965,
+                948,
                 929
             ],
             [
-                951,
-                933
-            ],
-            [
-                945,
-                950
+                948,
+                946
             ],
             [
                 976,
@@ -3360,26 +3825,26 @@
                 1024
             ],
             [
-                961,
-                1076
+                958,
+                1071
             ],
             [
-                933,
-                1089
-            ],
-            [
-                899,
-                1087
+                908,
+                1082
             ]
         ],
         "color": "#22D6D0",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Battle of Fingers",
             "Brevoy",
             "Dwarven Keeps",
             "Erven",
+            "Kings Road",
             "Manchu Tribes",
             "Mivon",
             "Pitax",
@@ -3404,89 +3869,72 @@
         },
         "border": [
             [
-                446,
-                1281
+                436,
+                1278
             ],
             [
-                432,
-                1254
+                426,
+                1260
             ],
             [
-                434,
-                1238
+                424,
+                1235
             ],
             [
-                404,
-                1210
+                397,
+                1202
             ],
             [
-                401,
-                1183
+                400,
+                1159
             ],
             [
-                409,
-                1156
-            ],
-            [
-                387,
-                1140
-            ],
-            [
-                372,
-                1126
-            ],
-            [
-                360,
+                385,
                 1145
             ],
             [
-                357,
-                1167
+                369,
+                1130
             ],
             [
-                336,
-                1174
+                354,
+                1165
             ],
             [
-                306,
-                1176
+                322,
+                1180
             ],
             [
-                281,
+                276,
                 1185
             ],
             [
-                272,
-                1216
+                265,
+                1234
             ],
             [
-                271,
-                1233
+                291,
+                1240
             ],
             [
-                303,
-                1238
-            ],
-            [
-                315,
-                1249
-            ],
-            [
-                331,
-                1250
+                316,
+                1254
             ],
             [
                 366,
                 1291
             ],
             [
-                421,
-                1301
+                411,
+                1289
             ]
         ],
         "color": "#F3FF21",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brevoy",
             "Embeth",
@@ -3509,201 +3957,132 @@
         },
         "border": [
             [
-                549,
-                427
-            ],
-            [
-                545,
-                438
-            ],
-            [
-                536,
-                442
+                533,
+                432
             ],
             [
                 548,
                 460
             ],
             [
-                549,
-                485
+                547,
+                506
             ],
             [
-                551,
-                514
+                521,
+                518
             ],
             [
-                514,
-                526
+                546,
+                551
             ],
             [
-                544,
-                560
+                575,
+                559
             ],
             [
-                587,
-                569
-            ],
-            [
-                600,
+                620,
                 593
             ],
             [
-                619,
-                601
+                651,
+                576
             ],
             [
-                646,
-                594
+                689,
+                541
             ],
             [
-                652,
-                581
+                714,
+                531
             ],
             [
-                672,
-                572
-            ],
-            [
-                687,
-                547
-            ],
-            [
-                713,
-                546
-            ],
-            [
-                712,
-                521
-            ],
-            [
-                705,
-                499
+                710,
+                490
             ],
             [
                 730,
-                479
+                469
             ],
             [
-                719,
-                441
+                716,
+                422
             ],
             [
-                717,
-                406
+                733,
+                362
             ],
             [
-                735,
-                372
+                727,
+                325
             ],
             [
-                731,
-                369
+                715,
+                299
+            ],
+            [
+                729,
+                268
             ],
             [
                 713,
-                348
-            ],
-            [
-                723,
-                328
-            ],
-            [
-                710,
-                310
-            ],
-            [
-                724,
-                289
-            ],
-            [
-                728,
-                278
-            ],
-            [
-                724,
-                278
-            ],
-            [
-                710,
-                264
+                258
             ],
             [
                 712,
                 236
             ],
             [
-                694,
-                213
+                700,
+                203
             ],
             [
-                686,
-                196
+                647,
+                157
             ],
             [
-                666,
-                175
-            ],
-            [
-                631,
+                591,
                 168
-            ],
-            [
-                606,
-                177
-            ],
-            [
-                588,
-                178
             ],
             [
                 582,
                 192
             ],
             [
-                586,
-                215
+                585,
+                228
             ],
             [
-                583,
-                238
+                595,
+                263
             ],
             [
-                599,
-                253
-            ],
-            [
-                582,
-                278
-            ],
-            [
-                606,
-                277
-            ],
-            [
-                639,
-                295
+                635,
+                287
             ],
             [
                 641,
                 339
             ],
             [
-                653,
-                364
+                626,
+                368
             ],
             [
-                623,
-                378
+                603,
+                410
             ],
             [
-                597,
-                432
+                548,
+                424
             ]
         ],
         "color": "#B09515",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Daggermark",
             "Numeria",
@@ -3725,52 +4104,44 @@
         },
         "border": [
             [
-                499,
-                692
+                484,
+                688
             ],
             [
                 421,
-                638
+                630
             ],
             [
-                413,
-                582
-            ],
-            [
-                422,
-                553
+                411,
+                567
             ],
             [
                 435,
                 526
             ],
             [
-                463,
-                514
-            ],
-            [
-                475,
-                498
+                469,
+                502
             ],
             [
                 473,
                 477
             ],
             [
-                498,
-                441
+                483,
+                445
             ],
             [
-                445,
-                451
+                411,
+                457
             ],
             [
-                415,
-                469
+                400,
+                468
             ],
             [
-                363,
-                470
+                353,
+                461
             ],
             [
                 347,
@@ -3781,61 +4152,64 @@
                 414
             ],
             [
-                267,
-                449
+                261,
+                441
             ],
             [
                 237,
                 444
             ],
             [
-                259,
-                557
+                251,
+                543
             ],
             [
                 227,
                 561
             ],
             [
-                253,
-                631
+                247,
+                618
             ],
             [
-                287,
-                619
+                273,
+                618
             ],
             [
-                294,
-                650
+                292,
+                638
             ],
             [
                 339,
                 645
             ],
             [
-                353,
-                686
+                351,
+                671
             ],
             [
-                413,
-                693
+                409,
+                691
             ],
             [
-                415,
-                723
+                411,
+                708
             ],
             [
-                432,
-                698
+                423,
+                710
             ],
             [
-                450,
-                692
+                435,
+                691
             ]
         ],
         "color": "#FA5050",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brass Wheels",
             "Daggermark",
@@ -3843,6 +4217,7 @@
             "Dunden",
             "Embeth",
             "Garent",
+            "Kings Road",
             "Manchu Tribes",
             "Sandor",
             "Touvette",
@@ -3863,12 +4238,12 @@
         },
         "border": [
             [
-                423,
-                697
+                432,
+                698
             ],
             [
-                476,
-                701
+                474,
+                696
             ],
             [
                 513,
@@ -3903,60 +4278,60 @@
                 897
             ],
             [
-                490,
-                922
+                485,
+                918
             ],
             [
-                467,
-                972
-            ],
-            [
-                467,
-                1015
+                471,
+                963
             ],
             [
                 459,
-                1034
+                1010
             ],
             [
-                422,
-                1068
+                443,
+                1043
             ],
             [
-                404,
-                1137
+                418,
+                1065
             ],
             [
-                366,
-                1118
+                396,
+                1123
+            ],
+            [
+                367,
+                1123
             ],
             [
                 349,
                 1166
             ],
             [
-                308,
-                1173
+                301,
+                1177
             ],
             [
-                286,
-                1138
+                281,
+                1139
             ],
             [
-                350,
-                1081
+                341,
+                1078
             ],
             [
                 356,
                 1029
             ],
             [
-                410,
-                1004
+                401,
+                1009
             ],
             [
-                415,
-                971
+                401,
+                969
             ],
             [
                 355,
@@ -3967,21 +4342,28 @@
                 835
             ],
             [
-                430,
-                846
+                421,
+                841
             ],
             [
-                438,
-                797
+                437,
+                792
             ],
             [
                 469,
                 752
+            ],
+            [
+                445,
+                734
             ]
         ],
         "color": "#62C46A",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Dream Realm",
             "Dunden",
@@ -4004,6 +4386,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bann",
             "Dunden",
@@ -4027,77 +4412,56 @@
         },
         "border": [
             [
-                542,
-                414
+                567,
+                395
             ],
             [
-                570,
-                409
+                582,
+                381
             ],
             [
-                578,
-                394
+                605,
+                361
             ],
             [
-                594,
-                387
+                587,
+                344
             ],
             [
-                604,
-                372
+                581,
+                318
             ],
             [
-                583,
-                347
-            ],
-            [
-                585,
-                327
-            ],
-            [
-                564,
-                305
-            ],
-            [
-                544,
-                272
-            ],
-            [
-                474,
-                268
+                526,
+                264
             ],
             [
                 373,
-                279
+                274
             ],
             [
                 295,
                 313
             ],
             [
-                299,
-                338
-            ],
-            [
                 361,
                 360
             ],
             [
-                408,
-                407
+                401,
+                394
             ],
             [
-                472,
-                415
-            ],
-            [
-                524,
-                402
+                501,
+                403
             ]
         ],
         "color": "#591773",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bann",
             "Dunden",
@@ -4134,20 +4498,12 @@
                 925
             ],
             [
-                770,
-                853
-            ],
-            [
-                735,
-                760
-            ],
-            [
-                717,
-                798
+                730,
+                759
             ],
             [
                 710,
-                855
+                841
             ],
             [
                 679,
@@ -4155,51 +4511,55 @@
             ],
             [
                 675,
-                926
+                890
             ],
             [
                 666,
-                977
+                992
             ],
             [
-                672,
-                994
-            ],
-            [
-                655,
+                654,
                 1020
             ],
             [
-                672,
-                1047
+                666,
+                1041
             ],
             [
-                662,
-                1064
-            ],
-            [
-                676,
-                1090
+                667,
+                1091
             ],
             [
                 653,
                 1119
             ],
             [
-                667,
-                1133
+                670,
+                1127
+            ],
+            [
+                736,
+                1137
             ],
             [
                 781,
                 1143
             ],
             [
-                808,
-                1124
+                794,
+                1130
             ],
             [
-                845,
-                1100
+                810,
+                1127
+            ],
+            [
+                819,
+                1103
+            ],
+            [
+                842,
+                1096
             ],
             [
                 860,
@@ -4209,12 +4569,16 @@
         "color": "#8F1A2C",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Aldori family",
             "Bann",
             "Beeret family",
             "Darien",
             "Dunden",
+            "Kings Road",
             "Mivon",
             "New Steveten",
             "Numeria",
@@ -4231,7 +4595,7 @@
     },
     {
         "id": null,
-        "name": "King Road",
+        "name": "Kings Road",
         "category": "Unknown",
         "file": "Infrastructure/Kings Road.md",
         "map": null,
@@ -4240,6 +4604,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Brass Wheels",
             "Brevoy",
@@ -4262,6 +4629,9 @@
         "color": null,
         "visibility": null,
         "related": false,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Battle of Fingers",
             "Brevoy",
@@ -4290,6 +4660,9 @@
         "color": null,
         "visibility": null,
         "related": false,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Agamoos Evercrown",
             "Bree Caley",
@@ -4316,6 +4689,9 @@
         "color": null,
         "visibility": null,
         "related": false,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Arie",
             "Bann",
@@ -4337,24 +4713,26 @@
     {
         "id": null,
         "name": "War of the beards",
-        "category": "Unknown",
+        "category": "history",
         "file": "History/War of the beards.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": 2923,
+        "EndYear": 2972,
         "references": [
             "Daggermark",
-            "Dwarven Keeps",
-            "The Timeline"
+            "Dwarven Keeps"
         ]
     },
     {
         "id": null,
         "name": "The Rill War",
-        "category": "Unknown",
+        "category": "history",
         "file": "History/The Rill War.md",
         "map": null,
         "view": {
@@ -4363,9 +4741,12 @@
             "zoom": 2
         },
         "border": null,
-        "color": null,
+        "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": 3843,
+        "EndYear": 3847,
         "references": [
             "Battle of Fingers",
             "Brevoy",
@@ -4374,14 +4755,13 @@
             "Numeria",
             "Pitax",
             "Roughen Fort",
-            "Swordlords of Brevoy",
-            "The Timeline"
+            "Swordlords of Brevoy"
         ]
     },
     {
         "id": null,
         "name": "The Manchu Conquests",
-        "category": "Unknown",
+        "category": "history",
         "file": "History/The Manchu Conquests.md",
         "map": null,
         "view": {
@@ -4390,34 +4770,37 @@
             "zoom": 2
         },
         "border": null,
-        "color": null,
+        "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": 3657,
+        "EndYear": 3702,
         "references": [
             "Manchu Tribes",
-            "Numeria",
-            "The Timeline"
+            "Numeria"
         ]
     },
     {
         "id": null,
         "name": "The Magical Anorchrism",
-        "category": "Unknown",
+        "category": "history",
         "file": "History/The Magical Anorchrism.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#211DA1",
         "visibility": null,
         "related": null,
-        "references": [
-            "The Timeline"
-        ]
+        "gmReferences": [],
+        "StartYear": 0,
+        "EndYear": 0,
+        "references": []
     },
     {
         "id": null,
         "name": "Battle of Fingers",
-        "category": "Unknown",
+        "category": "history",
         "file": "History/Battle of Fingers.md",
         "map": null,
         "view": {
@@ -4426,9 +4809,12 @@
             "zoom": 2
         },
         "border": null,
-        "color": null,
+        "color": "#B01313",
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": 3847,
+        "EndYear": 3847,
         "references": [
             "Brevoy",
             "Maameo Udoon",
@@ -4437,8 +4823,7 @@
             "Pitax",
             "Roughen Fort",
             "Swordlords of Brevoy",
-            "The Rill War",
-            "The Timeline"
+            "The Rill War"
         ]
     },
     {
@@ -4452,6 +4837,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4465,6 +4853,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4478,6 +4869,9 @@
         "color": null,
         "visibility": "gm",
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4491,6 +4885,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4504,6 +4901,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4517,6 +4917,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4530,6 +4933,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4543,6 +4949,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4556,6 +4965,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4569,6 +4981,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4582,6 +4997,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4595,6 +5013,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4608,6 +5029,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4621,6 +5045,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4634,6 +5061,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": []
     },
     {
@@ -4647,6 +5077,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Greenskin"
         ]
@@ -4662,6 +5095,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Dwarven Keeps",
             "The Wastes"
@@ -4678,6 +5114,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Dream Realm",
             "Material Plane",
@@ -4695,6 +5134,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Dream Realm",
             "Material Plane",
@@ -4712,6 +5154,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Dream Realm",
             "Sleeping Realm",
@@ -4729,6 +5174,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Material Plane",
             "Sleeping Realm",
@@ -4746,6 +5194,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Bann",
             "Dunden",
@@ -4773,6 +5224,9 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Agamoos Evercrown",
             "Asha Rakker",
@@ -4803,9 +5257,13 @@
         "color": null,
         "visibility": null,
         "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
         "references": [
             "Adsatra Sagebrook",
             "Aelthot",
+            "Agamoos Evercrown",
             "Aldori family",
             "Allas Dawnd",
             "Annj Bearer",
@@ -4826,6 +5284,7 @@
             "Claire Nightshield",
             "Conleth Umbra",
             "Crash",
+            "Cypher",
             "Daedove Wildguard",
             "Deren Seere",
             "Derk",
@@ -4841,6 +5300,7 @@
             "Gildi Crank",
             "Harlequin",
             "Iandri Flukeflow",
+            "Ichor",
             "Ihara Absul",
             "Jamandi Aldori",
             "Joker",
@@ -4859,6 +5319,7 @@
             "Magpie",
             "Magrie Beeret",
             "Malora Grainseller",
+            "Meel'a",
             "Milo Grainseller",
             "Mime",
             "Mivon",
@@ -4891,12 +5352,14 @@
             "Thorin Udoon",
             "Thundarak",
             "Tiv",
+            "Turtahir",
             "Ura Clawt",
             "Vacho",
             "Vaegarian host",
             "Varnhold",
             "Velmine",
             "Viine family",
+            "Vital Delivery",
             "Vondal Sandwashed",
             "Whirl Palett",
             "Wit",

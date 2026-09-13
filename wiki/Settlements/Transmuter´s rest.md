@@ -3,6 +3,9 @@ id: transmuters_rest
 name: Transmuter´s Rest
 category: settlement
 
+nation: [[Pitax]]
+Ruler: 
+
 map:
   x: 700
   y: 585

@@ -9,7 +9,7 @@ race: Tiefling
 birth: 3836
 death: 
 family: 
-organisations: 
+organisations: [[Thielflings]]
 origin: [[Pitax]]
 
 color: "#9C9C9C"

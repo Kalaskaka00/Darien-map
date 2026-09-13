@@ -53,15 +53,44 @@ function renderArticle(article, markdown){
 
     // Add visibility info at top (GM only)
     const visibilityInfo = getVisibilityInfoHTML(article);
+    const wikiSummary = article.file === "Home/Home.md"
+        ? renderWikiSummary()
+        : "";
     
     document.getElementById("article").innerHTML =
-        visibilityInfo + html + renderRelatedArticles(article);
+        visibilityInfo + html + renderRelatedArticles(article) + wikiSummary;
+
+}
+
+function renderWikiSummary(){
+
+    const latestBuild = wikiMeta.latestBuild
+        ? new Date(wikiMeta.latestBuild).toLocaleString(undefined, {
+            dateStyle: "medium",
+            timeStyle: "short"
+        })
+        : "Unknown";
+    const articleCount = Number.isFinite(wikiMeta.articleCount)
+        ? wikiMeta.articleCount
+        : "Unknown";
+    const latestChange = wikiMeta.latestChange || "No change note recorded.";
+
+    return `
+        <section class="wiki-summary">
+            <h2>Wiki</h2>
+            <dl>
+                <div><dt>Latest update</dt><dd>${escapeArticleHTML(latestBuild)}</dd></div>
+                <div><dt>Articles</dt><dd>${escapeArticleHTML(String(articleCount))}</dd></div>
+                <div><dt>Latest changes</dt><dd>${escapeArticleHTML(latestChange)}</dd></div>
+            </dl>
+        </section>
+    `;
 
 }
 
 function escapeArticleHTML(value){
 
-    return value
+    return String(value)
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
@@ -76,8 +105,12 @@ function renderRelatedArticles(article){
         return "";
 
     const related = new Map();
+    const references = [
+        ...(article.references || []),
+        ...(isGM ? article.gmReferences || [] : [])
+    ];
 
-    (article.references || []).forEach(name => {
+    references.forEach(name => {
         const relatedArticle = getArticle(name);
 
         if(relatedArticle && relatedArticle.file !== article.file && canReadArticle(relatedArticle))
@@ -85,8 +118,13 @@ function renderRelatedArticles(article){
     });
 
     world.forEach(candidate => {
+        const candidateReferences = [
+            ...(candidate.references || []),
+            ...(isGM ? candidate.gmReferences || [] : [])
+        ];
+
         if(candidate.file !== article.file &&
-            (candidate.references || []).includes(article.name) &&
+            candidateReferences.includes(article.name) &&
             canReadArticle(candidate))
             related.set(candidate.name, candidate);
     });

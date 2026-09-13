@@ -25,7 +25,8 @@ function enableDrawRoad(){
 
 function disableDrawRoad(){
 
-    stopLineDrawing();
+    if(drawingConfig?.type === "road")
+        stopLineDrawing();
 
 }
 
@@ -110,7 +111,7 @@ document.getElementById("road-cancel").onclick = function(){
 
     hideRoadForm();
 
-    startRoadDrawing();
+    enableDrawRoad();
 
 };
 
