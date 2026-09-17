@@ -2,14 +2,18 @@
 - PCs
 - Organisations summary -> Home
 - Nations Summary -> Home
-- Add Rivers
 - Deity stories
 - Thieflings
+- Deity Symbols
+- Family Symbols
+- Organisation symbols
+- Flags
 ## Details
 - Clean up and speed up code
 - Fix ping
-- Render bigger roads atop other roads.
+- Render bigger roads atop other roads (rivers).
 - Curves to style document
+- Layer button graphics
 ## Map
 - Lakes
 - Trade Routes
@@ -19,6 +23,7 @@
 - Family Crests
 - Weather
 - Party marker
+- Config for layer load order
 ## Tools
 - Laser pointer 
 - Travel calculator
@@ -34,7 +39,8 @@
 - Preview wiki article on map and link
 ## Wiki
 - Deity article type
-- Organisation article type
+- Organisation article type - Mark cities
+- Family article type - Mark cities
 - Nation article type
 - Campaign article type
 - Article text visible to some players

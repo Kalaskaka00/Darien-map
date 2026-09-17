@@ -15,9 +15,7 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host "Adding changed files..."
 git add .
 
-$msg = Read-Host "Commit message"
-
-git commit -m $msg
+git commit -m $changeNote
 git push
 
 Read-Host "Done! Press Enter to exit"

@@ -11,10 +11,17 @@ function openArticle(article, addToHistory = true){
         ? getActiveWikiTab()
         : null;
 
-    if(activeTab){
+    if(!activeTab && typeof createWikiTab === "function")
+        createWikiTab(article);
 
-        activeTab.article = article;
-        activeTab.directory = false;
+    const currentTab = typeof getActiveWikiTab === "function"
+        ? getActiveWikiTab()
+        : null;
+
+    if(currentTab){
+
+        currentTab.article = article;
+        currentTab.directory = false;
 
     }
 
