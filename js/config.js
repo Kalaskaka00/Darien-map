@@ -9,6 +9,18 @@ const CONFIG = {
     map: {
         kilometersPerMapUnit: 1,
         snapDistance: 5,
+        layerOrder: [
+            "nations",
+            "settlements",
+            "roads",
+            "rivers"
+        ],
+        layerVisibility: {
+            nations: true,
+            rivers: true,
+            roads: true,
+            settlements: true
+        },
         parchmentOverhang: {
             horizontal: 50,
             vertical: 50

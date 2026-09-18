@@ -9,12 +9,6 @@ const map = L.map('map', {
     zoomSnap: 0
 });
 
-map.createPane("rivers");
-map.getPane("rivers").style.zIndex = 410;
-
-map.createPane("roads");
-map.getPane("roads").style.zIndex = 420;
-
 // Definiera bildens hörn
 const bounds = [
     [0, 0],
@@ -28,7 +22,65 @@ const frameBounds = [
 ];
 
 L.imageOverlay('map/Map.avif', frameBounds, { interactive: false }).addTo(map);
-L.imageOverlay('map/Darien map.png', bounds).addTo(map);
+
+const mapPreview = L.imageOverlay(
+    'map/Darien map-preview.jpg',
+    bounds,
+    { interactive: false }
+).addTo(map);
+
+let detailedMapRequested = false;
+let detailedMapLoaded = false;
+let mapIsZooming = false;
+let initialViewReady = false;
+
+function loadDetailedMapWhenIdle(){
+
+    if(detailedMapRequested || detailedMapLoaded || mapIsZooming)
+        return;
+
+    detailedMapRequested = true;
+
+    const detailedMap = L.imageOverlay(
+        'map/Darien map.png',
+        bounds,
+        { interactive: false, opacity: 0 }
+    );
+
+    detailedMap.once('load', () => {
+
+        detailedMapLoaded = true;
+        detailedMap.setOpacity(1);
+        mapPreview.remove();
+
+    });
+
+    detailedMap.addTo(map);
+
+}
+
+function scheduleDetailedMap(){
+
+    const schedule = window.requestIdleCallback || function(callback){
+        window.setTimeout(callback, 250);
+    };
+
+    schedule(loadDetailedMapWhenIdle, { timeout: 1500 });
+
+}
+
+map.on('zoomstart', () => {
+    mapIsZooming = true;
+});
+
+map.on('zoomend', () => {
+    mapIsZooming = false;
+
+    if(!initialViewReady)
+        return;
+
+    scheduleDetailedMap();
+});
 
 // Anpassa kartan till bilden
 map.fitBounds(frameBounds);
@@ -38,6 +90,7 @@ map.dragging.enable();
 requestAnimationFrame(() => {
     map.invalidateSize();
     map.fitBounds(frameBounds);
+    initialViewReady = true;
 });
 
 function initializeMap(){

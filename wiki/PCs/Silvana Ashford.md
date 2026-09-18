@@ -21,7 +21,7 @@ color:
 
 Description
 
-## Major acomplishments
+## Major accomplishments
 - 
 ## Relations
 - 

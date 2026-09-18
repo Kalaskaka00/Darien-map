@@ -580,10 +580,19 @@
         "color": null,
         "visibility": null,
         "related": null,
-        "gmReferences": [],
+        "gmReferences": [
+            "Erven",
+            "Luxy",
+            "Thirdenlin"
+        ],
         "StartYear": null,
         "EndYear": null,
-        "references": []
+        "references": [
+            "Jarlek Grin",
+            "Meel'a",
+            "Pitax",
+            "Turtahir"
+        ]
     },
     {
         "id": null,
@@ -1318,6 +1327,7 @@
             "Bree Caley",
             "Candle Mages",
             "Conleth Umbra",
+            "Evergreen",
             "Harlequin",
             "Joker",
             "Lord of Stories",
@@ -1456,6 +1466,26 @@
             "Mime",
             "Pitax",
             "Xia"
+        ]
+    },
+    {
+        "id": "evergreen",
+        "name": "Evergreen",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Wanderers/Evergreen.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#5C0BB5",
+        "visibility": null,
+        "related": null,
+        "gmReferences": [
+            "Rendeen"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
+            "Nentrah"
         ]
     },
     {

@@ -31,6 +31,7 @@ Eventually when trying to fell the [[Golden Lands]] she was captured by [[Silvan
 ## Relations
 - [[Lord of Stories]] is Nentrahs patron and their aides sometimes interact with Nentrah [[Harlequin]], [[Joker]] and [[Mime]]
 - [[Myron]] is the only of Nentrahs siter who survived the fall of their home.
+- [[Evergreen]] is an acquaintance whom Nentrah has managed to curry some favor with.
 
 <!--GM
 ## GM info

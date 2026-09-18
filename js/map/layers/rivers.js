@@ -8,7 +8,6 @@ function addRiver(river){
             ...riverStyles[river.class],
             layer: layers.rivers,
             type: "rivers",
-            pane: "rivers",
             hover: true
         }
 
@@ -32,7 +31,9 @@ async function loadRivers(){
 
         });
 
-    rivers.forEach(addRiver);
+    rivers
+        .sort((left, right) => riverStyles[left.class].weight - riverStyles[right.class].weight)
+        .forEach(addRiver);
 
 }
 
@@ -98,6 +99,7 @@ async function addRiverToFile(river){
     await riversReady;
     rivers.push(river);
     addRiver(river);
+    orderLineLayers(layers.rivers);
 
     return saveRiversFile();
 

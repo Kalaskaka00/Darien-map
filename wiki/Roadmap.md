@@ -11,9 +11,8 @@
 ## Details
 - Clean up and speed up code
 - Fix ping
-- Render bigger roads atop other roads (rivers).
 - Curves to style document
-- Layer button graphics
+- Lines don't render of screen
 ## Map
 - Lakes
 - Trade Routes
@@ -33,6 +32,7 @@
 - Possible to show measurement
 - Shift ping drags screen
 - Show article
+- Edit articles
 ## UI
 - Wiki Pop out
 - Highlight Icons on map

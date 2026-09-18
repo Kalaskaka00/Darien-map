@@ -104,10 +104,46 @@ function getLineLength(points){
     }, 0) * CONFIG.map.kilometersPerMapUnit;
 
 }
+
+function orderLineLayers(layer){
+
+    const linePairs = new Map();
+
+    layer.getLayers().forEach(line => {
+
+        if(!line._linePair)
+            return;
+
+        linePairs.set(line._linePair, line._linePair);
+
+    });
+
+    const orderedPairs = [...linePairs]
+        .map(([linePair]) => linePair)
+        .sort((left, right) => left.weight - right.weight);
+
+    orderedPairs.forEach(linePair => {
+
+        linePair.layers.forEach(line => layer.removeLayer(line));
+
+    });
+
+    orderedPairs.forEach(linePair => {
+
+        linePair.layers.forEach(line => layer.addLayer(line));
+
+    });
+
+}
+
 function drawLine(object, options){
 
     // Valfri skugga
     let shadow = null;
+    const linePair = {
+        weight: options.weight,
+        layers: []
+    };
 
     const displayPoints = catmullRomSpline(object.points, 10);
 
@@ -118,8 +154,11 @@ function drawLine(object, options){
             weight: options.weight + (options.shadow.extraWidth ?? 4),
             opacity: options.shadow.opacity ?? 0.6,
             interactive: false,
-            pane: options.pane
+            ...(options.pane ? { pane: options.pane } : {})
         }).addTo(options.layer);
+
+        shadow._linePair = linePair;
+        linePair.layers.push(shadow);
 
     }
 
@@ -128,8 +167,11 @@ function drawLine(object, options){
         weight: options.weight,
         dashArray: options.dashArray ?? null,
         opacity: options.opacity ?? 1,
-        pane: options.pane
+        ...(options.pane ? { pane: options.pane } : {})
     }).addTo(options.layer);
+
+    line._linePair = linePair;
+    linePair.layers.push(line);
 
     registerMapObject(
         options.type,

@@ -8,7 +8,6 @@ function addRoad(road){
             ...roadStyles[road.class],
             layer: layers.roads,
             type: "roads",
-            pane: "roads",
             shadow: true,
             hover: true
         }
@@ -33,7 +32,9 @@ async function loadRoads(){
 
         });
 
-    roads.forEach(addRoad);
+    roads
+        .sort((left, right) => roadStyles[left.class].weight - roadStyles[right.class].weight)
+        .forEach(addRoad);
 
 }
 
@@ -99,6 +100,7 @@ async function addRoadToFile(road){
     await roadsReady;
     roads.push(road);
     addRoad(road);
+    orderLineLayers(layers.roads);
 
     return saveRoadsFile();
 
