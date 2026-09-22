@@ -277,3 +277,13 @@ Newly Introduced NPCs: [[Farlamin Mistshaper]], [[Lalne Quill]]
 A firework festival started celebrating the deal with [[Pitax]] where [[Farlamin Mistshaper]] put on some magical fireworks.
 
 Newly Introduced NPCs: [[Agamoos Evercrown]], [[Turtahir]], [[Meel'a]], [[Ichor]], [[Cypher]]
+
+**Session 48:** *The World Tree*
+[[Silvana Ashford]], [[Bree Caley]] and [[Conleth Umbra]] arrived at the edge of the [[World Tree]] where they navigated through and freed a captured [[Yelgolor Remoudou]]. 
+
+When arriving at the [[World Tree]] they got into a fight with [[Evergreen]] that was intense and ended with [[Silvana Ashford]] disintegrated one of the [[Old Gods]]. [[Silvana Ashford]] immediately got punished by [[Rendeen]] and the rest of the party.
+
+After recovering the [[Lord of Stories]] made their move and tried to make a deal, the protagonists refused the deal in which the [[Lord of Stories]] chose to eliminate the chances of revival. [[Myron]]s unconscious body was also thrown down the tree.
+
+Newly Introduced NPCs: [[Evergreen]], [[Lord of Stories]]
+Casualties: [[Evergreen]]

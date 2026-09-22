@@ -1,7 +1,7 @@
 ---
 Related: false
 ---
-# Darien
+# Home
 Darien in the year {{year:current}} is a land of adventures, monster, heroes and villains. The land has all manor of stories spanning from those trying to make their life in a chaotic world to the heroes fighting [[Deities Summary|gods]] and demons to protect it.
 
 Darien is a land with a tumultuous [[The Timeline|History]] including wars between nations, people making a name for themselves and [[Deities Summary|gods]] falling.

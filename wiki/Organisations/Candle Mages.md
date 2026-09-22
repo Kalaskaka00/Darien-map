@@ -1,13 +1,29 @@
+---
+name: Candle Mages
+id: candle_mages
+category: organisation
+
+type:
+  - Magic, Research
+
+image: CandleMagesSymbol.png
+
+majorLocations:
+  - [[Candelmore]]
+
+nations: 
+  - [[Golden Lands]]
+
+color: "#9013FE"
+---
 # Candle Mages
-**Locations:** [[Golden Lands]]
-**Main Office:**  [[Candelmore]]
-**Type:** Magic, Research
+*Knowledge is power*
+## Summary
+The Candle Mages are a group of mages who wished to escape the thumb of nations. They fled into the [[Stolen Lands]] and made a home there on [[Candelmore]].
 
-*The Candle Mages are a group of mages who wished to escape the thumb of nations. They fled into the [[Stolen Lands]] and made a home there on [[Candelmore]].*
+They were eventually cursed to a set of semi-death by [[Nentrah]].
 
-*They were eventually cursed to a set of semi-death by [[Nentrah]].*
-
-*The Candle Mages were eventually saved by [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] with some aid from [[Annj Bearer]]. Since then the mages have been stuck at Candelmore (with the exception of [[Derk]], [[Magie]] and [[Joker|Jandeen Faelmin]]).*
+The Candle Mages were eventually saved by [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] with some aid from [[Annj Bearer]]. Since then the mages have been stuck at Candelmore (with the exception of [[Derk]], [[Magie]] and [[Joker|Jandeen Faelmin]]).
 ## Leadership
 The group has  no official leader but [[Deren Seere]] usually acts as the informal leader but with that exception all members are equal and make decisions together.
 ## Organisation

@@ -1,13 +1,34 @@
 ---
+name: Grainseller family
+id: grainseller_family
+category: family
+
+image: GrainsellerCoat.png
+
+majorLocations:
+  - [[Cornstalk]]
+
+minorLocations:
+  - [[Avendale]]
+
+nations: 
+  - [[Touvette]]
+
+races:
+  - Halflings
+
+leader: [[Vein Grainseller]]
+
 view: 
   x: 606
   y: 453
   zoom: 2
+
+primaryColor: "#C28D3E"
+secondatyColor: "#4A9444"
 ---
 # Grainseller family
-**Locations:** [[Touvette]]
-**Home:** [[Cornstalk]]
-**Races:** Halflings
+*Luck is when preparation meets opportunity*
 
 The Grainseller has a long line of merchants and entrepreneurs, with a great standing in [[Touvette]] and a few other nations due to their great fortune. 
 

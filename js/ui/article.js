@@ -41,9 +41,13 @@ function renderArticle(article, markdown){
 
     let html;
 
-    if(article.category === "npc" || article.category === "pc"){
+    if(article.category === "npc" || article.category === "pc" || article.category === "family"){
 
         html = renderNPCQuote(markdown);
+
+    }else if(article.category === "organisation"){
+
+        html = renderOrganisationMotto(markdown);
 
     }else{
 

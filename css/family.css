@@ -1,0 +1,176 @@
+.family-card{
+
+    border:3px solid var(--family-color);
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom:25px;
+    background:rgba(255,255,255,.45);
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+
+}
+
+.family-banner{
+
+    padding:12px 20px;
+    background:var(--family-color);
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+
+}
+
+.family-crest{
+
+    width:180px;
+    height:180px;
+    object-fit:contain;
+    border:4px solid var(--family-secondary-color);
+    background:#f3ecd2;
+    box-sizing:border-box;
+
+}
+
+.family-left{
+
+    flex:0 0 190px;
+    padding-right:20px;
+    border-right:3px solid var(--family-secondary-color);
+
+}
+
+.family-right{
+
+    flex:1;
+
+}
+
+.family-content{
+
+    display:flex;
+    gap:20px;
+    padding:12px 20px 20px;
+
+}
+
+.family-content .npc-row{
+
+    border-bottom-color:var(--family-secondary-color);
+
+}
+
+#wiki-preview .family-card{
+
+    width:min(380px, calc(100vw - 40px));
+    margin:0;
+    box-sizing:border-box;
+
+}
+
+#wiki-preview .family-banner{
+
+    font-size:1rem;
+    padding:10px 12px;
+
+}
+
+#wiki-preview .family-crest{
+
+    width:100px;
+    height:100px;
+
+}
+
+#wiki-preview .family-left{
+
+    flex-basis:110px;
+    flex-shrink:0;
+    padding-right:8px;
+    border-right-width:2px;
+
+}
+
+#wiki-preview .family-content{
+
+    gap:8px;
+    min-width:0;
+
+}
+
+#wiki-preview .family-right{
+
+    min-width:0;
+
+}
+
+#wiki-preview .family-right .npc-row{
+
+    gap:6px;
+    min-width:0;
+
+}
+
+#wiki-preview .family-right .npc-row span{
+
+    min-width:0;
+    overflow-wrap:anywhere;
+
+}
+
+#wiki-preview .family-right .npc-row span:last-child{
+
+    overflow-wrap:anywhere;
+
+}
+
+.family-location-badge{
+
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    background:transparent;
+    border:0;
+    line-height:0;
+
+}
+
+.family-location-badge img{
+
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    border:3px solid var(--family-map-color, #6f5328);
+    border-radius:50%;
+    background:#f3ecd2;
+    box-shadow:0 0 8px 3px var(--family-map-color, #6f5328);
+    box-sizing:border-box;
+
+}
+
+.family-location-badge-major img{
+
+    box-shadow:0 0 16px 7px var(--family-map-color, #6f5328);
+
+}
+
+.family-nation-highlight{
+
+    animation:family-border-pulse 2.4s ease-in-out infinite;
+    filter:drop-shadow(0 0 4px rgba(255,255,255,.8));
+    transform-origin:center;
+
+}
+
+@keyframes family-border-pulse{
+
+    0%, 100%{
+        stroke-opacity:.8;
+        filter:drop-shadow(0 0 3px rgba(255,255,255,.7));
+    }
+
+    50%{
+        stroke-opacity:1;
+        filter:drop-shadow(0 0 9px rgba(255,255,255,.95));
+    }
+
+}

@@ -3,16 +3,16 @@
 - Organisations summary -> Home
 - Nations Summary -> Home
 - Deity stories
-- Thieflings
 - Deity Symbols
-- Family Symbols
-- Organisation symbols
 - Flags
+- Update settlements with organisations + families
 ## Details
 - Clean up and speed up code
 - Fix ping
 - Curves to style document
 - Lines don't render of screen
+- Zoom Crest
+- Related Articles from headers
 ## Map
 - Lakes
 - Trade Routes
@@ -39,8 +39,9 @@
 - Preview wiki article on map and link
 ## Wiki
 - Deity article type
-- Organisation article type - Mark cities
-- Family article type - Mark cities
 - Nation article type
 - Campaign article type
 - Article text visible to some players
+- Foldable Headers
+- Favorites
+- Links to articles

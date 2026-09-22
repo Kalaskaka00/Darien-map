@@ -1,11 +1,13 @@
 const PING_HOLD_TIME = 1000;
 const PING_MOVE_TOLERANCE = 8;
 const PING_DURATION = 1600;
-const PING_CHANNEL_NAME = "darien-map-pings";
+const PING_FALLBACK_CHANNEL_NAME = "darien-map-pings";
+const PING_EVENT_NAME = "ping";
 
 let pingHoldTimer = null;
 let pingHoldStart = null;
 let pingChannel = null;
+let pingRealtime = null;
 
 function getPingColor() {
     if(isGM)
@@ -39,16 +41,25 @@ function publishPing(latlng) {
 
     showPing(latlng, ping.color);
 
+    if(pingRealtime) {
+        pingChannel.send({
+            type: "broadcast",
+            event: PING_EVENT_NAME,
+            payload: ping
+        });
+        return;
+    }
+
     if(pingChannel) {
         pingChannel.postMessage(ping);
         return;
     }
 
-    localStorage.setItem(PING_CHANNEL_NAME, JSON.stringify(ping));
+    localStorage.setItem(PING_FALLBACK_CHANNEL_NAME, JSON.stringify(ping));
 }
 
 function handleRemotePing(event) {
-    const ping = event.data || JSON.parse(event.newValue || "null");
+    const ping = event.payload || event.data || JSON.parse(event.newValue || "null");
     if(!ping || typeof ping.lat !== "number" || typeof ping.lng !== "number")
         return;
 
@@ -96,12 +107,25 @@ function cancelPingOnMove(event) {
 }
 
 function initializePing() {
-    if("BroadcastChannel" in window) {
-        pingChannel = new BroadcastChannel(PING_CHANNEL_NAME);
-        pingChannel.addEventListener("message", handleRemotePing);
+    const realtimeConfig = CONFIG.map.realtime;
+    if(window.supabase && realtimeConfig?.url && realtimeConfig?.key) {
+        pingRealtime = window.supabase.createClient(
+            realtimeConfig.url,
+            realtimeConfig.key
+        );
+        pingChannel = pingRealtime
+            .channel(realtimeConfig.room || "darien-map")
+            .on("broadcast", {event: PING_EVENT_NAME}, handleRemotePing);
+        pingChannel.subscribe(status => {
+            if(status !== "SUBSCRIBED")
+                console.warn("Ping realtime status:", status);
+        });
+    } else if("BroadcastChannel" in window) {
+        pingChannel = new BroadcastChannel(PING_FALLBACK_CHANNEL_NAME);
+        pingChannel.addEventListener("message", event => handleRemotePing(event));
     } else {
         window.addEventListener("storage", event => {
-            if(event.key === PING_CHANNEL_NAME)
+            if(event.key === PING_FALLBACK_CHANNEL_NAME)
                 handleRemotePing(event);
         });
     }

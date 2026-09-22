@@ -1,7 +1,8 @@
 ---
+visibility: gm
+
 id: <% tp.file.title.toLowerCase().replace(/ /g,"_") %>
 category: npc 
-visibility: gm
 
 portrait: <% tp.file.title %>.png
 

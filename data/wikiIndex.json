@@ -17,6 +17,32 @@
     },
     {
         "id": null,
+        "name": "Devastation of Daggermark",
+        "category": "history",
+        "file": "Devastation of Daggermark.md",
+        "map": null,
+        "view": {
+            "x": 422,
+            "y": 483,
+            "zoom": 1
+        },
+        "border": null,
+        "color": "#B01313",
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "StartYear": 2972,
+        "EndYear": 2972,
+        "references": [
+            "Daggermark",
+            "Pitax",
+            "Sleeping Realm",
+            "Thirdenlin",
+            "War of the beards"
+        ]
+    },
+    {
+        "id": null,
         "name": "Troll Hunt (unfinished)",
         "category": "Unknown",
         "file": "Stories/Troll Hunt (unfinished).md",
@@ -270,7 +296,6 @@
         "StartYear": null,
         "EndYear": null,
         "references": [
-            "Darien",
             "Kings Road",
             "Pitax"
         ]
@@ -611,8 +636,27 @@
         "references": [
             "Cephal Lorentus",
             "Daedove Wildguard",
-            "Darien",
             "Maegar Varn"
+        ]
+    },
+    {
+        "id": null,
+        "name": "Thieflings",
+        "category": "Unknown",
+        "file": "Organisations/Thieflings.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
+            "Pitax",
+            "Silvana Ashford",
+            "Wit"
         ]
     },
     {
@@ -638,14 +682,14 @@
         ]
     },
     {
-        "id": null,
+        "id": "drowen_daggers",
         "name": "Drowen Daggers",
-        "category": "Unknown",
+        "category": "organisation",
         "file": "Organisations/Drowen Daggers.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#4C1F74",
         "visibility": "gm",
         "related": null,
         "gmReferences": [],
@@ -656,14 +700,14 @@
         ]
     },
     {
-        "id": null,
+        "id": "doves",
         "name": "Doves",
-        "category": "Unknown",
+        "category": "organisation",
         "file": "Organisations/Doves.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#FFFFFF",
         "visibility": null,
         "related": null,
         "gmReferences": [],
@@ -671,20 +715,19 @@
         "EndYear": null,
         "references": [
             "Arie",
-            "Darien",
             "Nunree",
             "Sparrow"
         ]
     },
     {
-        "id": null,
+        "id": "candle_mages",
         "name": "Candle Mages",
-        "category": "Unknown",
+        "category": "organisation",
         "file": "Organisations/Candle Mages.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#9013FE",
         "visibility": null,
         "related": null,
         "gmReferences": [],
@@ -707,14 +750,14 @@
         ]
     },
     {
-        "id": null,
+        "id": "brass_wheels",
         "name": "Brass Wheels",
-        "category": "Unknown",
+        "category": "organisation",
         "file": "Organisations/Brass Wheels.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#F8E163",
         "visibility": null,
         "related": null,
         "gmReferences": [],
@@ -722,39 +765,32 @@
         "EndYear": null,
         "references": [
             "Asha Rakker",
-            "Brevoy",
             "Emily Viine",
-            "Garent",
-            "Gralton",
             "Jarlek Grin",
             "Kings Road",
-            "Milo Grainseller",
-            "Pitax",
-            "Touvette"
+            "Milo Grainseller"
         ]
     },
     {
-        "id": null,
+        "id": "black_mantles",
         "name": "Black Mantles",
-        "category": "Unknown",
+        "category": "organisation",
         "file": "Organisations/Black Mantles.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#000000",
         "visibility": null,
         "related": null,
         "gmReferences": [],
         "StartYear": null,
         "EndYear": null,
-        "references": [
-            "Darien"
-        ]
+        "references": []
     },
     {
-        "id": null,
+        "id": "viine_family",
         "name": "Viine family",
-        "category": "Unknown",
+        "category": "family",
         "file": "Organisations/Families/Viine family.md",
         "map": null,
         "view": {
@@ -779,9 +815,9 @@
         ]
     },
     {
-        "id": null,
+        "id": "udoon_family",
         "name": "Udoon family",
-        "category": "Unknown",
+        "category": "family",
         "file": "Organisations/Families/Udoon family.md",
         "map": null,
         "view": {
@@ -797,7 +833,6 @@
         "StartYear": null,
         "EndYear": null,
         "references": [
-            "Brevoy",
             "Ekon Udoon",
             "Kiri Udoon",
             "Lonelywood",
@@ -806,9 +841,9 @@
         ]
     },
     {
-        "id": null,
+        "id": "grainseller_family",
         "name": "Grainseller family",
-        "category": "Unknown",
+        "category": "family",
         "file": "Organisations/Families/Grainseller family.md",
         "map": null,
         "view": {
@@ -824,7 +859,6 @@
         "StartYear": null,
         "EndYear": null,
         "references": [
-            "Cornstalk",
             "Malora Grainseller",
             "Milo Grainseller",
             "Touvette",
@@ -832,9 +866,9 @@
         ]
     },
     {
-        "id": null,
+        "id": "beeret_family",
         "name": "Beeret family",
-        "category": "Unknown",
+        "category": "family",
         "file": "Organisations/Families/Beeret family.md",
         "map": null,
         "view": {
@@ -1469,26 +1503,6 @@
         ]
     },
     {
-        "id": "evergreen",
-        "name": "Evergreen",
-        "category": "npc",
-        "file": "NPCs/Golden Lands/Wanderers/Evergreen.md",
-        "map": null,
-        "view": null,
-        "border": null,
-        "color": "#5C0BB5",
-        "visibility": null,
-        "related": null,
-        "gmReferences": [
-            "Rendeen"
-        ],
-        "StartYear": null,
-        "EndYear": null,
-        "references": [
-            "Nentrah"
-        ]
-    },
-    {
         "id": "egizaed",
         "name": "Egiazed",
         "category": "npc",
@@ -1751,7 +1765,8 @@
         "related": null,
         "gmReferences": [
             "Luxy",
-            "Pitax"
+            "Pitax",
+            "Thieflings"
         ],
         "StartYear": null,
         "EndYear": null,
@@ -3036,6 +3051,26 @@
         ]
     },
     {
+        "id": "evergreen",
+        "name": "Evergreen",
+        "category": "npc",
+        "file": "NPCs/Dead/Evergreen.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#5C0BB5",
+        "visibility": null,
+        "related": null,
+        "gmReferences": [
+            "Rendeen"
+        ],
+        "StartYear": null,
+        "EndYear": null,
+        "references": [
+            "Nentrah"
+        ]
+    },
+    {
         "id": "chorrad_troll_king",
         "name": "Chorrad Troll King",
         "category": "npc",
@@ -3433,7 +3468,6 @@
         "references": [
             "Avendale",
             "Bann",
-            "Darien",
             "Dunden",
             "Embeth",
             "Gralton",
@@ -3648,6 +3682,7 @@
         "references": [
             "Brevoy",
             "Daggermark",
+            "Devastation of Daggermark",
             "Manchu Tribes",
             "Mivon",
             "Numeria",
@@ -4243,7 +4278,6 @@
         "references": [
             "Brass Wheels",
             "Daggermark",
-            "Darien",
             "Dunden",
             "Embeth",
             "Garent",
@@ -4494,6 +4528,7 @@
         "EndYear": null,
         "references": [
             "Bann",
+            "Devastation of Daggermark",
             "Dunden",
             "Dwarven Keeps",
             "Gralton",
@@ -4606,7 +4641,6 @@
             "Aldori family",
             "Bann",
             "Beeret family",
-            "Darien",
             "Dunden",
             "Kings Road",
             "Mivon",
@@ -4666,6 +4700,7 @@
             "Battle of Fingers",
             "Brevoy",
             "Daggermark",
+            "Devastation of Daggermark",
             "Dwarven Keeps",
             "Kingmaker",
             "Manchu Tribes",
@@ -4681,7 +4716,7 @@
     },
     {
         "id": null,
-        "name": "Darien",
+        "name": "Home",
         "category": "Unknown",
         "file": "Home/Home.md",
         "map": null,
@@ -5324,6 +5359,7 @@
             "Dwen'zur Raincleanser",
             "Emily Viine",
             "Errard Specher",
+            "Evergreen",
             "Farlamin Mistshaper",
             "Flor Energa",
             "Garbin Sunheart",
@@ -5368,6 +5404,7 @@
             "Pixana Boldshard",
             "Rein Stagler",
             "Reina Palett",
+            "Rendeen",
             "Restov",
             "Rita Neat",
             "Sandak Viine",

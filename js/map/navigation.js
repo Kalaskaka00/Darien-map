@@ -18,6 +18,14 @@ function openArticle(article, addToHistory = true){
         ? getActiveWikiTab()
         : null;
 
+    const previousArticle = getCurrentArticle();
+
+    if(previousArticle && previousArticle.file !== article.file){
+
+        getArticleType(previousArticle.category)?.onClose?.(previousArticle);
+
+    }
+
     if(currentTab){
 
         currentTab.article = article;

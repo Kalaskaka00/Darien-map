@@ -9,6 +9,11 @@ const CONFIG = {
     map: {
         kilometersPerMapUnit: 1,
         snapDistance: 5,
+        realtime: {
+            url: "https://fudrygpmpbputjmzbozv.supabase.co",
+            key: "sb_publishable_NHBk-ArPhzzvHE0EAYHG5w_qWL59Bnk",
+            room: "darien-map"
+        },
         layerOrder: [
             "nations",
             "settlements",

@@ -1,9 +1,41 @@
-# Brass Wheels
-**Locations:** [[Gralton]], [[Touvette]], [[Pitax]], [[Brevoy]]
-**Main office:** [[Garent]]
-**Type:** Trade
+---
+name: Brass Wheels
+id: brass_wheels
+category: organisation
 
-*The Brass Wheels are the premier trading guild along the [[Kings Road]] and are in charge of maintaining it. They serve as a hub for traders offering services and an amount of legitamacy.*
+type:
+  - Trade
+
+image: BrassWheelsSymbol.png
+
+majorLocations:
+  - [[Avendale]]
+  - [[Garent]]
+  - [[Southhost]]
+
+minorLocations:
+  - [[Cornstalk]]
+  - [[Floureton]]
+  - [[Great Gate]]
+  - [[New Steveten]]
+  - [[Restov]]
+  - [[Roughen Fort]]
+  - [[Transmuter´s rest]]
+
+nations: 
+  - [[Dwarven Keeps]]
+  - [[Gralton]]
+  - [[Touvette]]
+  - [[Pitax]]
+  - [[Brevoy]]
+
+color: "#F8E163"
+---
+
+# Brass Wheels
+*Honest and fair deals, a motto to live by*
+## Summary
+The Brass Wheels are the premier trading guild along the [[Kings Road]] and are in charge of maintaining it. They serve as a hub for traders offering services and an amount of legitamacy.
 ## Leadership
 The guild is led by the Brass Head Manager. The Brass Head Manager is elected by the members and serves for 5 years. Under the Brass Head Manager are multiple Brass Managers each dealing with a city or small region and different buisnesses there.
 ## Organisation

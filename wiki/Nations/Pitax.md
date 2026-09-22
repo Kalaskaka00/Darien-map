@@ -71,7 +71,7 @@ Slavery is legal in Pitax seeing as long as the slave can't show magical aptitud
 
 **[[Daggermark]]:** Pitax is one of few nations who hold diplomatic relations with [[Daggermark]]. It is rumored that Pitax have at times loaned assassins and monsters from [[Daggermark]] and have in return offered magical services and expertise.
 ## History
-**Founding History:** Pitax grew from the great [[Pitax City]] During the [[Devastation of Daggermark]] 900 years ago many of its mages flew to Pitax. This combined with the already existing magical universities have led to its magical prowess in the modern day as well as warmer relation with [[Daggermark]].
+**Founding History:** Pitax grew from the great [[Pitax City]] During the [[Devastation of Daggermark]]  many of its mages flew to Pitax. This combined with the already existing magical universities have led to its magical prowess in the modern day as well as warmer relation with [[Daggermark]].
 
 **Recent History:** 
 - Pitax recently aided [[Numeria]] in [[The Rill War]] against [[Brevoy]] and [[Mivon]], this has defined Pitax relations in the latest decades.

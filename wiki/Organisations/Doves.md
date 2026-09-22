@@ -1,10 +1,33 @@
+---
+name: Doves
+id: doves
+category: organisation
+
+type:
+  - Religious
+
+image: DovesSymbol.png
+
+nations: 
+  - [[Brevoy]]
+  - [[Daggermark]]
+  - [[Galt]]
+  - [[Gralton]]
+  - [[Manchu Tribes]]
+  - [[Mivon]]
+  - [[Numeria]]
+  - [[The Wastes]]
+  - 
+  - [[Touvette]]
+
+color: "#FFFFFF"
+---
 # Doves
-**Locations:** [[Darien]]
-**Type:** Religious
+*Find salvation by the Peace Maker*
+## Summary
+The Doves are a group of pilgrims and healers who seek to further the aim of their God [[Arie]] by healing and helping others. They see themselves as an opposing force to [[Nunree]] and are strictly pacifistic.
 
-*The Doves are a group of pilgrims and healers who seek to further the aim of their God [[Arie]] by healing and helping others. They see themselves as an opposing force to [[Nunree]] and are strictly pacifistic.*
-
-*Most members wear bird regalia to protect from diseases and curses and show their status.*
+Most members wear bird regalia to protect from diseases and curses and show their status.
 ## Leadership
 The Doves are lead by a head priest called the white dove elected by the the Godess themself, their aided by the gray doves who are one rank lower and serve as leadership roles and are often experienced, lowest are the hatchlings which are less experienced or new members who serve as the rank and file.
 ## Organisation
