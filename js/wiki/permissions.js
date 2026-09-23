@@ -1,7 +1,7 @@
-function canReadArticle(article){
+function canReadArticleForPlayer(article, playerName, gmMode){
 
     // GM always sees everything
-    if(isGM) {
+    if(gmMode) {
         return true;
     }
 
@@ -27,6 +27,12 @@ function canReadArticle(article){
         : [article.visibility];
 
     // Check if current player has access
-    return currentPlayer && visibleTo.includes(currentPlayer);
+    return playerName && visibleTo.includes(playerName);
+
+}
+
+function canReadArticle(article){
+
+    return canReadArticleForPlayer(article, currentPlayer, isGM);
 
 }

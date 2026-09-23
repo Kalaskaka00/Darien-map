@@ -1,14 +1,32 @@
 ---
+name: Thieflings
+id: thieflings
+category: organisation
 
+type:
+  - Criminal
+
+image: ThieflingsSymbol.png
+
+majorLocations:
+  - [[Dragonlair]]
+
+minorLocations:
+  - [[Transmuter´s rest]]
+
+nations: 
+  - [[Numeria]]
+  - [[Pitax]]
+  - [[Touvette]]
+
+color: "#F54927"
 ---
 # Thieflings
-**Locations:** [[Pitax]]
-**Main Office:**  [[Dragonlair]]
-**Type:** Criminal
+*Take from the rich and give to us*
 
-*The Thieflings are a group in [[Pitax]] mostly consisting of Tieflings. The group focuses on smuggling, stealing and pick pocketing but that avoids violent crime.*
+The Thieflings are a group in [[Pitax]] mostly consisting of Tieflings. The group focuses on smuggling, stealing and pick pocketing but that avoids violent crime.
 
-*The group originates in [[Pitax]] but also work in nearby nations especially with smuggling operations.*
+The group originates in [[Pitax]] but also work in nearby nations especially with smuggling operations.
 ## Leadership
 The Theifligns are led by a group of the most respected members whom take decisions together for the group. The group is however quite lose and there are few decisions that are forced on its members.
 ## Organisation

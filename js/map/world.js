@@ -8,7 +8,7 @@ async function loadWorld() {
 
     const [indexResponse, metadataResponse] = await Promise.all([
         fetch("data/wikiIndex.json"),
-        fetch("data/wikiMeta.json")
+        fetch("data/wikiMeta.json?v=changelog-1")
     ]);
 
     world = await indexResponse.json();
@@ -40,6 +40,9 @@ async function loadWorld() {
     "Nations:",
     world.filter(item => item.category === "nation")
     );
+
+    if(restoreWikiTabs())
+        return;
 
     const homeArticle = getHomeArticle();
 

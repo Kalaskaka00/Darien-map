@@ -1,6 +1,7 @@
 let wikiTabs = [];
 let activeWikiTabId = null;
 let nextWikiTabId = 1;
+const wikiTabsStorageKey = "darien-map-wiki-tabs";
 
 const wikiTabList = document.getElementById("wiki-tab-list");
 const newWikiTabButton = document.getElementById("wiki-new-tab");
@@ -12,6 +13,86 @@ document.body.appendChild(wikiTabTooltip);
 function getActiveWikiTab(){
 
     return wikiTabs.find(tab => tab.id === activeWikiTabId);
+
+}
+
+function persistWikiTabs(){
+
+    const state = {
+        tabs: wikiTabs.map(tab => ({
+            file: tab.directory ? null : tab.article?.file || null,
+            directory: Boolean(tab.directory)
+        })),
+        activeIndex: wikiTabs.findIndex(tab => tab.id === activeWikiTabId)
+    };
+
+    try{
+
+        localStorage.setItem(wikiTabsStorageKey, JSON.stringify(state));
+
+    }catch(error){
+
+        console.warn("Unable to save wiki tabs:", error);
+
+    }
+
+}
+
+function restoreWikiTabs(){
+
+    let state;
+
+    try{
+
+        state = JSON.parse(localStorage.getItem(wikiTabsStorageKey) || "null");
+
+    }catch(error){
+
+        console.warn("Unable to read saved wiki tabs:", error);
+        return false;
+
+    }
+
+    if(!Array.isArray(state?.tabs))
+        return false;
+
+    const restoredTabs = state.tabs
+        .map(savedTab => {
+
+            if(savedTab?.directory)
+                return { article: { name: "Article directory", file: null }, directory: true };
+
+            const article = getArticleByFile(savedTab?.file);
+
+            return article && canReadArticle(article)
+                ? { article }
+                : null;
+
+        })
+        .filter(Boolean);
+
+    if(!restoredTabs.length)
+        return false;
+
+    wikiTabs = restoredTabs.map(tab => ({
+        ...tab,
+        id: nextWikiTabId++
+    }));
+
+    const activeIndex = Number.isInteger(state.activeIndex)
+        ? Math.min(Math.max(state.activeIndex, 0), wikiTabs.length - 1)
+        : 0;
+
+    activeWikiTabId = wikiTabs[activeIndex].id;
+    renderWikiTabs();
+    activateWikiTab(wikiTabs[activeIndex]);
+
+    if(!wikiTabs[activeIndex].directory)
+        pushHistory(wikiTabs[activeIndex].article);
+    else
+        updateHistoryButtons();
+
+    return true;
 
 }
 
@@ -32,6 +113,8 @@ function renderWikiTabs(){
 
         })
         .join("");
+
+    persistWikiTabs();
 
 }
 

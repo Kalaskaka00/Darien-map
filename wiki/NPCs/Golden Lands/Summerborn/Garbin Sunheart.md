@@ -24,6 +24,7 @@ Garbins family are successful farmers but he is seeking his own place in the wor
 Garbin eventually ventured to the [[Golden Lands]] to make a place for himself.
 ## Relations
 - [[Laura Faelamin]] and [[Claire Nightshield]] have gone through great efforts to teach Garbin how farming works.
+- [[Meel'a]] has treated Garbin kindly and is one of few people who doesn't make fun of him.
 - [[Calsys Viine]] saved Garbins life once when some bandits attacked.
 
 <!--GM

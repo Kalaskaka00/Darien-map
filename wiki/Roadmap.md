@@ -1,47 +1,43 @@
+## Check
+- Check show article
+- Check Laser Pointer
+- Changelog
+- Is link in Ox article readable?
 ## Non coding work
 - PCs
 - Organisations summary -> Home
 - Nations Summary -> Home
-- Deity stories
-- Deity Symbols
-- Flags
+- Deity articles & stories
 - Update settlements with organisations + families
 ## Details
 - Clean up and speed up code
-- Fix ping
 - Curves to style document
 - Lines don't render of screen
-- Zoom Crest
 - Related Articles from headers
+- Bring scroller to the top when opening a new tab & Scrollbar stays where it was last when opening a tab
 ## Map
 - Lakes
 - Trade Routes
 - Region names
 - Landmark names
-- Organisation HQs
-- Family Crests
 - Weather
 - Party marker
-- Config for layer load order
 ## Tools
-- Laser pointer 
 - Travel calculator
 - PC article - Players can edit
 - Player & GM Notepad(s)
 - Player side map markers
 - Possible to show measurement
 - Shift ping drags screen
-- Show article
 - Edit articles
 ## UI
 - Wiki Pop out
-- Highlight Icons on map
-- Preview wiki article on map and link
+- See players who are connected
 ## Wiki
-- Deity article type
-- Nation article type
+- Arrows changing pictures on several picture articles
+- Nation article type + Flags
 - Campaign article type
 - Article text visible to some players
-- Foldable Headers
 - Favorites
-- Links to articles
+- Webb Links to articles
+- Nicer summary articles

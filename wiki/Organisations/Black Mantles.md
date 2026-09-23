@@ -24,7 +24,7 @@ color: "#000000"
 ---
 # Black Mantles
 *Fall of the oppressors!*
-## Summary
+
 Black Mantles are a group of smugglers and slavers operating outside the law. Many of them and the group as a whole has an anarchic worldview seeing order and laws as obstacles and problems.
 
 The group has been known to aid rebellions in different regions.

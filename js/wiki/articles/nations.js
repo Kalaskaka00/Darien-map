@@ -16,47 +16,81 @@ function shrinkPolygon(points, factor){
 
 }
 
+function createNationGlowClip(glowLayers, outline){
+
+    const outlineElement = outline.getElement();
+    const renderer = outline._renderer;
+
+    if(!outlineElement || !renderer)
+        return null;
+
+    const svg = renderer._container;
+    const namespace = "http://www.w3.org/2000/svg";
+    const defs = svg.querySelector("defs") || document.createElementNS(namespace, "defs");
+    const clipPath = document.createElementNS(namespace, "clipPath");
+    const clipShape = document.createElementNS(namespace, "path");
+    const clipId = `nation-glow-clip-${L.Util.stamp(outline)}`;
+    const filter = document.createElementNS(namespace, "filter");
+    const blur = document.createElementNS(namespace, "feGaussianBlur");
+    const filterId = `nation-glow-blur-${L.Util.stamp(outline)}`;
+
+    if(!defs.parentNode)
+        svg.insertBefore(defs, svg.firstChild);
+
+    clipPath.setAttribute("id", clipId);
+    clipPath.setAttribute("clipPathUnits", "userSpaceOnUse");
+    clipPath.appendChild(clipShape);
+    defs.appendChild(clipPath);
+
+    filter.setAttribute("id", filterId);
+    filter.setAttribute("x", "-50%");
+    filter.setAttribute("y", "-50%");
+    filter.setAttribute("width", "200%");
+    filter.setAttribute("height", "200%");
+    blur.setAttribute("stdDeviation", "2.5");
+    filter.appendChild(blur);
+    defs.appendChild(filter);
+
+    glowLayers.forEach(layer => {
+
+        const element = layer.getElement();
+
+        element?.setAttribute("clip-path", `url(#${clipId})`);
+        element?.setAttribute("filter", `url(#${filterId})`);
+
+    });
+
+    const update = () => {
+
+        clipShape.setAttribute("d", outlineElement.getAttribute("d") || "");
+
+    };
+
+    update();
+    map.on("zoomend", () => requestAnimationFrame(update));
+
+    return update;
+}
+
 
 
 function addNation(country){
 
     const smoothBorder = catmullRomPolygon(country.border, 10);
 
-    // Glow-lager
-    const glow = L.polygon(smoothBorder, {
-    color: country.color,
-    weight: 20,
-    opacity: 0.12,
-    fill: false
-    }).addTo(layers.nations);
+    const glowOptions = {
+        color: country.color,
+        opacity: 0.12,
+        fill: false
+    };
 
-    const glow2 = L.polygon(smoothBorder, {
-    color: country.color,
-    weight: 16,
-    opacity: 0.12,
-    fill: false
-    }).addTo(layers.nations);
-
-    const glow3 = L.polygon(smoothBorder, {
-    color: country.color,
-    weight: 12,
-    opacity: 0.12,
-    fill: false
-    }).addTo(layers.nations);
-
-    const glow4 = L.polygon(smoothBorder, {
-    color: country.color,
-    weight: 8,
-    opacity: 0.12,
-    fill: false
-    }).addTo(layers.nations);
-
-    const glow5 = L.polygon(smoothBorder, {
-    color: country.color,
-    weight: 4,
-    opacity: 0.12,
-    fill: false
-    }).addTo(layers.nations);
+    const glowLayers = [
+        L.polygon(smoothBorder, { ...glowOptions, weight: 42 }).addTo(layers.nations),
+        L.polygon(smoothBorder, { ...glowOptions, weight: 32 }).addTo(layers.nations),
+        L.polygon(smoothBorder, { ...glowOptions, weight: 22 }).addTo(layers.nations),
+        L.polygon(smoothBorder, { ...glowOptions, weight: 14 }).addTo(layers.nations),
+        L.polygon(smoothBorder, { ...glowOptions, weight: 7 }).addTo(layers.nations)
+    ];
 
     // Yttre gräns
     const outline = L.polygon(smoothBorder, {
@@ -64,6 +98,11 @@ function addNation(country){
         weight: 3,
         fill: false
     }).addTo(layers.nations);
+
+    const updateGlowClip = createNationGlowClip(glowLayers, outline);
+
+    outline._nationGlowLayers = glowLayers;
+    outline._updateNationGlowClip = updateGlowClip;
     
     // Klick på landet + edit border
 outline.on("click", (e) => {
@@ -191,9 +230,12 @@ function getCountryShape(country){
 
         refresh(){
 
-            getMapObject("nations",country.id).setLatLngs(
-                catmullRomPolygon(country.border, 10)
-            );
+            const updatedBorder = catmullRomPolygon(country.border, 10);
+            const outline = getMapObject("nations", country.id);
+
+            outline.setLatLngs(updatedBorder);
+            outline._nationGlowLayers?.forEach(layer => layer.setLatLngs(updatedBorder));
+            outline._updateNationGlowClip?.();
 
         }
 

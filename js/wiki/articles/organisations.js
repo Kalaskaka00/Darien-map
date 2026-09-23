@@ -1,20 +1,19 @@
 function renderOrganisationMotto(markdown){
 
     const match = markdown.match(
-        /^# .+\n[\s\S]*?^\*([^*\n]+)\*\s*$/m
+        /^(# .+\n)\*([^*\n]+)\*\r?\n/m
     );
 
     if(!match)
         return marked.parse(markdown);
 
-    const mottoLine = match[0].split("\n").pop();
-    const html = marked.parse(markdown.replace(mottoLine, ""));
+    const html = marked.parse(markdown.replace(match[0], match[1]));
 
     return html.replace(
         "</h1>",
         `</h1>
         <div class="npc-quote">
-            ${match[1]}
+            ${match[2]}
         </div>`
     );
 

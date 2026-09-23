@@ -1,9 +1,29 @@
-# Swordlords of Brevoy
-**Locations:** [[Brevoy]]
-**Headquarters:** [[Restov]]
-**Type:** Military
+---
+name: Swordlords of Brevoy
+id: swordlords_of_brevoy
+category: organisation
 
-*The Swordlords are an organisation of warriors training since childhood to wield blades. They are considered some of the best fighters with swords.*
+type:
+  - Military
+
+image: SwordlordsSymbol.png
+
+majorLocations:
+  - [[Restov]]
+
+minorLocations:
+  - [[New Steveten]]
+  - [[Roughen Fort]]
+
+nations: 
+  - [[Brevoy]]
+
+color: "#9C2008"
+---
+# Swordlords of Brevoy
+*Sharp mind, sharper instincts, even sharper blades.*
+
+The Swordlords are an organisation of warriors training since childhood to wield blades. They are considered some of the best fighters with swords.
 ## Leadership
 The Swordlords are lead by a council of 3 swordlords known as the swordlords of [[Brevoy]] they take leadership and are the final examiners for graduating students. The organisation is practically controlled by the [[Aldori family]] giving it the unofficial name of the Aldori Swordlords.
 ## Organisation

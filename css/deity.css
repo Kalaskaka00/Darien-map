@@ -1,0 +1,94 @@
+.deity-card{
+
+    border:3px solid var(--deity-color);
+
+    margin-bottom:25px;
+
+    background:rgba(255,255,255,.45);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+
+}
+
+.deity-banner{
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+
+    background:var(--deity-color);
+    color:white;
+    font-size:34px;
+    font-weight:bold;
+    line-height:1.1;
+    padding:10px 20px;
+
+}
+
+.deity-alternative-names{
+
+    margin-top:5px;
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:.52em;
+    font-weight:normal;
+    font-style:italic;
+
+}
+
+.deity-content{
+
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    padding:10px 20px 20px;
+
+}
+
+.deity-symbol{
+
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    flex-shrink:0;
+
+}
+
+.deity-details{
+
+    flex:1;
+
+}
+
+.deity-card-compact{
+
+    width:280px;
+    margin:0;
+
+}
+
+.deity-card-compact .deity-banner{
+
+    font-size:1rem;
+    padding:8px 12px;
+
+}
+
+.deity-card-compact .deity-content{
+
+    font-size:.8rem;
+    padding:8px 12px 12px;
+
+}
+
+.deity-card-compact .deity-symbol{
+
+    width:64px;
+    height:64px;
+
+}
+
+.deity-card-compact .npc-row{
+
+    padding:6px 0;
+
+}

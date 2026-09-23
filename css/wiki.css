@@ -261,6 +261,28 @@
 
 }
 
+.article-collapsible-heading{
+
+    cursor:pointer;
+
+}
+
+.article-collapsible-heading::after{
+
+    content:"▾";
+    display:inline-block;
+    margin-left:.45em;
+    font-size:.75em;
+    transition:transform .15s ease;
+
+}
+
+.article-collapsible-heading[aria-expanded="false"]::after{
+
+    transform:rotate(-90deg);
+
+}
+
 .wiki-navigation{
 
     display: flex;
@@ -308,6 +330,94 @@
     opacity: .3;
 
     cursor: default;
+
+}
+
+#wiki-show-article{
+
+    margin-left:auto;
+
+}
+
+.wiki-share-dialog{
+
+    position:fixed;
+    inset:0;
+    z-index:2000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    background:rgba(25, 18, 9, .55);
+
+}
+
+.wiki-share-dialog[hidden]{
+
+    display:none;
+
+}
+
+.wiki-share-panel{
+
+    width:min(420px, 100%);
+    padding:22px;
+    border:2px solid #6f5328;
+    border-radius:8px;
+    background:url("Backgrounds/Parchment.avif") center / cover;
+    color:#2d2417;
+    box-shadow:0 8px 30px rgba(0, 0, 0, .4);
+    font-family:Georgia, serif;
+
+}
+
+.wiki-share-panel h2{
+
+    margin:0 0 10px;
+
+}
+
+.wiki-share-players{
+
+    display:grid;
+    gap:8px;
+    margin:16px 0;
+
+}
+
+.wiki-share-player{
+
+    display:flex;
+    gap:8px;
+    align-items:center;
+
+}
+
+.wiki-share-actions{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:flex-end;
+    margin-top:18px;
+
+}
+
+.wiki-share-actions button{
+
+    padding:8px 10px;
+    border:1px solid #8b7355;
+    border-radius:4px;
+    background:#f5f0e5;
+    color:#2d2417;
+    cursor:pointer;
+    font:inherit;
+
+}
+
+.wiki-share-actions button:hover{
+
+    background:#eadbb9;
 
 }
 

@@ -18,7 +18,7 @@ color: "#9013FE"
 ---
 # Candle Mages
 *Knowledge is power*
-## Summary
+
 The Candle Mages are a group of mages who wished to escape the thumb of nations. They fled into the [[Stolen Lands]] and made a home there on [[Candelmore]].
 
 They were eventually cursed to a set of semi-death by [[Nentrah]].

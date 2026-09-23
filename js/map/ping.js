@@ -3,15 +3,24 @@ const PING_MOVE_TOLERANCE = 8;
 const PING_DURATION = 1600;
 const PING_FALLBACK_CHANNEL_NAME = "darien-map-pings";
 const PING_EVENT_NAME = "ping";
+const LASER_EVENT_NAME = "laser-pointer";
+const LASER_FALLBACK_KEY = "darien-map-laser-pointer";
+const LASER_UPDATE_INTERVAL = 32;
 
 let pingHoldTimer = null;
 let pingHoldStart = null;
 let pingChannel = null;
 let pingRealtime = null;
+let laserActive = false;
+let laserVisible = false;
+let laserMarker = null;
+let laserUpdateTimer = null;
+const laserSessionId = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+const remoteLaserMarkers = new Map();
 
 function getPingColor() {
     if(isGM)
-        return "#8b0000";
+        return CONFIG.gmColor;
 
     return CONFIG.players[currentPlayer] || "#2d2417";
 }
@@ -33,6 +42,7 @@ function showPing(latlng, color) {
 
 function publishPing(latlng) {
     const ping = {
+        type: PING_EVENT_NAME,
         id: `${Date.now()}-${Math.random().toString(36).slice(2)}`,
         lat: latlng.lat,
         lng: latlng.lng,
@@ -60,10 +70,149 @@ function publishPing(latlng) {
 
 function handleRemotePing(event) {
     const ping = event.payload || event.data || JSON.parse(event.newValue || "null");
-    if(!ping || typeof ping.lat !== "number" || typeof ping.lng !== "number")
+    if(!ping || (ping.type && ping.type !== PING_EVENT_NAME) || typeof ping.lat !== "number" || typeof ping.lng !== "number")
         return;
 
     showPing({lat: ping.lat, lng: ping.lng}, ping.color || "#2d2417");
+}
+
+function getLaserColor() {
+    return isGM ? CONFIG.gmColor : CONFIG.players[currentPlayer] || "#2d2417";
+}
+
+function removeRemoteLaser(id) {
+    const marker = remoteLaserMarkers.get(id);
+    if(marker)
+        map.removeLayer(marker);
+    remoteLaserMarkers.delete(id);
+}
+
+function showLaserPointer(laser) {
+    if(!laser.active) {
+        removeRemoteLaser(laser.id);
+        return;
+    }
+
+    let marker = remoteLaserMarkers.get(laser.id);
+    if(!marker) {
+        marker = L.marker([laser.lat, laser.lng], {
+            interactive: false,
+            keyboard: false,
+            icon: L.divIcon({
+                className: "laser-pointer-marker",
+                html: `<span class="laser-pointer-light" style="--laser-color: ${laser.color};"></span>`,
+                iconSize: [0, 0],
+                iconAnchor: [0, 0]
+            })
+        }).addTo(map);
+        remoteLaserMarkers.set(laser.id, marker);
+    } else {
+        marker.setLatLng([laser.lat, laser.lng]);
+    }
+}
+
+function handleRemoteLaser(event) {
+    const laser = event.payload || event.data || JSON.parse(event.newValue || "null");
+    if(!laser || (laser.type && laser.type !== LASER_EVENT_NAME) || laser.id === laserSessionId)
+        return;
+
+    if(!laser.active) {
+        removeRemoteLaser(laser.id);
+        return;
+    }
+
+    if(typeof laser.lat !== "number" || typeof laser.lng !== "number")
+        return;
+
+    showLaserPointer(laser);
+}
+
+function publishLaserPointer(active, latlng) {
+    const laser = {
+        type: LASER_EVENT_NAME,
+        id: laserSessionId,
+        active,
+        lat: latlng?.lat,
+        lng: latlng?.lng,
+        color: getLaserColor()
+    };
+
+    if(!active) {
+        delete laser.lat;
+        delete laser.lng;
+    }
+
+    if(pingRealtime) {
+        pingChannel.send({type: "broadcast", event: LASER_EVENT_NAME, payload: laser});
+    } else if(pingChannel) {
+        pingChannel.postMessage(laser);
+    } else {
+        localStorage.setItem(LASER_FALLBACK_KEY, JSON.stringify(laser));
+    }
+}
+
+function updateLaserPointer(latlng) {
+    if(!laserActive || !laserVisible)
+        return;
+
+    if(laserMarker)
+        laserMarker.setLatLng(latlng);
+    else {
+        laserMarker = L.marker(latlng, {
+            interactive: false,
+            keyboard: false,
+            icon: L.divIcon({
+                className: "laser-pointer-marker",
+                html: `<span class="laser-pointer-light" style="--laser-color: ${getLaserColor()};"></span>`,
+                iconSize: [0, 0],
+                iconAnchor: [0, 0]
+            })
+        }).addTo(map);
+    }
+
+    window.clearTimeout(laserUpdateTimer);
+    laserUpdateTimer = window.setTimeout(() => publishLaserPointer(true, latlng), LASER_UPDATE_INTERVAL);
+}
+
+function hideLaserPointer() {
+    laserVisible = false;
+    window.clearTimeout(laserUpdateTimer);
+    laserUpdateTimer = null;
+    if(laserMarker) {
+        map.removeLayer(laserMarker);
+        laserMarker = null;
+    }
+
+    if(laserActive)
+        publishLaserPointer(false);
+}
+
+function showLaserPointerAt(latlng) {
+    if(!laserActive)
+        return;
+
+    laserVisible = true;
+    updateLaserPointer(latlng);
+}
+
+function toggleLaserPointer() {
+    laserActive = !laserActive;
+    laserTool.classList.toggle("active", laserActive);
+    laserTool.setAttribute("aria-pressed", String(laserActive));
+    map.getContainer().classList.toggle("laser-pointer-active", laserActive);
+
+    if(laserActive) {
+        laserVisible = true;
+        publishLaserPointer(true);
+    } else {
+        map.off("mousemove", handleLaserMapMove);
+        hideLaserPointer();
+        publishLaserPointer(false);
+    }
+}
+
+function handleLaserMapMove(event) {
+    updateLaserPointer(event.latlng);
 }
 
 function cancelPingHold() {
@@ -115,18 +264,24 @@ function initializePing() {
         );
         pingChannel = pingRealtime
             .channel(realtimeConfig.room || "darien-map")
-            .on("broadcast", {event: PING_EVENT_NAME}, handleRemotePing);
+            .on("broadcast", {event: PING_EVENT_NAME}, handleRemotePing)
+            .on("broadcast", {event: LASER_EVENT_NAME}, handleRemoteLaser);
         pingChannel.subscribe(status => {
             if(status !== "SUBSCRIBED")
                 console.warn("Ping realtime status:", status);
         });
     } else if("BroadcastChannel" in window) {
         pingChannel = new BroadcastChannel(PING_FALLBACK_CHANNEL_NAME);
-        pingChannel.addEventListener("message", event => handleRemotePing(event));
+        pingChannel.addEventListener("message", event => {
+            handleRemotePing(event);
+            handleRemoteLaser(event);
+        });
     } else {
         window.addEventListener("storage", event => {
             if(event.key === PING_FALLBACK_CHANNEL_NAME)
                 handleRemotePing(event);
+            if(event.key === LASER_FALLBACK_KEY)
+                handleRemoteLaser(event);
         });
     }
 
@@ -137,6 +292,9 @@ function initializePing() {
             latlng: map.mouseEventToLatLng(event)
         });
     });
+    map.on("mousemove", handleLaserMapMove);
+    map.on("mouseover", event => showLaserPointerAt(event.latlng));
+    map.on("mouseout", hideLaserPointer);
     document.addEventListener("mousemove", cancelPingOnMove);
     document.addEventListener("mouseup", cancelPingHold);
 }

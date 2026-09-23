@@ -62,9 +62,97 @@ function renderArticle(article, markdown){
         : "";
     
     document.getElementById("article").innerHTML =
-        visibilityInfo + html + renderRelatedArticles(article) + wikiSummary;
+        makeArticleHeadingsCollapsible(
+            visibilityInfo + html + renderRelatedArticles(article) + wikiSummary
+        );
 
 }
+
+function makeArticleHeadingsCollapsible(html){
+
+    const container = document.createElement("div");
+    container.innerHTML = html;
+
+    const headings = [...container.querySelectorAll("h1, h2, h3, h4, h5, h6")];
+    const hasSingleLevelOneHeading =
+        headings.filter(heading => heading.tagName === "H1").length === 1;
+
+    headings.forEach(heading => {
+        const level = heading.closest(".gm-notes") ? 2 : Number(heading.tagName.substring(1));
+
+        heading.dataset.headingLevel = String(level);
+
+        if(hasSingleLevelOneHeading && level === 1)
+            return;
+
+        heading.classList.add("article-collapsible-heading");
+        heading.setAttribute("aria-expanded", "true");
+        heading.setAttribute("role", "button");
+        heading.setAttribute("tabindex", "0");
+
+        if(heading.classList.contains("article-collapsed-by-default"))
+            setArticleHeadingExpanded(heading, false);
+    });
+
+    return container.innerHTML;
+
+}
+
+function toggleArticleHeading(heading){
+
+    const expanded = heading.getAttribute("aria-expanded") === "true";
+    setArticleHeadingExpanded(heading, !expanded);
+
+}
+
+function setArticleHeadingExpanded(heading, expanded){
+
+    const level = Number(heading.dataset.headingLevel);
+    const content = [];
+    let sibling = heading.nextElementSibling;
+
+    while(sibling){
+
+        const siblingLevel = sibling.matches("h1, h2, h3, h4, h5, h6")
+            ? Number(sibling.dataset.headingLevel || sibling.tagName.substring(1))
+            : null;
+
+        if(siblingLevel !== null && siblingLevel <= level)
+            break;
+
+        content.push(sibling);
+        sibling = sibling.nextElementSibling;
+
+    }
+
+    heading.setAttribute("aria-expanded", String(expanded));
+
+    content.forEach(element => {
+        element.hidden = !expanded;
+    });
+
+}
+
+document.getElementById("article").addEventListener("click", event => {
+
+    const heading = event.target.closest(".article-collapsible-heading");
+
+    if(heading)
+        toggleArticleHeading(heading);
+
+});
+
+document.getElementById("article").addEventListener("keydown", event => {
+
+    if((event.key === "Enter" || event.key === " ") &&
+        event.target.matches(".article-collapsible-heading")){
+
+        event.preventDefault();
+        toggleArticleHeading(event.target);
+
+    }
+
+});
 
 function renderWikiSummary(){
 
@@ -78,6 +166,18 @@ function renderWikiSummary(){
         ? wikiMeta.articleCount
         : "Unknown";
     const latestChange = wikiMeta.latestChange || "No change note recorded.";
+    const olderChangelogs = Array.isArray(wikiMeta.changelog)
+        ? wikiMeta.changelog.filter(entry => entry.date !== wikiMeta.latestBuild)
+        : [];
+    const changelogHTML = olderChangelogs.length
+        ? olderChangelogs.map(entry => `
+            <dl class="wiki-changelog-entry">
+                <div><dt>Update date</dt><dd>${escapeArticleHTML(formatChangelogDate(entry.date))}</dd></div>
+                <div><dt>Articles</dt><dd>${escapeArticleHTML(String(entry.articleCount ?? "Unknown"))}</dd></div>
+                <div><dt>Changes</dt><dd>${escapeArticleHTML(entry.changes || "No change note recorded.")}</dd></div>
+            </dl>
+        `).join("")
+        : "<p>No older changelogs.</p>";
 
     return `
         <section class="wiki-summary">
@@ -87,8 +187,21 @@ function renderWikiSummary(){
                 <div><dt>Articles</dt><dd>${escapeArticleHTML(String(articleCount))}</dd></div>
                 <div><dt>Latest changes</dt><dd>${escapeArticleHTML(latestChange)}</dd></div>
             </dl>
+            <h3 class="article-collapsed-by-default">Older changelogs</h3>
+            <div class="wiki-changelog">${changelogHTML}</div>
         </section>
     `;
+
+}
+
+function formatChangelogDate(value){
+
+    return value
+        ? new Date(value).toLocaleString(undefined, {
+            dateStyle: "medium",
+            timeStyle: "short"
+        })
+        : "Unknown";
 
 }
 

@@ -124,6 +124,16 @@
 
 }
 
+.npc-deceased .wikilink{
+
+    text-shadow:
+        -1px -1px 0 #ddd,
+        1px -1px 0 #ddd,
+        -1px 1px 0 #ddd,
+        1px 1px 0 #ddd;
+
+}
+
 .npc-deceased .npc-portrait{
 
     filter:grayscale(50%);

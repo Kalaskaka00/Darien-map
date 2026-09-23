@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="css/ping.css">
     <link rel="stylesheet" href="css/npc.css">
+    <link rel="stylesheet" href="css/deity.css">
     <link rel="stylesheet" href="css/family.css">
     <link rel="stylesheet" href="css/history.css">
     <link rel="stylesheet" href="css/settlement.css">
     <link rel="stylesheet" href="css/image-viewer.css">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/wiki.css?v=collapse">
-    <link rel="stylesheet" href="css/player-tools.css?v=measure-edit-3">
+    <link rel="stylesheet" href="css/player-tools.css?v=player-color-1">
 </head>
 <body>
 
@@ -51,6 +52,7 @@
         <button id="wiki-forward">→</button>
         <button id="wiki-home">⌂</button>
         <button id="wiki-directory" title="Article directory" aria-label="Article directory">☷</button>
+        <button id="wiki-show-article" type="button" title="Show article to selected players; Shift-click for everyone" aria-label="Show article to selected players; Shift-click for everyone">⇧</button>
     </div>
 
     <div id="wiki-workspace">
@@ -70,6 +72,8 @@
 </div>
 
 <div id="wiki-preview"></div>
+
+<div id="wiki-share-dialog" class="wiki-share-dialog" hidden></div>
 
 
 <div id="editor">
@@ -102,7 +106,14 @@
 
 <div id="player-tools">
 
-    <button id="player-tools-toggle">👥</button>
+    <button id="player-tools-toggle" aria-label="Player tools">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="9" cy="8" r="3"></circle>
+            <path d="M3.5 19a5.5 5.5 0 0 1 11 0"></path>
+            <circle cx="16.5" cy="9" r="2.5"></circle>
+            <path d="M14 19a4.5 4.5 0 0 1 7 0"></path>
+        </svg>
+    </button>
 
     <div id="player-tools-panel">
         <div id="player-status">
@@ -111,6 +122,7 @@
         </div>
 
         <button id="measure-tool" type="button">Measure distance</button>
+        <button id="laser-tool" type="button" aria-pressed="false">Laser pointer</button>
 
         <div id="player-login">
             <select id="player-select">
@@ -202,7 +214,7 @@
 <script src="js/map/map.js"></script>
 <script src="js/map/ping.js"></script>
 <script src="js/map/layers.js"></script>
-<script src="js/map/world.js"></script>
+<script src="js/map/world.js?v=tab-persistence-2"></script>
 <script src="js/map/navigation.js"></script>
 <script src="js/renderers/lineRenderer.js?v=snap-2"></script>
 <script src="js/map/layers/roadStyles.js"></script>
@@ -223,6 +235,7 @@
 <!-- Wiki -->
 <script src="js/wiki/articleRegistry.js"></script>
 <script src="js/wiki/articles/npc.js"></script>
+<script src="js/wiki/articles/deities.js"></script>
 <script src="js/wiki/articles/families.js"></script>
 <script src="js/wiki/articles/organisations.js"></script>
 <script src="js/wiki/articles/history.js"></script>
@@ -232,13 +245,14 @@
 <script src="js/wiki/sidebar.js"></script>
 <script src="js/wiki/permissions.js"></script>
 <script src="js/ui/imageViewer.js"></script>
-<script src="js/ui/article.js"></script>
-<script src="js/ui/playerTools.js?v=snap"></script>
+<script src="js/ui/article.js?v=collapsible-headings-3"></script>
+<script src="js/ui/playerTools.js?v=player-color-1"></script>
 <script src="js/wiki/wiki.js"></script>
 <script src="js/wiki/search.js"></script>
 <script src="js/wiki/history.js"></script>
 <script src="js/wiki/directory.js?v=preview"></script>
-<script src="js/wiki/tabs.js"></script>
+<script src="js/wiki/tabs.js?v=tab-persistence-1"></script>
+<script src="js/wiki/share.js"></script>
 
 <!-- Editor -->
 <script src="js/editor/state.js"></script>

@@ -115,14 +115,36 @@ fs.writeFileSync(
     JSON.stringify(wikiIndex, null, 4)
 );
 
+const latestBuild = new Date().toISOString();
+const latestChange = process.env.WIKI_CHANGE_NOTE?.trim() ||
+    previousMetadata.latestChange ||
+    "No change note recorded.";
+const changelog = Array.isArray(previousMetadata.changelog)
+    ? [...previousMetadata.changelog]
+    : [];
+
+if(previousMetadata.latestBuild &&
+    !changelog.some(entry => entry.date === previousMetadata.latestBuild)){
+    changelog.unshift({
+        date: previousMetadata.latestBuild,
+        articleCount: previousMetadata.articleCount,
+        changes: previousMetadata.latestChange || "No change note recorded."
+    });
+}
+
+changelog.unshift({
+    date: latestBuild,
+    articleCount: wikiIndex.length,
+    changes: latestChange
+});
+
 fs.writeFileSync(
     metadataFile,
     JSON.stringify({
-        latestBuild: new Date().toISOString(),
+        latestBuild,
         articleCount: wikiIndex.length,
-        latestChange: process.env.WIKI_CHANGE_NOTE?.trim() ||
-            previousMetadata.latestChange ||
-            "No change note recorded."
+        latestChange,
+        changelog
     }, null, 4)
 );
 

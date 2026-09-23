@@ -18,7 +18,7 @@ color: "#4C1F74"
 ---
 # Drowen Daggers
 *As the Fate Ender wills it*
-## Summary
+
 The Drowen daggers serves directly under the [[Daggermark]] Queen as an elongation of the state and assassinates opponents to the state.
 
 Outside their direct service to the Queen they lend their services for payment in gold, slaves, artifacts or other sufficient payment. Except for assassinations they also perform maiming, intimidation and occasionally thefts.

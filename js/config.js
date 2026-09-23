@@ -36,6 +36,8 @@ const CONFIG = {
         portraitSwitchDelay: 5000
     },
 
+    gmColor: "#1B6B16",
+
     players: {
         "Ludwig": "#EF3BF5",
         "Mallena": "#03fc73",

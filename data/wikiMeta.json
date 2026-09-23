@@ -1,5 +1,72 @@
 {
-    "latestBuild": "2026-09-22T15:41:00.882Z",
+    "latestBuild": "2026-09-23T18:46:52.867Z",
     "articleCount": 182,
-    "latestChange": "New attempt with PING, added families and organisation wiki types, improved layer order"
+    "latestChange": "Show article tool, save wiki tabs as cookies, foldable headers, changed look of nation borders, laser pointer tool, deity article type, organisations added, Meel'a added",
+    "changelog": [
+        {
+            "date": "2026-09-23T18:46:52.867Z",
+            "articleCount": 182,
+            "changes": "Show article tool, save wiki tabs as cookies, foldable headers, changed look of nation borders, laser pointer tool, deity article type, organisations added, Meel'a added"
+        },
+        {
+            "date": "2026-09-23T18:42:14.622Z",
+            "articleCount": 182,
+            "changes": "New attempt with PING, added families and organisation wiki types, improved layer order"
+        },
+        {
+            "date": "2026-09-23T18:33:25.089Z",
+            "articleCount": 182,
+            "changes": "New attempt with PING, added families and organisation wiki types, improved layer order"
+        },
+        {
+            "date": "2026-09-23T18:30:03.901Z",
+            "articleCount": 182,
+            "changes": "New attempt with PING, added families and organisation wiki types, improved layer order"
+        },
+        {
+            "date": "2026-09-23T18:26:00.602Z",
+            "articleCount": 182,
+            "changes": "New attempt with PING, added families and organisation wiki types, improved layer order"
+        },
+        {
+            "date": "2026-09-23T17:41:57.525Z",
+            "articleCount": 182,
+            "changes": "New attempt with PING, added families and organisation wiki types, improved layer order"
+        },
+        {
+            "date": "2026-09-23T17:37:33.926Z",
+            "articleCount": 182,
+            "changes": "New attempt with PING, added families and organisation wiki types, improved layer order"
+        },
+        {
+            "date": "2026-09-23T16:25:09.886Z",
+            "articleCount": 182,
+            "changes": "New attempt with PING, added families and organisation wiki types, improved layer order"
+        },
+        {
+            "date": "2026-09-23T16:06:15.422Z",
+            "articleCount": 182,
+            "changes": "New attempt with PING, added families and organisation wiki types, improved layer order"
+        },
+        {
+            "date": "2026-09-22T15:41:00.882Z",
+            "articleCount": 182,
+            "changes": "New attempt with PING, added families and organisation wiki types, improved layer order"
+        },
+        {
+            "date": "2026-09-18T16:51:47.477Z",
+            "articleCount": 180,
+            "changes": "Improved zoom performance, Improved layer order rendering, prettied up map buttons, Agamoos article"
+        },
+        {
+            "date": "2026-09-17T18:44:49.013Z",
+            "articleCount": 179,
+            "changes": "Added rivers, fixed bug with beging with one tab opened."
+        },
+        {
+            "date": "2026-09-13T18:35:16.105Z",
+            "articleCount": 179,
+            "changes": "Added settlement & history wiki types. Added Article types. Added Roads & Rivers. Added backgrounds."
+        }
+    ]
 }

@@ -34,7 +34,7 @@ color: "#F8E163"
 
 # Brass Wheels
 *Honest and fair deals, a motto to live by*
-## Summary
+
 The Brass Wheels are the premier trading guild along the [[Kings Road]] and are in charge of maintaining it. They serve as a hub for traders offering services and an amount of legitamacy.
 ## Leadership
 The guild is led by the Brass Head Manager. The Brass Head Manager is elected by the members and serves for 5 years. Under the Brass Head Manager are multiple Brass Managers each dealing with a city or small region and different buisnesses there.

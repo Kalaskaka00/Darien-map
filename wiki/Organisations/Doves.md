@@ -24,7 +24,7 @@ color: "#FFFFFF"
 ---
 # Doves
 *Find salvation by the Peace Maker*
-## Summary
+
 The Doves are a group of pilgrims and healers who seek to further the aim of their God [[Arie]] by healing and helping others. They see themselves as an opposing force to [[Nunree]] and are strictly pacifistic.
 
 Most members wear bird regalia to protect from diseases and curses and show their status.

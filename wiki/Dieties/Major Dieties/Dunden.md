@@ -8,7 +8,8 @@
 
 **Domains:** Forge, Grave, Tempest, War
 
-**Symbol:** Two crossing lightning bolts, an avil, five feathers
+**Symbol:** Two crossing lightning bolts, an an
+vil, five feathers
 
 **Description:** Dunden is often described as a messenger, wielding a golden spear, wearing light leather armor and carying a satchel of letters as well as some smithing tools. Dunden is often shown as an Aaracokra, Kenku or Owlin or non descript birdperson.
 

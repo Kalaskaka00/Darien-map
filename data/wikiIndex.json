@@ -17,32 +17,6 @@
     },
     {
         "id": null,
-        "name": "Devastation of Daggermark",
-        "category": "history",
-        "file": "Devastation of Daggermark.md",
-        "map": null,
-        "view": {
-            "x": 422,
-            "y": 483,
-            "zoom": 1
-        },
-        "border": null,
-        "color": "#B01313",
-        "visibility": null,
-        "related": null,
-        "gmReferences": [],
-        "StartYear": 2972,
-        "EndYear": 2972,
-        "references": [
-            "Daggermark",
-            "Pitax",
-            "Sleeping Realm",
-            "Thirdenlin",
-            "War of the beards"
-        ]
-    },
-    {
-        "id": null,
         "name": "Troll Hunt (unfinished)",
         "category": "Unknown",
         "file": "Stories/Troll Hunt (unfinished).md",
@@ -538,13 +512,21 @@
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#41d9d9",
         "visibility": null,
         "related": null,
-        "gmReferences": [],
+        "gmReferences": [
+            "Maegar Varn"
+        ],
         "StartYear": null,
         "EndYear": null,
-        "references": []
+        "references": [
+            "Agamoos Evercrown",
+            "Maegar Varn",
+            "Pitax",
+            "Turtahir",
+            "Vaegarian host"
+        ]
     },
     {
         "id": "conleth_umbra",
@@ -620,14 +602,14 @@
         ]
     },
     {
-        "id": null,
+        "id": "vaegarian_host",
         "name": "Vaegarian host",
-        "category": "Unknown",
+        "category": "organisation",
         "file": "Organisations/Vaegarian host.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#969595",
         "visibility": null,
         "related": null,
         "gmReferences": [],
@@ -640,14 +622,14 @@
         ]
     },
     {
-        "id": null,
+        "id": "thieflings",
         "name": "Thieflings",
-        "category": "Unknown",
+        "category": "organisation",
         "file": "Organisations/Thieflings.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#F54927",
         "visibility": null,
         "related": null,
         "gmReferences": [],
@@ -660,14 +642,14 @@
         ]
     },
     {
-        "id": null,
+        "id": "swordlords_of_brevoy",
         "name": "Swordlords of Brevoy",
-        "category": "Unknown",
+        "category": "organisation",
         "file": "Organisations/Swordlords of Brevoy.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#9C2008",
         "visibility": null,
         "related": null,
         "gmReferences": [],
@@ -677,8 +659,7 @@
             "Aldori family",
             "Brevoy",
             "Jamandi Aldori",
-            "Kassil Aldori",
-            "Restov"
+            "Kassil Aldori"
         ]
     },
     {
@@ -2095,6 +2076,7 @@
             "Calsys Viine",
             "Claire Nightshield",
             "Laura Faelamin",
+            "Meel'a",
             "Restov"
         ]
     },
@@ -4864,6 +4846,32 @@
     },
     {
         "id": null,
+        "name": "Devastation of Daggermark",
+        "category": "history",
+        "file": "History/Devastation of Daggermark.md",
+        "map": null,
+        "view": {
+            "x": 422,
+            "y": 483,
+            "zoom": 1
+        },
+        "border": null,
+        "color": "#B01313",
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "StartYear": 2972,
+        "EndYear": 2972,
+        "references": [
+            "Daggermark",
+            "Pitax",
+            "Sleeping Realm",
+            "Thirdenlin",
+            "War of the beards"
+        ]
+    },
+    {
+        "id": null,
         "name": "Battle of Fingers",
         "category": "history",
         "file": "History/Battle of Fingers.md",
@@ -5116,14 +5124,14 @@
         "references": []
     },
     {
-        "id": null,
+        "id": "bann",
         "name": "Bann",
-        "category": "Unknown",
+        "category": "deity",
         "file": "Dieties/Major Dieties/Bann.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#0F3966",
         "visibility": null,
         "related": null,
         "gmReferences": [],

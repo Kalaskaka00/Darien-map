@@ -3,6 +3,7 @@ const playerToolsPanel = document.getElementById("player-tools-panel");
 const playerSelect = document.getElementById("player-select");
 const playerStatusDisplay = document.getElementById("player-status-display");
 const measureTool = document.getElementById("measure-tool");
+const laserTool = document.getElementById("laser-tool");
 
 let measurementPoints = [];
 let measurementLine = null;
@@ -235,9 +236,15 @@ function initializePlayerTools() {
 
 // Update player status display
 function updatePlayerStatus() {
+    playerToolsToggle.style.color = isGM
+        ? CONFIG.gmColor
+        : currentPlayer
+            ? CONFIG.players[currentPlayer] || "#808080"
+            : "#808080";
+
     if(isGM) {
         playerStatusDisplay.textContent = "GM";
-        playerStatusDisplay.style.color = "#8b0000";
+        playerStatusDisplay.style.color = CONFIG.gmColor;
     } else if(currentPlayer) {
         playerStatusDisplay.textContent = currentPlayer;
         const color = CONFIG.players[currentPlayer] || "#2d2417";
@@ -268,6 +275,11 @@ playerSelect.addEventListener("change", function() {
 measureTool.addEventListener("click", function(e) {
     e.stopPropagation();
     toggleMeasureTool();
+});
+
+laserTool.addEventListener("click", function(e) {
+    e.stopPropagation();
+    toggleLaserPointer();
 });
 
 // Close panel when clicking outside
