@@ -1,22 +1,43 @@
+---
+name: Erven
+id: erven
+category: deity
+
+image: ErvenSymbol.png
+
+names:
+  - Great beard
+  - The first delver
+
+aspects:
+  - Mountains
+  - Metals
+  - Darkness
+  - Fire
+  - Wisdom
+
+races:
+  - Dueregars
+  - Dwarves
+  - Goliaths
+  - Minotaurs
+
+symbols:
+  - A twin peeked mounatin
+  - A spark on a dark background
+  - A long Beard
+
+color: "#4A4A4A"
+---
 # Erven
-
-**Other Names:** 
-
-**Aspects:** Mountains, Metals, Darkness, Fire, Wisdom
-
-**Associated Races:** Dueregars, Dwarves, Goliaths, Minotaurs
-
-**Domains:** Forge, Knowledge, Light, Twilight
-
-**Symbol:** A twin peeked mounatin, A spark on a dark background, A long Beard
-
-**Description:** Erven is often described as a wise man or a miner, wielding a pickaxe and a book. Erven is often depicted as a dwarf or Duregar with a several meter long beard.
+## Description
+Erven is often described as a wise man or a miner, wielding a pickaxe and a book. Erven is often depicted as a dwarf or duregar with a several meter long beard.
 
 Erven is often thought of as patient, calm and wise. He has a duality of being both wise and simeltaniouslty quiet and inactive.
 
 Erven often stands against acting without thought. He is generally thought to dislike sunlight and violence.
-
-**Worship:** Erven is often worshiped at stone or metal altars, if possible inside caves or underground. The altars usually have depictions of mountauns and fire carved into them.
+## Worship
+Erven is often worshiped at stone or metal altars, if possible inside caves or underground. The altars usually have depictions of mountauns and fire carved into them.
 
 A normal ritual for followers of Erven is to cut of some hair, burn it with some incense. Breathing in the smoke is said to give some wisdom.
 

@@ -26,8 +26,8 @@ races:
 
 symbols:
   - A cickle moon 
-  - a sword layered over a full moon
-  - a crooked shortsword
+  - A sword layered over a full moon
+  - A crooked shortsword
 
 color: "#0F3966"
 ---

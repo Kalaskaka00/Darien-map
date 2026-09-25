@@ -1,22 +1,45 @@
+---
+name: Xiander
+id: xiander
+category: deity
+
+image: XianderSymbol.png
+
+names:
+  - The outsider
+  - The wanderer
+  - The great diviner
+
+aspects:
+  - Death
+  - Redemption/Rebirth
+  - Destiny
+  - Prophecies
+  - Outcasts
+
+races:
+  - Changelings
+  - Drow
+  - Half-Orcs
+  - Shifters
+  - Tieflings
+
+symbols:
+  - An hourglass
+  - Three half circles inside each other each turned a qaurter
+  - A droplette
+
+color: "#000000"
+---
 # Xiander
+## Description
+Xiander is often described as a wanderer, constantly shifting mirroring the people they meet, the only constant being that they have a gloss globe that foretells prophecies. Xiander has no agreed upon form as their gender and race is said to change to blend in with their surroundings.
 
-**Other Names:** The outsider, The wanderer, The great Diviner
-
-**Aspects:** Death, Redemption/Rebirth, Destiny, Prophecies, Outcasts
-
-**Associated Races:** Changelings, Drow, Half-Orcs, Shifters, Tieflings
-
-**Domains:** Death, Grave, Order, Twilight
-
-**Symbol:** An hourglass, three half circles inside each other each turned a qaurter, a droplette
-
-**Description:** Xiander is often described as a wanderer, constantly shifting mirroring the people they meet, the only constant being that they have a gloss globe that fortells prophecies. Xiander has no agreed upon form as their gender and race is said to change to blend in with their surrondings.
-
-Xiander is often thought of as watchfull, judgefull but forgiving. They have the dualty of both offerign starts and showing paths while simeltaniously being the one to end the paths.
+Xiander is often thought of as watchful, judging but forgiving. They have the dualty of both offerign starts and showing paths while simeltaniously being the one to end the paths.
 
 Xiander is said to see against anyone who tries to avoid their destiny and anyone who makes a false redemption. 
-
-**Worship:** Xiander is usually worshiped at graveyards at large stone altars at ground level. The altars often have depictions of a life story from birth til death.
+## Worship
+Xiander is usually worshiped at graveyards at large stone altars at ground level. The altars often have depictions of a life story from birth til death.
 
 Many of those who want to dedicate themselves to Xiander head out wandering searching for answers in the world. The clerics of Xiander are often grave keepers.
 

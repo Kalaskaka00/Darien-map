@@ -2,12 +2,10 @@
 Related: false
 ---
 # Deities Summary
-## Major Dieties
 While some Gods are trusted more than others depending on culture there are generally none of the main Gods who are seen as "pure evil" or "pure good". The Gods are multifaceted ruling booth the good and the bad.
+## Major Deities
 
-Except theese there also exist smaller Gods, theese are generally seen with distrust by most.
-
-| **Diety**      | **Aspects**                                             | **Races**                                                           | **Main Domains**                   | **Symbol**                                |
+| **Deity**      | **Aspects**                                             | **Races**                                                           | **Main Domains**                   | **Symbol**                                |
 | -------------- | ------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------- | ----------------------------------------- |
 | [[Bann]]       | Monsters, War, The Moon, Tides, Trickery                | Bugbears, Goblins, Orcs, Sea-Elves, Satyrs, Shadar-Kai              | Light, Nature, Trickery, War       | A cickle moon                             |
 | [[Dunden]]     | Storms, Winds, Duels, Smithing, Honor                   | Aaracokra, Kenkus, Owlin                                            | Forge, Grave, Tempest, War         | Two crossing lightning bolts              |
@@ -17,9 +15,9 @@ Except theese there also exist smaller Gods, theese are generally seen with dist
 | [[Thirdenlin]] | Magic, Knowledge, Writing, Wits, Dragons                | Elves, Gnomes, Dragonborn, Genasis, Kobold                          | Arcana, Knowledge, Peace, Trickery | A Dragons Claw                            |
 | [[Vanee]]      | Farming, The Earth, The Sun, Tranquility, Fertility     | Halflings, Harengons, Humans, Tortles                               | Life, Light, Nature, Peace         | Three wiggly lines ending in wheat stocks |
 | [[Xiander]]    | Death, Redemtion/Rebirth, Destiny, Prophecies, Outcasts | Changelings, Drow, Half-Orcs, Shifters, Tieflings                   | Death, Grave, Order, Twilight      | An hourglas                               |
-## Minor Dieties
+## Minor Deities
 
-| Diety      | Aspects                                          | Races                          | Main Domains                   | Symbol                                                                                            |
+| Deity      | Aspects                                          | Races                          | Main Domains                   | Symbol                                                                                            |
 | ---------- | ------------------------------------------------ | ------------------------------ | ------------------------------ | ------------------------------------------------------------------------------------------------- |
 | [[Arie]]   | Care, Healing, Life, Pacifism, Peace             | Tortles                        | Life, Peace                    | An open hand                                                                                      |
 | [[Ebus]]   | Buildings, Homes, Peace, Slef-Sufficency         | Firbolgs, Halflings, harengons | Forge, Life, Order, Peace      | A house                                                                                           |
