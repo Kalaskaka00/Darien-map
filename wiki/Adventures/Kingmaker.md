@@ -191,7 +191,7 @@ Newly Introduced NPCs: [[Egizaed]]
 **Session 29 & 30:** *Pitaxian ruins*
 Traveling to the mountains in the east of the [[Stolen Lands]] [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] found [[Siphon]] caring for a wounded [[Brunno Meadowmane]]. Their were apparently monster infested ruins in the mountain.
 
-The protagonists ventured inside and found that the ruins were [[Pitax]]ian in origin. After dispatching several monsters the protagonists found a minor reflection of the [[Dream Realm]], a journal, some treasure and most importantly a highly charged [[Fluix Crystal]].
+The protagonists ventured inside and found that the ruins were [[Pitax]]ian in origin. After dispatching several monsters the protagonists found a minor reflection of the [[Dream Realm]], a journal, some treasure and most importantly a highly charged [[Rare Materials|Fluix Crystal]].
 
 Satisfied with the immediate threat of the monsters being taken care of the protagonists ventured onward to aid [[Oleg's Outpost]].
 
@@ -212,7 +212,7 @@ Furthermore a delegation from [[Mivon]] arrived where one member clearly agitate
 Newly Introduced NPCs: [[Rein Stagler]], [[Barnur Keenhold]]
 
 **Session 33 & 34:** *Defusing a bomb and the fall of a hero*
-Going back to the [[Pitax]]ian ruins [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] with the aid of [[Annj Bearer]], [[Maegar Varn]] and [[Cephal Lorentus]] went to deal with the big magic build up in the [[Fluix Crystal]].
+Going back to the [[Pitax]]ian ruins [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] with the aid of [[Annj Bearer]], [[Maegar Varn]] and [[Cephal Lorentus]] went to deal with the big magic build up in the [[Rare Materials|Fluix Crystal]].
 
 Arriving they came to find [[Nentrah]] and a fight quickly broke out. As [[Nentrah]] tried to flee [[Claire Nightshield]] tried to dive after her and followed her through a portal by an unfortunate turn of events. 
 
@@ -287,3 +287,14 @@ After recovering the [[Lord of Stories]] made their move and tried to make a dea
 
 Newly Introduced NPCs: [[Evergreen]], [[Lord of Stories]]
 Casualties: [[Evergreen]]
+
+**Session 49:** *The games of gods*
+Delving in to the routes of the [[World Tree]] [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] quickly came face to face with what remained of [[Wyndee]] where they made a pact to return her power in return for answers. They learned:
+- [[Wyndee]] is bound to help [[Xia]] through some sort of deal and she despises it.
+- [[Xia]] is a shard of [[Xiander]] shattered of during [[The Magical Anorchrism]].
+- [[Xia]] has gained power from stories they've affected, [[Wyndee]] and [[Divine Artifacts|The Eye of Xiander]] and may gain more power still.
+- The Major deities can'/won't intervene and if they do the entire world will turn on its head.
+
+[[Silvana Ashford]] pleaded with [[Jonas Arc]] in a dream to help avert conflict between [[Golden Lands]] and [[Mivon]] and asked for his advice.
+
+Newly Introduced NPCs: [[Wyndee]]

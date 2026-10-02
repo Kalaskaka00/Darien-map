@@ -21,6 +21,7 @@ nations:
   - [[Touvette]]
 
 color: "#FFFFFF"
+text: black
 ---
 # Doves
 *Find salvation by the Peace Maker*

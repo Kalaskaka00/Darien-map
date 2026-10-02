@@ -27,6 +27,7 @@ symbols:
   - Five feathers
 
 color: "#FCED39"
+text: black
 ---
 # Dunden
 ## Description

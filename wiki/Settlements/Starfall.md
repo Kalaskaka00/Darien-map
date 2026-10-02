@@ -22,7 +22,7 @@ Starfall is known for its beautiful landscapes and vivid mountains.
 ## History 
 
 ## Economy 
-Starfall is quite self reliant when it comes to food and economy. They do however also have a mining industry that mines up a magical material called [[Stardust]] which they sell to mages, alchemists and astrologers.
+Starfall is quite self reliant when it comes to food and economy. They do however also have a mining industry that mines up a magical material called [[Rare Materials|Stardust]] which they sell to mages, alchemists and astrologers.
 ## Important NPCs 
 - Tsar [[Gulrim Frostreach I]] whom is known among his subject for his calm demeanor, and sometimes slowness to act.
 ## Organisations/Groups

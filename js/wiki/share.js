@@ -7,6 +7,7 @@ sessionStorage.setItem("wiki-share-sender-id", wikiShareSenderId);
 
 let wikiShareRealtime = null;
 let wikiShareChannel = null;
+let wikiShareChannelStatus = "joining";
 
 function escapeWikiShareHTML(value){
 
@@ -39,24 +40,46 @@ function showWikiShareDialog(content){
 
 }
 
-function publishSharedArticle(article, recipients){
+async function publishSharedArticle(article, recipients, allowRestricted = false){
 
     const message = {
         articleFile: article.file,
         recipients,
-        senderId: wikiShareSenderId
+        senderId: wikiShareSenderId,
+        allowRestricted
     };
 
-    if(wikiShareRealtime){
-        wikiShareChannel.send({
-            type: "broadcast",
-            event: wikiShareEventName,
-            payload: message
-        });
-    }else if(wikiShareChannel){
-        wikiShareChannel.postMessage(message);
-    }else{
-        localStorage.setItem(wikiShareEventName, JSON.stringify(message));
+    try{
+
+        if(wikiShareRealtime){
+            if(wikiShareChannelStatus !== "SUBSCRIBED"){
+                window.alert("Article was not sent because the realtime connection is not ready.");
+                return;
+            }
+
+            const status = await wikiShareChannel.send({
+                type: "broadcast",
+                event: wikiShareEventName,
+                payload: message
+            });
+
+            if(status !== "ok"){
+                console.error("Wiki share broadcast failed:", status);
+                window.alert("Article could not be sent. Check the realtime connection and try again.");
+                return;
+            }
+        }else if(wikiShareChannel){
+            wikiShareChannel.postMessage(message);
+        }else{
+            localStorage.setItem(wikiShareEventName, JSON.stringify(message));
+        }
+
+    }catch(error){
+
+        console.error("Wiki share broadcast failed:", error);
+        window.alert("Article could not be sent. Check the realtime connection and try again.");
+        return;
+
     }
 
     closeWikiShareDialog();
@@ -94,7 +117,7 @@ function confirmHiddenArticleShare(article, recipients){
             const choice = button.dataset.shareChoice;
 
             if(choice === "all")
-                publishSharedArticle(article, recipients);
+                publishSharedArticle(article, recipients, true);
             else if(choice === "visible")
                 publishSharedArticle(article, visibleRecipients);
             else
@@ -106,10 +129,16 @@ function confirmHiddenArticleShare(article, recipients){
 
 function shareCurrentArticle(article, recipients){
 
-    if(!article || !article.file || !canReadArticle(article))
+    if(!article || !article.file)
         return;
 
-    if(!isGM && !isPublicArticle(article)){
+    const activeTab = getActiveWikiTab();
+    const canShareArticle = canReadArticle(article) || activeTab?.sharedAccess;
+
+    if(!canShareArticle)
+        return;
+
+    if(!isGM && !isPublicArticle(article) && recipients === null){
         window.alert("Players cannot show hidden articles.");
         return;
     }
@@ -119,7 +148,7 @@ function shareCurrentArticle(article, recipients){
         return;
     }
 
-    publishSharedArticle(article, recipients);
+    publishSharedArticle(article, recipients, !isPublicArticle(article));
 
 }
 
@@ -163,10 +192,10 @@ function handleSharedArticle(event){
 
     const article = getArticleByFile(message.articleFile);
 
-    if(!article || !canReadArticle(article))
+    if(!article || (!canReadArticle(article) && !message.allowRestricted))
         return;
 
-    openArticleInNewTab(article);
+    openArticleInNewTab(article, Boolean(message.allowRestricted));
 
 }
 
@@ -174,12 +203,16 @@ function initializeWikiShare(){
 
     const realtimeConfig = CONFIG.map.realtime;
 
-    if(window.supabase && realtimeConfig?.url && realtimeConfig?.key){
-        wikiShareRealtime = window.supabase.createClient(realtimeConfig.url, realtimeConfig.key);
+    if(pingRealtime && realtimeConfig?.url && realtimeConfig?.key){
+        wikiShareRealtime = pingRealtime;
         wikiShareChannel = wikiShareRealtime
             .channel(`${realtimeConfig.room || "darien-map"}-wiki-share`)
             .on("broadcast", {event: wikiShareEventName}, handleSharedArticle);
-        wikiShareChannel.subscribe();
+        wikiShareChannel.subscribe(status => {
+            wikiShareChannelStatus = status;
+            if(status !== "SUBSCRIBED")
+                console.warn("Wiki share realtime status:", status);
+        });
     }else if("BroadcastChannel" in window){
         wikiShareChannel = new BroadcastChannel(wikiShareEventName);
         wikiShareChannel.addEventListener("message", handleSharedArticle);

@@ -9,7 +9,10 @@ view:
   y: 
   zoom: 1
 
-color: "#211DA1"
+color: 
 ---
 # <% tp.file.title %>
+Battle/War "#B01313"
+Magic/Divine "#211DA1"
+
 Description

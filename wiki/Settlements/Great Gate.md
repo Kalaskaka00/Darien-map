@@ -24,6 +24,6 @@ Great Gate uses its minerals and geothermal vents to power massive forges and re
 ## Important NPCs 
 - Name 
 ## Organizations/Groups
-- 
+- The [[Brass Wheels]] operate a small market at the edge of the town for merchants to quickly trade with the denizens without having to make the trip to the caves.
 ## Notable Locations 
 - The Magma springs are a series of canals channeling magma along the industrial district, in large glowing columns.

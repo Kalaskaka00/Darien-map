@@ -23,7 +23,7 @@ Meel'a is a druid, she's an odd, slightly ominous character that delivers dead-p
 ## Major accomplishments
 - Delivered an important cargo to the baronesses of the [[Golden Lands]].
 ## Relations
-- [[Garbin]] is like a clumsy bird. It takes him multiple tries, but he's able to get to where he needs to somehow. To be in his presence is a nice experience
+- [[Garbin Sunheart]] is like a clumsy bird. It takes him multiple tries, but he's able to get to where he needs to somehow. To be in his presence is a nice experience
 - [[Turtahir]] is a friend, he shares a similar sense of the world, though his mindset might be more prey-like. He's very much like a rabbit.
 - [[Agamoos Evercrown]] is my benefactor, he saved me from [[Pitax]]ian researchers. Sometimes he talks too much.
 - [[Maegar Varn]] and the [[Vaegarian Host]] are rivals to Meel'a and her group. Meel'a would take upon a harder challenge in an attempt to out-do the [[Vaegarian Host]].

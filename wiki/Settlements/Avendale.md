@@ -23,8 +23,9 @@ Avendale is especially known for its culinary talents and music.
 ## Economy 
 Avendale uses its great amount of farm land and culinary talents to trade for great wealth. Even at times their master chefs traveling across the continent to serve at wedding, receptions and noble events.
 ## Important NPCs 
-- Name 
-## Organizations/Groups
 - 
+## Organizations/Groups
+- The [[Brass Wheels]] have many locations in the city and run the main market in the town, their economic power is immense.
+- The [[Grainseller family]] has several warehouses and a large influence in the town.
 ## Notable Locations 
 - Merry farmers market is among the largest markets on the continent said to have at least 1 000 different market stalls.

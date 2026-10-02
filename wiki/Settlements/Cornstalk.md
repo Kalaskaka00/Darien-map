@@ -23,6 +23,7 @@ Cornstalk is known especially for their cheese.
 Cornstalk lives on constant trade with travelers selling its great surpluses of food. The town is thought to posses some of the best agricultural lands in [[Touvette]]. Merchants especially covet the Cornstalk cheese and corn.
 ## Important NPCs 
 - [[Vein Grainseller]] is an important figure in the town and is sometimes considered more important than the mayor.
+- The [[Brass Wheels]] operate much of the mercantile in the city and has a lot of trade with the [[Grainseller family]].
 ## Organizations/Groups
 - The [[Grainseller family]] is the strongest and most notable family in for many miles. The family is large and is omnipresent in all corners of the town.
 ## Notable Locations 

@@ -27,6 +27,6 @@ Lonelywood survives mostly from the fishing, whaling and supplemental hunting. I
 - [[Kiri Udoon]] is the bright mind that has helped revolutionize the mining industry in Lonelywood. 
 - [[Ekon Udoon]] is an adventurer who makes his home in Lonelywood but is not often seen.
 ## Organisations/Groups
-- The [[Udoon family]] is the most prominent force of the town.
+- The [[Udoon family]] is the most prominent force of the town operating much of the mining industry.
 ## Notable Locations 
 - The Plummeting mines are the most known part of the city generating much of its income but are also well known to be scary and very cold even threatining creatures hardened agaisnt the cold.

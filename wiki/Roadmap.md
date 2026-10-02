@@ -1,20 +1,22 @@
 ## Check
-- Check show article
-- Check Laser Pointer
-- Changelog
 - Is link in Ox article readable?
+- Show article to GM
+- Show hidden articles
+- Check Laser Pointer less choppy
+- Demo Player & GM Notepad(s)
 ## Non coding work
 - PCs
-- Organisations summary -> Home
-- Nations Summary -> Home
-- Deity articles & stories
-- Update settlements with organisations + families
+- Deity stories
+- Add more settlements
+- Finish Troll Hunt
+- Expand Music List
+- Update Ihara and Harlequin based on report.
 ## Details
 - Clean up and speed up code
 - Curves to style document
 - Lines don't render of screen
-- Related Articles from headers
-- Bring scroller to the top when opening a new tab & Scrollbar stays where it was last when opening a tab
+- Preview doesn't disappear when scrolling
+- Not able to select roads and rivers
 ## Map
 - Lakes
 - Trade Routes
@@ -25,7 +27,6 @@
 ## Tools
 - Travel calculator
 - PC article - Players can edit
-- Player & GM Notepad(s)
 - Player side map markers
 - Possible to show measurement
 - Shift ping drags screen
@@ -36,8 +37,10 @@
 ## Wiki
 - Arrows changing pictures on several picture articles
 - Nation article type + Flags
-- Campaign article type
+- Campaign article type (cursive in timeline)
+- Story article time (cursive in timeline)
+- Places article type (Regions & Places)
 - Article text visible to some players
 - Favorites
 - Webb Links to articles
-- Nicer summary articles
+- Nations Summary -> Home

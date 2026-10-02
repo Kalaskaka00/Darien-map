@@ -35,6 +35,7 @@
 .laser-pointer-marker {
     background: transparent;
     border: 0;
+    transition: transform 70ms linear;
 }
 
 .laser-pointer-light {

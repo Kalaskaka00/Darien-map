@@ -25,6 +25,7 @@ Due to its proximity to the [[Kings Road]] and agriculturally productive lands t
 - [[Sandak Viine]] is in charge of the city and is a highly appreciated leader.
 - [[Emily Viine]] a common sight, especially in the market.
 ## Organizations/Groups
-- The [[Viine family]] rule Southhost, they are very popular among the people.
+- The [[Viine family]] rule Southhost, they are very popular among the people and hold great influence in most parts of the city.
+- The [[Brass Wheels]] does plenty of business with the farmers in the area and help transport much of the produce. The Brass Wheels have exclusive contracts with many of the farmers.
 ## Notable Locations 
 - The Great Plazas are a large complex of public baths, parks and town squares.

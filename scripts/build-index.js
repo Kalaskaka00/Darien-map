@@ -50,7 +50,10 @@ for (const file of files) {
     const getReferences = content => [...content.matchAll(/(?<!!)\[\[(.*?)\]\]/g)]
         .map(match => match[1].split("|")[0].split("#")[0].trim())
         .filter(Boolean);
-    const references = getReferences(publicContent);
+    const references = [
+        ...getReferences(publicContent),
+        ...getReferences(parsed.matter)
+    ];
     const gmReferences = getReferences(gmSections);
 
     referencesByFile.set(file.replace(/^wiki[\\/]/, "").replace(/\\/g, "/"), {

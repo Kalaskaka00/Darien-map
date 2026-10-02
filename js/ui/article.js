@@ -37,7 +37,7 @@ function getVisibilityInfoHTML(article) {
     return visibilityHTML;
 }
 
-function renderArticle(article, markdown){
+async function renderArticle(article, markdown){
 
     let html;
 
@@ -55,6 +55,9 @@ function renderArticle(article, markdown){
 
     }
 
+    if(article.category === "summary")
+        html = await renderSummaryLists(html);
+
     // Add visibility info at top (GM only)
     const visibilityInfo = getVisibilityInfoHTML(article);
     const wikiSummary = article.file === "Home/Home.md"
@@ -65,6 +68,434 @@ function renderArticle(article, markdown){
         makeArticleHeadingsCollapsible(
             visibilityInfo + html + renderRelatedArticles(article) + wikiSummary
         );
+
+    if(document.querySelector("#article .pc-summary-cards .npc-portrait-group"))
+        startPortraitRotation();
+
+}
+
+async function renderSummaryLists(html){
+
+    const container = document.createElement("div");
+    container.innerHTML = html;
+
+    const tablePlaceholders = [...container.querySelectorAll("p")]
+        .filter(paragraph =>
+            /^(?:\/(?:Mayor|Major|Minor) Deities Table\/|\/Organisations Table\/|\/Families Table\/|\/NPCs (?:Alive|Dead) Table\/|\/PC Headers\/)$/i.test(
+                paragraph.textContent.trim()
+            )
+        );
+    const hasDeityTable = tablePlaceholders.some(placeholder =>
+        /^\/(?:Mayor|Major|Minor) Deities Table\/$/i.test(placeholder.textContent.trim())
+    );
+    const hasOrganisationTable = tablePlaceholders.some(placeholder =>
+        /^\/Organisations Table\/$/i.test(placeholder.textContent.trim())
+    );
+    const hasFamilyTable = tablePlaceholders.some(placeholder =>
+        /^\/Families Table\/$/i.test(placeholder.textContent.trim())
+    );
+    const hasNpcTables = tablePlaceholders.some(placeholder =>
+        /^\/NPCs (?:Alive|Dead) Table\/$/i.test(placeholder.textContent.trim())
+    );
+    const hasPCHeaders = tablePlaceholders.some(placeholder =>
+        /^\/PC Headers\/$/i.test(placeholder.textContent.trim())
+    );
+    const [deities, organisations, families, npcs, pcs] = await Promise.all([
+        hasDeityTable
+        ? await Promise.all(
+            world
+                .filter(article => article.category === "deity" && canReadArticle(article))
+                .map(async article => ({
+                    ...article,
+                    ...await getArticleData(article)
+                }))
+        )
+        : [],
+        hasOrganisationTable
+            ? await Promise.all(
+                world
+                    .filter(article => article.category === "organisation" && canReadArticle(article))
+                    .map(async article => ({
+                        ...article,
+                        ...await getArticleData(article)
+                    }))
+            )
+            : [],
+        hasFamilyTable
+            ? await Promise.all(
+                world
+                    .filter(article => article.category === "family" && canReadArticle(article))
+                    .map(async article => ({
+                        ...article,
+                        ...await getArticleData(article)
+                    }))
+            )
+            : [],
+        hasNpcTables
+            ? await Promise.all(
+                world
+                    .filter(article =>
+                        article.category === "npc" && canReadArticle(article)
+                    )
+                    .map(async article => ({
+                        ...article,
+                        ...await getArticleData(article)
+                    }))
+            )
+            : [],
+        hasPCHeaders
+            ? await Promise.all(
+                world
+                    .filter(article => article.category === "pc" && canReadArticle(article))
+                    .map(async article => ({
+                        ...article,
+                        ...await getArticleData(article)
+                    }))
+            )
+            : []
+    ]);
+
+    tablePlaceholders.forEach(placeholder => {
+
+        const npcTableMatch = placeholder.textContent.trim().match(
+            /^\/NPCs (Alive|Dead) Table\/$/i
+        );
+
+        if(npcTableMatch){
+            const deceased = npcTableMatch[1].toLowerCase() === "dead";
+            const selectedNPCs = npcs.filter(article =>
+                (
+                    article.death !== null &&
+                    article.death !== undefined &&
+                    String(article.death).trim() !== ""
+                ) === deceased
+            );
+            placeholder.replaceWith(
+                buildNpcSummaryTable(selectedNPCs, deceased)
+            );
+            return;
+        }
+
+        if(/^\/PC Headers\/$/i.test(placeholder.textContent.trim())){
+            placeholder.replaceWith(buildPCSummaryHeaders(pcs));
+            return;
+        }
+
+        if(/^\/Organisations Table\/$/i.test(placeholder.textContent.trim())){
+            placeholder.replaceWith(buildOrganisationSummaryTable(organisations));
+            return;
+        }
+
+        if(/^\/Families Table\/$/i.test(placeholder.textContent.trim())){
+            placeholder.replaceWith(buildFamilySummaryTable(families));
+            return;
+        }
+
+        const isMinor = /^\/Minor/i.test(placeholder.textContent.trim());
+        const group = isMinor ? "Minor Deities" : "Major Deities";
+        const groupDeities = deities
+            .filter(article =>
+                article.file.split("/").includes(group)
+            )
+            .sort((left, right) => left.name.localeCompare(right.name));
+        const table = document.createElement("table");
+        table.className = "deity-summary-table";
+
+        table.innerHTML = `
+            <thead>
+                <tr>
+                    <th>Deity</th>
+                    <th>Aspects</th>
+                    <th>Races</th>
+                    <th>Symbol</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${groupDeities.map(article => {
+                    const name = escapeArticleHTML(article.name);
+                    const handlerName = article.name
+                        .replace(/\\/g, "\\\\")
+                        .replace(/'/g, "\\'");
+                    const alternativeNames = formatSummaryValues(article.names);
+                    const symbol = article.image
+                        ? `<img class="deity-summary-symbol" src="wiki/Images/Symbols/${escapeArticleHTML(article.image)}" alt="${name} symbol" loading="lazy">`
+                        : "";
+
+                    return `
+                        <tr style="--deity-color:${escapeArticleHTML(article.color || "#6b705c")}">
+                            <th scope="row">
+                                <a
+                                    href="#"
+                                    class="wikilink"
+                                    data-page="${name}"
+                                    onmouseenter="hoverArticle(event,'${handlerName}')"
+                                    onmouseleave="hidePreview()">${name}</a>
+                                ${alternativeNames
+                                    ? `<span class="deity-summary-alternative-names">${escapeArticleHTML(alternativeNames)}</span>`
+                                    : ""}
+                            </th>
+                            <td>${escapeArticleHTML(formatSummaryValues(article.aspects))}</td>
+                            <td>${escapeArticleHTML(formatSummaryValues(article.races))}</td>
+                            <td>${symbol}</td>
+                        </tr>
+                    `;
+                }).join("")}
+            </tbody>
+        `;
+
+        placeholder.replaceWith(table);
+
+    });
+
+    container.querySelectorAll("ul").forEach(list => {
+
+        const items = [...list.children].filter(
+            item => item.tagName === "LI"
+        );
+
+        if(!items.length)
+            return;
+
+        list.classList.add("summary-event-list");
+
+        items.forEach(item => {
+
+            const historyArticle = [...item.querySelectorAll("a[data-page]")]
+                .map(link => getArticle(link.dataset.page))
+                .find(candidate => candidate?.category === "history");
+
+            item.classList.add("summary-event");
+            item.style.setProperty(
+                "--summary-color",
+                historyArticle?.color || "#6b705c"
+            );
+
+            const yearLabel = [...item.children].find(child =>
+                child.tagName === "STRONG" &&
+                /^Year\b/i.test(child.textContent.trim())
+            );
+
+            if(!yearLabel)
+                return;
+
+            const year = document.createElement("span");
+            year.className = "summary-event-year";
+            year.append(yearLabel);
+
+            const details = document.createElement("span");
+            details.className = "summary-event-details";
+
+            [...item.childNodes].forEach(node => {
+                if(node !== yearLabel)
+                    details.append(node);
+            });
+
+            item.replaceChildren(year, details);
+
+        });
+
+    });
+
+    return container.innerHTML;
+
+}
+
+function buildOrganisationSummaryTable(organisations){
+
+    const table = document.createElement("table");
+    table.className = "organisation-summary-table";
+
+    const rows = organisations
+        .sort((left, right) => left.name.localeCompare(right.name))
+        .map(article => {
+            const name = escapeArticleHTML(article.name);
+            const handlerName = article.name
+                .replace(/\\/g, "\\\\")
+                .replace(/'/g, "\\'");
+            const symbol = article.image
+                ? `<img class="organisation-summary-symbol" src="wiki/Images/Symbols/${escapeArticleHTML(article.image)}" alt="" loading="lazy">`
+                : "";
+
+            return `
+                <tr style="--organisation-color:${escapeArticleHTML(article.color || article.primaryColor || "#6b705c")}">
+                    <th scope="row">
+                        ${symbol}
+                        <a
+                            href="#"
+                            class="wikilink"
+                            data-page="${name}"
+                            onmouseenter="hoverArticle(event,'${handlerName}')"
+                            onmouseleave="hidePreview()">${name}</a>
+                    </th>
+                    <td>${escapeArticleHTML(formatSummaryValues(article.type))}</td>
+                    <td>${renderWikiLinks(article.nations || [])}</td>
+                </tr>
+            `;
+        })
+        .join("");
+
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Organisation</th>
+                <th>Type</th>
+                <th>Nations</th>
+            </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+    `;
+
+    return table;
+
+}
+
+function buildFamilySummaryTable(families){
+
+    const table = document.createElement("table");
+    table.className = "family-summary-table";
+
+    const rows = families
+        .sort((left, right) => left.name.localeCompare(right.name))
+        .map(article => {
+            const name = escapeArticleHTML(article.name);
+            const handlerName = article.name
+                .replace(/\\/g, "\\\\")
+                .replace(/'/g, "\\'");
+            const primaryColor = article.primaryColor || article.color || "#6f5328";
+            const secondaryColor = article.secondaryColor || article.secondatyColor || primaryColor;
+            const symbol = article.image
+                ? `<img class="family-summary-symbol" src="wiki/Images/Coat of Arms/${escapeArticleHTML(article.image)}" alt="${name} coat of arms" loading="lazy">`
+                : "";
+
+            return `
+                <tr style="--family-primary-color:${escapeArticleHTML(primaryColor)};--family-secondary-color:${escapeArticleHTML(secondaryColor)}">
+                    <th scope="row">
+                        <a
+                            href="#"
+                            class="wikilink"
+                            data-page="${name}"
+                            onmouseenter="hoverArticle(event,'${handlerName}')"
+                            onmouseleave="hidePreview()">${name}</a>
+                    </th>
+                    <td>${symbol}</td>
+                    <td>${renderWikiLinks(article.leader || "")}</td>
+                    <td>${renderWikiLinks(article.nations || [])}</td>
+                </tr>
+            `;
+        })
+        .join("");
+
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Family</th>
+                <th>Symbol</th>
+                <th>Leader</th>
+                <th>Nations</th>
+            </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+    `;
+
+    return table;
+
+}
+
+function buildNpcSummaryTable(npcs, deceased){
+
+    const table = document.createElement("table");
+    table.className = "npc-summary-table";
+
+    const rows = npcs
+        .sort((left, right) => left.name.localeCompare(right.name))
+        .map(article => {
+            const articleName = escapeArticleHTML(article.name);
+            const handlerName = article.name
+                .replace(/\\/g, "\\\\")
+                .replace(/'/g, "\\'");
+            const displayName = `${deceased ? "† " : ""}${article.name}`;
+            const yearValue = deceased
+                ? formatSummaryValues(article.death)
+                : formatSummaryNpcAge(article);
+
+            return `
+                <tr style="--npc-summary-color:${escapeArticleHTML(article.color || "#6b705c")}">
+                    <th scope="row">
+                        <a
+                            href="#"
+                            class="wikilink"
+                            data-page="${articleName}"
+                            onmouseenter="hoverArticle(event,'${handlerName}')"
+                            onmouseleave="hidePreview()">${escapeArticleHTML(displayName)}</a>
+                    </th>
+                    <td>${escapeArticleHTML(yearValue)}</td>
+                    <td>${renderSummaryLinks(article.origin)}</td>
+                    <td>${renderSummaryLinks(article.family)}</td>
+                    <td>${renderSummaryLinks(article.organisations)}</td>
+                </tr>
+            `;
+        })
+        .join("");
+
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>${deceased ? "Died" : "Age"}</th>
+                <th>Origin</th>
+                <th>Family</th>
+                <th>Organisations</th>
+            </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+    `;
+
+    return table;
+
+}
+
+function buildPCSummaryHeaders(pcs){
+
+    const cards = document.createElement("div");
+    cards.className = "pc-summary-cards";
+
+    cards.innerHTML = pcs
+        .sort((left, right) =>
+            (left.fullname || left.name).localeCompare(right.fullname || right.name)
+        )
+        .map(article => buildPCSidebar(article, true))
+        .join("");
+
+    return cards;
+
+}
+
+function formatSummaryNpcAge(article){
+
+    const birthYear = Number.parseInt(article.birth, 10);
+    const currentYear = Number(CONFIG.world.currentYear);
+
+    if(!Number.isFinite(birthYear) || !Number.isFinite(currentYear))
+        return "";
+
+    return String(currentYear - birthYear);
+
+}
+
+function renderSummaryLinks(value){
+
+    const values = (Array.isArray(value) ? value : [value])
+        .filter(item => item !== null && item !== undefined && String(item).trim());
+
+    return values.map(renderWikiLinks).join(", ");
+
+}
+
+function formatSummaryValues(value){
+
+    return (Array.isArray(value) ? value : [value])
+        .filter(item => item !== null && item !== undefined && item !== "")
+        .join(", ");
 
 }
 
@@ -316,8 +747,10 @@ async function getArticleData(article){
     const response =
         await fetch("wiki/" + article.file);
 
-    const markdown =
-        await response.text();
+    if(!response.ok)
+        throw new Error(`Unable to load article data for "${article.name}": ${response.status}`);
+
+    const markdown = await response.text();
 
     const parsed =
         extractFrontmatter(markdown);

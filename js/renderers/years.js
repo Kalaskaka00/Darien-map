@@ -15,7 +15,7 @@ function formatYear(year){
 function renderYears(markdown){
 
     return markdown.replace(
-        /\{\{year:(\d+|current)\}\}/g,
+        /\{\{year:(-?\d+|current)\}\}/g,
         (match, year)=>{
 
             const resolvedYear = year === "current"

@@ -1,8 +1,123 @@
 {
-    "latestBuild": "2026-09-25T17:14:32.443Z",
-    "articleCount": 182,
-    "latestChange": "Added all major dieties",
+    "latestBuild": "2026-10-02T16:23:44.693Z",
+    "articleCount": 195,
+    "latestChange": "Update Show Article Tool and Laserpointer, Made headers into related articles, added functionality for negative years, added summary articles, added demo for notepads, improved scrollbar behavior when switching articles",
     "changelog": [
+        {
+            "date": "2026-10-02T16:23:44.693Z",
+            "articleCount": 195,
+            "changes": "Update Show Article Tool and Laserpointer, Made headers into related articles, added functionality for negative years, added summary articles, added demo for notepads, improved scrollbar behavior when switching articles"
+        },
+        {
+            "date": "2026-10-02T12:44:09.999Z",
+            "articleCount": 191,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-10-02T12:19:33.408Z",
+            "articleCount": 191,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-10-02T12:18:31.933Z",
+            "articleCount": 191,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-10-02T12:16:40.095Z",
+            "articleCount": 191,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-30T15:56:10.148Z",
+            "articleCount": 191,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-30T15:55:37.580Z",
+            "articleCount": 191,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-30T15:32:17.799Z",
+            "articleCount": 191,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-29T16:22:25.327Z",
+            "articleCount": 190,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-27T16:17:15.925Z",
+            "articleCount": 189,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-27T14:02:18.747Z",
+            "articleCount": 188,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-27T11:54:32.925Z",
+            "articleCount": 187,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-27T10:27:58.432Z",
+            "articleCount": 186,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-27T09:31:54.697Z",
+            "articleCount": 185,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-27T07:37:48.893Z",
+            "articleCount": 184,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-26T20:22:41.128Z",
+            "articleCount": 183,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-26T17:02:35.866Z",
+            "articleCount": 182,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-26T16:59:23.480Z",
+            "articleCount": 182,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-26T16:56:08.980Z",
+            "articleCount": 182,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-26T16:52:56.251Z",
+            "articleCount": 182,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-26T16:49:34.317Z",
+            "articleCount": 182,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-26T16:47:00.967Z",
+            "articleCount": 182,
+            "changes": "Added all major dieties"
+        },
+        {
+            "date": "2026-09-26T16:38:06.325Z",
+            "articleCount": 182,
+            "changes": "Added all major dieties"
+        },
         {
             "date": "2026-09-25T17:14:32.443Z",
             "articleCount": 182,

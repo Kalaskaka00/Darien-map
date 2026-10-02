@@ -14,6 +14,9 @@ function buildDeityNames(article){
 function buildDeityCard(article, compact = false){
 
     const color = article.color || "#4b4b4b";
+    const textColor = String(article.text).toLowerCase() === "black"
+        ? "black"
+        : "white";
     const symbolImage = article.image
         ? `
             <img
@@ -25,7 +28,7 @@ function buildDeityCard(article, compact = false){
         : "";
 
     return `
-        <section class="deity-card${compact ? " deity-card-compact" : ""}" style="--deity-color:${escapeArticleHTML(color)};">
+        <section class="deity-card${compact ? " deity-card-compact" : ""}" style="--deity-color:${escapeArticleHTML(color)}; --deity-text-color:${textColor};">
             <header class="deity-banner">
                 <span>${escapeArticleHTML(article.name)}</span>
                 ${buildDeityNames(article)}

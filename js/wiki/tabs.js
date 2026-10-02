@@ -5,6 +5,7 @@ const wikiTabsStorageKey = "darien-map-wiki-tabs";
 
 const wikiTabList = document.getElementById("wiki-tab-list");
 const newWikiTabButton = document.getElementById("wiki-new-tab");
+const wikiSidebar = document.getElementById("wiki-sidebar");
 const wikiTabTooltip = document.createElement("div");
 
 wikiTabTooltip.id = "wiki-tab-tooltip";
@@ -16,12 +17,22 @@ function getActiveWikiTab(){
 
 }
 
+function saveActiveWikiTabScroll(){
+
+    const tab = getActiveWikiTab();
+
+    if(tab && !tab.directory && !tab.scrollRestorePending)
+        tab.scrollTop = wikiSidebar.scrollTop;
+
+}
+
 function persistWikiTabs(){
 
     const state = {
         tabs: wikiTabs.map(tab => ({
             file: tab.directory ? null : tab.article?.file || null,
-            directory: Boolean(tab.directory)
+            directory: Boolean(tab.directory),
+            scrollTop: tab.directory ? null : tab.scrollTop || 0
         })),
         activeIndex: wikiTabs.findIndex(tab => tab.id === activeWikiTabId)
     };
@@ -65,7 +76,12 @@ function restoreWikiTabs(){
             const article = getArticleByFile(savedTab?.file);
 
             return article && canReadArticle(article)
-                ? { article }
+                ? {
+                    article,
+                    scrollTop: Number.isFinite(savedTab?.scrollTop)
+                        ? Math.max(0, savedTab.scrollTop)
+                        : 0
+                }
                 : null;
 
         })
@@ -142,7 +158,8 @@ function createWikiTab(article){
 
     const tab = {
         id: nextWikiTabId++,
-        article
+        article,
+        scrollTop: 0
     };
 
     wikiTabs.push(tab);
@@ -154,6 +171,8 @@ function createWikiTab(article){
 }
 
 function activateWikiTab(tab){
+
+    saveActiveWikiTabScroll();
 
     activeWikiTabId = tab.id;
 
@@ -168,25 +187,43 @@ function activateWikiTab(tab){
 
     closeDirectory?.();
     setCurrentArticle(tab.article);
+    tab.scrollRestorePending = true;
+    tab.scrollIntentStart = null;
+    wikiSidebar.scrollTop = 0;
     renderWikiTabs();
-    loadArticle(tab.article.file);
+    loadArticle(tab.article.file).then(() => {
+
+        if(activeWikiTabId === tab.id &&
+            tab.scrollRestorePending &&
+            getCurrentArticle()?.file === tab.article.file){
+
+            tab.scrollIntentStart = null;
+            wikiSidebar.scrollTop = tab.scrollTop || 0;
+
+        }
+
+    });
 
 }
 
-function openArticleInNewTab(article){
+function openArticleInNewTab(article, sharedAccess = false){
 
-    if(!canReadArticle(article))
+    if(!canReadArticle(article) && !sharedAccess)
         return;
 
+    saveActiveWikiTabScroll();
     closeDirectory?.();
     hidePreview();
-    createWikiTab(article);
-    openArticle(article);
+    const tab = createWikiTab(article);
+    tab.sharedAccess = sharedAccess;
+    wikiSidebar.scrollTop = 0;
+    openArticle(article, true, sharedAccess);
 
 }
 
 function openDirectoryInNewTab(){
 
+    saveActiveWikiTabScroll();
     const tab = createWikiTab({
         name: "Article directory",
         file: null
@@ -204,6 +241,9 @@ function closeWikiTab(tabId){
 
     if(tabIndex < 0)
         return;
+
+    if(wikiTabs[tabIndex].id === activeWikiTabId)
+        saveActiveWikiTabScroll();
 
     const wasActive = wikiTabs[tabIndex].id === activeWikiTabId;
     wikiTabs.splice(tabIndex, 1);
@@ -229,6 +269,62 @@ function closeWikiTab(tabId){
     renderWikiTabs();
 
 }
+
+wikiSidebar.addEventListener("scroll", () => {
+
+    const tab = getActiveWikiTab();
+
+    if(directoryOpen || !tab)
+        return;
+
+    if(tab.scrollRestorePending){
+
+        if(tab.scrollIntentStart !== null &&
+            wikiSidebar.scrollTop !== tab.scrollIntentStart){
+
+            tab.scrollRestorePending = false;
+            tab.scrollIntentStart = null;
+            saveActiveWikiTabScroll();
+
+        }
+
+        return;
+
+    }
+
+    saveActiveWikiTabScroll();
+
+}, { passive: true });
+
+function noteWikiSidebarScrollIntent(){
+
+    const tab = getActiveWikiTab();
+
+    if(tab?.scrollRestorePending && tab.scrollIntentStart === null)
+        tab.scrollIntentStart = wikiSidebar.scrollTop;
+
+}
+
+wikiSidebar.addEventListener("wheel", noteWikiSidebarScrollIntent, { passive: true });
+wikiSidebar.addEventListener("touchstart", noteWikiSidebarScrollIntent, { passive: true });
+wikiSidebar.addEventListener("pointerdown", noteWikiSidebarScrollIntent, { passive: true });
+
+document.addEventListener("keydown", event => {
+
+    if(!["ArrowDown", "ArrowUp", " ", "End", "Home", "PageDown", "PageUp"].includes(event.key))
+        return;
+
+    if(wikiSidebar.contains(document.activeElement) || document.activeElement === document.body)
+        noteWikiSidebarScrollIntent();
+
+});
+
+window.addEventListener("pagehide", () => {
+
+    saveActiveWikiTabScroll();
+    persistWikiTabs();
+
+});
 
 wikiTabList.addEventListener("click", event => {
 

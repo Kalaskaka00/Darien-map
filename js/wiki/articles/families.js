@@ -121,6 +121,10 @@ function buildFamilySidebar(article){
 
     const color = article.primaryColor || article.color || "#6f5328";
     const secondaryColor = article.secondaryColor || article.secondatyColor || color;
+    const textColor = article.category === "organisation" &&
+        String(article.text).toLowerCase() === "black"
+        ? "black"
+        : "white";
     const imageFolder = article.category === "organisation"
         ? "Symbols"
         : "Coat of Arms";
@@ -129,7 +133,7 @@ function buildFamilySidebar(article){
         : "";
 
     return `
-        <section class="family-card" style="--family-color:${color};--family-secondary-color:${secondaryColor};">
+        <section class="family-card" style="--family-color:${color};--family-secondary-color:${secondaryColor};--family-text-color:${textColor};">
             <header class="family-banner">
                 <span>${escapeArticleHTML(article.name)}</span>
             </header>

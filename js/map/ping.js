@@ -15,6 +15,7 @@ let laserActive = false;
 let laserVisible = false;
 let laserMarker = null;
 let laserUpdateTimer = null;
+let pendingLaserPosition = null;
 const laserSessionId = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
 const remoteLaserMarkers = new Map();
 
@@ -170,14 +171,36 @@ function updateLaserPointer(latlng) {
         }).addTo(map);
     }
 
-    window.clearTimeout(laserUpdateTimer);
-    laserUpdateTimer = window.setTimeout(() => publishLaserPointer(true, latlng), LASER_UPDATE_INTERVAL);
+    pendingLaserPosition = latlng;
+    if(laserUpdateTimer)
+        return;
+
+    publishPendingLaserPosition();
+    laserUpdateTimer = window.setTimeout(flushPendingLaserPosition, LASER_UPDATE_INTERVAL);
+}
+
+function publishPendingLaserPosition() {
+    if(!pendingLaserPosition || !laserActive || !laserVisible)
+        return;
+
+    publishLaserPointer(true, pendingLaserPosition);
+    pendingLaserPosition = null;
+}
+
+function flushPendingLaserPosition() {
+    laserUpdateTimer = null;
+    if(!pendingLaserPosition || !laserActive || !laserVisible)
+        return;
+
+    publishPendingLaserPosition();
+    laserUpdateTimer = window.setTimeout(flushPendingLaserPosition, LASER_UPDATE_INTERVAL);
 }
 
 function hideLaserPointer() {
     laserVisible = false;
     window.clearTimeout(laserUpdateTimer);
     laserUpdateTimer = null;
+    pendingLaserPosition = null;
     if(laserMarker) {
         map.removeLayer(laserMarker);
         laserMarker = null;
@@ -205,7 +228,6 @@ function toggleLaserPointer() {
         laserVisible = true;
         publishLaserPointer(true);
     } else {
-        map.off("mousemove", handleLaserMapMove);
         hideLaserPointer();
         publishLaserPointer(false);
     }

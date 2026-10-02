@@ -24,6 +24,6 @@ Floureton makes its money by trading with merchants along the [[Kings Road]] sel
 ## Important NPCs 
 - 
 ## Organizations/Groups
-- 
+- The [[Brass Wheels]] have several offices and warehouses and operates much of the market in Floureton.
 ## Notable Locations 
 - The grand painter is a huge marble statue in the center of town of a great artisan forgotten by time.

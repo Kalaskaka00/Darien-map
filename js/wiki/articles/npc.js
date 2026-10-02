@@ -31,15 +31,17 @@ function buildPortraits(article, imageFolder, expandable = true){
 
 }
 
-function buildNPCSidebar(article, extraRows = "", imageFolder = "NPCs", expandable = true){
+function buildNPCSidebar(article, extraRows = "", imageFolder = "NPCs", expandable = true, linkedName = false){
 
     const portraits = getPortraits(article);
 
     const deceased = article.death ? "npc-deceased" : "";
 
-    const name = article.death
-        ? `† ${article.fullname}`
-        : article.fullname;
+    const fullname = article.fullname || article.name;
+    const displayName = `${article.death ? "† " : ""}${fullname}`;
+    const name = linkedName
+        ? `<a class="wikilink" href="#" data-page="${escapeArticleHTML(article.name)}">${escapeArticleHTML(displayName)}</a>`
+        : displayName;
 
     return `
 
@@ -129,14 +131,14 @@ function sidebarRow(label, value, renderLinks = true){
     `;
 }
 
-function buildPCSidebar(article){
+function buildPCSidebar(article, linkedName = false){
 
     const extraRows = `
         ${sidebarRow("Player", article.player, false)}
         ${sidebarRow("Adventure", article.adventure)}
     `;
 
-    return buildNPCSidebar(article, extraRows, "PCs");
+    return buildNPCSidebar(article, extraRows, "PCs", true, linkedName);
 }
 function renderNPCQuote(markdown){
 

@@ -17,7 +17,7 @@
     align-items:flex-start;
 
     background:var(--deity-color);
-    color:white;
+    color:var(--deity-text-color, white);
     font-size:34px;
     font-weight:bold;
     line-height:1.1;

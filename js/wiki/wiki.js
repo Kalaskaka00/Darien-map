@@ -39,7 +39,7 @@ async function loadArticle(file){
 
     renderSidebar(worldArticle || article);
 
-    renderArticle(worldArticle || article, markdown);
+    await renderArticle(worldArticle || article, markdown);
 
 }
 

@@ -10,11 +10,8 @@ type:
 
 image: VaegarianSymbol.png
 
-majorLocations:
-  - [[Varnhold]]
-
 nations: 
-  - [[Summerborn]]
+  - [[Golden Lands]]
 
 color: "#969595"
 ---

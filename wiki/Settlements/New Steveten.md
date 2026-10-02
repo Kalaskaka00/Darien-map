@@ -26,6 +26,7 @@ New Steveten has enough food to feed its citizens but also imports food from [[S
 - [[Talia Andureen]] is queen of [[Brevoy]] and rules the city. She is known to be quite pompus and care a lot about how the city looks and feels.
 - [[Rita Neat]] is a close and vital advisor.
 ## Organizations/Groups
-- 
+- The [[Brass Wheels]] hold several auction houses in the city auctioning of items from further down the [[Kings Road]] to the nobility.
+- The [[Swordlords of Brevoy]] has a base in the city mostly for when the need arises to coordinate with the royal army.
 ## Notable Locations 
 - Steveten palace looms over the city giving a powerful and regal impression.

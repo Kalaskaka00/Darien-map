@@ -12,14 +12,15 @@
     <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="css/ping.css">
     <link rel="stylesheet" href="css/npc.css">
-    <link rel="stylesheet" href="css/deity.css">
-    <link rel="stylesheet" href="css/family.css">
+    <link rel="stylesheet" href="css/deity.css?v=text-color-1">
+    <link rel="stylesheet" href="css/family.css?v=organisation-text-color-1">
     <link rel="stylesheet" href="css/history.css">
     <link rel="stylesheet" href="css/settlement.css">
     <link rel="stylesheet" href="css/image-viewer.css">
     <link rel="stylesheet" href="css/search.css">
-    <link rel="stylesheet" href="css/wiki.css?v=collapse">
+    <link rel="stylesheet" href="css/wiki.css?v=article-share-2">
     <link rel="stylesheet" href="css/player-tools.css?v=player-color-1">
+    <link rel="stylesheet" href="css/notepad.css?v=notepad-4">
 </head>
 <body>
 
@@ -105,6 +106,46 @@
 </div>
 
 <div id="player-tools">
+
+    <button id="notepad-toggle" type="button" aria-label="Open notepad" aria-expanded="false">
+        <span aria-hidden="true">✎</span>
+    </button>
+
+    <section id="notepad-panel" aria-label="Notepad" hidden>
+        <header class="notepad-header">
+            <div>
+                <h2>Notepad</h2>
+                <p id="notepad-owner"></p>
+            </div>
+            <div class="notepad-header-actions">
+                <button id="notepad-expand" type="button" aria-label="Expand notepad" aria-pressed="false">⛶</button>
+                <button id="notepad-close" type="button" aria-label="Close notepad">×</button>
+            </div>
+        </header>
+        <label id="notepad-owner-picker-wrap" for="notepad-owner-picker" hidden>
+            View notebook
+            <select id="notepad-owner-picker"></select>
+        </label>
+        <div id="notepad-tabs" role="tablist" aria-label="Notes"></div>
+        <div class="notepad-actions">
+            <button id="notepad-add" type="button">＋ New note</button>
+            <button id="notepad-rename" type="button">Rename</button>
+            <button id="notepad-delete" type="button">Delete</button>
+            <button id="notepad-edit" type="button">Edit</button>
+            <button id="notepad-done" type="button" hidden>Done</button>
+        </div>
+        <div id="notepad-view" aria-label="Note"></div>
+        <div id="notepad-editor" hidden>
+            <div id="notepad-link-suggestions" role="listbox" aria-label="Matching articles" hidden></div>
+            <textarea id="notepad-content" aria-label="Note content" placeholder="Write your notes here..."></textarea>
+            <div class="notepad-link-row">
+                <input id="notepad-article-name" type="text" list="notepad-article-list" placeholder="Article name">
+                <datalist id="notepad-article-list"></datalist>
+                <button id="notepad-add-link" type="button">Add article link</button>
+            </div>
+        </div>
+        <p id="notepad-save-status" role="status">Saved in this browser</p>
+    </section>
 
     <button id="player-tools-toggle" aria-label="Player tools">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -215,7 +256,7 @@
 <script src="js/map/ping.js"></script>
 <script src="js/map/layers.js"></script>
 <script src="js/map/world.js?v=tab-persistence-2"></script>
-<script src="js/map/navigation.js"></script>
+<script src="js/map/navigation.js?v=article-share-2"></script>
 <script src="js/renderers/lineRenderer.js?v=snap-2"></script>
 <script src="js/map/layers/roadStyles.js"></script>
 <script src="js/map/layers/riverStyles.js"></script>
@@ -234,25 +275,26 @@
 
 <!-- Wiki -->
 <script src="js/wiki/articleRegistry.js"></script>
-<script src="js/wiki/articles/npc.js"></script>
-<script src="js/wiki/articles/deities.js"></script>
-<script src="js/wiki/articles/families.js"></script>
+<script src="js/wiki/articles/npc.js?v=pc-summary-card-link-1"></script>
+<script src="js/wiki/articles/deities.js?v=text-color-1"></script>
+<script src="js/wiki/articles/families.js?v=organisation-text-color-1"></script>
 <script src="js/wiki/articles/organisations.js"></script>
 <script src="js/wiki/articles/history.js"></script>
 <script src="js/wiki/articles/settlements.js?v=snap-3"></script>
 <script src="js/wiki/articles/nations.js?v=snap-2"></script>
 <script src="js/wiki/articles.js"></script>
 <script src="js/wiki/sidebar.js"></script>
-<script src="js/wiki/permissions.js"></script>
+<script src="js/wiki/permissions.js?v=article-share-2"></script>
 <script src="js/ui/imageViewer.js"></script>
 <script src="js/ui/article.js?v=collapsible-headings-3"></script>
 <script src="js/ui/playerTools.js?v=player-color-1"></script>
+<script src="js/ui/notepad.js?v=notepad-4"></script>
 <script src="js/wiki/wiki.js"></script>
 <script src="js/wiki/search.js"></script>
 <script src="js/wiki/history.js"></script>
 <script src="js/wiki/directory.js?v=preview"></script>
-<script src="js/wiki/tabs.js?v=tab-persistence-1"></script>
-<script src="js/wiki/share.js"></script>
+<script src="js/wiki/tabs.js?v=article-scroll-2"></script>
+<script src="js/wiki/share.js?v=article-share-2"></script>
 
 <!-- Editor -->
 <script src="js/editor/state.js"></script>

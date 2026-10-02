@@ -4,8 +4,8 @@ name: <% tp.file.title %>
 category: settlement
 
 capital: true
-nation: [[]]
-Ruler: [[]]
+nation: [[
+Ruler: [[
 
 map:
   x: 

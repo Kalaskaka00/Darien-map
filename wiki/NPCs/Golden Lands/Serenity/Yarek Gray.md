@@ -17,7 +17,7 @@ color: "#BF902E"
 # Yarek Gray
 *I you are not a true seaman until you've had the ocean stare back at you*
 
-Yarek is one of the fisher men in Serenity. He is the only one who is said to have survived an encounter with the [[Behemoth]].
+Yarek is one of the fisher men in Serenity. He is the only one who is said to have survived an encounter with the Behemoth.
 
 His Ship Tritons Grace is the largest fishing vessel in [[Serenity]] but still of a size where one person can quite easily handle it.
 ## Relations

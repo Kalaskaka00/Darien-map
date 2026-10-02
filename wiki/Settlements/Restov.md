@@ -29,6 +29,7 @@ Restov has enough food to feed its population without imports, but just barley.
 - [[Iandri Flukeflow]] is a mage and advisor in the city.
 ## Organisations/Groups
 - The [[Aldori family]] rules the city and maintains an iron discipline.
-- The [[Swordlords of Brevoy]] are the heros of the city and what every kid aspires to be.
+- The [[Swordlords of Brevoy]] are the heros of the city and what every kid aspires to be. The Swordlords have their main office and practice ground here.
+- The [[Brass Wheels]] have this as the end of their journey from [[Gralton]] buying weapons, tools and escorts in return for selling produce and metals from further down the [[Kings Road]].
 ## Notable Locations 
 - The academy of blades. The academy of blades have trained some of the best swordsmen in the world and is a mandatory stop for all in the [[Aldori family]] and the [[Swordlords of Brevoy]].

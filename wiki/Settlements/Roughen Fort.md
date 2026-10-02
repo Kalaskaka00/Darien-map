@@ -29,5 +29,7 @@ Except for the banking and general trade Roughen fort has a small farming and lu
 - [[Keldithas Beeret]] is in charge of the city and its banks.
 ## Organizations/Groups
 - The [[Beeret family]] are the rulers of Roughen Fort and know just about anything happening in and around Roughen Fort as well as having many debts they can call on.
+- The [[Brass Wheels]] have a few facilities for merchants including warehouses and stables, they also make use of the [[Beeret family]] banks.
+- The [[Swordlords of Brevoy]] hold a barrack in the fort to protect from disliked incursions.
 ## Notable Locations 
 - Rill memorial. Outside Roughen Fort, a large field of plaques and small statues to remember those who died in [[The Rill War]] and specifically commemorating the [[Battle of Fingers]]. At the edge of the fields two statues depicting a locathah beserker and an elven mage stand to the west facing down one of the [[Swordlords of Brevoy]] and a priestess in the east.

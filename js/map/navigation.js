@@ -1,6 +1,6 @@
-function openArticle(article, addToHistory = true){
+function openArticle(article, addToHistory = true, sharedAccess = false){
 
-    if(!canReadArticle(article))
+    if(!canReadArticle(article) && !sharedAccess)
     return;
 
     closeDirectory?.();
@@ -24,12 +24,22 @@ function openArticle(article, addToHistory = true){
 
         getArticleType(previousArticle.category)?.onClose?.(previousArticle);
 
+        if(currentTab){
+
+            currentTab.scrollTop = 0;
+            currentTab.scrollRestorePending = false;
+            currentTab.scrollIntentStart = null;
+            document.getElementById("wiki-sidebar").scrollTop = 0;
+
+        }
+
     }
 
     if(currentTab){
 
         currentTab.article = article;
         currentTab.directory = false;
+        currentTab.sharedAccess = sharedAccess;
 
     }
 

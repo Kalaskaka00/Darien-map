@@ -24,6 +24,7 @@ Transmuter´s rest gains almost all wealth from the arcane trade and mostly does
 ## Important NPCs 
 - Name 
 ## Organizations/Groups
-- Organisations
+- The [[Brass Wheels]] take much of the alchemical supplies out to the wider markets.
+- The [[Thieflings]] have a hideout in the city and help smuggle goods in and out.
 ## Notable Locations 
 - The alchemy mines are miens laying under Transmuter´s rest reaching deep in to the earth looking for arcane ingredients.

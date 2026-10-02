@@ -13,7 +13,7 @@
 
     padding:12px 20px;
     background:var(--family-color);
-    color:white;
+    color:var(--family-text-color, white);
     font-size:32px;
     font-weight:bold;
 

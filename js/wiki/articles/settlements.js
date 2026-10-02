@@ -40,8 +40,22 @@ const SmallCityStoneWallTowersIcon = L.icon({
     popupAnchor: [0, -20]
 });
 
+const TowerMageIcon = L.icon({
+    iconUrl: 'icons/Tower_mage.png',
+    iconSize: [12, 24],
+    iconAnchor: [6, 12],
+    popupAnchor: [0, -12]
+});
+
 const TownIcon = L.icon({
     iconUrl: 'icons/Town.png',
+    iconSize: [24, 24],
+    iconAnchor: [12, 12],
+    popupAnchor: [0, -12]
+});
+
+const VillageIcon = L.icon({
+    iconUrl: 'icons/Village.png',
     iconSize: [24, 24],
     iconAnchor: [12, 12],
     popupAnchor: [0, -12]
@@ -84,9 +98,16 @@ function addCity(city) {
             icon = SmallCityIcon;
             break;
 
+        case "Tower_Mage":
+            icon = TowerMageIcon;
+            break;
             
         case "Town":
             icon = TownIcon;
+            break;
+
+        case "Village":
+            icon = VillageIcon;
             break;
 
         case "Village_Wood_Wall":

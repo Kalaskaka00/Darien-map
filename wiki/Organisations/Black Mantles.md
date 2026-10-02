@@ -9,6 +9,9 @@ type:
 
 image: BlackMantlesSymbol.png
 
+minorLocations:
+  - [[Nerrez]]
+
 nations: 
   - [[Brevoy]]
   - [[Daggermark]]
