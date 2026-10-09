@@ -17,7 +17,7 @@ CONFIG.players: {
 }
 ```
 
-The color is for future use (player status display).
+The configured color is used to identify the player in the connected-player list.
 
 ## Article Visibility
 
@@ -77,6 +77,12 @@ The player tools panel shows who you're currently logged in as:
 - "No one" - viewing as public (see all public articles)
 - Player name - viewing as that player (see public + player-specific articles)
 - "GM" - viewing as GM (see all articles including GM-only)
+
+### Connected Players
+The player tools panel also shows players and the GM while they are connected.
+The name uses its configured player or GM color, and the status light shows
+activity: green for activity within 15 minutes, yellow after 15 minutes, and
+red after 1 hour. Names disappear when their browser disconnects.
 
 ### Access Control Display (GM Only)
 When viewing an article as GM, you'll see an "Access:" line showing which players can view that article.

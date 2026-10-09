@@ -21,8 +21,8 @@ view:
   y: 746
   zoom: 2
 
-primaryColor: "#E6E944"
-secondatyColor: "#000000"
+color: "#E6E944"
+secondaryColor: "#000000"
 ---
 # Beeret family
 *A Beeret always pay their debts*

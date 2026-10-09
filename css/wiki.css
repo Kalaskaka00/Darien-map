@@ -64,6 +64,12 @@
 
 }
 
+#article img[data-expand-image="true"]{
+
+    cursor:zoom-in;
+
+}
+
 .gm-notes{
 
     margin-top:40px;
@@ -430,6 +436,68 @@
 
 }
 
+.nation-summary-table{
+
+    width:100%;
+    table-layout:fixed;
+    border-collapse:separate;
+    border-spacing:0 .4rem;
+
+}
+
+.nation-summary-table th,
+.nation-summary-table td{
+
+    padding:.65rem .8rem;
+    text-align:left;
+    vertical-align:top;
+    overflow-wrap:anywhere;
+    background:color-mix(in srgb, var(--nation-color) 10%, transparent);
+
+}
+
+.nation-summary-table th:nth-child(1){
+
+    width:24%;
+
+}
+
+.nation-summary-table th:nth-child(2){
+
+    width:20%;
+
+}
+
+.nation-summary-table tbody th{
+
+    border-left:4px solid var(--nation-color);
+
+}
+
+.nation-summary-table tbody th a{
+
+    color:var(--nation-color);
+
+}
+
+.nation-summary-table thead th{
+
+    color:#2d2417;
+    background:rgba(111,83,40,.18);
+
+}
+
+.nation-summary-table .nation-summary-crest{
+
+    display:block;
+    width:75px;
+    height:75px;
+    max-width:100%;
+    margin-bottom:.35rem;
+    object-fit:contain;
+
+}
+
 .family-summary-table{
 
     width:100%;
@@ -649,6 +717,7 @@
 
 .wiki-navigation{
 
+    position:relative;
     display: flex;
 
     gap: .3rem;
@@ -700,6 +769,96 @@
 #wiki-show-article{
 
     margin-left:auto;
+
+}
+
+#wiki-local-options.local-options-changed{
+
+    background:rgba(160, 25, 25, .2);
+    color:#b21f1f;
+    box-shadow:inset 0 0 0 1px #b21f1f;
+
+}
+
+#wiki-local-options.local-options-changed:hover{
+
+    background:rgba(160, 25, 25, .32);
+    color:#8f1111;
+
+}
+
+#wiki-local-options-panel{
+
+    position:absolute;
+    top:calc(100% + 6px);
+    right:0;
+    z-index:20;
+    width:min(240px, calc(100vw - 32px));
+    padding:14px;
+    border:1px solid #7b5a2b;
+    border-radius:6px;
+    background:#f3ecd2;
+    color:#2d2417;
+    box-shadow:0 4px 14px rgba(0, 0, 0, .28);
+    font-family:Georgia, "Times New Roman", serif;
+
+}
+
+#wiki-local-options-panel[hidden]{
+
+    display:none;
+
+}
+
+#wiki-local-options-panel h2{
+
+    margin:0 0 10px;
+    font-size:1rem;
+
+}
+
+#wiki-local-year-form{
+
+    display:grid;
+    gap:8px;
+
+}
+
+#wiki-local-year{
+
+    width:100%;
+    box-sizing:border-box;
+    padding:5px;
+
+}
+
+.wiki-local-options-actions{
+
+    display:flex;
+    gap:8px;
+
+}
+
+.wiki-local-options-actions button{
+
+    flex:1;
+    width:auto;
+    height:auto;
+    min-width:0;
+    padding:5px 8px;
+    border:1px solid #7b5a2b;
+    border-radius:4px;
+    background:#e7d9b6;
+    color:#2d2417;
+    cursor:pointer;
+    font:inherit;
+
+}
+
+#wiki-local-year-status{
+
+    margin:2px 0 0;
+    font-size:.8rem;
 
 }
 

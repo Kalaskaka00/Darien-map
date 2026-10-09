@@ -5,8 +5,7 @@ category: settlement
 
 capital: true
 nation: [[Numeria]]
-Ruler: 
-
+ruler:
 map:
   x: 408
   y: 771

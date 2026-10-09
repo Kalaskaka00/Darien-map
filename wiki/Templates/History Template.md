@@ -2,8 +2,8 @@
 visibility: gm
 
 category: history
-StartYear: 0
-EndYear: 0
+startYear: 0
+endYear: 0
 view: 
   x: 
   y: 

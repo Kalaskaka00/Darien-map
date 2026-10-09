@@ -16,6 +16,7 @@ function renderSidebar(article){
     }
 
     articleSidebar.innerHTML = type.sidebar(article);
+    enableExpandableImages(articleSidebar);
 
     startPortraitRotation();
 
@@ -23,18 +24,51 @@ function renderSidebar(article){
 
 function calculateAge(article){
 
-    if(!article.birth)
+    if(article.birth === null ||
+        article.birth === undefined ||
+        String(article.birth).trim() === "")
         return "";
 
-    const birth = parseInt(article.birth);
+    const birth = Number.parseInt(article.birth, 10);
+    const currentYear = Number(getCurrentYear());
 
-    if(article.death){
+    if(!Number.isFinite(birth) || !Number.isFinite(currentYear))
+        return "";
 
-        return `${article.death - birth} (Deceased)`;
+    if(currentYear < birth)
+        return "Not born yet";
 
-    }
+    const death = article.death === null ||
+        article.death === undefined ||
+        String(article.death).trim() === ""
+            ? NaN
+            : Number(article.death);
 
-    return CONFIG.world.currentYear - birth;
+    if(Number.isFinite(death) && currentYear >= death)
+        return `${death - birth} (Deceased)`;
+
+    return currentYear - birth;
+
+}
+
+function getCharacterTimelineStatus(article){
+
+    const currentYear = Number(getCurrentYear());
+    const birth = Number.parseInt(article.birth, 10);
+
+    if(Number.isFinite(birth) && currentYear < birth)
+        return "unborn";
+
+    const death = article.death === null ||
+        article.death === undefined ||
+        String(article.death).trim() === ""
+            ? NaN
+            : Number(article.death);
+
+    if(Number.isFinite(death) && currentYear >= death)
+        return "deceased";
+
+    return "alive";
 
 }
 

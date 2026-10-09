@@ -5,7 +5,7 @@ category: settlement
 
 capital: true
 nation: [[
-Ruler: [[
+ruler: [[
 
 map:
   x: 

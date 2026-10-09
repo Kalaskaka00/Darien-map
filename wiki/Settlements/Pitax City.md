@@ -5,7 +5,7 @@ category: settlement
 
 capital: true
 nation: [[Pitax]]
-Ruler: Council of 9
+ruler: Council of 9
 
 map:
   x: 666

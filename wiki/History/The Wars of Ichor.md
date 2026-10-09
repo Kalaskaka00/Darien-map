@@ -1,7 +1,7 @@
 ---
 category: history
-StartYear: -13333
-EndYear: -13113
+startYear: -13333
+endYear: -13113
 color: "#211DA1"
 ---
 # The Wars of Ichor

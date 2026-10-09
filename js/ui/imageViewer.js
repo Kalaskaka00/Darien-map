@@ -41,6 +41,14 @@ function closeImageViewer(){
 
 }
 
+function enableExpandableImages(container){
+
+    container.querySelectorAll("img").forEach(image => {
+        image.dataset.expandImage = "true";
+    });
+
+}
+
 document.addEventListener("click", event => {
 
     const image = event.target.closest("[data-expand-image=\"true\"]");

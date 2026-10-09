@@ -74,10 +74,10 @@ wikiIndex.push({
     border: data.border || null,
     color: data.color || null,
     visibility: data.visibility || null,
-    related: data.related ?? data.Related ?? null,
+    related: data.related ?? null,
     gmReferences: [],
-    StartYear: data.StartYear ?? null,
-    EndYear: data.EndYear ?? null
+    startYear: data.startYear ?? null,
+    endYear: data.endYear ?? null
 });
 }
 

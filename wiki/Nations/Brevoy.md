@@ -3,6 +3,15 @@ id: brevoy
 name: Brevoy
 category: nation
 
+capital: [[New Steveten]]
+ruler: [[Talia Andureen]]
+races:
+  - Goliaths
+  - Halflings
+  - Humans
+  - Orcs
+
+image: BrevoyBanner.png
 color: "#8F1A2C"
 
 view: 
@@ -32,11 +41,6 @@ border:
   - [860, 1053]
 ---
 # Brevoy
-**Capital:** [[New Steveten]]
-
-**Common Races:** Halflings, Half-Orcs, Humans
-**Uncommon Races:** Elves, Firbolgs, Goliaths, Half-Elves, Orcs
-
 *Brevoy is one of the larger large nations in the [[Darien]] region and as such wields significant influence. They have a strong military tradition and have become known for their iron working and swords.*
 ## Terrain & Geography
 Brevoy has a large coast to the north, but it is quite dangerous during the winter months to travel there. To the east is a mountain chain known as [[Icerime peak]] which is only passable through a few mountain passes. To the south are the wasteland known as the [[Stolen Lands]]. To the west are a few mountains and an open plain with a border to [[Numeria]].

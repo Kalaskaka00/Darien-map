@@ -3,6 +3,15 @@ id: manchu_tribes
 name: Manchu Tribes
 category: nation
 
+capital: [[Urrudar]]
+ruler: [[Wise Hoof]]
+races:
+  - Aaracokra
+  - Centaurs
+  - Hobgoblins
+  - Humans
+
+image: ManchuTribesBanner.png
 color: "#B09515"
 
 view: 
@@ -43,11 +52,6 @@ border:
   - [548, 424]
 ---
 # Manchu Tribes
-**Capital:** -
-
-**Common Races:** Centaurs, Humans
-**Uncommon Races:** Aaracokra, Half-Orcs, Hobgoblin, Orc
-
 *The Manchu tribes live over large grasslands as nomadic tribes. They normally ride on horseback (or similar), living of the land and participating in raids and actively trade with neighbors.*
 ## Terrain & Geography
 To the north as the climate becomes colder and more forested the influence of the Manchu tribes disapears to [[Numeria]]. To the east of the Manchu Tribes are some rivers and more fertile lands bordering to [[Pitax]] and [[Touvette]]. To the west and south the Mancu Tribes stretch far bordering  [[Daggermark]].

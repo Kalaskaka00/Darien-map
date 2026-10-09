@@ -1,7 +1,7 @@
 ---
 category: history
-StartYear: 2972
-EndYear: 2972
+startYear: 2972
+endYear: 2972
 view:
   x: 422
   y: 483

@@ -4,7 +4,7 @@ name: Southhost
 category: settlement
 
 nation: [[Brevoy]]
-Ruler: [[Viine family]]
+ruler: [[Viine family]]
 
 map:
   x: 896

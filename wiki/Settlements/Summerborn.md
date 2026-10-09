@@ -5,8 +5,7 @@ category: settlement
 
 capital: true
 nation: [[Golden Lands]]
-Ruler: 
-
+ruler:
 map:
   x: 838
   y: 566

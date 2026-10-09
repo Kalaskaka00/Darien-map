@@ -2,7 +2,7 @@ const CONFIG = {
 
     world:{
 
-        currentYear:3864
+        currentYear:3863
 
     },
 
@@ -43,6 +43,14 @@ const CONFIG = {
         "Mallena": "#03fc73",
         "Rasmus": "#a81d1d"
     }
+
+}
+
+let localYearOverride = null;
+
+function getCurrentYear(){
+
+    return localYearOverride ?? CONFIG.world.currentYear;
 
 }
 

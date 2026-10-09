@@ -1,7 +1,7 @@
 ---
 category: history
-StartYear: 3843
-EndYear: 3847
+startYear: 3843
+endYear: 3847
 view: 
   x: 785 
   y: 764 

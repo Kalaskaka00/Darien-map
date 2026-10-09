@@ -68,6 +68,21 @@
     cursor: pointer;
 }
 
+#notepad-backups-toggle {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid rgba(111, 83, 40, 0.45);
+    border-radius: 5px;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+#notepad-backups-toggle:hover,
+#notepad-backups-toggle[aria-expanded="true"] {
+    background: rgba(230, 217, 195, 0.8);
+}
+
 #notepad-panel.expanded {
     position: fixed;
     inset: 0 auto 0 0;
@@ -177,6 +192,60 @@
     opacity: 0.5;
 }
 
+#notepad-backups {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 7px;
+    margin: 0 0 10px;
+    padding: 10px;
+    border: 1px solid #c9a87c;
+    border-radius: 4px;
+    background: rgba(255, 253, 247, 0.7);
+}
+
+#notepad-backups[hidden] {
+    display: none;
+}
+
+#notepad-backups label,
+#notepad-backup-select {
+    grid-column: 1 / -1;
+}
+
+#notepad-backup-select {
+    min-width: 0;
+    padding: 7px;
+    border: 1px solid #c9a87c;
+    border-radius: 4px;
+    background: #fffdf7;
+    color: #2d2417;
+}
+
+#notepad-backup-restore {
+    grid-column: 1 / -1;
+    justify-self: start;
+    padding: 6px 9px;
+    border: 1px solid #c9a87c;
+    border-radius: 4px;
+    background: #f5f0e5;
+    color: #2d2417;
+    font-family: Georgia, serif;
+    cursor: pointer;
+}
+
+#notepad-backup-restore:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+#notepad-backup-status {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: #6f5328;
+    font-size: 0.8rem;
+}
+
 #notepad-view {
     min-height: 180px;
     padding: 10px;
@@ -268,4 +337,19 @@
     margin: 8px 0 0;
     color: #6f5328;
     font-size: 0.8rem;
+}
+
+#notepad-retry {
+    margin-top: 6px;
+    padding: 6px 9px;
+    border: 1px solid #c9a87c;
+    border-radius: 4px;
+    background: #f5f0e5;
+    color: #2d2417;
+    font-family: Georgia, serif;
+    cursor: pointer;
+}
+
+#notepad-retry[hidden] {
+    display: none;
 }

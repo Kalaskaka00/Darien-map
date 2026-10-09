@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="css/editor.css">
     <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="css/ping.css">
-    <link rel="stylesheet" href="css/npc.css">
+    <link rel="stylesheet" href="css/npc.css?v=local-year-2">
     <link rel="stylesheet" href="css/deity.css?v=text-color-1">
-    <link rel="stylesheet" href="css/family.css?v=organisation-text-color-1">
+    <link rel="stylesheet" href="css/family.css?v=nation-article-1">
     <link rel="stylesheet" href="css/history.css">
     <link rel="stylesheet" href="css/settlement.css">
     <link rel="stylesheet" href="css/image-viewer.css">
     <link rel="stylesheet" href="css/search.css">
-    <link rel="stylesheet" href="css/wiki.css?v=article-share-2">
+    <link rel="stylesheet" href="css/wiki.css?v=nation-summary-3">
     <link rel="stylesheet" href="css/player-tools.css?v=player-color-1">
-    <link rel="stylesheet" href="css/notepad.css?v=notepad-4">
+    <link rel="stylesheet" href="css/player-presence.css">
+    <link rel="stylesheet" href="css/notepad.css?v=global-notepads-1">
 </head>
 <body>
 
@@ -53,7 +54,20 @@
         <button id="wiki-forward">→</button>
         <button id="wiki-home">⌂</button>
         <button id="wiki-directory" title="Article directory" aria-label="Article directory">☷</button>
+        <button id="wiki-local-options" type="button" title="Local options; right-click to reset" aria-label="Local options; right-click to reset" aria-expanded="false" aria-controls="wiki-local-options-panel">⚙</button>
         <button id="wiki-show-article" type="button" title="Show article to selected players; Shift-click for everyone" aria-label="Show article to selected players; Shift-click for everyone">⇧</button>
+        <section id="wiki-local-options-panel" aria-label="Local options" hidden>
+            <h2>Local options</h2>
+            <form id="wiki-local-year-form">
+                <label for="wiki-local-year">View world as of year</label>
+                <input id="wiki-local-year" name="year" type="number" step="1" required>
+                <div class="wiki-local-options-actions">
+                    <button type="submit">Apply year</button>
+                    <button id="wiki-local-year-reset" type="button">Reset</button>
+                </div>
+                <p id="wiki-local-year-status" role="status">This only changes your view.</p>
+            </form>
+        </section>
     </div>
 
     <div id="wiki-workspace">
@@ -118,6 +132,7 @@
                 <p id="notepad-owner"></p>
             </div>
             <div class="notepad-header-actions">
+                <button id="notepad-backups-toggle" type="button" aria-label="Show saved versions" aria-expanded="false" title="Saved versions">↶</button>
                 <button id="notepad-expand" type="button" aria-label="Expand notepad" aria-pressed="false">⛶</button>
                 <button id="notepad-close" type="button" aria-label="Close notepad">×</button>
             </div>
@@ -134,6 +149,12 @@
             <button id="notepad-edit" type="button">Edit</button>
             <button id="notepad-done" type="button" hidden>Done</button>
         </div>
+        <div id="notepad-backups" hidden>
+            <label for="notepad-backup-select">Saved versions</label>
+            <select id="notepad-backup-select"></select>
+            <button id="notepad-backup-restore" type="button">Restore selected version</button>
+            <p id="notepad-backup-status" role="status"></p>
+        </div>
         <div id="notepad-view" aria-label="Note"></div>
         <div id="notepad-editor" hidden>
             <div id="notepad-link-suggestions" role="listbox" aria-label="Matching articles" hidden></div>
@@ -144,7 +165,8 @@
                 <button id="notepad-add-link" type="button">Add article link</button>
             </div>
         </div>
-        <p id="notepad-save-status" role="status">Saved in this browser</p>
+        <p id="notepad-save-status" role="status">Loading shared storage...</p>
+        <button id="notepad-retry" type="button" hidden>Retry connection</button>
     </section>
 
     <button id="player-tools-toggle" aria-label="Player tools">
@@ -173,6 +195,11 @@
     </div>
 
 </div>
+
+<section id="player-presence" aria-label="Connected players" hidden>
+    <p id="player-presence-status" role="status">Connecting...</p>
+    <ul id="player-presence-list"></ul>
+</section>
 
 <div id="river-form" class="editor-form" style="display:none;">
 
@@ -256,7 +283,7 @@
 <script src="js/map/ping.js"></script>
 <script src="js/map/layers.js"></script>
 <script src="js/map/world.js?v=tab-persistence-2"></script>
-<script src="js/map/navigation.js?v=article-share-2"></script>
+<script src="js/map/navigation.js?v=article-share-3"></script>
 <script src="js/renderers/lineRenderer.js?v=snap-2"></script>
 <script src="js/map/layers/roadStyles.js"></script>
 <script src="js/map/layers/riverStyles.js"></script>
@@ -269,32 +296,34 @@
 <!-- Renderers -->
 <script src="js/renderers/images.js"></script>
 <script src="js/renderers/links.js"></script>
-<script src="js/renderers/years.js"></script>
+<script src="js/renderers/years.js?v=local-year-1"></script>
 <script src="js/renderers/gmNotes.js"></script>
 <script src="js/renderers/markdown.js"></script>
 
 <!-- Wiki -->
 <script src="js/wiki/articleRegistry.js"></script>
-<script src="js/wiki/articles/npc.js?v=pc-summary-card-link-1"></script>
+<script src="js/wiki/articles/npc.js?v=local-year-2"></script>
 <script src="js/wiki/articles/deities.js?v=text-color-1"></script>
 <script src="js/wiki/articles/families.js?v=organisation-text-color-1"></script>
 <script src="js/wiki/articles/organisations.js"></script>
-<script src="js/wiki/articles/history.js"></script>
+<script src="js/wiki/articles/history.js?v=local-year-1"></script>
 <script src="js/wiki/articles/settlements.js?v=snap-3"></script>
-<script src="js/wiki/articles/nations.js?v=snap-2"></script>
+<script src="js/wiki/articles/nations.js?v=nation-highlights-2"></script>
 <script src="js/wiki/articles.js"></script>
-<script src="js/wiki/sidebar.js"></script>
-<script src="js/wiki/permissions.js?v=article-share-2"></script>
+<script src="js/wiki/sidebar.js?v=image-expansion-1"></script>
+<script src="js/wiki/permissions.js?v=article-share-3"></script>
 <script src="js/ui/imageViewer.js"></script>
-<script src="js/ui/article.js?v=collapsible-headings-3"></script>
+<script src="js/ui/article.js?v=nation-summary-2"></script>
 <script src="js/ui/playerTools.js?v=player-color-1"></script>
-<script src="js/ui/notepad.js?v=notepad-4"></script>
+<script src="js/ui/playerPresence.js"></script>
+<script src="js/ui/notepad.js?v=global-notepads-1"></script>
 <script src="js/wiki/wiki.js"></script>
+<script src="js/ui/localOptions.js?v=local-year-2"></script>
 <script src="js/wiki/search.js"></script>
 <script src="js/wiki/history.js"></script>
 <script src="js/wiki/directory.js?v=preview"></script>
-<script src="js/wiki/tabs.js?v=article-scroll-2"></script>
-<script src="js/wiki/share.js?v=article-share-2"></script>
+<script src="js/wiki/tabs.js?v=article-share-3"></script>
+<script src="js/wiki/share.js?v=article-share-4"></script>
 
 <!-- Editor -->
 <script src="js/editor/state.js"></script>

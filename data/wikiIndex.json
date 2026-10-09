@@ -11,8 +11,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -27,9 +27,10 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
+            "Annj Bearer",
             "Bille Frostbite",
             "Brunno Meadowmane",
             "Crash",
@@ -56,8 +57,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Brevoy",
@@ -92,8 +93,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brass Wheels",
             "Pitax",
@@ -116,8 +117,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Adsatra Sagebrook",
             "Bille Frostbite",
@@ -166,8 +167,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Numeria",
             "Rare Materials"
@@ -189,8 +190,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brass Wheels",
             "Brevoy",
@@ -216,8 +217,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Artarp Rein",
             "Beheria",
@@ -244,8 +245,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Battle of Fingers",
             "Beeret family",
@@ -273,8 +274,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Aldori family",
             "Brass Wheels",
@@ -304,8 +305,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Kings Road",
             "Pitax"
@@ -327,8 +328,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Gildi Crank",
@@ -353,8 +354,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brass Wheels",
             "Brevoy",
@@ -381,8 +382,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Black Mantles",
             "Daggermark",
@@ -405,8 +406,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Barnur Keenhold",
             "Jonas Arc",
@@ -430,8 +431,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Ekon Udoon",
@@ -457,8 +458,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Daggermark",
             "Gralton",
@@ -481,8 +482,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brass Wheels",
             "Dwarven Keeps",
@@ -505,8 +506,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Asha Rakker",
             "Brass Wheels",
@@ -531,8 +532,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brass Wheels",
             "Gralton",
@@ -555,8 +556,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Pitax",
             "Thieflings"
@@ -578,8 +579,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brass Wheels",
             "Grainseller family",
@@ -604,8 +605,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -640,8 +641,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Kings Road",
             "Numeria",
@@ -664,8 +665,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brass Wheels",
             "Grainseller family",
@@ -684,8 +685,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Vital Delivery"
         ]
@@ -702,8 +703,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Kingmaker",
             "Mivon"
@@ -723,8 +724,8 @@
         "gmReferences": [
             "Maegar Varn"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Agamoos Evercrown",
             "Garbin Sunheart",
@@ -747,8 +748,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Kingmaker",
             "Sleeping Realm"
@@ -766,8 +767,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Kingmaker",
             "Numeria"
@@ -785,8 +786,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Kingmaker",
             "Mivon"
@@ -808,8 +809,8 @@
             "Luxy",
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Jarlek Grin",
             "Meel'a",
@@ -831,8 +832,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Cephal Lorentus",
             "Daedove Wildguard",
@@ -851,8 +852,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Dragonlair",
             "Numeria",
@@ -875,8 +876,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Aldori family",
             "Brevoy",
@@ -899,8 +900,8 @@
         "visibility": "gm",
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Daggermark",
             "Nerrez",
@@ -919,8 +920,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Arie",
             "Brevoy",
@@ -947,8 +948,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -978,8 +979,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Asha Rakker",
             "Avendale",
@@ -1015,8 +1016,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Daggermark",
@@ -1041,12 +1042,12 @@
             "zoom": 2
         },
         "border": null,
-        "color": null,
+        "color": "#BA6E14",
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Calsys Viine",
@@ -1068,12 +1069,12 @@
             "zoom": 2
         },
         "border": null,
-        "color": null,
+        "color": "#30388A",
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Ekon Udoon",
@@ -1095,12 +1096,12 @@
             "zoom": 2
         },
         "border": null,
-        "color": null,
+        "color": "#C28D3E",
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Avendale",
             "Cornstalk",
@@ -1122,12 +1123,12 @@
             "zoom": 2
         },
         "border": null,
-        "color": null,
+        "color": "#E6E944",
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Keldithas Beeret",
@@ -1147,12 +1148,12 @@
             "zoom": 2
         },
         "border": null,
-        "color": null,
+        "color": "#9C2008",
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Iandri Flukeflow",
@@ -1178,8 +1179,8 @@
             "Rendeen",
             "Xiander"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Chirp",
             "Magrie Beeret",
@@ -1203,8 +1204,8 @@
             "Arie",
             "Daggermark"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Doves",
             "Sparrow"
@@ -1225,8 +1226,8 @@
             "Sandor",
             "Vanee"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Claire Nightshield",
@@ -1247,8 +1248,8 @@
         "gmReferences": [
             "Erven"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bille Frostbite",
             "Pitax"
@@ -1268,8 +1269,8 @@
         "gmReferences": [
             "Vanee"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Touvette"
         ]
@@ -1289,8 +1290,8 @@
             "Ebus",
             "Vanee"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Grainseller family",
             "Malora Grainseller",
@@ -1313,8 +1314,8 @@
             "Erven",
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Farlamin Mistshaper",
             "Pitax"
@@ -1334,8 +1335,8 @@
         "gmReferences": [
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Adsatra Sagebrook",
             "Lalne Quill",
@@ -1358,8 +1359,8 @@
         "gmReferences": [
             "Rendeen"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brunno Meadowmane",
             "Claire Nightshield",
@@ -1382,8 +1383,8 @@
         "gmReferences": [
             "Sandor"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Claire Nightshield",
@@ -1407,8 +1408,8 @@
         "gmReferences": [
             "Rendeen"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Mivon",
             "Rendeen"
@@ -1430,8 +1431,8 @@
             "Sandor",
             "Xiander"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Barnur Keenhold",
             "Divine Artifacts",
@@ -1454,8 +1455,8 @@
         "gmReferences": [
             "Dunden"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Dunden",
             "Jonas Arc",
@@ -1475,8 +1476,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Cypher"
         ]
@@ -1493,8 +1494,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Ichor"
         ]
@@ -1513,8 +1514,8 @@
         "gmReferences": [
             "Sandor"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Agamoos Evercrown",
             "Asha Rakker",
@@ -1540,8 +1541,8 @@
             "Dunden",
             "Sandor"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brass Wheels",
             "Gralton",
@@ -1564,8 +1565,8 @@
         "gmReferences": [
             "Bann"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Claire Nightshield",
@@ -1588,8 +1589,8 @@
         "gmReferences": [
             "Nunree"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brunno Meadowmane",
             "Vacho",
@@ -1610,8 +1611,8 @@
         "gmReferences": [
             "Xia"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Candle Mages",
@@ -1642,8 +1643,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Nentrah",
             "Stag Lord",
@@ -1664,8 +1665,8 @@
         "gmReferences": [
             "Xia"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Aldori family",
             "Conleth Umbra",
@@ -1689,8 +1690,8 @@
             "Xia",
             "Xiander"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Claire Nightshield",
             "Harlequin",
@@ -1717,8 +1718,8 @@
         "gmReferences": [
             "Xia"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Candle Mages",
             "Deren Seere",
@@ -1746,10 +1747,11 @@
         "visibility": null,
         "related": null,
         "gmReferences": [
+            "Pitax",
             "Xia"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Joker",
             "Lord of Stories",
@@ -1772,8 +1774,8 @@
         "gmReferences": [
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Aelthot",
             "Bree Caley",
@@ -1799,8 +1801,8 @@
             "Ebus",
             "Erven"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Dwarven Keeps",
@@ -1823,8 +1825,8 @@
         "gmReferences": [
             "Black Mantles"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Black Mantles",
             "Bree Caley",
@@ -1854,8 +1856,8 @@
             "Erven",
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Claire Nightshield",
@@ -1882,8 +1884,8 @@
             "Luxy",
             "Sandor"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Grainseller family",
             "Maegar Varn",
@@ -1907,8 +1909,8 @@
         "gmReferences": [
             "Bann"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brave Wish",
             "Brevoy",
@@ -1936,8 +1938,8 @@
         "gmReferences": [
             "Ebus"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Conleth Umbra",
@@ -1960,8 +1962,8 @@
         "gmReferences": [
             "Sandor"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Embeth",
             "Maegar Varn",
@@ -1980,8 +1982,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Maegar Varn",
@@ -2004,8 +2006,8 @@
             "Dunden",
             "Sandor"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Conleth Umbra",
             "Karri",
@@ -2030,8 +2032,8 @@
             "Pitax",
             "Thieflings"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Dragonlair",
             "Milo Grainseller",
@@ -2056,8 +2058,8 @@
             "Erven",
             "The Wastes"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brave Wish",
             "Bree Caley",
@@ -2086,8 +2088,8 @@
         "gmReferences": [
             "Luxy"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Claire Nightshield",
@@ -2112,8 +2114,8 @@
         "gmReferences": [
             "Ebus"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Chirp",
             "Mivon",
@@ -2132,8 +2134,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Chorrad Troll King",
@@ -2159,8 +2161,8 @@
             "Erven",
             "Sandor"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Adsatra Sagebrook",
             "Annj Bearer",
@@ -2180,8 +2182,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brass Wheels",
             "Bree Caley",
@@ -2208,8 +2210,8 @@
         "gmReferences": [
             "Xiander"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Beeret family",
             "Brevoy",
@@ -2233,8 +2235,8 @@
             "Rendeen",
             "Vanee"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bleakwatch",
             "Bralon Alepike",
@@ -2259,8 +2261,8 @@
         "gmReferences": [
             "Xiander"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Aldori family",
             "Battle of Fingers",
@@ -2291,8 +2293,8 @@
             "Sandor",
             "Vanee"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Manchu Tribes",
             "Zayne Copper"
@@ -2313,8 +2315,8 @@
             "Erven",
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Felrick Kindhelm",
@@ -2339,8 +2341,8 @@
             "Thirdenlin",
             "Xiander"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Aldori family",
             "Brevoy",
@@ -2364,8 +2366,8 @@
         "gmReferences": [
             "Vanee"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Calsys Viine",
@@ -2390,8 +2392,8 @@
             "Dunden",
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bralon Alepike",
             "Dwarven Keeps",
@@ -2415,8 +2417,8 @@
         "gmReferences": [
             "Erven"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Chirp",
             "Gralton"
@@ -2436,8 +2438,8 @@
         "gmReferences": [
             "Xiander"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Kingmaker",
             "The Wastes",
@@ -2458,8 +2460,8 @@
         "gmReferences": [
             "Xiander"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bille Frostbite",
             "Bree Caley",
@@ -2493,8 +2495,8 @@
         "gmReferences": [
             "Luxy"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Errard Specher",
             "Magrie Beeret",
@@ -2515,8 +2517,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Movh Bearer",
@@ -2538,8 +2540,8 @@
         "gmReferences": [
             "Sandor"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Claire Nightshield",
@@ -2567,8 +2569,8 @@
             "Dunden",
             "Erven"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -2594,8 +2596,8 @@
         "gmReferences": [
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -2629,8 +2631,8 @@
             "Vanee",
             "Xiander"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Farlamin Mistshaper",
@@ -2651,8 +2653,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Odak One Eye",
             "Serenity"
@@ -2673,8 +2675,8 @@
             "Wyndee",
             "Xiander"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Beheria",
             "Harlequin",
@@ -2696,8 +2698,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Artarp Rein",
             "Serenity",
@@ -2716,8 +2718,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Artarp Rein",
             "Bree Caley",
@@ -2741,8 +2743,8 @@
             "Thirdenlin",
             "Wyndee"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Harlequin",
             "Joker",
@@ -2764,8 +2766,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Ninne",
             "Odak One Eye"
@@ -2788,8 +2790,8 @@
             "Magpie",
             "The Wastes"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Crash",
             "Doves",
@@ -2815,8 +2817,8 @@
             "Sandor",
             "Vanee"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Crash",
@@ -2840,8 +2842,8 @@
         "gmReferences": [
             "Rendeen"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Crash",
             "Numeria",
@@ -2865,8 +2867,8 @@
         "gmReferences": [
             "Balrotho"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Aelthot",
             "Balrotho",
@@ -2889,8 +2891,8 @@
         "gmReferences": [
             "Vacho"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Vacho"
         ]
@@ -2907,8 +2909,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Vacho"
         ]
@@ -2929,8 +2931,8 @@
             "Magie",
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -2965,8 +2967,8 @@
             "Bann",
             "Vanee"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -3001,8 +3003,8 @@
         "gmReferences": [
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -3036,8 +3038,8 @@
             "Nunree",
             "Xiander"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -3071,8 +3073,8 @@
         "gmReferences": [
             "Arie"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -3105,8 +3107,8 @@
         "gmReferences": [
             "Erven"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -3140,8 +3142,8 @@
         "gmReferences": [
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer",
             "Bree Caley",
@@ -3176,8 +3178,8 @@
             "Bille Frostbite",
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Adsatra Sagebrook",
             "Bille Frostbite",
@@ -3207,8 +3209,8 @@
             "Sandor",
             "Vanee"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Embeth"
@@ -3228,8 +3230,8 @@
         "gmReferences": [
             "Nunree"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bille Frostbite",
             "Bree Caley",
@@ -3255,8 +3257,8 @@
             "Xia",
             "Xiander"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Candle Mages",
@@ -3284,8 +3286,8 @@
             "Thirdenlin",
             "Xia"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brave Wish",
             "Bree Caley",
@@ -3312,8 +3314,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bille Frostbite",
             "Bree Caley",
@@ -3342,8 +3344,8 @@
             "Bann",
             "The Wastes"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bille Frostbite",
             "Bree Caley",
@@ -3369,8 +3371,8 @@
         "gmReferences": [
             "Rendeen"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Nentrah"
         ]
@@ -3389,8 +3391,8 @@
         "gmReferences": [
             "Bann"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bree Caley",
             "Claire Nightshield",
@@ -3413,8 +3415,8 @@
         "gmReferences": [
             "Vanee"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Calsys Viine",
@@ -3441,8 +3443,8 @@
             "Luxy",
             "Sandor"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brass Wheels",
             "Brevoy",
@@ -3466,8 +3468,8 @@
         "gmReferences": [
             "Dunden"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Ekon Udoon",
@@ -3492,8 +3494,8 @@
             "Erven",
             "Sandor"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Claire Nightshield",
@@ -3517,8 +3519,8 @@
         "gmReferences": [
             "Bann"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Ekon Udoon",
@@ -3545,8 +3547,8 @@
             "Erven",
             "Udoon family"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Claire Nightshield",
@@ -3570,8 +3572,8 @@
         "gmReferences": [
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Calsys Viine",
@@ -3596,8 +3598,8 @@
         "gmReferences": [
             "Brevoy"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Rita Neat"
@@ -3617,8 +3619,8 @@
         "gmReferences": [
             "Viine family"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Sandak Viine",
@@ -3640,8 +3642,8 @@
         "gmReferences": [
             "Thirdenlin"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Beeret family",
             "Brevoy",
@@ -3663,8 +3665,8 @@
         "gmReferences": [
             "Dunden"
         ],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Aldori family",
             "Brevoy",
@@ -3684,8 +3686,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Aldori family",
             "Brevoy",
@@ -3778,8 +3780,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Avendale",
             "Bann",
@@ -3901,8 +3903,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bann",
             "Brevoy",
@@ -3992,8 +3994,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Daggermark",
@@ -4217,8 +4219,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Battle of Fingers",
             "Brevoy",
@@ -4313,8 +4315,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brevoy",
             "Embeth",
@@ -4462,8 +4464,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Daggermark",
             "Numeria",
@@ -4589,8 +4591,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brass Wheels",
             "Daggermark",
@@ -4743,8 +4745,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Dream Realm",
             "Dunden",
@@ -4757,19 +4759,19 @@
         ]
     },
     {
-        "id": null,
+        "id": "dwarven_keeps",
         "name": "Dwarven Keeps",
-        "category": "Unknown",
+        "category": "nation",
         "file": "Nations/Dwarven Keeps.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#737475",
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bann",
             "Dunden",
@@ -4841,8 +4843,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bann",
             "Devastation of Daggermark",
@@ -4953,8 +4955,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Aldori family",
             "Bann",
@@ -4987,8 +4989,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Brass Wheels",
             "Brevoy",
@@ -5012,8 +5014,8 @@
         "visibility": null,
         "related": false,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Battle of Fingers",
             "Brevoy",
@@ -5045,8 +5047,8 @@
         "visibility": null,
         "related": false,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5061,8 +5063,8 @@
         "visibility": null,
         "related": false,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5077,11 +5079,27 @@
         "visibility": null,
         "related": false,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "PCs Summary"
         ]
+    },
+    {
+        "id": null,
+        "name": "Nations Summary",
+        "category": "summary",
+        "file": "Home/Nations Summary.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": false,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": []
     },
     {
         "id": null,
@@ -5095,8 +5113,8 @@
         "visibility": null,
         "related": false,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Agamoos Evercrown",
             "Bree Caley",
@@ -5107,6 +5125,7 @@
             "Gralton",
             "Kingmaker",
             "Meel'a",
+            "Nations Summary",
             "NPCs Summary",
             "Organisations Summary",
             "PCs Summary",
@@ -5128,8 +5147,8 @@
         "visibility": null,
         "related": false,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5144,8 +5163,8 @@
         "visibility": null,
         "related": false,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5160,8 +5179,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": 2923,
-        "EndYear": 2972,
+        "startYear": 2923,
+        "endYear": 2972,
         "references": [
             "Daggermark",
             "Dwarven Keeps"
@@ -5179,8 +5198,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": -13333,
-        "EndYear": -13113,
+        "startYear": -13333,
+        "endYear": -13113,
         "references": []
     },
     {
@@ -5199,8 +5218,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": 3843,
-        "EndYear": 3847,
+        "startYear": 3843,
+        "endYear": 3847,
         "references": [
             "Battle of Fingers",
             "Brevoy",
@@ -5228,8 +5247,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": 3657,
-        "EndYear": 3702,
+        "startYear": 3657,
+        "endYear": 3702,
         "references": [
             "Manchu Tribes",
             "Numeria"
@@ -5247,8 +5266,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": 0,
-        "EndYear": 0,
+        "startYear": 0,
+        "endYear": 0,
         "references": []
     },
     {
@@ -5267,8 +5286,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": 2972,
-        "EndYear": 2972,
+        "startYear": 2972,
+        "endYear": 2972,
         "references": [
             "Daggermark",
             "Pitax",
@@ -5293,8 +5312,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": 3847,
-        "EndYear": 3847,
+        "startYear": 3847,
+        "endYear": 3847,
         "references": [
             "Brevoy",
             "Maameo Udoon",
@@ -5318,8 +5337,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5334,8 +5353,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5350,8 +5369,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5366,8 +5385,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5382,8 +5401,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5398,8 +5417,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5414,8 +5433,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5430,8 +5449,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5446,8 +5465,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5462,8 +5481,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5478,8 +5497,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5494,8 +5513,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5510,8 +5529,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5526,8 +5545,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5542,8 +5561,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": []
     },
     {
@@ -5558,8 +5577,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Greenskin"
         ]
@@ -5576,8 +5595,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Dwarven Keeps",
             "The Wastes"
@@ -5595,8 +5614,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Dream Realm",
             "Material Plane",
@@ -5615,8 +5634,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Dream Realm",
             "Material Plane",
@@ -5635,8 +5654,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Dream Realm",
             "Sleeping Realm",
@@ -5655,8 +5674,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Material Plane",
             "Sleeping Realm",
@@ -5675,8 +5694,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Annj Bearer"
         ]
@@ -5693,8 +5712,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Bann",
             "Dunden",
@@ -5723,8 +5742,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Agamoos Evercrown",
             "Asha Rakker",
@@ -5756,8 +5775,8 @@
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "StartYear": null,
-        "EndYear": null,
+        "startYear": null,
+        "endYear": null,
         "references": [
             "Adsatra Sagebrook",
             "Aelthot",

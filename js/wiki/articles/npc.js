@@ -35,17 +35,22 @@ function buildNPCSidebar(article, extraRows = "", imageFolder = "NPCs", expandab
 
     const portraits = getPortraits(article);
 
-    const deceased = article.death ? "npc-deceased" : "";
+    const status = getCharacterTimelineStatus(article);
+    const timelineClass = status === "deceased"
+        ? "npc-deceased"
+        : status === "unborn"
+            ? "npc-unborn"
+            : "";
 
     const fullname = article.fullname || article.name;
-    const displayName = `${article.death ? "† " : ""}${fullname}`;
+    const displayName = `${status === "deceased" ? "† " : ""}${fullname}`;
     const name = linkedName
         ? `<a class="wikilink" href="#" data-page="${escapeArticleHTML(article.name)}">${escapeArticleHTML(displayName)}</a>`
         : displayName;
 
     return `
 
-<div class="npc-card ${deceased}" style="--npc-color:${article.color};">
+<div class="npc-card ${timelineClass}" style="--npc-color:${article.color};">
 
     <div class="npc-banner">
         ${name}

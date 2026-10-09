@@ -3,6 +3,18 @@ id: numeria
 name: Numeria
 category: nation
 
+capital: [[Starfall]]
+ruler: [[Gulrim Frostreach I]]
+races:
+  - Duregar
+  - Dwarves
+  - Firbolgs
+  - Goliaths
+  - Lizardfolk
+  - Locathah
+  - Owlin
+
+image: NumeriaBanner.png
 color: "#22D6D0"
 
 view: 
@@ -61,11 +73,6 @@ border:
   - [908, 1082]
 ---
 # Numeria
-**Capital:** [[Starfall]]
-
-**Common Races:** Dwarves, Goliaths
-**Uncommon Races:** Aaracokras, Duregar, Firbolgs, Humans, Lizardfolk, Locathah, Owlin, Tritons
-
 *Numera describes a huge area vaguely unified. They're known for their harsh climate and exotic furs.*
 ## Terrain & Geography
 Numeria is bordered to the north by a large open sea that's frozen much of the year. To the west is vast wilderness. To the south Numeria borders som large rivers, swamps, mountains and beyond those the [[Manchu Tribes]]. Lastly to the east Numeria borders [[Brevoy]].

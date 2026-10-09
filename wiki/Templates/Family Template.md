@@ -26,8 +26,8 @@ view:
   y: 690
   zoom: 2
 
-primaryColor: "#9C2008"
-secondatyColor: "#0E1282"
+color: "#9C2008"
+secondaryColor: "#0E1282"
 ---
 # <% tp.file.title %>
 *Moto*

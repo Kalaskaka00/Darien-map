@@ -1,5 +1,5 @@
 ---
-Related: false
+related: false
 category: summary
 ---
 # Deities Summary

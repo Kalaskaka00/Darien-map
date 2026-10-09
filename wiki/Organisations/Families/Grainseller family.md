@@ -24,8 +24,8 @@ view:
   y: 453
   zoom: 2
 
-primaryColor: "#C28D3E"
-secondatyColor: "#4A9444"
+color: "#C28D3E"
+secondaryColor: "#4A9444"
 ---
 # Grainseller family
 *Luck is when preparation meets opportunity*

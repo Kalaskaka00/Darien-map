@@ -5,7 +5,7 @@ category: settlement
 
 capital: true
 nation: [[Touvette]]
-Ruler: Localy elected mayor
+ruler: Localy elected mayor
 
 map:
   x: 595

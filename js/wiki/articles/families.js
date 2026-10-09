@@ -59,7 +59,7 @@ function addFamilyLocationBadge(location, article, size, kind){
 
     badge.getElement()?.style.setProperty(
         "--family-map-color",
-        article.primaryColor || article.color || "#6f5328"
+        article.color || "#6f5328"
     );
 
     familyHighlightLayers.push({layer: badge, type: "badge"});
@@ -119,8 +119,8 @@ function focusFamilyArticle(article){
 
 function buildFamilySidebar(article){
 
-    const color = article.primaryColor || article.color || "#6f5328";
-    const secondaryColor = article.secondaryColor || article.secondatyColor || color;
+    const color = article.color || "#6f5328";
+    const secondaryColor = article.secondaryColor || color;
     const textColor = article.category === "organisation" &&
         String(article.text).toLowerCase() === "black"
         ? "black"

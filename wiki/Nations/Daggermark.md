@@ -3,6 +3,15 @@ id: daggermark
 name: Daggermark
 category: nation
 
+capital: [[Suzerian]]
+ruler: [[Jerrezia Stillborn]]
+races:
+  - Changelings
+  - Drow
+  - Duergar
+  - Kenkus
+
+image: DaggermarkBanner.png
 color: "#591773"
 
 view:
@@ -24,11 +33,6 @@ border:
   - [501, 403]
 ---
 # Daggermark
-**Capital:** Suzerain
-
-**Common Races:** Changelings, Drow, Duergar, Kenkus
-**Uncommon Races:** Bugbears, Centaurs, Half-Elves, Humans, Tieflings
-
 *Daggermark is a nation which most avoid. It is very isolated and known for its slavery practices and living sacrifices. Daggermark does however posses skilled hexers, assassins and spies. Daggermark is generally seen as teetering on the [[Sleeping Realm]].*
 ## Terrain & Geography
 North of Daggermark are the [[Manchu Tribes]] with hostile lands separating the nations. To the east over the ocean is [[Gralton]]. To the west and south of Daggermark is vast oceans.

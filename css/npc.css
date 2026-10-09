@@ -109,7 +109,8 @@
 
 
 
-.npc-deceased{
+.npc-deceased,
+.npc-unborn{
 
     background: url("Backgrounds/Gravestone.jpg");
 
@@ -117,14 +118,16 @@
 
 }
 
-.npc-deceased .npc-banner{
+.npc-deceased .npc-banner,
+.npc-unborn .npc-banner{
 
     background:var(--npc-color);
     filter:grayscale(50%);
 
 }
 
-.npc-deceased .wikilink{
+.npc-deceased .wikilink,
+.npc-unborn .wikilink{
 
     text-shadow:
         -1px -1px 0 #ddd,
@@ -134,13 +137,15 @@
 
 }
 
-.npc-deceased .npc-portrait{
+.npc-deceased .npc-portrait,
+.npc-unborn .npc-portrait{
 
     filter:grayscale(50%);
 
 }
 
-.npc-deceased .npc-row{
+.npc-deceased .npc-row,
+.npc-unborn .npc-row{
 
     border-color:#555;
 

@@ -44,5 +44,20 @@ It nagged at Brunno for the next hour of tracking, it was far more difficult tha
 
 After another two hours Brunno saw the sun starting to close on the horizon, Brunno expected maybe two more hours before the darkness would make further tracking impossible. But right now the tracks were very obvious, the troll seemed to have broken every branch in the area and have left almost ridiculously deep footprints at points. 
 
-Brunno mumbled to himself *why the change?* It dawned on Brunno just barley in time as he quickly turned around, *this is a trap*. Just as he said that he could see a large figure starting to move a few meters from their position towards them. The troll had walked in a circle to make an ambush! *Over there* Brunno shouted and pointed before quickly backing off.
+Brunno mumbled to himself *why the change?* It dawned on Brunno just barley in time as he quickly turned around, *this is a trap*. Just as he said that he could see a large figure starting to move a few meters from their position towards them. The troll had walked in a circle to make an ambush! *Over there* Brunno shouted and pointed while taking several steps back.
 ## Chapter 4
+[[Siphon]] had never been a brave person, but there certainly wasn't anything wrong with her reflexes. By the times she had turned around she had her shortbow in her hands. Before she even had time to think she had an arrow on the string and within another second it was soaring through the air.
+
+Siphon could immediately tell it would hit and now took a second to scan her surroundings. [[Brunno Meadowmane]] was running for cover behind her. To Siphons left she could see [[Kesten Garess]] raising his blade, his eyes darting around. Running past her she could see [[Velmine]] charging the intruder with long strides. As Siphon turned back her attention she saw the arrow had hit slightly above the trolls eye letting blood triple down its face and making it stumble as it charged.
+
+She heard Kesten below orders *There's no time to oil the weapons! Siphon use the branded arrows, me and Velmine will get to work!* Right after Kesten finished the order Velmine connected with the troll horns straight in to the guts of the troll making it shout in an unknown guttering language *Rummba, keashn rai!*
+
+Siphon could see the threat she had been told about, rather than buckling under the damage the troll stod firm and the arrow fell out as the wound closed in its forehead. The troll reached out with its hand and grabbed Velmine at one of her horns with its inhuman strength. 
+
+Siphon fired two flame arrows in rapid succession each hitting the trolls chest a few centimeters apart. The arrows that been branded by [[Annj Bearer]] lit up with embers that seemed to dance over its skin. Rather than hurt the troll though the troll gave a guttural laugh as it lifted Velmine by the horn.
+
+Velmine drove her halbered deep in the trolls guts and Kesten took his blade deep in to its arm. The wounds clearly hurt the troll as it screamed in anger, but the damage kept repairing. The troll almost ignored Kesten as its other hand hit Velmine with such strong force that she flew several meters into a tree her horn broken with it in the trolls hand.
+
+Kesten stod and forced himself to take a deep breath as the troll turned towards him. he swung his blade once more hitting the arm that was now hanging limply at the trolls side. However to late Kesten saw the claws coming towards him from above. A fraction before they hit an arrow hit the troll in the eye making the devastating hit only scratch Kestens face.
+
+With one eye out of operation Kesten shouted a new *the flames aren't working! Retreat, I'll cover you.* Velmine stod up with a few broken ribs, every breath sending pain through her body. Velmine did the only thing she could, she ignored the order and ran to Kestens aid Halberd driving deep into the trolls shoulder blade. She yelled at the top of her lungs *flames or not it still bleeds!* 

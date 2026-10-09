@@ -4,7 +4,7 @@ name: Varnhold
 category: settlement
 
 nation: [[Golden Lands]]
-Ruler: 
+ruler:
 
 map:
   x: 1114

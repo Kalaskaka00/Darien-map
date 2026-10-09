@@ -17,6 +17,9 @@ function setGMMode(enabled){
 
 function toggleGMMode(){
 
+    if(!isGM && !currentPlayer)
+        return;
+
     setGMMode(!isGM);
 
     location.reload();
@@ -25,6 +28,11 @@ function toggleGMMode(){
 
 function setCurrentPlayer(playerName){
 
+    if(playerName && !Object.prototype.hasOwnProperty.call(CONFIG.players, playerName)) {
+        console.error("Cannot select an unknown player:", playerName);
+        return;
+    }
+
     currentPlayer = playerName || null;
 
     localStorage.setItem("currentPlayer", playerName || "");
@@ -32,7 +40,6 @@ function setCurrentPlayer(playerName){
     // When setting a player (or clearing it), exit GM mode
     isGM = false;
     localStorage.setItem("gmMode", "false");
-
     updatePlayerStatus();
 
     location.reload();

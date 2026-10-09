@@ -350,13 +350,141 @@ function polygonCentroid(points) {
     );
 }
 
+function nationRulerRow(value){
+
+    if(typeof value !== "string")
+        return sidebarRow("Ruler", value);
+
+    const linkMatch = value.match(/^\s*\[\[([\s\S]+?)\]\]\s*$/);
+
+    if(!linkMatch)
+        return sidebarRow("Ruler", value);
+
+    const [target, alias] = linkMatch[1].split("|");
+    const page = target.split("#")[0].trim();
+    const ruler = getArticle(page);
+
+    if(!ruler || !["npc", "pc"].includes(ruler.category))
+        return sidebarRow("Ruler", value);
+
+    const fullName = String(ruler.fullname || "").trim();
+    const label = fullName || String(alias || page).trim();
+    const escapedPage = escapeArticleHTML(ruler.name);
+    const handlerPage = ruler.name
+        .replace(/\\/g, "\\\\")
+        .replace(/'/g, "\\'");
+    const rulerLink = `
+        <a href="#" class="wikilink nation-ruler-link" data-page="${escapedPage}" onmouseenter="hoverArticle(event,'${handlerPage}')" onmouseleave="hidePreview()">${escapeArticleHTML(label)}</a>
+    `;
+
+    if(!fullName){
+
+        getArticleData(ruler).then(data => {
+
+            const loadedFullName = String(data.fullname || "").trim();
+
+            if(!loadedFullName)
+                return;
+
+            document.querySelectorAll(".nation-ruler-link").forEach(link => {
+
+                if(link.dataset.page === ruler.name)
+                    link.textContent = loadedFullName;
+
+            });
+
+        }).catch(error => {
+
+            console.error(`Unable to load full name for ruler "${ruler.name}":`, error);
+
+        });
+
+    }
+
+    return `
+        <div class="npc-row">
+            <span>Ruler</span>
+            <span>${rulerLink}</span>
+        </div>
+    `;
+
+}
+
+function focusNationArticle(article){
+
+    focusArticle(article);
+    highlightFamilyMap({
+        ...article,
+        majorLocations: article.capital,
+        nations: article.name
+    });
+
+    if(article.capital)
+        return;
+
+    getArticleData(article).then(data => {
+
+        if(getCurrentArticle()?.file !== article.file)
+            return;
+
+        highlightFamilyMap({
+            ...article,
+            ...data,
+            majorLocations: data.capital,
+            nations: article.name
+        });
+
+    }).catch(error => {
+
+        console.error(`Unable to load map highlights for nation "${article.name}":`, error);
+
+    });
+
+}
+
+function buildNationSidebar(article){
+
+    const color = article.color || "#6f5328";
+    const secondaryColor = article.secondaryColor || color;
+    const image = article.image
+        ? `<img class="nation-crest" src="wiki/Images/Coat of Arms/${article.image}" alt="${escapeArticleHTML(article.name)} flag or coat of arms">`
+        : "";
+
+    return `
+        <section class="nation-card" style="--nation-color:${color};--nation-secondary-color:${secondaryColor};">
+            <header class="nation-banner">
+                <span>${escapeArticleHTML(article.name)}</span>
+            </header>
+            <div class="nation-content">
+                <div class="nation-left">
+                    ${image}
+                </div>
+                <div class="nation-right">
+                    ${sidebarRow("Capital", article.capital)}
+                    ${nationRulerRow(article.ruler)}
+                    ${sidebarRow("Common races", article.races)}
+                </div>
+            </div>
+        </section>
+    `;
+
+}
+
 registerArticleType("nation",{
 
-    focus: focusArticle,
+    sidebar: buildNationSidebar,
+
+    preview: buildNationSidebar,
+
+    focus: focusNationArticle,
 
     onOpen(article){},
 
-    onClose(article){},
+    onClose(article){
+
+        clearFamilyMapHighlights();
+
+    },
 
     icon:"🏳️"
 

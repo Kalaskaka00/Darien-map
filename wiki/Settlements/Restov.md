@@ -4,7 +4,7 @@ name: Restov
 category: settlement
 
 nation: [[Brevoy]]
-Ruler: [[Aldori family]]
+ruler: [[Aldori family]]
 
 map:
   x: 1065

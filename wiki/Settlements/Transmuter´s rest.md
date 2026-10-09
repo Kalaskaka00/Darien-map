@@ -4,8 +4,7 @@ name: Transmuter´s Rest
 category: settlement
 
 nation: [[Pitax]]
-Ruler: 
-
+ruler:
 map:
   x: 700
   y: 585

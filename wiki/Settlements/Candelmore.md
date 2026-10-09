@@ -4,7 +4,7 @@ name: Candelmore
 category: settlement
 
 nation: [[Golden Lands]]
-Ruler: [[Candle Mages]]
+ruler: [[Candle Mages]]
 
 map:
   x: 835

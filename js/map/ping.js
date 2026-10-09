@@ -41,16 +41,19 @@ function showPing(latlng, color) {
     window.setTimeout(() => map.removeLayer(ping), PING_DURATION);
 }
 
-function publishPing(latlng) {
+function publishPing(latlng, centerMap) {
     const ping = {
         type: PING_EVENT_NAME,
         id: `${Date.now()}-${Math.random().toString(36).slice(2)}`,
         lat: latlng.lat,
         lng: latlng.lng,
-        color: getPingColor()
+        color: getPingColor(),
+        centerMap
     };
 
     showPing(latlng, ping.color);
+    if(centerMap)
+        map.panTo(latlng);
 
     if(pingRealtime) {
         pingChannel.send({
@@ -74,7 +77,10 @@ function handleRemotePing(event) {
     if(!ping || (ping.type && ping.type !== PING_EVENT_NAME) || typeof ping.lat !== "number" || typeof ping.lng !== "number")
         return;
 
-    showPing({lat: ping.lat, lng: ping.lng}, ping.color || "#2d2417");
+    const latlng = {lat: ping.lat, lng: ping.lng};
+    showPing(latlng, ping.color || "#2d2417");
+    if(ping.centerMap === true)
+        map.panTo(latlng);
 }
 
 function getLaserColor() {
@@ -254,13 +260,14 @@ function startPingHold(event) {
     cancelPingHold();
     pingHoldStart = {
         x: originalEvent.clientX,
-        y: originalEvent.clientY
+        y: originalEvent.clientY,
+        centerMap: originalEvent.shiftKey
     };
     pingHoldTimer = window.setTimeout(() => {
         if(!pingHoldStart)
             return;
 
-        publishPing(event.latlng);
+        publishPing(event.latlng, pingHoldStart.centerMap);
         pingHoldTimer = null;
     }, PING_HOLD_TIME);
 }

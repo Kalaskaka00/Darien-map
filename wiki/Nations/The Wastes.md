@@ -3,6 +3,14 @@ id: the_wastes
 name: The Wastes
 category: nation
 
+races:
+  - Bugbears
+  - Goblins
+  - Hobgoblins
+  - Kobolds
+  - Orcs
+  - Tieflings
+
 color: "#CFCED6"
 
 view: 
@@ -36,11 +44,6 @@ border:
   - [443, 1492]
 ---
 # The Wastes
-**Capital:** -
-
-**Common Races:** Goblins, Hobgoblins, Orcs
-**Uncommon Races:** Bugbears, Half-Orcs, Humans, Kobolds, Tieflings
-
 *The wastes describes a large emptiness without any real state. This land is mostly empty deserts with roaming bands of Goblins, Hobgoblins and Orcs. There is however the possibility of fabulous wealth for those who can make the trip through meaning there are some signs of civilisation and some travelers and traders.*
 ## Terrain & Geography
 The Wastes are a large area nestled between some mountain ranges and are almsot empty of features except for them. 

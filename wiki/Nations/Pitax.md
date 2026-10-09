@@ -3,6 +3,17 @@ id: pitax
 name: Pitax
 category: nation
 
+capital: [[Pitax City]]
+ruler: Council of 9
+races:
+  - Dragonborn
+  - Elves
+  - Genasi
+  - Gnomes
+  - Humans
+  - Tieflings
+
+image: PitaxBanner.png
 color: "#241E96"
 
 view: 
@@ -28,11 +39,6 @@ border:
   - [592, 715]
 ---
 # Pitax
-**Capital:** [[Pitax City]]
-
-**Common Races:** Elves, Humans, Tieflings
-**Uncommon Races:** Changelings, Dragonborn, Genasi, Half-Elves, Gnomes
-
 *Pitax is a city state originating from the powerful and renowned city of Pitax. Pitax is known for its arcane power, research and traditions, which dictate all of society.*
 ## Terrain & Geography
 Pitax is bordered by mountains to its north. To its west is a river bordering the [[Manchu Tribes]]. To the south nearer the farmlands is [[Touvette]]. Lastly to the east are the [[Nalmarches]] entering the [[Stolen Lands]].

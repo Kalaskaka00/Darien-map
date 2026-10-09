@@ -4,8 +4,7 @@ name: Oleg's Outpost
 category: settlement
 
 nation: [[Golden Lands]]
-Ruler: 
-
+ruler:
 map:
   x: 823
   y: 703

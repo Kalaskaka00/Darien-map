@@ -21,8 +21,8 @@ view:
   y: 810
   zoom: 2
 
-primaryColor: "#30388A"
-secondatyColor: "#9E9E9E"
+color: "#30388A"
+secondaryColor: "#9E9E9E"
 ---
 # Udoon family
 *Heat of the heart!*

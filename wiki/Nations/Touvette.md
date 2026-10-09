@@ -3,6 +3,18 @@ id: touvette
 name: Touvette
 category: nation
 
+capital: [[Avendale]]
+ruler: Parlament
+races:
+  - Dwarves
+  - Halflings
+  - Harengons
+  - Humans
+  - Fairies
+  - Firbolgs
+  - Satyrs
+
+image: TouvetteBanner.png
 color: "#27872A"
 
 view: 
@@ -29,11 +41,6 @@ border:
   - [522, 683]
 ---
 # Touvette
-**Capital:** [[Avendale]]
-
-**Common Races:** Halflings, Harengons
-**Uncommon Races:** Dwarves, Gnomes, Humans, Fairies, Firbolgs, Satyrs
-
 *Touvetee has undoubtedly the best farmland in [[Darien]] littered with small villages. Touvette has used its farmland to assemble a notable wealth and exports a lot of its agricultural output to its neighbors. It has used its position to forge a neutral and peaceful stance in the world, they also therefore negotiate many disputes.*
 ## Terrain & Geography
 Tovette has some large hills with [[Manchu Tribes]] to the northwest. To the north is the land border to [[Pitax]]. To the east there's a river towards [[Embeth]]. To the south there's the rivers to Gralton.

@@ -1,6 +1,6 @@
 function formatYear(year){
 
-    const diff = CONFIG.world.currentYear - year;
+    const diff = getCurrentYear() - year;
 
     if(diff === 0)
         return `${year} (the current year)`;
@@ -19,7 +19,7 @@ function renderYears(markdown){
         (match, year)=>{
 
             const resolvedYear = year === "current"
-                ? CONFIG.world.currentYear
+                ? getCurrentYear()
                 : parseInt(year);
 
             return formatYear(resolvedYear);

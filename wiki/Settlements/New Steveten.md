@@ -5,7 +5,7 @@ category: settlement
 
 capital: true
 nation: [[Brevoy]]
-Ruler: [[Andureen family]]
+ruler: [[Andureen family]]
 
 map:
   x: 966

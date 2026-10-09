@@ -4,7 +4,7 @@ name: Cornstalk
 category: settlement
 
 nation: [[Touvette]]
-Ruler: Localy elected mayor
+ruler: Localy elected mayor
 
 map:
   x: 606

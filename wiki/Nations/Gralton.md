@@ -3,6 +3,16 @@ id: gralton
 name: Gralton
 category: nation
 
+capital: [[Garent]]
+ruler: The guild council
+races:
+  - Aarakocra
+  - Dragonborn
+  - Halfling
+  - Human
+  - Triton
+
+image: GraltonBanner.png
 color: "#FA5050"
 
 view: 
@@ -38,11 +48,6 @@ border:
   - [435, 691]
 ---
 # Gralton
-**Capital:** [[Garent]]
-
-**Common Races:** Half-Elf, Halfling, Human
-**Uncommon Races:** Aarakocra, Dragonborn, Gnome, Sea-Elf, Tortle, Triton
-
 *Gralton is often described as the harbor of the [[Darien]] region and is the entry and exit of international trade through the [[Kings Road]] and therefor wields significant wealth and influence. Gralton can be thought of as a nation of guilds.*
 ## Terrain & Geography
 To the north is Graltons only land border where it borders [[Touvette]] and [[Embeth]]. To the east is the inland seas with [[Galt]] on the opposite end. To the south outside the coast are [[The Isles]]. To the west across a small inland sea rests [[Daggermark]].

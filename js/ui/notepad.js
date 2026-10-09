@@ -18,17 +18,34 @@ const notepadRenameButton = document.getElementById("notepad-rename");
 const notepadDeleteButton = document.getElementById("notepad-delete");
 const notepadEditButton = document.getElementById("notepad-edit");
 const notepadDoneButton = document.getElementById("notepad-done");
+const notepadBackupsToggle = document.getElementById("notepad-backups-toggle");
+const notepadBackupsPanel = document.getElementById("notepad-backups");
+const notepadBackupSelect = document.getElementById("notepad-backup-select");
+const notepadBackupRestore = document.getElementById("notepad-backup-restore");
+const notepadBackupStatus = document.getElementById("notepad-backup-status");
+const notepadRetryButton = document.getElementById("notepad-retry");
 const notepadAddLinkButton = document.getElementById("notepad-add-link");
 const NOTEPAD_STORAGE_PREFIX = "darien-map-notepad:";
 const NOTEPAD_EXPANDED_STORAGE_KEY = "darien-map-notepad-expanded";
+const NOTEPAD_BACKUP_LIMIT = 20;
+const NOTEPAD_TABLE = "darien_notepads";
+const NOTEPAD_SAVE_DELAY = 500;
+const notepadSupabase = typeof pingRealtime !== "undefined" ? pingRealtime : null;
 
 let notepadViewedOwner = null;
 let notepadState = null;
 let notepadStorageError = false;
 let notepadDataInvalid = false;
+let notepadLoading = false;
+let notepadLoadError = false;
 let notepadEditing = false;
 let notepadSuggestionIndex = -1;
 let notepadPreferenceError = false;
+let notepadBackups = [];
+let notepadSaveQueue = Promise.resolve();
+let notepadSaveTimer = null;
+let notepadSavedGlobally = false;
+const notepadRecentStateKeys = new Map();
 
 function getNotepadStorageKey(owner) {
     return `${NOTEPAD_STORAGE_PREFIX}${encodeURIComponent(owner)}`;
@@ -43,15 +60,40 @@ function createNotepadId() {
     return `${Date.now()}-${Math.random().toString(36).slice(2)}`;
 }
 
-function getNotepadOwner() {
-    if(isGM)
-        return notepadOwnerPicker.value || "GM";
+function updateNotepadOwnerOptions() {
+    const availableOwners = isGM
+        ? [
+            {value: "GM", label: "GM"},
+            {value: "Party", label: "Party"},
+            ...Object.keys(CONFIG.players).map(playerName => ({value: playerName, label: playerName}))
+        ]
+        : [
+            ...(currentPlayer ? [{value: currentPlayer, label: currentPlayer}] : []),
+            {value: "Party", label: "Party"}
+        ];
+    const allowedOwners = new Set(availableOwners.map(owner => owner.value));
+    const preferredOwner = allowedOwners.has(notepadViewedOwner)
+        ? notepadViewedOwner
+        : isGM
+            ? "GM"
+            : currentPlayer || "Party";
 
-    return currentPlayer || null;
+    notepadOwnerPicker.replaceChildren();
+    availableOwners.forEach(owner => {
+        const option = document.createElement("option");
+        option.value = owner.value;
+        option.textContent = owner.label;
+        notepadOwnerPicker.append(option);
+    });
+    notepadOwnerPicker.value = preferredOwner;
+    return preferredOwner;
 }
 
 function isNotepadReadOnly() {
-    return isGM && notepadViewedOwner !== "GM";
+    if(isGM)
+        return notepadViewedOwner !== "GM" && notepadViewedOwner !== "Party";
+
+    return notepadViewedOwner !== "Party" && notepadViewedOwner !== currentPlayer;
 }
 
 function setNotepadStatus(message, isError = false) {
@@ -81,44 +123,241 @@ function normalizeNotepadState(state) {
     };
 }
 
-function loadNotepad(owner) {
-    notepadDataInvalid = false;
+function normalizeNotepadBackups(backups) {
+    if(!Array.isArray(backups))
+        return [];
+
+    return backups
+        .filter(backup =>
+            backup &&
+            Number.isFinite(Number(backup.createdAt)) &&
+            normalizeNotepadState(backup.state)
+        )
+        .sort((first, second) => Number(second.createdAt) - Number(first.createdAt))
+        .slice(0, NOTEPAD_BACKUP_LIMIT);
+}
+
+function rememberNotepadState(owner, state) {
+    const normalized = normalizeNotepadState(state);
+    if(!normalized)
+        return;
+
+    const stateKey = JSON.stringify(normalized);
+    const recentStateKeys = notepadRecentStateKeys.get(owner) || [];
+    notepadRecentStateKeys.set(owner, [
+        stateKey,
+        ...recentStateKeys.filter(key => key !== stateKey)
+    ].slice(0, 8));
+}
+
+function readLegacyNotepad(owner) {
     try {
         const saved = localStorage.getItem(getNotepadStorageKey(owner));
-        notepadState = saved ? normalizeNotepadState(JSON.parse(saved)) : null;
-        if(saved && !notepadState) {
-            console.warn("Saved notepad data is invalid; showing a new empty notebook.");
+        if(!saved)
+            return null;
+
+        const state = normalizeNotepadState(JSON.parse(saved));
+        if(!state) {
+            console.warn("Saved local notepad is invalid and will not be migrated.");
             notepadDataInvalid = true;
-        } else {
-            notepadDataInvalid = false;
         }
-        notepadStorageError = false;
-        if(!notepadState)
-            notepadState = createNotepadState();
+        return state;
     } catch(error) {
-        console.error("Could not load notepad:", error);
-        notepadState = createNotepadState();
-        notepadStorageError = true;
+        console.warn("Could not read local notepad for migration:", error);
+        notepadDataInvalid = true;
+        return null;
     }
 }
 
-function saveNotepad() {
-    if(!notepadState || isNotepadReadOnly() || !notepadViewedOwner)
-        return;
+async function fetchRemoteNotepad(owner) {
+    const {data, error} = await notepadSupabase
+        .from(NOTEPAD_TABLE)
+        .select("owner,state,backups,updated_at")
+        .eq("owner", owner)
+        .maybeSingle();
+    if(error)
+        throw error;
+    return data;
+}
+
+function applyRemoteNotepad(row) {
+    const state = normalizeNotepadState(row.state);
+    if(!state)
+        throw new Error(`The shared ${row.owner} notebook has invalid data.`);
+
+    notepadState = state;
+    notepadBackups = normalizeNotepadBackups(row.backups);
+    rememberNotepadState(row.owner, state);
+    notepadStorageError = false;
+    notepadLoadError = false;
+    notepadSavedGlobally = true;
+}
+
+async function loadNotepad(owner) {
+    notepadLoading = true;
+    notepadLoadError = false;
+    notepadStorageError = false;
+    notepadSavedGlobally = false;
+    notepadState = null;
+    notepadBackups = [];
+    setNotepadStatus("Loading shared notebook...");
+    notepadRetryButton.hidden = true;
+    renderNotepadControls();
 
     try {
-        localStorage.setItem(
-            getNotepadStorageKey(notepadViewedOwner),
-            JSON.stringify(notepadState)
-        );
-        notepadStorageError = false;
-        notepadDataInvalid = false;
-        setNotepadStatus("Saved in this browser");
+        if(!notepadSupabase)
+            throw new Error("Supabase is not configured for shared notebook storage.");
+
+        let row = await fetchRemoteNotepad(owner);
+        if(owner !== notepadViewedOwner)
+            return;
+
+        if(!row) {
+            const initialState = readLegacyNotepad(owner) || createNotepadState();
+            const {data, error} = await notepadSupabase
+                .from(NOTEPAD_TABLE)
+                .insert({owner, state: initialState})
+                .select("owner,state,backups,updated_at")
+                .single();
+
+            if(error && error.code !== "23505")
+                throw error;
+            row = data || await fetchRemoteNotepad(owner);
+            if(!row)
+                throw error || new Error("The shared notebook could not be created or loaded.");
+        }
+
+        if(owner !== notepadViewedOwner)
+            return;
+        applyRemoteNotepad(row);
+        notepadEditing = false;
     } catch(error) {
-        console.error("Could not save notepad:", error);
-        notepadStorageError = true;
-        setNotepadStatus("Could not save. Check browser storage.", true);
+        console.error(`Could not load shared ${owner} notebook:`, error);
+        if(owner === notepadViewedOwner) {
+            notepadState = null;
+            notepadBackups = [];
+            notepadStorageError = true;
+            notepadLoadError = true;
+            setNotepadStatus("Could not load shared storage. Check the Supabase setup and retry.", true);
+        }
+    } finally {
+        if(owner === notepadViewedOwner) {
+            notepadLoading = false;
+            renderNotepad();
+        }
     }
+}
+
+function renderNotepadControls() {
+    const unavailable = notepadLoading || !notepadState;
+    const readOnly = isNotepadReadOnly() || unavailable;
+    const note = getActiveNotepadNote();
+
+    notepadAddButton.disabled = readOnly;
+    notepadRenameButton.disabled = readOnly || !note;
+    notepadDeleteButton.disabled = readOnly || !note || notepadState?.notes.length <= 1;
+    notepadEditButton.disabled = readOnly || !note || notepadEditing;
+    notepadContent.disabled = readOnly || !note || !notepadEditing;
+    notepadArticleName.disabled = readOnly || !note || !notepadEditing;
+    notepadAddLinkButton.disabled = readOnly || !note || !notepadEditing;
+    notepadBackupRestore.disabled = readOnly || notepadBackups.length === 0;
+    notepadRetryButton.hidden = !notepadLoadError && !notepadStorageError;
+    notepadRetryButton.textContent = notepadLoadError ? "Retry connection" : "Retry save";
+}
+
+function renderNotepadBackups() {
+    notepadBackupSelect.replaceChildren();
+    notepadBackupStatus.textContent = "";
+    notepadBackupRestore.disabled = true;
+
+    if(!notepadViewedOwner)
+        return;
+
+    notepadBackups.forEach((backup, index) => {
+        const option = document.createElement("option");
+        option.value = String(index);
+        option.textContent = new Date(Number(backup.createdAt)).toLocaleString();
+        notepadBackupSelect.append(option);
+    });
+    notepadBackupRestore.disabled = isNotepadReadOnly() || notepadLoading || notepadBackups.length === 0;
+    notepadBackupStatus.textContent = notepadBackups.length
+        ? `${notepadBackups.length} saved version${notepadBackups.length === 1 ? "" : "s"}`
+        : "No backups yet. Older versions are saved automatically as you edit.";
+}
+
+function saveNotepad(options = {}) {
+    if(!notepadState || isNotepadReadOnly() || !notepadViewedOwner || notepadLoading)
+        return Promise.resolve(false);
+
+    if(notepadSaveTimer) {
+        window.clearTimeout(notepadSaveTimer);
+        notepadSaveTimer = null;
+    }
+
+    const owner = notepadViewedOwner;
+    const stateSnapshot = JSON.parse(JSON.stringify(notepadState));
+    setNotepadStatus("Saving to shared storage...");
+    const saveTask = async () => {
+        if(!notepadSupabase)
+            throw new Error("Supabase is not configured for shared notebook storage.");
+
+        const row = {owner, state: stateSnapshot};
+        rememberNotepadState(owner, stateSnapshot);
+        if(options.backupState) {
+            row.backups = normalizeNotepadBackups([
+                {createdAt: Date.now(), state: options.backupState},
+                ...notepadBackups
+            ]);
+        }
+        const {data, error} = await notepadSupabase
+            .from(NOTEPAD_TABLE)
+            .upsert(row, {onConflict: "owner"})
+            .select("owner,state,backups,updated_at")
+            .single();
+        if(error)
+            throw error;
+
+        if(owner === notepadViewedOwner) {
+            notepadBackups = normalizeNotepadBackups(data.backups);
+            notepadSavedGlobally = true;
+            notepadStorageError = false;
+            notepadDataInvalid = false;
+            setNotepadStatus("Saved globally · publicly readable and editable");
+            renderNotepadControls();
+            if(!notepadBackupsPanel.hidden)
+                renderNotepadBackups();
+        }
+        return true;
+    };
+
+    notepadSaveQueue = notepadSaveQueue
+        .catch(() => false)
+        .then(saveTask)
+        .catch(error => {
+            console.error(`Could not save shared ${owner} notebook:`, error);
+            if(owner === notepadViewedOwner) {
+                notepadStorageError = true;
+                setNotepadStatus("Could not save to shared storage. Your edit is still in this page; retry.", true);
+                renderNotepadControls();
+            }
+            return false;
+        });
+    return notepadSaveQueue;
+}
+
+function scheduleNotepadSave() {
+    if(notepadSaveTimer)
+        window.clearTimeout(notepadSaveTimer);
+
+    setNotepadStatus("Unsaved changes...");
+    notepadSaveTimer = window.setTimeout(() => {
+        notepadSaveTimer = null;
+        saveNotepad();
+    }, NOTEPAD_SAVE_DELAY);
+}
+
+function getNotepadBackups() {
+    return notepadBackups;
 }
 
 function getActiveNotepadNote() {
@@ -246,35 +485,26 @@ function handleNotepadSuggestionKeys(event) {
 }
 
 function renderNotepad() {
-    const owner = getNotepadOwner();
-    notepadOwnerPickerWrap.hidden = !isGM;
-
-    if(isGM) {
-        const selectedOwner = notepadOwnerPicker.value || "GM";
-        if(notepadViewedOwner !== selectedOwner) {
-            notepadViewedOwner = selectedOwner;
-            notepadEditing = false;
-            loadNotepad(notepadViewedOwner);
-        }
-        notepadOwnerLabel.textContent = notepadViewedOwner === "GM"
-            ? "Your GM notebook"
-            : `${notepadViewedOwner}'s notebook (read-only)`;
-    } else if(owner) {
-        if(notepadViewedOwner !== owner) {
-            notepadViewedOwner = owner;
-            notepadEditing = false;
-            loadNotepad(owner);
-        }
-        notepadOwnerLabel.textContent = `Your notebook: ${owner}`;
-    } else {
-        notepadViewedOwner = null;
-        notepadState = null;
+    notepadOwnerPickerWrap.hidden = false;
+    const selectedOwner = updateNotepadOwnerOptions();
+    if(notepadViewedOwner !== selectedOwner) {
+        notepadViewedOwner = selectedOwner;
         notepadEditing = false;
-        notepadOwnerLabel.textContent = "Select a player in Player tools to use a personal notebook.";
+        loadNotepad(notepadViewedOwner);
+        notepadOwnerLabel.textContent = `${selectedOwner} notebook · cloud-synced · publicly readable/editable`;
+        return;
     }
 
+    notepadOwnerLabel.textContent = notepadViewedOwner === "Party"
+        ? "Shared Party notebook · cloud-synced · publicly readable/editable"
+        : notepadViewedOwner === "GM"
+            ? "GM notebook · cloud-synced · publicly readable/editable"
+            : isGM
+                ? `${notepadViewedOwner}'s notebook · cloud-synced · publicly readable/editable (view-only here)`
+                : `${notepadViewedOwner} notebook · cloud-synced · publicly readable/editable`;
+
     const hasNotebook = Boolean(notepadState);
-    const readOnly = isNotepadReadOnly() || !hasNotebook;
+    const readOnly = isNotepadReadOnly() || !hasNotebook || notepadLoading;
     notepadTabs.replaceChildren();
     notepadArticleList.replaceChildren();
 
@@ -311,6 +541,7 @@ function renderNotepad() {
     notepadView.hidden = notepadEditing;
     notepadEditor.hidden = !notepadEditing;
     hideNotepadLinkSuggestions();
+    renderNotepadControls();
 
     if(note)
         renderNotepadView(note.content);
@@ -327,16 +558,25 @@ function renderNotepad() {
             });
     }
 
-    if(notepadStorageError)
-        setNotepadStatus("Notepad storage could not be accessed.", true);
+    if(notepadLoading)
+        setNotepadStatus("Loading shared notebook...");
+    else if(notepadLoadError)
+        setNotepadStatus("Could not load shared storage. Check the Supabase setup and retry.", true);
+    else if(notepadStorageError)
+        setNotepadStatus("Could not save to shared storage. Your edit remains in this page; retry.", true);
     else if(notepadDataInvalid)
-        setNotepadStatus("Saved note data is invalid; editing will replace it.", true);
+        setNotepadStatus("The previous local version was invalid; a new cloud notebook was started.", true);
     else if(notepadPreferenceError)
         setNotepadStatus("Notepad size preference could not be saved.", true);
-    else if(readOnly && isGM)
-        setNotepadStatus("Viewing local browser data; this is not shared across devices.");
+    else if(readOnly)
+        setNotepadStatus("Read-only here; anyone can still edit notebooks through the public API.");
+    else if(notepadSavedGlobally)
+        setNotepadStatus("Saved globally · publicly readable and editable");
     else
-        setNotepadStatus("Saved in this browser");
+        setNotepadStatus("Ready to save globally · publicly readable and editable");
+
+    if(!notepadBackupsPanel.hidden)
+        renderNotepadBackups();
 }
 
 function toggleNotepad(forceOpen) {
@@ -386,19 +626,26 @@ try {
     setNotepadExpanded(false, false);
 }
 
-const gmNotebookOption = document.createElement("option");
-gmNotebookOption.value = "GM";
-gmNotebookOption.textContent = "GM";
-notepadOwnerPicker.append(gmNotebookOption);
-
-Object.keys(CONFIG.players).forEach(playerName => {
-    const option = document.createElement("option");
-    option.value = playerName;
-    option.textContent = playerName;
-    notepadOwnerPicker.append(option);
+notepadOwnerPicker.addEventListener("change", () => {
+    if(notepadSaveTimer) {
+        window.clearTimeout(notepadSaveTimer);
+        notepadSaveTimer = null;
+        saveNotepad();
+    }
+    notepadViewedOwner = notepadOwnerPicker.value;
+    notepadEditing = false;
+    renderNotepad();
 });
 
-notepadOwnerPicker.addEventListener("change", renderNotepad);
+notepadRetryButton.addEventListener("click", () => {
+    if(!notepadViewedOwner)
+        return;
+
+    if(notepadLoadError)
+        loadNotepad(notepadViewedOwner);
+    else
+        saveNotepad();
+});
 
 notepadAddButton.addEventListener("click", () => {
     if(!notepadState || isNotepadReadOnly())
@@ -426,6 +673,49 @@ notepadEditButton.addEventListener("click", () => {
 notepadDoneButton.addEventListener("click", () => {
     notepadEditing = false;
     renderNotepad();
+});
+
+notepadBackupsToggle.addEventListener("click", () => {
+    notepadBackupsPanel.hidden = !notepadBackupsPanel.hidden;
+    const isOpen = !notepadBackupsPanel.hidden;
+    notepadBackupsToggle.setAttribute("aria-expanded", String(isOpen));
+    notepadBackupsToggle.setAttribute("aria-label", isOpen ? "Hide saved versions" : "Show saved versions");
+    notepadBackupsToggle.title = isOpen ? "Hide saved versions" : "Saved versions";
+    if(!notepadBackupsPanel.hidden)
+        renderNotepadBackups();
+});
+
+notepadBackupRestore.addEventListener("click", async () => {
+    if(!notepadState || isNotepadReadOnly() || !notepadViewedOwner)
+        return;
+
+    try {
+        const backups = getNotepadBackups();
+        const selectedBackup = backups[Number(notepadBackupSelect.value)];
+        if(!selectedBackup) {
+            notepadBackupStatus.textContent = "Choose a saved version to restore.";
+            return;
+        }
+
+        const createdAt = new Date(selectedBackup.createdAt).toLocaleString();
+        if(!window.confirm(`Restore the notebook from ${createdAt}? The current version will also be backed up.`))
+            return;
+
+        const previousState = notepadState;
+        notepadState = normalizeNotepadState(selectedBackup.state);
+        notepadEditing = false;
+        const saved = await saveNotepad({backupState: previousState});
+        if(!saved) {
+            notepadState = previousState;
+            renderNotepad();
+            return;
+        }
+        notepadBackupsPanel.hidden = true;
+        renderNotepad();
+    } catch(error) {
+        console.error("Could not restore notepad backup:", error);
+        notepadBackupStatus.textContent = "Could not restore that saved version.";
+    }
 });
 
 notepadRenameButton.addEventListener("click", () => {
@@ -468,7 +758,7 @@ notepadContent.addEventListener("input", () => {
         return;
 
     note.content = notepadContent.value;
-    saveNotepad();
+    scheduleNotepadSave();
     renderNotepadLinkSuggestions();
 });
 
@@ -512,9 +802,51 @@ notepadView.addEventListener("click", event => {
 });
 
 window.addEventListener("storage", event => {
-    if(notepadPanel.hidden || !notepadViewedOwner || event.key !== getNotepadStorageKey(notepadViewedOwner))
+    if(event.key !== NOTEPAD_EXPANDED_STORAGE_KEY)
         return;
 
-    loadNotepad(notepadViewedOwner);
-    renderNotepad();
+    setNotepadExpanded(event.newValue === "true", false);
 });
+
+if(notepadSupabase) {
+    notepadSupabase
+        .channel(`${CONFIG.map.realtime.room || "darien-map"}-notepad-sync`)
+        .on("postgres_changes", {
+            event: "*",
+            schema: "public",
+            table: NOTEPAD_TABLE
+        }, async event => {
+            if(notepadPanel.hidden || !notepadViewedOwner)
+                return;
+
+            const changedOwner = event.new?.owner || event.old?.owner;
+            if(changedOwner !== notepadViewedOwner)
+                return;
+
+            try {
+                const owner = notepadViewedOwner;
+                const row = await fetchRemoteNotepad(owner);
+                if(owner !== notepadViewedOwner || !row)
+                    return;
+
+                const remoteStateKey = JSON.stringify(normalizeNotepadState(row.state));
+                const recentStateKeys = notepadRecentStateKeys.get(owner) || [];
+                if(recentStateKeys.includes(remoteStateKey))
+                    return;
+
+                if(notepadEditing || notepadSaveTimer) {
+                    setNotepadStatus("Another device changed this notebook while you were editing. Your next save may replace those changes.", true);
+                } else {
+                    applyRemoteNotepad(row);
+                    renderNotepad();
+                }
+            } catch(error) {
+                console.error("Could not refresh shared notebook:", error);
+                setNotepadStatus("Could not refresh shared changes.", true);
+            }
+        })
+        .subscribe(status => {
+            if(status !== "SUBSCRIBED")
+                console.warn("Notepad realtime status:", status);
+        });
+}

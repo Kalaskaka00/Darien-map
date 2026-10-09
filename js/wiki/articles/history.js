@@ -8,13 +8,13 @@ function historyYear(value){
 
 function historyEndYear(article){
 
-    return historyYear(article.EndYear ?? article.endYear ?? article.StartYear);
+    return historyYear(article.endYear ?? article.startYear);
 
 }
 
 function historyStartYear(article){
 
-    return historyYear(article.StartYear ?? article.startYear);
+    return historyYear(article.startYear);
 
 }
 
@@ -40,7 +40,7 @@ function formatHistoryContext(article){
     if(start === null)
         return "Unknown date";
 
-    const currentYear = Number(CONFIG.world.currentYear);
+    const currentYear = Number(getCurrentYear());
     const yearLabel = formatHistoryYears(article);
 
     if(!Number.isFinite(currentYear))
@@ -66,7 +66,7 @@ function formatHistoryElapsed(article){
 
     const start = historyStartYear(article);
     const end = historyEndYear(article);
-    const currentYear = Number(CONFIG.world.currentYear);
+    const currentYear = Number(getCurrentYear());
 
     if(start === null || !Number.isFinite(currentYear))
         return "Unknown date";

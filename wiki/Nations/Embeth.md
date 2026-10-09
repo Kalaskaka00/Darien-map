@@ -3,6 +3,17 @@ id: embeth
 name: Embeth
 category: nation
 
+races:
+  - Centaur
+  - Eladrin
+  - Fairy
+  - Firbolg
+  - Harengon
+  - Owlin
+  - Satyr
+  - Shifter
+  - Wood Elf
+
 color: "#62C46A"
 
 view: 

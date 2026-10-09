@@ -247,7 +247,7 @@ function buildSettlementCard(article, compact = false){
                 </div>
                 <div class="settlement-details">
                     ${nationRow}
-                    ${sidebarRow("Ruler", article.Ruler || article.ruler)}
+                    ${sidebarRow("Ruler", article.ruler)}
                 </div>
             </div>
         </section>

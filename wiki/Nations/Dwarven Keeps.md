@@ -1,9 +1,15 @@
+---
+id: dwarven_keeps
+name: Dwarven Keeps
+category: nation
+
+races:
+  - Dwarves
+  - Gnomes
+
+color: "#737475"
+---
 # Dwarven Keeps
-**Capital:** -
-
-**Common Races:** Dwarves, Gnomes
-**Uncommon Races:** Dueregar, Half-Orcs, Tieflings
-
 *The dwarven keeps mark many old castles and fort built with only a small part visible to the outer world and far more buried in the mountains and caves. The Keeps are known for trading rare minerals, metals and smithing tools, weaponry and armor.*
 
 *Many of the keeps nowadays are however abandoned or in a state of decline. There exist keeps not even inhabited anymore, often instead taken up by other creatures.*

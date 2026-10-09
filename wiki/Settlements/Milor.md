@@ -5,7 +5,7 @@ category: settlement
 capital: true
 nation:
   - [[Mivon]]
-Ruler:
+ruler:
   - [[Milor temple]]
 map:
   x: 1225

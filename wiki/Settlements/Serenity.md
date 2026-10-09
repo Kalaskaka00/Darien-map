@@ -2,7 +2,7 @@
 id: serenity
 name: Serenity
 category: settlement
-Ruler:
+ruler:
   - [[Odak One Eye]]
 map:
   x: 1025

@@ -21,8 +21,8 @@ view:
   y: 685
   zoom: 2
 
-primaryColor: "#BA6E14"
-secondatyColor: "#D6DE85"
+color: "#BA6E14"
+secondaryColor: "#D6DE85"
 ---
 # Viine family
 *Marry happy Viine for what conquerors gives to others marriage gives to thee*

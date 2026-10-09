@@ -3,6 +3,15 @@ id: mivon
 name: Mivon
 category: nation
 
+capital: [[Milor]]
+ruler: [[Deven Sunderer]]
+races:
+  - Aasimar
+  - Humans
+  - Elves
+  - Kenkus
+
+image: MivonBanner.png
 color: "#F3FF21"
 
 view: 
@@ -28,11 +37,6 @@ border:
   - [411, 1289]
 ---
 # Mivon
-**Capital:** [[Milor]]
-
-**Common Races:** Humans
-**Uncommon Races:** Aasimar, Elves, Half-Elfs, Half-Orcs, Kenkus
-
 *Mivon is a minor nation renown for its religious centers and stance. The country as a whole is a theocracy with strong worships and punishments for those who don't conform.*
 ## Terrain & Geography
 Mivon borders dense forests and rivers to the north into the [[Stolen Lands]]. To the east is a large mountain chain bordering to [[The Wastes]]. To the west is a large river bordering [[Embeth]]. Towards the south are plains bordering [[Galt]].

@@ -1,7 +1,7 @@
 ---
 category: history
-StartYear: 3657
-EndYear: 3702
+startYear: 3657
+endYear: 3702
 view: 
   x: 282 
   y: 773 

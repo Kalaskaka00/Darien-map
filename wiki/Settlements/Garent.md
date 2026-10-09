@@ -5,8 +5,7 @@ category: settlement
 
 capital: true
 nation: [[Gralton]]
-Ruler: 
-
+ruler:
 map:
   x: 600
   y: 257

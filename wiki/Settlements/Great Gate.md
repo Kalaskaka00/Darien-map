@@ -4,8 +4,7 @@ name: Great Gate
 category: settlement
 
 nation: [[Dwarven Keeps]]
-Ruler: 
-
+ruler:
 map:
   x: 670
   y: 730

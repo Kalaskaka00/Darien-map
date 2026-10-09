@@ -1,6 +1,7 @@
 const wikiShowArticleButton = document.getElementById("wiki-show-article");
 const wikiShareDialog = document.getElementById("wiki-share-dialog");
 const wikiShareEventName = "wiki-share-article";
+const wikiGMRecipient = "__GM__";
 const wikiShareSenderId = sessionStorage.getItem("wiki-share-sender-id") || `${Date.now()}-${Math.random().toString(36).slice(2)}`;
 
 sessionStorage.setItem("wiki-share-sender-id", wikiShareSenderId);
@@ -95,8 +96,9 @@ function getSelectedSharePlayers(){
 
 function confirmHiddenArticleShare(article, recipients){
 
-    const visibleRecipients = (recipients || Object.keys(CONFIG.players)).filter(playerName =>
-        canReadArticleForPlayer(article, playerName, false)
+    const recipientOptions = recipients || [...Object.keys(CONFIG.players), wikiGMRecipient];
+    const visibleRecipients = recipientOptions.filter(recipient =>
+        recipient === wikiGMRecipient || canReadArticleForPlayer(article, recipient, false)
     );
     const recipientLabel = recipients?.length ? recipients.join(", ") : "everyone";
 
@@ -138,11 +140,6 @@ function shareCurrentArticle(article, recipients){
     if(!canShareArticle)
         return;
 
-    if(!isGM && !isPublicArticle(article) && recipients === null){
-        window.alert("Players cannot show hidden articles.");
-        return;
-    }
-
     if(isGM && !isPublicArticle(article)){
         confirmHiddenArticleShare(article, recipients);
         return;
@@ -154,17 +151,23 @@ function shareCurrentArticle(article, recipients){
 
 function openShareRecipientDialog(article){
 
-    const playerOptions = Object.keys(CONFIG.players).map(playerName => `
+    const recipients = [
+        ...Object.keys(CONFIG.players)
+            .filter(playerName => isGM || playerName !== currentPlayer)
+            .map(playerName => ({value: playerName, label: playerName})),
+        ...(!isGM ? [{value: wikiGMRecipient, label: "GM"}] : [])
+    ];
+    const playerOptions = recipients.map(({value, label}) => `
         <label class="wiki-share-player">
-            <input type="checkbox" name="wiki-share-player" value="${escapeWikiShareHTML(playerName)}">
-            <span>${escapeWikiShareHTML(playerName)}</span>
+            <input type="checkbox" name="wiki-share-player" value="${escapeWikiShareHTML(value)}">
+            <span>${escapeWikiShareHTML(label)}</span>
         </label>
     `).join("");
 
     showWikiShareDialog(`
         <div class="wiki-share-panel" role="dialog" aria-modal="true" aria-labelledby="wiki-share-title">
             <h2 id="wiki-share-title">Show article</h2>
-            <p>Choose which players should open this article in a new wiki tab.</p>
+            <p>Choose who should open this article in a new wiki tab.</p>
             <div class="wiki-share-players">${playerOptions}</div>
             <div class="wiki-share-actions">
                 <button type="button" data-share-submit>Show article</button>
@@ -187,7 +190,14 @@ function handleSharedArticle(event){
     if(!message || message.senderId === wikiShareSenderId || !message.articleFile)
         return;
 
-    if(isGM || !currentPlayer || (message.recipients && !message.recipients.includes(currentPlayer)))
+    const addressedToGM = isGM && (
+        message.recipients === null || message.recipients?.includes(wikiGMRecipient)
+    );
+    const addressedToPlayer = !isGM && currentPlayer && (
+        message.recipients === null || message.recipients?.includes(currentPlayer)
+    );
+
+    if(!addressedToGM && !addressedToPlayer)
         return;
 
     const article = getArticleByFile(message.articleFile);

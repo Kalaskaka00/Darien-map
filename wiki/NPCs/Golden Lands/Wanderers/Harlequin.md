@@ -34,5 +34,5 @@ Harlequin was the second member of the Jesters. She originates from [[Pitax]] wh
  - I am quite unstable.
  
 **Other information:** 
-
+Previously Harlequin was known as Jeverra Lock and was the overseers of [[Pitax]]s daughter.
 -->
