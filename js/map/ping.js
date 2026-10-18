@@ -1,6 +1,7 @@
 const PING_HOLD_TIME = 1000;
 const PING_MOVE_TOLERANCE = 8;
 const PING_DURATION = 1600;
+const PING_CENTER_PAN_DURATION = 0.6;
 const PING_FALLBACK_CHANNEL_NAME = "darien-map-pings";
 const PING_EVENT_NAME = "ping";
 const LASER_EVENT_NAME = "laser-pointer";
@@ -53,7 +54,7 @@ function publishPing(latlng, centerMap) {
 
     showPing(latlng, ping.color);
     if(centerMap)
-        map.panTo(latlng);
+        map.panTo(latlng, {duration: PING_CENTER_PAN_DURATION});
 
     if(pingRealtime) {
         pingChannel.send({
@@ -80,7 +81,7 @@ function handleRemotePing(event) {
     const latlng = {lat: ping.lat, lng: ping.lng};
     showPing(latlng, ping.color || "#2d2417");
     if(ping.centerMap === true)
-        map.panTo(latlng);
+        map.panTo(latlng, {duration: PING_CENTER_PAN_DURATION});
 }
 
 function getLaserColor() {

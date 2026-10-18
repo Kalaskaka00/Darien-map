@@ -289,7 +289,7 @@ Newly Introduced NPCs: [[Evergreen]], [[Lord of Stories]]
 Casualties: [[Evergreen]]
 
 **Session 49:** *The games of gods*
-Delving in to the routes of the [[World Tree]] [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] quickly came face to face with what remained of [[Wyndee]] where they made a pact to return her power in return for answers. They learned:
+Delving in to the routes of the [[World Tree]] [[Silvana Ashford]], [[Bree Caley]] and [[Conleth Umbra]] quickly came face to face with what remained of [[Wyndee]] where they made a pact to return her power in return for answers. They learned:
 - [[Wyndee]] is bound to help [[Xia]] through some sort of deal and she despises it.
 - [[Xia]] is a shard of [[Xiander]] shattered of during [[The Magical Anorchrism]].
 - [[Xia]] has gained power from stories they've affected, [[Wyndee]] and [[Divine Artifacts|The Eye of Xiander]] and may gain more power still.
@@ -298,3 +298,19 @@ Delving in to the routes of the [[World Tree]] [[Silvana Ashford]], [[Bree Caley
 [[Silvana Ashford]] pleaded with [[Jonas Arc]] in a dream to help avert conflict between [[Golden Lands]] and [[Mivon]] and asked for his advice.
 
 Newly Introduced NPCs: [[Wyndee]]
+
+## Act 4 - Politics, Wars and Gods
+**Session 50:** *The Summerborn Games*
+Together with the [[Aldori family]] [[Silvana Ashford]], [[Bree Caley]] and [[Conleth Umbra]] arranged some games and festivals for the [[Brevoy]] nobility. During the events many nobles dealing and politics tried to rope them in.
+
+The baronesses swore a loyalty oath to her majesty [[Talia Andureen]] and agreed to ready their barony for war. The queen for her turn pressed that loyalty would be awarded and saw that they had a clear path forward.
+
+The baronesses agreed to [[Keldithas Beeret]]s offer to help fund a large roadwork in return for some magical knowledge and keeping their distance from the [[Viine family]].
+
+The baronesses agreed to [[Sandak Viine]]s request to help avoid a conflict or war.
+
+The baronesses handed over [[Nentrah]] in to the [[Udoon family]] custody on the request of [[Maameo Udoon]].
+
+The baronesses denied [[Jamandi Aldori]]s offer to aid in a coup against the crown and making the [[Golden Lands]] a vassal of the new [[Brevoy]].
+
+Newly Introduced NPCs: [[Talia Andureen]], [[Ekon Udoon]]

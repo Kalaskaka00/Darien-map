@@ -1,9 +1,9 @@
+---
+visibility: gm
+--- 
 ## Check
-- Show article to GM
-- Notepad Beta
-- Player side change year and see NPC changes
-- See players who are connected
-- Shift ping drags screen
+- Notepad Beta 2
+- Shift ping drags screen slower movement
 ## Non coding work
 - PCs
 - Deity stories
@@ -18,7 +18,7 @@
 - Preview doesn't disappear when scrolling
 - Not able to select roads and rivers
 - Simplifying tags combine portrait and image
-- Expand pictures on all articles
+- Move tabs
 ## Map
 - Lakes
 - Trade Routes

@@ -1,7 +1,6 @@
 ---
 id: talia_andureen
 category: npc 
-visibility: gm
 
 portrait: Talia Andureen.jpg
 

@@ -38,6 +38,7 @@ let notepadStorageError = false;
 let notepadDataInvalid = false;
 let notepadLoading = false;
 let notepadLoadError = false;
+let notepadLoadErrorMessage = null;
 let notepadEditing = false;
 let notepadSuggestionIndex = -1;
 let notepadPreferenceError = false;
@@ -196,6 +197,7 @@ function applyRemoteNotepad(row) {
 async function loadNotepad(owner) {
     notepadLoading = true;
     notepadLoadError = false;
+    notepadLoadErrorMessage = null;
     notepadStorageError = false;
     notepadSavedGlobally = false;
     notepadState = null;
@@ -238,7 +240,10 @@ async function loadNotepad(owner) {
             notepadBackups = [];
             notepadStorageError = true;
             notepadLoadError = true;
-            setNotepadStatus("Could not load shared storage. Check the Supabase setup and retry.", true);
+            notepadLoadErrorMessage = error?.code === "PGRST205" || error?.code === "42P01"
+                ? "Shared notepad storage is missing in Supabase. Apply supabase/migrations/20261003153400_global_notepads.sql, then retry."
+                : "Could not load shared storage. Check the Supabase setup and retry.";
+            setNotepadStatus(notepadLoadErrorMessage, true);
         }
     } finally {
         if(owner === notepadViewedOwner) {
@@ -561,7 +566,7 @@ function renderNotepad() {
     if(notepadLoading)
         setNotepadStatus("Loading shared notebook...");
     else if(notepadLoadError)
-        setNotepadStatus("Could not load shared storage. Check the Supabase setup and retry.", true);
+        setNotepadStatus(notepadLoadErrorMessage || "Could not load shared storage. Check the Supabase setup and retry.", true);
     else if(notepadStorageError)
         setNotepadStatus("Could not save to shared storage. Your edit remains in this page; retry.", true);
     else if(notepadDataInvalid)

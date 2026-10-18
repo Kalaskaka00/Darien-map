@@ -28,7 +28,8 @@ Except for her role as Lord Protector she is one of the highest heads among the 
 ## Relations
 - [[Raisan Aldori]] is Jamandis father.
 - [[Kassil Aldori]] is Jamandis adopted son whom is thought to be her designated heir.
-- [[Kesten Garess]] was promoted by Jamandi and seen for his talent and served her loyally for many years.[[Maameo Udoon]] is a friend since [[The Rill War]]
+- [[Kesten Garess]] was promoted by Jamandi and seen for his talent and served her loyally for many years.
+- [[Maameo Udoon]] is a friend since [[The Rill War]]
 
 <!--GM
 ## GM info

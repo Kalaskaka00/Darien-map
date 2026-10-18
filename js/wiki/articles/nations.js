@@ -76,6 +76,11 @@ function createNationGlowClip(glowLayers, outline){
 
 function addNation(country){
 
+    if(!Array.isArray(country.border) || country.border.length < 3){
+        console.warn(`Nation "${country.name}" has no valid map border and will not be drawn.`);
+        return;
+    }
+
     const smoothBorder = catmullRomPolygon(country.border, 10);
 
     const glowOptions = {

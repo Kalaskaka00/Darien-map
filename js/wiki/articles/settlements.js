@@ -41,7 +41,7 @@ const SmallCityStoneWallTowersIcon = L.icon({
 });
 
 const TowerMageIcon = L.icon({
-    iconUrl: 'icons/Tower_mage.png',
+    iconUrl: 'icons/Tower_Mage.png',
     iconSize: [12, 24],
     iconAnchor: [6, 12],
     popupAnchor: [0, -12]
