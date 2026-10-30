@@ -2,7 +2,7 @@
 id: gildi_crank
 category: npc 
 
-portrait: Gildi Crank.jpg
+image: Gildi Crank.jpg
 
 fullname: Gildi Crank
 race: Firbolg

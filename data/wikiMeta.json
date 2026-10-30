@@ -1,8 +1,68 @@
 {
-    "latestBuild": "2026-10-18T09:17:04.703Z",
-    "articleCount": 196,
-    "latestChange": "Bug fixes, smoothed pan to ping",
+    "latestBuild": "2026-10-30T18:11:26.934Z",
+    "articleCount": 198,
+    "latestChange": "Now possible to change order of wiki tabs, new settlement icons, campaign article type, added trade routes",
     "changelog": [
+        {
+            "date": "2026-10-30T18:11:26.934Z",
+            "articleCount": 198,
+            "changes": "Now possible to change order of wiki tabs, new settlement icons, campaign article type, added trade routes"
+        },
+        {
+            "date": "2026-10-30T18:09:47.878Z",
+            "articleCount": 198,
+            "changes": "Bug fixes, smoothed pan to ping"
+        },
+        {
+            "date": "2026-10-30T17:19:33.363Z",
+            "articleCount": 198,
+            "changes": "Bug fixes, smoothed pan to ping"
+        },
+        {
+            "date": "2026-10-30T17:19:20.817Z",
+            "articleCount": 198,
+            "changes": "Bug fixes, smoothed pan to ping"
+        },
+        {
+            "date": "2026-10-30T16:46:54.216Z",
+            "articleCount": 198,
+            "changes": "Bug fixes, smoothed pan to ping"
+        },
+        {
+            "date": "2026-10-30T16:43:30.324Z",
+            "articleCount": 198,
+            "changes": "Bug fixes, smoothed pan to ping"
+        },
+        {
+            "date": "2026-10-30T14:48:15.984Z",
+            "articleCount": 198,
+            "changes": "Bug fixes, smoothed pan to ping"
+        },
+        {
+            "date": "2026-10-30T12:41:06.508Z",
+            "articleCount": 198,
+            "changes": "Bug fixes, smoothed pan to ping"
+        },
+        {
+            "date": "2026-10-28T19:25:12.654Z",
+            "articleCount": 197,
+            "changes": "Bug fixes, smoothed pan to ping"
+        },
+        {
+            "date": "2026-10-28T19:07:18.112Z",
+            "articleCount": 197,
+            "changes": "Bug fixes, smoothed pan to ping"
+        },
+        {
+            "date": "2026-10-21T18:25:05.807Z",
+            "articleCount": 197,
+            "changes": "Bug fixes, smoothed pan to ping"
+        },
+        {
+            "date": "2026-10-18T18:31:32.742Z",
+            "articleCount": 197,
+            "changes": "Bug fixes, smoothed pan to ping"
+        },
         {
             "date": "2026-10-18T09:17:04.703Z",
             "articleCount": 196,

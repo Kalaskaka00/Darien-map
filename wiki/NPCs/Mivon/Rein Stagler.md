@@ -2,7 +2,7 @@
 id: rein_stagler
 category: npc 
 
-portrait: Rein Stagler.webp
+image: Rein Stagler.webp
 
 fullname: Rein Stagler, Poison Orchid
 race: Human

@@ -2,7 +2,7 @@
 id: conleth_umbra
 category: pc 
 
-portrait: Conleth Umbra.png
+image: Conleth Umbra.png
 
 fullname: Conleth Umbra
 race: Quickstep

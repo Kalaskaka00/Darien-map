@@ -42,7 +42,8 @@ function findSnapPoint(lat, lng, maxDistance = CONFIG.map.snapDistance) {
 
     [
         ...(typeof roads !== "undefined" ? roads : []),
-        ...(typeof rivers !== "undefined" ? rivers : [])
+        ...(typeof rivers !== "undefined" ? rivers : []),
+        ...(typeof tradeRoutes !== "undefined" ? tradeRoutes : [])
     ].forEach(item => {
 
         item.points.forEach(point => {

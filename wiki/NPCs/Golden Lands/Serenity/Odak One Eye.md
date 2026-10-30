@@ -2,7 +2,7 @@
 id: odak_one_eye
 category: npc 
 
-portrait: Odak One Eye.jpg
+image: Odak One Eye.jpg
 
 fullname: Cheif Odak One Eye
 race: Human

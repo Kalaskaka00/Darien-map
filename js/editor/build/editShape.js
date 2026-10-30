@@ -60,6 +60,9 @@ async function finishEditShape(){
     if(editingShape.object?.type === "river")
         saved = await saveRiverToFile(editingShape.object);
 
+    if(editingShape.object?.type === "tradeRoute")
+        saved = await saveTradeRouteToFile(editingShape.object);
+
     navigator.clipboard.writeText(yaml);
 
     closeEditorTool();

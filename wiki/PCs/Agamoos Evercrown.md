@@ -2,7 +2,7 @@
 id: agamoos_evercrown
 category: pc 
 
-portrait: Agamoos Evercrown.png
+image: Agamoos Evercrown.png
 
 fullname: Agamoos Evercrown
 race: Faun

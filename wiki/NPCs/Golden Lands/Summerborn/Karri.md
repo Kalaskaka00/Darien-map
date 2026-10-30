@@ -2,7 +2,7 @@
 id: karri
 category: npc 
 
-portrait: Karri.png
+image: Karri.png
 
 fullname: Regent Karri
 race: Aaracokra

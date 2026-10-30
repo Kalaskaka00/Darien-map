@@ -2,7 +2,7 @@
 id: thundarak
 category: npc 
 
-portrait: Thundarak.png
+image: Thundarak.png
 
 fullname: Thundarak
 race: Cyclops

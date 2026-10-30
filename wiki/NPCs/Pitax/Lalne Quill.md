@@ -2,7 +2,7 @@
 id: lalne_quill
 category: npc 
 
-portrait: Lalne Quill.jpg
+image: Lalne Quill.jpg
 
 fullname: Head Archivist, Lalne Quill
 race: Half-Elf

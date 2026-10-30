@@ -2,7 +2,7 @@
 id: ninne
 category: npc 
 
-portrait: Ninne.jpg
+image: Ninne.jpg
 
 fullname: Ninne
 race: Doppelganger

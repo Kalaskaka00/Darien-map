@@ -2,7 +2,7 @@
 id: stag_lord
 category: npc 
 
-portrait: Stag Lord.jpg
+image: Stag Lord.jpg
 
 fullname: Durie Allseer, The Stag Lord, Ruler of the Stolen Lands
 race: Human

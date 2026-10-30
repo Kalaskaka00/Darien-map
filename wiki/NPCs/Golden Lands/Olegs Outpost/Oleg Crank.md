@@ -2,7 +2,7 @@
 id: oleg_crank
 category: npc 
 
-portrait: Oleg Crank.png
+image: Oleg Crank.png
 
 fullname: Oleg Crank
 race: Human

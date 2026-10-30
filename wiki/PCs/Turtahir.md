@@ -2,7 +2,7 @@
 id: turtahir
 category: pc 
 
-portrait: Turtahir.png
+image: Turtahir.png
 
 fullname: Turtahir
 race: Galappa

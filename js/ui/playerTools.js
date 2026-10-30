@@ -3,16 +3,43 @@ const playerToolsPanel = document.getElementById("player-tools-panel");
 const playerSelect = document.getElementById("player-select");
 const playerStatusDisplay = document.getElementById("player-status-display");
 const measureTool = document.getElementById("measure-tool");
+const playerToolVisibilityButton = document.getElementById("player-tool-visibility");
 const laserTool = document.getElementById("laser-tool");
 
+const PLAYER_TOOL_VISIBILITY_KEY = "darien-map-measurement-visibility";
+const PLAYER_TOOL_VISIBILITY_STAGES = [
+    {value: "everyone", label: "Everyone"},
+    {value: "gm", label: "GM only"},
+    {value: "private", label: "Only me"}
+];
+const measurementSessionId = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+const remoteMeasurements = new Map();
 let measurementPoints = [];
 let measurementLine = null;
 let measurementMarkers = [];
 let measurementFinished = false;
 let measureReadout = null;
+let playerToolVisibility = localStorage.getItem(PLAYER_TOOL_VISIBILITY_KEY) || "everyone";
 const editorPanel = document.getElementById("editor-panel");
 
 const kilometersToMiles = 0.621371;
+
+if(!PLAYER_TOOL_VISIBILITY_STAGES.some(stage => stage.value === playerToolVisibility))
+    playerToolVisibility = "everyone";
+
+function getMeasurementReadoutContent(points) {
+    const distanceInMapUnits = points.slice(1).reduce((total, point, index) => {
+        const previousPoint = points[index];
+        return total + Math.hypot(
+            point[0] - previousPoint[0],
+            point[1] - previousPoint[1]
+        );
+    }, 0);
+    const kilometers = distanceInMapUnits * CONFIG.map.kilometersPerMapUnit;
+    const miles = kilometers * kilometersToMiles;
+
+    return `Distance<br><strong>${kilometers.toFixed(2)} km</strong><br>${miles.toFixed(2)} mi`;
+}
 
 function initializeMeasureReadout() {
     const control = L.control({position: "topright"});
@@ -34,21 +61,143 @@ function updateMeasurementReadout() {
     if(!measureReadout)
         return;
 
-    const distanceInMapUnits = measurementPoints.slice(1).reduce((total, point, index) => {
-        const previousPoint = measurementPoints[index];
-        return total + Math.hypot(
-            point[0] - previousPoint[0],
-            point[1] - previousPoint[1]
-        );
-    }, 0);
-    const kilometers = distanceInMapUnits * CONFIG.map.kilometersPerMapUnit;
-    const miles = kilometers * kilometersToMiles;
-
-    measureReadout.innerHTML = `Distance<br><strong>${kilometers.toFixed(2)} km</strong><br>${miles.toFixed(2)} mi`;
+    measureReadout.innerHTML = getMeasurementReadoutContent(measurementPoints);
     measureReadout.style.display = measurementPoints.length > 1 ? "block" : "none";
 }
 
+function getPlayerToolSender() {
+    if(isGM)
+        return {role: "gm", name: "GM"};
+    if(currentPlayer && Object.prototype.hasOwnProperty.call(CONFIG.players, currentPlayer))
+        return {role: "player", name: currentPlayer};
+    return {role: "guest", name: null};
+}
+
+function getPlayerToolVisibility() {
+    return playerToolVisibility;
+}
+
+function isPlayerToolVisibleToCurrentUser(tool) {
+    if(!tool.visibility || tool.visibility === "everyone")
+        return true;
+    if(tool.visibility !== "gm")
+        return false;
+    if(isGM)
+        return true;
+
+    const sender = getPlayerToolSender();
+    return sender.role !== "guest" &&
+        sender.role === tool.role &&
+        sender.name === tool.name;
+}
+
+function sendMeasurementUpdate(payload) {
+    if(pingRealtime) {
+        pingChannel.send({
+            type: "broadcast",
+            event: MEASUREMENT_EVENT_NAME,
+            payload
+        });
+    } else if(pingChannel) {
+        pingChannel.postMessage(payload);
+    } else {
+        localStorage.setItem(MEASUREMENT_FALLBACK_KEY, JSON.stringify(payload));
+    }
+}
+
+function publishMeasurement(active) {
+    const sender = getPlayerToolSender();
+    const shouldShare = active && playerToolVisibility !== "private";
+    const payload = {
+        type: MEASUREMENT_EVENT_NAME,
+        id: measurementSessionId,
+        active: shouldShare,
+        visibility: playerToolVisibility,
+        ...sender
+    };
+    if(shouldShare)
+        payload.points = measurementPoints;
+
+    sendMeasurementUpdate(payload);
+}
+
+function removeRemoteMeasurement(id) {
+    const measurement = remoteMeasurements.get(id);
+    if(measurement)
+        map.removeLayer(measurement);
+    remoteMeasurements.delete(id);
+}
+
+function handleRemoteMeasurement(event) {
+    const measurement = event.payload || event.data || JSON.parse(event.newValue || "null");
+    if(
+        !measurement ||
+        measurement.type !== MEASUREMENT_EVENT_NAME ||
+        typeof measurement.id !== "string" ||
+        measurement.id === measurementSessionId
+    )
+        return;
+
+    if(!measurement.active) {
+        removeRemoteMeasurement(measurement.id);
+        return;
+    }
+
+    const validSender = measurement.role === "gm" && measurement.name === "GM" ||
+        measurement.role === "player" &&
+            typeof measurement.name === "string" &&
+            Object.prototype.hasOwnProperty.call(CONFIG.players, measurement.name) ||
+        measurement.role === "guest" && measurement.name === null;
+    if(
+        !validSender ||
+        !Array.isArray(measurement.points) ||
+        measurement.points.some(point =>
+            !Array.isArray(point) ||
+            point.length !== 2 ||
+            !Number.isFinite(point[0]) ||
+            !Number.isFinite(point[1])
+        )
+    )
+        return;
+
+    if(!isPlayerToolVisibleToCurrentUser(measurement)) {
+        removeRemoteMeasurement(measurement.id);
+        return;
+    }
+
+    removeRemoteMeasurement(measurement.id);
+    const group = L.layerGroup();
+    const line = L.polyline(measurement.points, {
+        color: "#b22222",
+        weight: 3,
+        dashArray: "8 6",
+        interactive: false
+    }).addTo(group);
+    measurement.points.forEach(point => {
+        L.circleMarker(point, {
+            radius: 4,
+            color: "#7f1d1d",
+            weight: 2,
+            fillColor: "#f7e7ce",
+            fillOpacity: 1,
+            interactive: false
+        }).addTo(group);
+    });
+    if(measurement.points.length > 1) {
+        line.bindTooltip(getMeasurementReadoutContent(measurement.points), {
+            permanent: true,
+            direction: "center",
+            className: "measure-readout"
+        });
+    }
+    group.addTo(map);
+    if(measurement.points.length > 1)
+        line.openTooltip();
+    remoteMeasurements.set(measurement.id, group);
+}
+
 function clearMeasurement() {
+    const hadMeasurement = measurementPoints.length > 0;
     if(measurementLine)
         map.removeLayer(measurementLine);
 
@@ -60,6 +209,8 @@ function clearMeasurement() {
 
     if(measureReadout)
         measureReadout.style.display = "none";
+    if(hadMeasurement)
+        publishMeasurement(false);
 }
 
 function removeMeasurementPoint(index) {
@@ -81,6 +232,7 @@ function createMeasurementMarker(point, index) {
         measurementPoints[index] = [e.latlng.lat, e.latlng.lng];
         measurementLine.setLatLngs(measurementPoints);
         updateMeasurementReadout();
+        publishMeasurement(true);
     });
 
     marker.on("contextmenu", function(e) {
@@ -151,6 +303,7 @@ function renderMeasurement() {
     measurementLine.on("mousedown", addMeasurementPointOnLine);
 
     updateMeasurementReadout();
+    publishMeasurement(measurementPoints.length > 0);
 }
 
 function addMeasurementPoint(e) {
@@ -232,6 +385,14 @@ function initializePlayerTools() {
 
     // Update display
     updatePlayerStatus();
+    updatePlayerToolVisibilityButton();
+}
+
+function updatePlayerToolVisibilityButton() {
+    const stage = PLAYER_TOOL_VISIBILITY_STAGES.find(item => item.value === playerToolVisibility);
+    playerToolVisibilityButton.textContent = stage.label;
+    playerToolVisibilityButton.setAttribute("aria-label", `Show to others: ${stage.label}`);
+    playerToolVisibilityButton.dataset.visibility = stage.value;
 }
 
 // Update player status display
@@ -275,6 +436,21 @@ playerSelect.addEventListener("change", function() {
 measureTool.addEventListener("click", function(e) {
     e.stopPropagation();
     toggleMeasureTool();
+});
+
+playerToolVisibilityButton.addEventListener("click", function(e) {
+    e.stopPropagation();
+    const currentIndex = PLAYER_TOOL_VISIBILITY_STAGES.findIndex(
+        stage => stage.value === playerToolVisibility
+    );
+    playerToolVisibility = PLAYER_TOOL_VISIBILITY_STAGES[
+        (currentIndex + 1) % PLAYER_TOOL_VISIBILITY_STAGES.length
+    ].value;
+    localStorage.setItem(PLAYER_TOOL_VISIBILITY_KEY, playerToolVisibility);
+    updatePlayerToolVisibilityButton();
+    if(measurementPoints.length > 0)
+        publishMeasurement(true);
+    updateLaserPointerVisibility();
 });
 
 laserTool.addEventListener("click", function(e) {

@@ -2,7 +2,7 @@
 id: deren_seere
 category: npc 
 
-portrait: Deren Seere.png
+image: Deren Seere.png
 
 fullname: Deren Seere, Master of Knowing
 race: Changeling (Undead)

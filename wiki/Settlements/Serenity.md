@@ -7,7 +7,7 @@ ruler:
 map:
   x: 1025
   y: 467
-  icon: Village
+  icon: Small_Village
 ---
 # Serenity
 *Serenity is the small fishing village surrounded by mists and cut of from the world on the edge of [[Embeth]]*

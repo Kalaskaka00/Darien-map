@@ -2,7 +2,7 @@
 id: keldithas_beeret
 category: npc 
 
-portrait: Keldithas Beeret.jpg
+image: Keldithas Beeret.jpg
 
 fullname: Lord Keldithas Beeret, "Silver Seer"
 race: High-elf

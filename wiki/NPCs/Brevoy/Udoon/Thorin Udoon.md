@@ -2,7 +2,7 @@
 id: thorin_udoon
 category: npc 
 
-portrait: Thorin Udoon.png
+image: Thorin Udoon.png
 
 fullname: Lord Thorin Udoon, Oathkeeper, Guardian of Loneleywood
 race: Goliath

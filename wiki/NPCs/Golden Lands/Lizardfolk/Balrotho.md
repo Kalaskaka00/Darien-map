@@ -2,7 +2,7 @@
 id: balrotho
 category: npc 
 
-portrait: Balrotho.png
+image: Balrotho.png
 
 fullname: Balrotho (The Champion)
 race: Lizardfolk

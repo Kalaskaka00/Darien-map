@@ -2,7 +2,7 @@
 id: mime
 category: npc 
 
-portrait: Mime.jpg
+image: Mime.jpg
 
 fullname: Mime
 race: Human

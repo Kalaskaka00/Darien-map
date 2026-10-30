@@ -2,7 +2,7 @@
 id: myron
 category: npc 
 
-portrait: Myron.jpg
+image: Myron.jpg
 
 fullname: Myron
 race: Dryad

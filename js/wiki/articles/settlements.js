@@ -1,7 +1,21 @@
 const CastleIcon = L.icon({
     iconUrl: 'icons/Castle.png',
-    iconSize: [40, 32],
-    iconAnchor: [20, 16],
+    iconSize: [32, 32],
+    iconAnchor: [16, 16],
+    popupAnchor: [0, -16]
+});
+
+const DrowCityIcon = L.icon({
+    iconUrl: 'icons/Drow_City.png',
+    iconSize: [40, 40],
+    iconAnchor: [20, 20],
+    popupAnchor: [0, -20]
+});
+
+const DwarvenKeepIcon = L.icon({
+    iconUrl: 'icons/Dwarven_Keep.png',
+    iconSize: [32, 32],
+    iconAnchor: [16, 16],
     popupAnchor: [0, -16]
 });
 
@@ -12,8 +26,8 @@ const KeepIcon = L.icon({
     popupAnchor: [0, -12]
 });
 
-const LargeCityStoneWallTowersIcon = L.icon({
-    iconUrl: 'icons/Large_City_Stone_Wall_Towers.png',
+const LargeCityStoneWallIcon = L.icon({
+    iconUrl: 'icons/Large_City_Stone_Wall.png',
     iconSize: [40, 40],
     iconAnchor: [20, 20],
     popupAnchor: [0, -20]
@@ -28,16 +42,23 @@ const LargeCityIcon = L.icon({
 
 const SmallCityIcon = L.icon({
     iconUrl: 'icons/Small_City.png',
-    iconSize: [40, 40],
-    iconAnchor: [20, 20],
-    popupAnchor: [0, -20]
+    iconSize: [32, 32],
+    iconAnchor: [16, 16],
+    popupAnchor: [0, -16]
 });
 
-const SmallCityStoneWallTowersIcon = L.icon({
-    iconUrl: 'icons/Small_City_Stone_Wall_Towers.png',
-    iconSize: [40, 40],
-    iconAnchor: [20, 20],
-    popupAnchor: [0, -20]
+const SmallCityStoneWallIcon = L.icon({
+    iconUrl: 'icons/Small_City_Stone_Wall.png',
+    iconSize: [32, 32],
+    iconAnchor: [16, 16],
+    popupAnchor: [0, -16]
+});
+
+const SmallVillageIcon = L.icon({
+    iconUrl: 'icons/Small_Village.png',
+    iconSize: [24, 16],
+    iconAnchor: [12, 8],
+    popupAnchor: [0, -12]
 });
 
 const TowerMageIcon = L.icon({
@@ -49,6 +70,13 @@ const TowerMageIcon = L.icon({
 
 const TownIcon = L.icon({
     iconUrl: 'icons/Town.png',
+    iconSize: [24, 24],
+    iconAnchor: [12, 12],
+    popupAnchor: [0, -12]
+});
+
+const UnderwaterVillageIcon = L.icon({
+    iconUrl: 'icons/Underwater_Village.png',
     iconSize: [24, 24],
     iconAnchor: [12, 12],
     popupAnchor: [0, -12]
@@ -74,28 +102,40 @@ function addCity(city) {
 
     switch(city.map.icon){
 
-            case "Castle":
+        case "Castle":
             icon = CastleIcon;
+            break;
+            
+        case "Drow_City":
+            icon = DrowCityIcon;
+            break;
+
+        case "Dwarven_Keep":
+            icon = DwarvenKeepIcon;
             break;
 
         case "Keep":
             icon = KeepIcon;
             break;
 
-        case "Large_City_Stone_Wall_Towers":
-            icon = LargeCityStoneWallTowersIcon;
+        case "Large_City_Stone_Wall":
+            icon = LargeCityStoneWallIcon;
             break;
 
-                case "Large_City":
-        icon = LargeCityIcon;
-        break;
+        case "Large_City":
+            icon = LargeCityIcon;
+            break;
 
-        case "Small_City_Stone_Wall_Towers":
-            icon = SmallCityStoneWallTowersIcon;
+        case "Small_City_Stone_Wall":
+            icon = SmallCityStoneWallIcon;
             break;
 
         case "Small_City":
             icon = SmallCityIcon;
+            break;
+
+        case "Small_Village":
+            icon = SmallVillageIcon;
             break;
 
         case "Tower_Mage":
@@ -104,6 +144,10 @@ function addCity(city) {
             
         case "Town":
             icon = TownIcon;
+            break;
+
+        case "Underwater_Village":
+            icon = UnderwaterVillageIcon;
             break;
 
         case "Village":

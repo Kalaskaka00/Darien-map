@@ -2,7 +2,7 @@
 id: farlamin_mistshaper
 category: npc 
 
-portrait: Farlamin Mistshaper.jpg
+image: Farlamin Mistshaper.jpg
 
 fullname: Illusionist Councilor Farlamin Mistshaper "Fools Gold"
 race: High Elf

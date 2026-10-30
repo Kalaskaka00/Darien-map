@@ -2,7 +2,7 @@
 id: zayne_copper
 category: npc 
 
-portrait: Zayne Copper.png
+image: Zayne Copper.png
 
 fullname: Councilor Zayne Copper
 race: Human

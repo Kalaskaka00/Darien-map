@@ -2,7 +2,7 @@
 id: magie
 category: npc 
 
-portrait: Magie.jpg
+image: Magie.jpg
 
 fullname: Magie, Master of Transmutation
 race: Shadar-Kai

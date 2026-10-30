@@ -2,7 +2,7 @@
 id: oliveria
 category: npc 
 
-portrait: Oliveria.jpg
+image: Oliveria.jpg
 
 fullname: Oliveria The Dead Speaker
 race: Hag

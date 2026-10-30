@@ -4,6 +4,7 @@ visibility: gm
 ## Check
 - Notepad Beta 2
 - Shift ping drags screen slower movement
+- Possible to show measurement and Laser Pointer
 ## Non coding work
 - PCs
 - Deity stories
@@ -15,29 +16,23 @@ visibility: gm
 - Clean up and speed up code
 - Curves to style document
 - Lines don't render of screen
-- Preview doesn't disappear when scrolling
 - Not able to select roads and rivers
-- Simplifying tags combine portrait and image
-- Move tabs
 ## Map
 - Lakes
-- Trade Routes
 - Region names
 - Landmark names
 - Weather
 - Party marker
 ## Tools
 - Travel calculator
-- PC article - Players can edit
+- PC article - Players can edit (and aids that describes for players)
 - Player side map markers
-- Possible to show measurement
-- Edit articles (and aids that describes for players)
+- Edit articles 
 ## UI
 - Wiki Pop out
 - Tools explainer
 ## Wiki
 - Arrows changing pictures on several picture articles
-- Campaign article type (cursive in timeline)
 - Story article time (cursive in timeline)
 - Places article type (Regions & Places)
 - Article text visible to some players

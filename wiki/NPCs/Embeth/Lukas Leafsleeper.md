@@ -3,7 +3,7 @@ id: lukas_leafsleeper
 category: npc 
 visibility: gm
 
-portrait: Lukas Leafsleeper.png
+image: Lukas Leafsleeper.png
 
 fullname: Lukas Leafsleeper
 race: Harengon

@@ -2,7 +2,7 @@
 id: ura_clawt
 category: npc 
 
-portrait: Ura Clawt.png
+image: Ura Clawt.png
 
 fullname: Ura Clawt "Mastermind"
 race: Human

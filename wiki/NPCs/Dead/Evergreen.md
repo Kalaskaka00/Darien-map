@@ -2,7 +2,7 @@
 id: evergreen
 category: npc 
 
-portrait: Evergreen.jpg
+image: Evergreen.jpg
 
 fullname: Evergreen
 race: [[Old God]]

@@ -2,7 +2,7 @@
 id: iandri_flukeflow
 category: npc 
 
-portrait: Iandri Flukeflow.png
+image: Iandri Flukeflow.png
 
 fullname: Iandri Flukeflow
 race: Gnome

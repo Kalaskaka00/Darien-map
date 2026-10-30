@@ -2,7 +2,7 @@
 id: aelthot
 category: npc 
 
-portrait: Aelthot.webp
+image: Aelthot.webp
 
 fullname: Tribefather Aelthot (Promise)
 race: Lizardfolk

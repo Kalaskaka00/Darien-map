@@ -2,7 +2,7 @@
 id: joker
 category: npc 
 
-portrait: Joker.jpg
+image: Joker.jpg
 
 fullname: Janden Faelmin "Joker", Former Master of Minds
 race: Wood Elf

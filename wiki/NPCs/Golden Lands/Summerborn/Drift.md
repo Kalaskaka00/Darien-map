@@ -2,7 +2,7 @@
 id: drift
 category: npc 
 
-portrait: Drift.png
+image: Drift.png
 
 fullname: High Preist Drift "The Seer"
 race: Air Genasi
@@ -22,6 +22,17 @@ She eventually ventured to the [[Golden Lands]] where she became an advisor and 
 ## Relations
 - 
 ## Prophecies
+**[[Kingmaker]] Third Prophecy (possessed):**
+Troubled heroes, hunted, torn.  
+Poisoned marshes, hatred born.  
+Mages rage where wild roots bind.  
+Shrouded cloaks and vengeful minds.
+
+Holy men with hearts of rot.  
+Faithful allies, trust forgot.  
+The Speaker sealed, beyond your plea.  
+War shall come. And death shall see.
+
 **[[Kingmaker]] Second Prophecy:**
 I hear trees creaking in the wind, they scream of anger and pain.
 I see new paths, some leading to prosperity others to doom.

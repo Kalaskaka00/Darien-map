@@ -2,7 +2,7 @@
 id: yarslav_crain
 category: npc 
 
-portrait: Yarslav Crain.png
+image: Yarslav Crain.png
 
 fullname: Yarslav Crain, Master of Creation
 race: Gnome (Undead)

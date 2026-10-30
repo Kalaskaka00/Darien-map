@@ -2,7 +2,7 @@
 id: chirp
 category: npc 
 
-portrait: Chirp.png
+image: Chirp.png
 
 fullname: Shaharice Boldshard "Chirp"
 race: Eladrin

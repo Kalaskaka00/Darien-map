@@ -2,7 +2,7 @@
 id: laura_faelamin
 category: npc 
 
-portrait: Laura Faelamin.png
+image: Laura Faelamin.png
 
 fullname: Laura Faelamin
 race: High Elf

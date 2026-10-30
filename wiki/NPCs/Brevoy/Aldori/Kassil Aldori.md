@@ -2,7 +2,7 @@
 id: kassil_aldori
 category: npc 
 
-portrait: Kassil Aldori.webp
+image: Kassil Aldori.webp
 
 fullname: Lord Kassil Aldori
 race: Half-orc

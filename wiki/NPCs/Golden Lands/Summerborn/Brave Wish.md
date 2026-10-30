@@ -2,7 +2,7 @@
 id: brave_wish
 category: npc 
 
-portrait: Brave Wish.jpg
+image: Brave Wish.jpg
 
 fullname: Brave Wish
 race: Tabaxi

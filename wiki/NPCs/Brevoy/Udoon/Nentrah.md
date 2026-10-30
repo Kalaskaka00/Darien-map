@@ -2,7 +2,7 @@
 id: nentrah
 category: npc 
 
-portrait: Nentrah.webp
+image: Nentrah.webp
 
 fullname: Nentrah
 race: Dryad
@@ -28,6 +28,8 @@ Nentrah would spend the next 1000 years destroying kingdoms which would rise in 
 - The [[Stag Lord]] and his gang
 
 Eventually when trying to fell the [[Golden Lands]] she was captured by [[Silvana Ashford]], [[Bree Caley]] and [[Conleth Umbra]] during the siege of [[Summerborn]].
+
+In the year {{year:3863}} Nentrah was handed over as a captive to the [[Udoon family]] for indefinite imprisonment. 
 ## Relations
 - [[Lord of Stories]] is Nentrahs patron and their aides sometimes interact with Nentrah [[Harlequin]], [[Joker]] and [[Mime]]
 - [[Myron]] is the only of Nentrahs siter who survived the fall of their home.

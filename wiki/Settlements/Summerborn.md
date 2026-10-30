@@ -9,7 +9,7 @@ ruler:
 map:
   x: 838
   y: 566
-  icon: Small_City_Stone_Wall_Towers
+  icon: Small_City_Stone_Wall
 ---
 # Summerborn
 *Summerborn is the bustling city in the [[Golden Lands]]*, deep within the [[Stolen Lands]]

@@ -2,7 +2,7 @@
 id: n'neb
 category: npc 
 
-portrait: n'Neb.webp
+image: n'Neb.webp
 
 fullname: n'Neb, The Troll Slayer
 race: Grung

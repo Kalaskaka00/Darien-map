@@ -2,7 +2,7 @@
 id: bille_frostbite
 category: npc 
 
-portrait: Bille Frostbite.webp
+image: Bille Frostbite.webp
 
 fullname: Court Mage Bille Frostbite
 race: Human

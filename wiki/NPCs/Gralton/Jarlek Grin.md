@@ -2,7 +2,7 @@
 id: jarlek_grin
 category: npc 
 
-portrait: Jarlek Grin.jpg
+image: Jarlek Grin.jpg
 
 fullname: Jarlek Grin
 race: Human

@@ -10,7 +10,7 @@ ruler: [[Andureen family]]
 map:
   x: 966
   y: 689
-  icon: Small_City_Stone_Wall_Towers
+  icon: Small_City_Stone_Wall
 ---
 # New Steveten
 *The royal and noble capital of [[Brevoy]]*

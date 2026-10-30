@@ -8,7 +8,7 @@ ruler:
 map:
   x: 700
   y: 585
-  icon: Small_City_Stone_Wall_Towers
+  icon: Small_City_Stone_Wall
 ---
 # Transmuter´s rest
 *The world leading city of alchemists and magical devices in [[Pitax]]*

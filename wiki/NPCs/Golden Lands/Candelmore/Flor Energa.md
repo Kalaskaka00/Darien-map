@@ -2,7 +2,7 @@
 id: flor_energa
 category: npc 
 
-portrait: Flor Energa.png
+image: Flor Energa.png
 
 fullname: Flor Energa, Master of Energy
 race: Half-Elf (Undead)

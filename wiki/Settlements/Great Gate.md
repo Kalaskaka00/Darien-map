@@ -8,7 +8,7 @@ ruler:
 map:
   x: 670
   y: 730
-  icon: Castle
+  icon: Dwarven_Keep
 ---
 # Great Gate
 *The great Dwarven fortress in [[Boggy Ridge]] separating Numeria and Pitax.*

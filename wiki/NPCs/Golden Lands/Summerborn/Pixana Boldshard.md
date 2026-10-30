@@ -2,7 +2,7 @@
 id: pixana_boldshard
 category: npc 
 
-portrait: Pixana Boldshard.png
+image: Pixana Boldshard.png
 
 fullname: Grand Diplomat Pixana Boldshard
 race: Eladrin

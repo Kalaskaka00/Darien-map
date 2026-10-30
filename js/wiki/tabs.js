@@ -121,7 +121,7 @@ function renderWikiTabs(){
             const escapedName = escapeWikiTabText(name);
 
             return `
-            <button class="wiki-tab${tab.id === activeWikiTabId ? " active" : ""}" type="button" data-wiki-tab-id="${tab.id}" data-tooltip="${escapedName}" aria-label="${escapedName}">
+            <button class="wiki-tab${tab.id === activeWikiTabId ? " active" : ""}" type="button" draggable="true" data-wiki-tab-id="${tab.id}" data-tooltip="${escapedName}" aria-label="${escapedName}" aria-keyshortcuts="Alt+ArrowUp Alt+ArrowDown" title="Drag to reorder; use Alt+Up or Alt+Down to move">
                 <span class="wiki-tab-title">${escapeWikiTabText(getWikiTabLabel(name))}</span>
                 <span class="wiki-tab-close" role="button" aria-label="Close ${escapedName}">×</span>
             </button>
@@ -131,6 +131,25 @@ function renderWikiTabs(){
         .join("");
 
     persistWikiTabs();
+
+}
+
+function moveWikiTab(tabId, offset){
+
+    const tabIndex = wikiTabs.findIndex(tab => tab.id === tabId);
+    const nextIndex = tabIndex + offset;
+
+    if(tabIndex < 0 || nextIndex < 0 || nextIndex >= wikiTabs.length)
+        return false;
+
+    const [tab] = wikiTabs.splice(tabIndex, 1);
+    wikiTabs.splice(nextIndex, 0, tab);
+    renderWikiTabs();
+
+    const movedTab = wikiTabList.querySelector(`[data-wiki-tab-id="${tabId}"]`);
+    movedTab?.focus();
+
+    return true;
 
 }
 
@@ -348,6 +367,92 @@ wikiTabList.addEventListener("click", event => {
     }
 
     activateWikiTab(tab);
+
+});
+
+let draggedWikiTabId = null;
+
+wikiTabList.addEventListener("dragstart", event => {
+
+    const tab = event.target.closest(".wiki-tab");
+
+    if(!tab || event.target.closest(".wiki-tab-close")){
+        event.preventDefault();
+        return;
+    }
+
+    draggedWikiTabId = Number(tab.dataset.wikiTabId);
+    tab.classList.add("dragging");
+    event.dataTransfer.effectAllowed = "move";
+    event.dataTransfer.setData("text/plain", String(draggedWikiTabId));
+
+});
+
+wikiTabList.addEventListener("dragover", event => {
+
+    if(draggedWikiTabId === null)
+        return;
+
+    const target = event.target.closest(".wiki-tab");
+
+    if(!target)
+        return;
+
+    event.preventDefault();
+    event.dataTransfer.dropEffect = "move";
+
+    const draggedTab = wikiTabList.querySelector(
+        `[data-wiki-tab-id="${draggedWikiTabId}"]`
+    );
+
+    if(!draggedTab || draggedTab === target)
+        return;
+
+    const targetRect = target.getBoundingClientRect();
+    const insertAfter = event.clientY >= targetRect.top + targetRect.height / 2;
+    wikiTabList.insertBefore(draggedTab, insertAfter ? target.nextElementSibling : target);
+
+});
+
+wikiTabList.addEventListener("drop", event => {
+
+    if(draggedWikiTabId === null)
+        return;
+
+    event.preventDefault();
+    wikiTabs = Array.from(wikiTabList.querySelectorAll(".wiki-tab"))
+        .map(tabElement => wikiTabs.find(tab => tab.id === Number(tabElement.dataset.wikiTabId)))
+        .filter(Boolean);
+    draggedWikiTabId = null;
+    renderWikiTabs();
+
+});
+
+wikiTabList.addEventListener("dragend", () => {
+
+    if(draggedWikiTabId === null)
+        return;
+
+    draggedWikiTabId = null;
+    renderWikiTabs();
+
+});
+
+wikiTabList.addEventListener("keydown", event => {
+
+    if(!event.altKey || !["ArrowUp", "ArrowDown"].includes(event.key))
+        return;
+
+    const tab = event.target.closest(".wiki-tab");
+
+    if(!tab)
+        return;
+
+    event.preventDefault();
+    moveWikiTab(
+        Number(tab.dataset.wikiTabId),
+        event.key === "ArrowUp" ? -1 : 1
+    );
 
 });
 

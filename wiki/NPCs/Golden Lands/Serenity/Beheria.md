@@ -2,7 +2,7 @@
 id: beheria
 category: npc 
 
-portrait: Beheria.webp
+image: Beheria.webp
 
 fullname: Beheria The Chanter
 race: Hag

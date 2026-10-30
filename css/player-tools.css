@@ -81,6 +81,34 @@
     color: white;
 }
 
+#player-tool-visibility-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 0 0 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #c9a87c;
+}
+
+#player-tool-visibility-control .player-status-label {
+    margin: 0;
+}
+
+#player-tool-visibility {
+    padding: 4px 9px;
+    border: 1px solid #8b7355;
+    border-radius: 14px;
+    background: #f3ead1;
+    color: #2d2417;
+    font-family: Georgia, serif;
+    cursor: pointer;
+}
+
+#player-tool-visibility:hover {
+    background: #e6d9c3;
+}
+
 #laser-tool.active {
     background: #b22222;
     border-color: #7f1d1d;

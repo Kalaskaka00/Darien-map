@@ -2,7 +2,7 @@
 id: annj_bearer
 category: npc 
 
-portrait: Annj Bearer.png
+image: Annj Bearer.png
 
 fullname: Annj Bearer
 race: Half-Elf

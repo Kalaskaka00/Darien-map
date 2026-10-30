@@ -2,7 +2,7 @@
 id: vondal_sandwashed
 category: npc 
 
-portrait: Vondal Sandwashed.png
+image: Vondal Sandwashed.png
 
 fullname: Vondal Sandwashed
 race: Dwarf

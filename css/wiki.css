@@ -193,6 +193,18 @@
 
 }
 
+.wiki-tab[draggable="true"]{
+
+    cursor:grab;
+
+}
+
+.wiki-tab.dragging{
+
+    opacity:.45;
+
+}
+
 .wiki-tab-title{
 
     display:block;

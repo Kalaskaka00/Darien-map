@@ -2,7 +2,7 @@
 id: derk
 category: npc 
 
-portrait: Derk.png
+image: Derk.png
 
 fullname: Derk, Master of Protection
 race: Warforged

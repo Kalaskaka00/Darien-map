@@ -2,7 +2,7 @@
 id: harlequin
 category: npc 
 
-portrait: Harlequin.jpg
+image: Harlequin.jpg
 
 fullname: Harlequin
 race: Half-Elf

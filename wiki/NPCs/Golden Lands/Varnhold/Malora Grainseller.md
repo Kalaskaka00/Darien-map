@@ -2,7 +2,7 @@
 id: malora_grainseller
 category: npc 
 
-portrait: Malora Grainseller.png
+image: Malora Grainseller.png
 
 fullname: Malora Grainseller
 race: Halfling

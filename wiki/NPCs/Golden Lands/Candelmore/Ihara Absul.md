@@ -2,7 +2,7 @@
 id: ihara_absul
 category: npc 
 
-portrait: Ihara Absul.png
+image: Ihara Absul.png
 
 fullname: Ihara Absul, Master of Death
 race: High Elf

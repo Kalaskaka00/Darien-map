@@ -91,7 +91,7 @@ function getHistoryEvents(article){
 
     return world
         .filter(candidate =>
-            candidate.category === "history" &&
+            ["history", "campaign"].includes(candidate.category) &&
             candidate.file !== article.file &&
             historyStartYear(candidate) !== null &&
             canReadArticle(candidate)

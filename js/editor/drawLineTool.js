@@ -1,4 +1,5 @@
 let drawingLine = null;
+let drawingLineShadow = null;
 let drawingPoints = [];
 let drawingConfig = null;
 
@@ -28,7 +29,7 @@ function addLinePoint(e){
 // Allow external code to add points to the current line drawing
 function addPointToLineDrawing(lat, lng){
 
-    if(!drawingConfig || editorMode !== "draw-road" && editorMode !== "draw-river" && editorMode !== "draw-polygon"){
+    if(!drawingConfig || editorMode !== "draw-road" && editorMode !== "draw-river" && editorMode !== "draw-trade-route" && editorMode !== "draw-polygon"){
         return false;
     }
 
@@ -52,12 +53,40 @@ function updateLinePreview(){
 
     }
 
+    if(drawingLineShadow){
+
+        map.removeLayer(drawingLineShadow);
+
+        drawingLineShadow = null;
+
+    }
+
     if(drawingPoints.length < 2)
         return;
 
+    const displayPoints = catmullRomSpline(drawingPoints, 10);
+
+    if(drawingConfig.shadow){
+
+        drawingLineShadow = L.polyline(
+
+            displayPoints,
+
+            {
+                color: drawingConfig.shadow.color ?? "#444343",
+                weight: drawingConfig.weight + (drawingConfig.shadow.extraWidth ?? 4),
+                dashArray: drawingConfig.dashArray ?? null,
+                opacity: drawingConfig.shadow.opacity ?? 0.6,
+                interactive: false
+            }
+
+        ).addTo(map);
+
+    }
+
     drawingLine = L.polyline(
 
-        catmullRomSpline(drawingPoints, 10),
+        displayPoints,
 
         {
             color: drawingConfig.color ?? "#888",
@@ -114,6 +143,14 @@ function stopLineDrawing(){
         map.removeLayer(drawingLine);
 
         drawingLine = null;
+
+    }
+
+    if(drawingLineShadow){
+
+        map.removeLayer(drawingLineShadow);
+
+        drawingLineShadow = null;
 
     }
 

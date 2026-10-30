@@ -2,7 +2,7 @@
 id: jelbli_flukeflow
 category: npc 
 
-portrait: Jelbi Flukeflow.jpg
+image: Jelbi Flukeflow.jpg
 
 fullname: Jelbi Flukeflow
 race: Gnome

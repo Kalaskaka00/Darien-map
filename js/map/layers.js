@@ -6,7 +6,9 @@ const layers = {
 
     rivers: L.layerGroup(),
 
-    roads: L.layerGroup()
+    roads: L.layerGroup(),
+
+    tradeRoutes: L.layerGroup()
 
 };
 
@@ -18,7 +20,9 @@ const mapObjects = {
 
     rivers: {},
 
-    roads: {}
+    roads: {},
+
+    tradeRoutes: {}
 
 };
 
@@ -26,7 +30,8 @@ const layerLabels = {
     nations: "Nations",
     settlements: "Settlements",
     rivers: "Rivers",
-    roads: "Roads"
+    roads: "Roads",
+    tradeRoutes: "Trade Routes"
 };
 
 let applyingLayerOrder = false;

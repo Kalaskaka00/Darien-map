@@ -2,7 +2,7 @@
 id: wit
 category: npc 
 
-portrait: Wit.jpg
+image: Wit.jpg
 
 fullname: Vlaron Content "Wit"
 race: Tiefling

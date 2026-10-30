@@ -2,7 +2,7 @@
 id: garbin_sunheart
 category: npc 
 
-portrait: Garbin Sunheart.png
+image: Garbin Sunheart.png
 
 fullname: Garbin Sunheart
 race: Halfling

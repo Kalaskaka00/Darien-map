@@ -2,7 +2,7 @@
 id: peck_arck
 category: npc 
 
-portrait: Peck Arck.webp
+image: Peck Arck.webp
 
 fullname: Peck Arck
 race: Human

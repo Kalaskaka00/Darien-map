@@ -2,7 +2,7 @@
 id: vacho
 category: npc 
 
-portrait: Vacho.png
+image: Vacho.png
 
 fullname: Vacho (The Hunter)
 race: Lizardfolk

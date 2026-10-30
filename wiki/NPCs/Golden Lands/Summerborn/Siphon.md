@@ -2,7 +2,7 @@
 id: siphon
 category: npc 
 
-portrait: Siphon.avif
+image: Siphon.avif
 
 fullname: Sylthana Wolxaris "Siphon"
 race: Half-elf

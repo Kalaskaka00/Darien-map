@@ -2,7 +2,7 @@
 id: adsatra_sagebrook
 category: npc 
 
-portrait: Adsatra Sagebrook.png
+image: Adsatra Sagebrook.png
 
 fullname: Adsatra Sagebrook
 race: High Elf

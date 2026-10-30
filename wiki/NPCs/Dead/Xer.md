@@ -2,7 +2,7 @@
 id: xer
 category: npc 
 
-portrait: Xer.jpg
+image: Xer.jpg
 
 fullname: Xer
 race: Yuan-Ti

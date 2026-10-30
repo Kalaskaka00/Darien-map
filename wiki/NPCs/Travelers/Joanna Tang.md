@@ -2,7 +2,7 @@
 id: joanna_tang
 category: npc 
 
-portrait: Joanna Tang.png
+image: Joanna Tang.png
 
 fullname: Joanna Tang
 race: Human

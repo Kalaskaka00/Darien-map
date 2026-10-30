@@ -2,7 +2,7 @@
 id: cephal_lorentus
 category: npc 
 
-portrait: Cephal Lorentus.webp
+image: Cephal Lorentus.webp
 
 fullname: Cephal Lorentus
 race: Human

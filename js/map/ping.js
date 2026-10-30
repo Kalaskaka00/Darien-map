@@ -6,6 +6,8 @@ const PING_FALLBACK_CHANNEL_NAME = "darien-map-pings";
 const PING_EVENT_NAME = "ping";
 const LASER_EVENT_NAME = "laser-pointer";
 const LASER_FALLBACK_KEY = "darien-map-laser-pointer";
+const MEASUREMENT_EVENT_NAME = "measurement";
+const MEASUREMENT_FALLBACK_KEY = "darien-map-measurement";
 const LASER_UPDATE_INTERVAL = 32;
 
 let pingHoldTimer = null;
@@ -129,6 +131,11 @@ function handleRemoteLaser(event) {
         return;
     }
 
+    if(!isPlayerToolVisibleToCurrentUser(laser)) {
+        removeRemoteLaser(laser.id);
+        return;
+    }
+
     if(typeof laser.lat !== "number" || typeof laser.lng !== "number")
         return;
 
@@ -136,16 +143,21 @@ function handleRemoteLaser(event) {
 }
 
 function publishLaserPointer(active, latlng) {
+    const visibility = getPlayerToolVisibility();
+    const sender = getPlayerToolSender();
+    const shouldShare = active && visibility !== "private";
     const laser = {
         type: LASER_EVENT_NAME,
         id: laserSessionId,
-        active,
-        lat: latlng?.lat,
-        lng: latlng?.lng,
-        color: getLaserColor()
+        active: shouldShare,
+        visibility,
+        ...sender,
+        color: getLaserColor(),
+        lat: shouldShare ? latlng?.lat : undefined,
+        lng: shouldShare ? latlng?.lng : undefined
     };
 
-    if(!active) {
+    if(!shouldShare) {
         delete laser.lat;
         delete laser.lng;
     }
@@ -179,6 +191,10 @@ function updateLaserPointer(latlng) {
     }
 
     pendingLaserPosition = latlng;
+    if(getPlayerToolVisibility() === "private") {
+        pendingLaserPosition = null;
+        return;
+    }
     if(laserUpdateTimer)
         return;
 
@@ -189,6 +205,10 @@ function updateLaserPointer(latlng) {
 function publishPendingLaserPosition() {
     if(!pendingLaserPosition || !laserActive || !laserVisible)
         return;
+    if(getPlayerToolVisibility() === "private") {
+        pendingLaserPosition = null;
+        return;
+    }
 
     publishLaserPointer(true, pendingLaserPosition);
     pendingLaserPosition = null;
@@ -198,9 +218,27 @@ function flushPendingLaserPosition() {
     laserUpdateTimer = null;
     if(!pendingLaserPosition || !laserActive || !laserVisible)
         return;
+    if(getPlayerToolVisibility() === "private") {
+        pendingLaserPosition = null;
+        return;
+    }
 
     publishPendingLaserPosition();
     laserUpdateTimer = window.setTimeout(flushPendingLaserPosition, LASER_UPDATE_INTERVAL);
+}
+
+function updateLaserPointerVisibility() {
+    window.clearTimeout(laserUpdateTimer);
+    laserUpdateTimer = null;
+    pendingLaserPosition = null;
+    if(!laserActive)
+        return;
+    if(!laserVisible || getPlayerToolVisibility() === "private") {
+        publishLaserPointer(false);
+        return;
+    }
+    if(laserMarker)
+        publishLaserPointer(true, laserMarker.getLatLng());
 }
 
 function hideLaserPointer() {
@@ -295,7 +333,8 @@ function initializePing() {
         pingChannel = pingRealtime
             .channel(realtimeConfig.room || "darien-map")
             .on("broadcast", {event: PING_EVENT_NAME}, handleRemotePing)
-            .on("broadcast", {event: LASER_EVENT_NAME}, handleRemoteLaser);
+            .on("broadcast", {event: LASER_EVENT_NAME}, handleRemoteLaser)
+            .on("broadcast", {event: MEASUREMENT_EVENT_NAME}, event => handleRemoteMeasurement(event));
         pingChannel.subscribe(status => {
             if(status !== "SUBSCRIBED")
                 console.warn("Ping realtime status:", status);
@@ -305,6 +344,7 @@ function initializePing() {
         pingChannel.addEventListener("message", event => {
             handleRemotePing(event);
             handleRemoteLaser(event);
+            handleRemoteMeasurement(event);
         });
     } else {
         window.addEventListener("storage", event => {
@@ -312,6 +352,8 @@ function initializePing() {
                 handleRemotePing(event);
             if(event.key === LASER_FALLBACK_KEY)
                 handleRemoteLaser(event);
+            if(event.key === MEASUREMENT_FALLBACK_KEY)
+                handleRemoteMeasurement(event);
         });
     }
 

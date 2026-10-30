@@ -1,3 +1,15 @@
+---
+id: vital_delivery
+name: Vital Delivery
+category: campaign
+
+image: Vital Delivery.jpg
+
+startYear: 3863
+endYear: 3863
+
+color: "#BF902E"
+---
 # Vital Delivery
 **Session 1:** *A mysterious cargo*
 [[Turtahir]], [[Meel'a]] and [[Agamoos Evercrown]] got a mission from [[Jarlek Grin]] to travel to the baronesses of [[Summerborn]] and deliver a cargo that was secret but important. The group borrowed a wagon, got some fake cargo and set out.

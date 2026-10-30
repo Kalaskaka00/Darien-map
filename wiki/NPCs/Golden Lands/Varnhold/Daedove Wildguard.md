@@ -2,7 +2,7 @@
 id: daedove_wildguard
 category: npc 
 
-portrait: Daedove Wildguard.png
+image: Daedove Wildguard.png
 
 fullname: Daedove Wildguard
 race: Sea Elf

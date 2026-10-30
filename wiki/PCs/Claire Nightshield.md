@@ -2,7 +2,7 @@
 id: claire_nightshield
 category: pc 
 
-portrait: Claire Nightshield.png
+image: Claire Nightshield.png
 
 fullname: Claire Nightshield
 race: Dwarf

@@ -3,7 +3,7 @@ id: vein_grainseller
 category: npc 
 visibility: gm
 
-portrait: Vein Grainseller.jpg
+image: Vein Grainseller.jpg
 
 fullname: Vein Grainseller
 race: Halfling

@@ -2,7 +2,7 @@
 id: meel'a
 category: pc 
 
-portrait: Meel'a.png
+image: Meel'a.png
 
 fullname: Meel'a
 race: Fungoid

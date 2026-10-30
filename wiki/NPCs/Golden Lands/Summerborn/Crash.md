@@ -2,7 +2,7 @@
 id: crash
 category: npc 
 
-portrait: Crash.jpg
+image: Crash.jpg
 
 fullname: Crasus Ridee "Crash"
 race: Human

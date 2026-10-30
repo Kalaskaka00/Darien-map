@@ -128,3 +128,13 @@ This information is shared between Player 1 and Player 2.
 - GMs can see everything and see who has access to each article
 - Public articles show no visibility info
 - The system gracefully handles missing players in the config
+
+## Player Tool Sharing
+
+The player tools panel has one **Show to others** setting for the measure distance and laser pointer tools:
+
+- **Everyone**: all connected viewers can see the measurement and laser pointer.
+- **GM only**: the user who created them and the GM can see them.
+- **Only me**: measurements and laser pointer remain local to the user.
+
+The selection is saved in localStorage.

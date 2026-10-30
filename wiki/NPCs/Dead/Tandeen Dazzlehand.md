@@ -2,7 +2,7 @@
 id: tandeen_dazzlehand
 category: npc 
 
-portrait: 
+image: 
  - Tandeen Dazzlehand.jpg
  - Marionette.jpg
 

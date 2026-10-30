@@ -2,7 +2,7 @@
 id: barnur_keenhold
 category: npc 
 
-portrait: Barnur Keenhold.png
+image: Barnur Keenhold.png
 
 fullname: Barnur Keenhold, The Great Sledge
 race: Dwarf

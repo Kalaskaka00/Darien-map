@@ -2,7 +2,7 @@
 id: asha_rakker
 category: npc 
 
-portrait: Asha Rakker.jpg
+image: Asha Rakker.jpg
 
 fullname: Asha Rakker
 race: Wood Elf

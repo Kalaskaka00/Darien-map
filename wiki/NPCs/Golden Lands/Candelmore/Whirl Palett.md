@@ -2,7 +2,7 @@
 id: whirl_palett
 category: npc 
 
-portrait: Whirl Palett.png
+image: Whirl Palett.png
 
 fullname: Whirl Palett, Master of Visions
 race: Human

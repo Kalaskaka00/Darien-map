@@ -2,7 +2,7 @@
 id: brunno_meadowmane
 category: npc 
 
-portrait: Brunno Meadowmane.webp
+image: Brunno Meadowmane.webp
 
 fullname: Brunno Meadowmane
 race: Human

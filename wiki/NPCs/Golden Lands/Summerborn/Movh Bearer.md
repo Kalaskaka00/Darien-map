@@ -2,7 +2,7 @@
 id: movh_bearer
 category: npc 
 
-portrait: Movh Bearer.png
+image: Movh Bearer.png
 
 fullname: Movh Bearer
 race: Human

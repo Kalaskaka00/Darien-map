@@ -2,7 +2,7 @@
 id: magrie_beeret
 category: npc 
 
-portrait: Magrie Beeret.jpg
+image: Magrie Beeret.jpg
 
 fullname: Envoy, Curator, Lady Magrie Beeret
 race: Half-elf

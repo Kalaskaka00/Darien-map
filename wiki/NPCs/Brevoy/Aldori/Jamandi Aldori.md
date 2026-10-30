@@ -2,7 +2,7 @@
 id: jamandi_aldori
 category: npc 
 
-portrait: Jamandi Aldori.webp
+image: Jamandi Aldori.webp
 
 fullname: Lady Jamandi Aldori, Swordlord of Brevoy, Lord Protector of Restov
 race: Human

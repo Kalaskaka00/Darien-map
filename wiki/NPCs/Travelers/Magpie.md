@@ -2,7 +2,7 @@
 id: magpie
 category: npc 
 
-portrait: Magpie.png
+image: Magpie.png
 
 fullname: Magpie
 race: ???

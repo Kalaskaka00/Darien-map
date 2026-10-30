@@ -2,7 +2,7 @@
 id: errard_specher
 category: npc 
 
-portrait: Errard Specher.jpg
+image: Errard Specher.jpg
 
 fullname: Errard Specher
 race: Human

@@ -2,7 +2,7 @@
 id: yelgolor_remoudou
 category: npc 
 
-portrait: Yelgolor Remoudou.png
+image: Yelgolor Remoudou.png
 
 fullname: Yelgolor Remoudou
 race: Firbolg

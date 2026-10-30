@@ -2,7 +2,7 @@
 id: milo_grainseller
 category: npc 
 
-portrait: Milo Grainseller.jpg
+image: Milo Grainseller.jpg
 
 fullname: Treasurer Milo Grainseller
 race: Halfling

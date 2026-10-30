@@ -2,7 +2,7 @@
 id: ox
 category: npc 
 
-portrait: Ox.png
+image: Ox.png
 
 fullname: Shudzok The Barbaric "Ox"
 race: Orc

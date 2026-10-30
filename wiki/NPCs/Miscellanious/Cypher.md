@@ -2,7 +2,7 @@
 id: cypher
 category: npc 
 
-portrait: Cypher.jpg
+image: Cypher.jpg
 
 fullname: Cypher
 race: 

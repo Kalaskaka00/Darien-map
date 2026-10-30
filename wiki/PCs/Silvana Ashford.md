@@ -2,7 +2,7 @@
 id: silvana_ashford
 category: pc 
 
-portrait: Silvana Ashford.png
+image: Silvana Ashford.png
 
 fullname: Silvana Ashford
 race: Hexblood

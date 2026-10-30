@@ -1,3 +1,16 @@
+---
+id: kingmaker
+name: Kingmaker
+category: campaign
+
+image: Kingmaker.avif
+
+startYear: 3862
+endYear: 3863
+
+color: "#5C0BB5"
+---
+
 # Kingmaker
 ## Act 1 - The Stolen Lands
 **Session 1:** *Assault on Aldori Mansion*
@@ -314,3 +327,19 @@ The baronesses handed over [[Nentrah]] in to the [[Udoon family]] custody on the
 The baronesses denied [[Jamandi Aldori]]s offer to aid in a coup against the crown and making the [[Golden Lands]] a vassal of the new [[Brevoy]].
 
 Newly Introduced NPCs: [[Talia Andureen]], [[Ekon Udoon]]
+
+**Session 51:** *Everything all at once*
+Taking a breath after the Summerborn Games [[Silvana Ashford]], [[Bree Caley]] and [[Conleth Umbra]] most things started to go awry simultaneously.
+ - [[Vondal Sandwashed]] sent a letter to [[Bree Caley]] explaining that he, [[Peck Arck]] and [[Zara]] had found some interesting ruins in the [[Varnhold]] area.
+ - [[Pitax]] through [[Farlamin Mistshaper]] sent a letter to [[Bille Frostbite]] and [[Conleth Umbra]] about an arranged meeting with the lizardfolks.
+ - [[Wit]] told [[Silvana Ashford]] about a criminal organisation he and a partner was investigating within their borders dealing with kidnappings, thefts and other illegality.
+ - [[Drift]] gave a third ominous prophecy and then collapsed into a coma.
+ - [[Cephal Lorentus]] warned of a [[Mivon]] delegation with [[Jonas Arc]] at its head coming with the permission of the queen [[Talia Andureen]]. 
+ - [[Adsatra Sagebrook]] panicked told the protagonists that [[Annj Bearer]] and the [[Candle Mages]] were in trouble due to rifts with the [[Dream Realm]] at [[Candelmore]].
+ - [[Errard Specher]] with [[Chirp]] created protests demanding a constitution and clearer laws.
+ - [[n'Neb]] through a message informed that the swamps were being poisoned and a lizardfolk civil war was brewing.
+
+With all the crises going on at once te protagonists took three immediate actions:
+1. They sent [[Cephal Lorentus]] to slow down the [[Mivon]] delegation.
+2. They temporarily calmed the protesting crowds.
+3. They set out towards [[Candelmore]].

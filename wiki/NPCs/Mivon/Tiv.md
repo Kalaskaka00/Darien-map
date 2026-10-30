@@ -2,7 +2,7 @@
 id: tiv
 category: npc 
 
-portrait: Tiv.webp
+image: Tiv.webp
 
 fullname: Tiv, Cold Wanderer
 race: Kobold

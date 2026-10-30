@@ -2,7 +2,7 @@
 id: dwen'zur_raincleanser
 category: npc 
 
-portrait: Dwen'zur Raincleanser.png
+image: Dwen'zur Raincleanser.png
 
 fullname: Great Shaman Dwen'zur Raincleanser
 race: Centaur

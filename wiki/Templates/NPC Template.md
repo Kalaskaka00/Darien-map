@@ -4,7 +4,7 @@ visibility: gm
 id: <% tp.file.title.toLowerCase().replace(/ /g,"_") %>
 category: npc 
 
-portrait: <% tp.file.title %>.png
+image: <% tp.file.title %>.png
 
 fullname: <% tp.file.title %>
 race: 

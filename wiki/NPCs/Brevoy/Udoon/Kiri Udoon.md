@@ -2,7 +2,7 @@
 id: kiri_udoon
 category: npc 
 
-portrait: Kiri Udoon.png
+image: Kiri Udoon.png
 
 fullname: Lady Kiri Udoon
 race: Goliath

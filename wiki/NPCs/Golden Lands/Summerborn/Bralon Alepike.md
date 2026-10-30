@@ -2,7 +2,7 @@
 id: bralon_alepike
 category: npc 
 
-portrait: Bralon Alepike.png
+image: Bralon Alepike.png
 
 fullname: Bralon Alepike
 race: Dwarf

@@ -85,7 +85,7 @@
         "map": {
             "x": 700,
             "y": 585,
-            "icon": "Small_City_Stone_Wall_Towers"
+            "icon": "Small_City_Stone_Wall"
         },
         "view": null,
         "border": null,
@@ -109,7 +109,7 @@
         "map": {
             "x": 838,
             "y": 566,
-            "icon": "Small_City_Stone_Wall_Towers"
+            "icon": "Small_City_Stone_Wall"
         },
         "view": null,
         "border": null,
@@ -209,7 +209,7 @@
         "map": {
             "x": 1025,
             "y": 467,
-            "icon": "Village"
+            "icon": "Small_Village"
         },
         "view": null,
         "border": null,
@@ -259,6 +259,29 @@
         ]
     },
     {
+        "id": "rough_loch",
+        "name": "Rough Loch",
+        "category": "settlement",
+        "file": "Settlements/Rough Loch.md",
+        "map": {
+            "x": 681,
+            "y": 866,
+            "icon": "Underwater_Village"
+        },
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Numeria",
+            "Rare Materials"
+        ]
+    },
+    {
         "id": "restov",
         "name": "Restov",
         "category": "settlement",
@@ -266,7 +289,7 @@
         "map": {
             "x": 1065,
             "y": 690,
-            "icon": "Small_City_Stone_Wall_Towers"
+            "icon": "Small_City_Stone_Wall"
         },
         "view": null,
         "border": null,
@@ -346,7 +369,7 @@
         "map": {
             "x": 966,
             "y": 689,
-            "icon": "Small_City_Stone_Wall_Towers"
+            "icon": "Small_City_Stone_Wall"
         },
         "view": null,
         "border": null,
@@ -374,7 +397,7 @@
         "map": {
             "x": 360,
             "y": 403,
-            "icon": "Small_City"
+            "icon": "Drow_City"
         },
         "view": null,
         "border": null,
@@ -467,6 +490,29 @@
         ]
     },
     {
+        "id": "iceless_deep",
+        "name": "Iceless Deep",
+        "category": "settlement",
+        "file": "Settlements/Iceless Deep.md",
+        "map": {
+            "x": 561,
+            "y": 751,
+            "icon": "Dwarven_Keep"
+        },
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Dwarven Keeps",
+            "Rare Materials"
+        ]
+    },
+    {
         "id": "great_gate",
         "name": "Great Gate",
         "category": "settlement",
@@ -474,7 +520,7 @@
         "map": {
             "x": 670,
             "y": 730,
-            "icon": "Castle"
+            "icon": "Dwarven_Keep"
         },
         "view": null,
         "border": null,
@@ -498,7 +544,7 @@
         "map": {
             "x": 600,
             "y": 257,
-            "icon": "Large_City_Stone_Wall_Towers"
+            "icon": "Large_City_Stone_Wall"
         },
         "view": null,
         "border": null,
@@ -1598,40 +1644,6 @@
         ]
     },
     {
-        "id": "nentrah",
-        "name": "Nentrah",
-        "category": "npc",
-        "file": "NPCs/Golden Lands/Wanderers/Nentrah.md",
-        "map": null,
-        "view": null,
-        "border": null,
-        "color": "#1C1B1B",
-        "visibility": null,
-        "related": null,
-        "gmReferences": [
-            "Xia"
-        ],
-        "startYear": null,
-        "endYear": null,
-        "references": [
-            "Bree Caley",
-            "Candle Mages",
-            "Conleth Umbra",
-            "Evergreen",
-            "Harlequin",
-            "Joker",
-            "Lord of Stories",
-            "Mime",
-            "Myron",
-            "Pitax",
-            "Silvana Ashford",
-            "Stag Lord",
-            "Summerborn",
-            "Thundarak",
-            "Waking World"
-        ]
-    },
-    {
         "id": "myron",
         "name": "Myron",
         "category": "npc",
@@ -1684,7 +1696,7 @@
         "view": null,
         "border": null,
         "color": "#1C1B1B",
-        "visibility": "gm",
+        "visibility": null,
         "related": null,
         "gmReferences": [
             "Xia",
@@ -2577,6 +2589,7 @@
             "Claire Nightshield",
             "Conleth Umbra",
             "Felrick Kindhelm",
+            "Iceless Deep",
             "Laura Faelamin",
             "Numeria",
             "Silvana Ashford"
@@ -3503,6 +3516,41 @@
             "Kiri Udoon",
             "Maameo Udoon",
             "Udoon family"
+        ]
+    },
+    {
+        "id": "nentrah",
+        "name": "Nentrah",
+        "category": "npc",
+        "file": "NPCs/Brevoy/Udoon/Nentrah.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#1C1B1B",
+        "visibility": null,
+        "related": null,
+        "gmReferences": [
+            "Xia"
+        ],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Bree Caley",
+            "Candle Mages",
+            "Conleth Umbra",
+            "Evergreen",
+            "Harlequin",
+            "Joker",
+            "Lord of Stories",
+            "Mime",
+            "Myron",
+            "Pitax",
+            "Silvana Ashford",
+            "Stag Lord",
+            "Summerborn",
+            "Thundarak",
+            "Udoon family",
+            "Waking World"
         ]
     },
     {
@@ -5032,6 +5080,7 @@
             "The Manchu Conquests",
             "The Rill War",
             "The Wars of Ichor",
+            "Vital Delivery",
             "War of the beards"
         ]
     },
@@ -5697,7 +5746,10 @@
         "startYear": null,
         "endYear": null,
         "references": [
-            "Annj Bearer"
+            "Annj Bearer",
+            "Bralon Alepike",
+            "Iceless Deep",
+            "Rough Loch"
         ]
     },
     {
@@ -5731,19 +5783,19 @@
         ]
     },
     {
-        "id": null,
+        "id": "vital_delivery",
         "name": "Vital Delivery",
-        "category": "Unknown",
+        "category": "campaign",
         "file": "Adventures/Vital Delivery.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#BF902E",
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "startYear": null,
-        "endYear": null,
+        "startYear": 3863,
+        "endYear": 3863,
         "references": [
             "Agamoos Evercrown",
             "Asha Rakker",
@@ -5764,19 +5816,19 @@
         ]
     },
     {
-        "id": null,
+        "id": "kingmaker",
         "name": "Kingmaker",
-        "category": "Unknown",
+        "category": "campaign",
         "file": "Adventures/Kingmaker.md",
         "map": null,
         "view": null,
         "border": null,
-        "color": null,
+        "color": "#5C0BB5",
         "visibility": null,
         "related": null,
         "gmReferences": [],
-        "startYear": null,
-        "endYear": null,
+        "startYear": 3862,
+        "endYear": 3863,
         "references": [
             "Adsatra Sagebrook",
             "Aelthot",

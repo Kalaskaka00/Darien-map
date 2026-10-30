@@ -15,11 +15,12 @@
     <link rel="stylesheet" href="css/deity.css?v=text-color-1">
     <link rel="stylesheet" href="css/family.css?v=nation-article-1">
     <link rel="stylesheet" href="css/history.css">
+    <link rel="stylesheet" href="css/campaign.css">
     <link rel="stylesheet" href="css/settlement.css">
     <link rel="stylesheet" href="css/image-viewer.css">
     <link rel="stylesheet" href="css/search.css">
-    <link rel="stylesheet" href="css/wiki.css?v=nation-summary-3">
-    <link rel="stylesheet" href="css/player-tools.css?v=player-color-1">
+    <link rel="stylesheet" href="css/wiki.css?v=tab-reordering-1">
+    <link rel="stylesheet" href="css/player-tools.css?v=player-tool-visibility-2">
     <link rel="stylesheet" href="css/player-presence.css">
     <link rel="stylesheet" href="css/notepad.css?v=global-notepads-1">
 </head>
@@ -108,6 +109,9 @@
         <button id="draw-river">
             Draw River
         </button>
+        <button id="draw-trade-route">
+            Draw Trade Route
+        </button>
         <button id="edit-shape">
             Edit Shape
         </button>
@@ -184,6 +188,12 @@
             <div id="player-status-display">No one</div>
         </div>
 
+        <div id="player-tool-visibility-control">
+            <span class="player-status-label">Show to others:</span>
+            <button id="player-tool-visibility" type="button" aria-label="Show to others: Everyone">
+                Everyone
+            </button>
+        </div>
         <button id="measure-tool" type="button">Measure distance</button>
         <button id="laser-tool" type="button" aria-pressed="false">Laser pointer</button>
 
@@ -267,6 +277,47 @@
 
 </div>
 
+<div id="trade-route-form" class="editor-form" style="display:none;">
+
+    <div class="editor-form-title">
+        New Trade Route
+    </div>
+
+    <label>
+        Name
+        <input id="trade-route-name" type="text" required>
+    </label>
+
+    <label>
+        Route size
+        <select id="trade-route-class">
+            <option value="major">Major Trade Route</option>
+            <option value="minor" selected>Minor Trade Route</option>
+        </select>
+    </label>
+
+    <label>
+        Route type
+        <select id="trade-route-mode">
+            <option value="land" selected>Land based</option>
+            <option value="water">Water based</option>
+            <option value="air">Air based</option>
+            <option value="underground">Underground</option>
+        </select>
+    </label>
+
+    <label>
+        Wiki article (optional)
+        <input id="trade-route-article" type="text">
+    </label>
+
+    <div class="editor-form-buttons">
+        <button id="trade-route-cancel">Cancel</button>
+        <button id="trade-route-create">Create</button>
+    </div>
+
+</div>
+
 <div id="camera-info"></div>
 
 <!-- Resources -->
@@ -287,8 +338,10 @@
 <script src="js/renderers/lineRenderer.js?v=snap-2"></script>
 <script src="js/map/layers/roadStyles.js"></script>
 <script src="js/map/layers/riverStyles.js"></script>
+<script src="js/map/layers/tradeRouteStyles.js"></script>
 <script src="js/map/layers/rivers.js"></script>
 <script src="js/map/layers/roads.js"></script>
+<script src="js/map/layers/tradeRoutes.js"></script>
 
 <!-- Utils -->
 <script src="js/utils/frontmatter.js"></script>
@@ -307,6 +360,7 @@
 <script src="js/wiki/articles/families.js?v=organisation-text-color-1"></script>
 <script src="js/wiki/articles/organisations.js"></script>
 <script src="js/wiki/articles/history.js?v=local-year-1"></script>
+<script src="js/wiki/articles/campaigns.js"></script>
 <script src="js/wiki/articles/settlements.js?v=snap-4"></script>
 <script src="js/wiki/articles/nations.js?v=nation-highlights-3"></script>
 <script src="js/wiki/articles.js"></script>
@@ -314,7 +368,7 @@
 <script src="js/wiki/permissions.js?v=article-share-3"></script>
 <script src="js/ui/imageViewer.js"></script>
 <script src="js/ui/article.js?v=nation-summary-2"></script>
-<script src="js/ui/playerTools.js?v=player-color-1"></script>
+<script src="js/ui/playerTools.js?v=player-tool-visibility-2"></script>
 <script src="js/ui/playerPresence.js"></script>
 <script src="js/ui/notepad.js?v=global-notepads-2"></script>
 <script src="js/wiki/wiki.js"></script>
@@ -322,7 +376,7 @@
 <script src="js/wiki/search.js"></script>
 <script src="js/wiki/history.js"></script>
 <script src="js/wiki/directory.js?v=preview"></script>
-<script src="js/wiki/tabs.js?v=article-share-3"></script>
+<script src="js/wiki/tabs.js?v=tab-reordering-1"></script>
 <script src="js/wiki/share.js?v=article-share-4"></script>
 
 <!-- Editor -->
@@ -337,6 +391,7 @@
 <script src="js/editor/build/drawPolygon.js"></script>
 <script src="js/editor/build/drawRoad.js"></script>
 <script src="js/editor/build/drawRiver.js"></script>
+<script src="js/editor/build/drawTradeRoute.js"></script>
 <script src="js/editor/build/editShape.js"></script>
 <script src="js/editor/build/moveSettlement.js"></script>
 

@@ -2,7 +2,7 @@
 id: chorrad_troll_king
 category: npc 
 
-portrait: Chorrad Troll King.png
+image: Chorrad Troll King.png
 
 fullname: Chorrad Troll King
 race: Troll

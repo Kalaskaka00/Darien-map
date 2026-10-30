@@ -17,6 +17,7 @@ const CONFIG = {
         layerOrder: [
             "nations",
             "settlements",
+            "tradeRoutes",
             "roads",
             "rivers"
         ],
@@ -24,7 +25,8 @@ const CONFIG = {
             nations: true,
             rivers: true,
             roads: true,
-            settlements: true
+            settlements: true,
+            tradeRoutes: true
         },
         parchmentOverhang: {
             horizontal: 50,

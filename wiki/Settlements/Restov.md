@@ -9,7 +9,7 @@ ruler: [[Aldori family]]
 map:
   x: 1065
   y: 690
-  icon: Small_City_Stone_Wall_Towers
+  icon: Small_City_Stone_Wall
 ---
 # Restov
 *A small fortress city to the east in Brevoy, home of the [[Aldori family]] and [[Swordlords of Brevoy]].*

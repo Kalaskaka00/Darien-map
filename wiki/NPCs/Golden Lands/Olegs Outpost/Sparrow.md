@@ -2,7 +2,7 @@
 id: sparrow
 category: npc 
 
-portrait: Sparrow.jpg
+image: Sparrow.jpg
 
 fullname: Sunfer Perhern "Sparrow"
 race: Half-orc

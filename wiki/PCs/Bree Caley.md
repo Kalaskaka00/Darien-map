@@ -2,7 +2,7 @@
 id: bree_caley
 category: pc 
 
-portrait: Bree Caley.jpg
+image: Bree Caley.jpg
 
 fullname: Bree Caley
 race: Halfling

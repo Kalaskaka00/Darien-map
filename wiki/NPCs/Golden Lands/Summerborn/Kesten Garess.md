@@ -2,7 +2,7 @@
 id: kesten_garess
 category: npc 
 
-portrait: Kesten Garess.webp
+image: Kesten Garess.webp
 
 fullname: General Kesten Garess
 race: Human

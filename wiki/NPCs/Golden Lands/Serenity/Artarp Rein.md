@@ -2,7 +2,7 @@
 id: artarp_rein
 category: npc 
 
-portrait: Artarp Rein.webp
+image: Artarp Rein.webp
 
 fullname: Mist Speaker Artarp Rein
 race: Half_elf

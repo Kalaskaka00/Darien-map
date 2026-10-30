@@ -2,7 +2,7 @@
 id: jonas_arc
 category: npc 
 
-portrait: Jonas Arc.jpg
+image: Jonas Arc.jpg
 
 fullname: Jonas Arc, Hero of Mivon
 race: Human

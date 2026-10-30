@@ -2,7 +2,7 @@
 id: yarek_gray
 category: npc 
 
-portrait: Yarek Gray.jpg
+image: Yarek Gray.jpg
 
 fullname: Yarek Gray
 race: 

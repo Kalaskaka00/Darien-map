@@ -7,7 +7,7 @@ nation:
 map:
   x: 360
   y: 403
-  icon: Small_City
+  icon: Drow_City
 ---
 # Nerrez
 *Nerrez is the only city of [[Daggermark]] that is open for outsiders but it is strictly regulated and often described as dangerous.*

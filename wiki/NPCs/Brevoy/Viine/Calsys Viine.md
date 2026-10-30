@@ -2,7 +2,7 @@
 id: calsys_viine
 category: npc 
 
-portrait: Calsys Viine.jpg
+image: Calsys Viine.jpg
 
 fullname: Lady Calsys Viine
 race: Halfling

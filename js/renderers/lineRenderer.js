@@ -153,6 +153,7 @@ function drawLine(object, options){
             color: options.shadow.color ?? "#444343",
             weight: options.weight + (options.shadow.extraWidth ?? 4),
             opacity: options.shadow.opacity ?? 0.6,
+            dashArray: options.dashArray ?? null,
             interactive: false,
             ...(options.pane ? { pane: options.pane } : {})
         }).addTo(options.layer);
@@ -188,6 +189,14 @@ function drawLine(object, options){
         tooltip.append(object.name);
         tooltip.append(document.createElement("br"));
         tooltip.append(`Type: ${formatLineType(object.class)}`);
+
+        if(object.type === "tradeRoute"){
+
+            tooltip.append(document.createElement("br"));
+            tooltip.append(`Based: ${formatLineType(object.mode)}`);
+
+        }
+
         tooltip.append(document.createElement("br"));
         tooltip.append(`Length: ${kilometers.toFixed(0)} km (${miles.toFixed(0)} miles)`);
 

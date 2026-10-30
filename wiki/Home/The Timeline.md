@@ -15,4 +15,4 @@ The years are sometimes put as AA for After Anorchrism or BA Before Anorchrism, 
 - **Year {{year:3702}}** [[The Manchu Conquests]] ends with the [[Manchu Tribes]] almost collapsing in on itself.
 - **Year {{year:3843}}** [[The Rill War]] between [[Brevoy]], [[Mivon]] and [[Numeria]], [[Pitax]] raged.
 - **Year {{year:3847}}** [[The Rill War]] ended in the [[Battle of Fingers]] and [[Brevoy]] building [[Roughen Fort]].
-- **Year {{year:3862}}** [[Kingmaker]] campaign starts.
+- **Year {{year:3862}}** [[Kingmaker]] campaign starts and [[Vital Delivery]] happens.

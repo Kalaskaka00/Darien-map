@@ -1,9 +1,8 @@
 ---
 id: lord_of_stories
 category: npc 
-visibility: gm
 
-portrait: Lord of Stories.jpg
+image: Lord of Stories.jpg
 
 fullname: Xia "Lord of Stories"
 race: Avatar of a God

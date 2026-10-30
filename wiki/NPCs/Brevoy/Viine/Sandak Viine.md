@@ -2,7 +2,7 @@
 id: sandak_viine
 category: npc 
 
-portrait: Sandak Viine.png
+image: Sandak Viine.png
 
 fullname: Lord Sandak Viine, "Peacemaker"
 race: 

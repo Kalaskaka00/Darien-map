@@ -2,7 +2,7 @@
 id: maameo_udoon
 category: npc 
 
-portrait: Maameo Udoon.png
+image: Maameo Udoon.png
 
 fullname: Lady, Maameo Udoon "The Sledge"
 race: Goliath

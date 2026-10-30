@@ -2,7 +2,7 @@
 id: egizaed
 category: npc 
 
-portrait: Egizaed.png
+image: Egizaed.png
 
 fullname: Egizaed
 race: Copper Dragon

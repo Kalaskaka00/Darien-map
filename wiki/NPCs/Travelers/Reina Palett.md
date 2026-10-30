@@ -2,7 +2,7 @@
 id: reina_palett
 category: npc 
 
-portrait: Reina Palett.webp
+image: Reina Palett.webp
 
 fullname: Reina Palett
 race: Human

@@ -2,7 +2,7 @@
 id: ichor
 category: npc 
 
-portrait: Ichor.jpg
+image: Ichor.jpg
 
 fullname: Ichor
 race: 

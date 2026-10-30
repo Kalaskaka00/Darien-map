@@ -2,7 +2,7 @@
 id: emily_viine
 category: npc 
 
-portrait: Emily Viine.png
+image: Emily Viine.png
 
 fullname: Emily Viine
 race: Halfling

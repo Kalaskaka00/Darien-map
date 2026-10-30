@@ -2,7 +2,7 @@
 id: heren_blaze
 category: npc 
 
-portrait: Heren Blaze.jpg
+image: Heren Blaze.jpg
 
 fullname: Heren Blaze "Firebrand"
 race: High Elf

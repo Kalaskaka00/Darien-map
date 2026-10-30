@@ -2,7 +2,7 @@
 id: rita_neat
 category: npc 
 
-portrait: Rita Neat.png
+image: Rita Neat.png
 
 fullname: Rita Neat
 race: Half-Elf

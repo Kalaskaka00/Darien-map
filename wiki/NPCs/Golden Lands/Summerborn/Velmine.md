@@ -2,7 +2,7 @@
 id: velmine
 category: npc 
 
-portrait: Velmine.png
+image: Velmine.png
 
 fullname: Velmine "Demon Hunter"
 race: Tiefling

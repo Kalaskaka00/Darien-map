@@ -2,7 +2,7 @@
 id: felrick_kindhelm
 category: npc 
 
-portrait: Felrick Kindhelm.jpg
+image: Felrick Kindhelm.jpg
 
 fullname: Felrick Kindhelm
 race: Gnome

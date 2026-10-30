@@ -9,7 +9,7 @@ ruler:
 map:
   x: 600
   y: 257
-  icon: Large_City_Stone_Wall_Towers
+  icon: Large_City_Stone_Wall
 ---
 # Garent
 *The city of Guilds and trade, the capital of [[Gralton]]*

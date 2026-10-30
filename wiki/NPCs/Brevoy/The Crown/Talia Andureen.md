@@ -2,7 +2,7 @@
 id: talia_andureen
 category: npc 
 
-portrait: Talia Andureen.jpg
+image: Talia Andureen.jpg
 
 fullname: Queen Talia Andureen I
 race: Human

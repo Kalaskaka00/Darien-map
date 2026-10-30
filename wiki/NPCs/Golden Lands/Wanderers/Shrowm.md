@@ -2,7 +2,7 @@
 id: shrowm
 category: npc 
 
-portrait: Shrowm.png
+image: Shrowm.png
 
 fullname: Shrowm
 race: Human (Undead)

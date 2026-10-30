@@ -2,7 +2,7 @@
 id: zara
 category: npc 
 
-portrait: Zara.jpg
+image: Zara.jpg
 
 fullname: Zara
 race: Half-Elf (Werelynx)

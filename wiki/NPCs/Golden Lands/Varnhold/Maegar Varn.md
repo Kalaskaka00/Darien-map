@@ -2,7 +2,7 @@
 id: maegar_varn 
 category: npc 
 
-portrait: Maegar Varn.webp 
+image: Maegar Varn.webp 
 
 fullname: Lord Maegar Varn 
 race: Human

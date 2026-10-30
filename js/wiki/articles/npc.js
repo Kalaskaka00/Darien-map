@@ -1,8 +1,8 @@
 function getPortraits(article){
 
-    const portraits = Array.isArray(article.portrait)
-        ? article.portrait
-        : [article.portrait || `${article.fullname}.webp`];
+    const portraits = Array.isArray(article.image)
+        ? article.image
+        : [article.image || `${article.fullname}.webp`];
 
     return portraits.filter(Boolean);
 

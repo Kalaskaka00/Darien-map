@@ -2,7 +2,7 @@
 id: allas_dawnd
 category: npc 
 
-portrait: Allas Dawnd.jpg
+image: Allas Dawnd.jpg
 
 fullname: Allas Dawnd
 race: Half-Elf

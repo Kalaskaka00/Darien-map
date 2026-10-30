@@ -2,7 +2,7 @@
 id: ekon_udoon
 category: npc 
 
-portrait: Ekon Udoon.png
+image: Ekon Udoon.png
 
 fullname: Lord Ekon Udoon
 race: Goliath
