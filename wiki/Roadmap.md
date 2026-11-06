@@ -17,6 +17,7 @@ visibility: gm
 - Lines don't render of screen
 - Not able to select roads and rivers
 - Bug with layer order trade routes load in under roads
+- Limt Zoom out
 ## Map
 - Lakes
 - Weather
