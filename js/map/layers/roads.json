@@ -208,6 +208,35 @@
         ]
     },
     {
+        "id": "new_road_1793545743149",
+        "name": "Road to Sandor",
+        "type": "road",
+        "class": "trail",
+        "article": null,
+        "points": [
+            [
+                349,
+                1225
+            ],
+            [
+                355,
+                1241
+            ],
+            [
+                367,
+                1259
+            ],
+            [
+                380,
+                1256
+            ],
+            [
+                385,
+                1269
+            ]
+        ]
+    },
+    {
         "id": "new_road_1789310710207",
         "name": "Stolen Road",
         "type": "road",

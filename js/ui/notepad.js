@@ -90,6 +90,18 @@ function updateNotepadOwnerOptions() {
     return preferredOwner;
 }
 
+function getNotepadOwnerDescription(owner) {
+    const visibilityNote = " · app-only visibility; database access is not authenticated";
+    if(owner === "Party")
+        return `Shared Party notebook · visible and editable by everyone in the app${visibilityNote}`;
+    if(owner === "GM")
+        return `GM notebook · visible to the GM in the app${visibilityNote}`;
+
+    return isGM
+        ? `${owner}'s notebook · visible to ${owner} and the GM in the app (view-only)${visibilityNote}`
+        : `${owner} notebook · visible to you and the GM in the app${visibilityNote}`;
+}
+
 function isNotepadReadOnly() {
     if(isGM)
         return notepadViewedOwner !== "GM" && notepadViewedOwner !== "Party";
@@ -327,7 +339,7 @@ function saveNotepad(options = {}) {
             notepadSavedGlobally = true;
             notepadStorageError = false;
             notepadDataInvalid = false;
-            setNotepadStatus("Saved globally · publicly readable and editable");
+            setNotepadStatus("Saved to shared storage.");
             renderNotepadControls();
             if(!notepadBackupsPanel.hidden)
                 renderNotepadBackups();
@@ -496,17 +508,11 @@ function renderNotepad() {
         notepadViewedOwner = selectedOwner;
         notepadEditing = false;
         loadNotepad(notepadViewedOwner);
-        notepadOwnerLabel.textContent = `${selectedOwner} notebook · cloud-synced · publicly readable/editable`;
+        notepadOwnerLabel.textContent = getNotepadOwnerDescription(selectedOwner);
         return;
     }
 
-    notepadOwnerLabel.textContent = notepadViewedOwner === "Party"
-        ? "Shared Party notebook · cloud-synced · publicly readable/editable"
-        : notepadViewedOwner === "GM"
-            ? "GM notebook · cloud-synced · publicly readable/editable"
-            : isGM
-                ? `${notepadViewedOwner}'s notebook · cloud-synced · publicly readable/editable (view-only here)`
-                : `${notepadViewedOwner} notebook · cloud-synced · publicly readable/editable`;
+    notepadOwnerLabel.textContent = getNotepadOwnerDescription(notepadViewedOwner);
 
     const hasNotebook = Boolean(notepadState);
     const readOnly = isNotepadReadOnly() || !hasNotebook || notepadLoading;
@@ -574,11 +580,11 @@ function renderNotepad() {
     else if(notepadPreferenceError)
         setNotepadStatus("Notepad size preference could not be saved.", true);
     else if(readOnly)
-        setNotepadStatus("Read-only here; anyone can still edit notebooks through the public API.");
+        setNotepadStatus("Read-only in this view.");
     else if(notepadSavedGlobally)
-        setNotepadStatus("Saved globally · publicly readable and editable");
+        setNotepadStatus("Saved to shared storage.");
     else
-        setNotepadStatus("Ready to save globally · publicly readable and editable");
+        setNotepadStatus("Ready to save to shared storage.");
 
     if(!notepadBackupsPanel.hidden)
         renderNotepadBackups();
@@ -639,6 +645,7 @@ notepadOwnerPicker.addEventListener("change", () => {
     }
     notepadViewedOwner = notepadOwnerPicker.value;
     notepadEditing = false;
+    loadNotepad(notepadViewedOwner);
     renderNotepad();
 });
 

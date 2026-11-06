@@ -5,6 +5,9 @@ const playerStatusDisplay = document.getElementById("player-status-display");
 const measureTool = document.getElementById("measure-tool");
 const playerToolVisibilityButton = document.getElementById("player-tool-visibility");
 const laserTool = document.getElementById("laser-tool");
+const mapToolVisibilityToggle = document.getElementById("map-tool-visibility-toggle");
+const mapToolVisibilityPanel = document.getElementById("map-tool-visibility-panel");
+const mapPinToolButton = document.getElementById("map-pin-tool");
 
 const PLAYER_TOOL_VISIBILITY_KEY = "darien-map-measurement-visibility";
 const PLAYER_TOOL_VISIBILITY_STAGES = [
@@ -342,6 +345,7 @@ function handleMeasurementContextMenu(e) {
 function toggleMeasureTool() {
     const active = !isMeasureToolActive();
     measureTool.classList.toggle("active", active);
+    measureTool.setAttribute("aria-pressed", String(active));
 
     if(active) {
         measurementFinished = false;
@@ -393,6 +397,20 @@ function updatePlayerToolVisibilityButton() {
     playerToolVisibilityButton.textContent = stage.label;
     playerToolVisibilityButton.setAttribute("aria-label", `Show to others: ${stage.label}`);
     playerToolVisibilityButton.dataset.visibility = stage.value;
+
+    const visibilityColor = stage.value === "everyone"
+        ? "#2878d0"
+        : stage.value === "gm"
+            ? CONFIG.gmColor
+            : isGM
+                ? CONFIG.gmColor
+                : currentPlayer
+                    ? CONFIG.players[currentPlayer] || "#808080"
+                    : "#808080";
+    mapToolVisibilityToggle.style.setProperty("--tool-visibility-color", visibilityColor);
+    mapToolVisibilityToggle.setAttribute("aria-label", `Tool visibility: ${stage.label}`);
+    mapToolVisibilityToggle.dataset.tooltip = `Tool visibility: ${stage.label}`;
+    mapToolVisibilityToggle.dataset.visibility = stage.value;
 }
 
 // Update player status display
@@ -418,14 +436,26 @@ function updatePlayerStatus() {
 
 // Toggle player tools panel
 playerToolsToggle.onclick = function() {
-    playerToolsPanel.classList.toggle("open");
-    playerToolsToggle.classList.toggle("active");
+    const isOpen = playerToolsPanel.classList.toggle("open");
+    playerToolsToggle.classList.toggle("active", isOpen);
+    playerToolsToggle.setAttribute("aria-expanded", String(isOpen));
 };
 
 const playerTools = document.getElementById("player-tools");
 const editorPanelObserver = new MutationObserver(updatePlayerToolsPosition);
 editorPanelObserver.observe(editorPanel, {attributes: true, attributeFilter: ["class"]});
 window.addEventListener("resize", updatePlayerToolsPosition);
+
+function closeMapToolVisibilityPanel() {
+    mapToolVisibilityPanel.classList.remove("open");
+    mapToolVisibilityToggle.setAttribute("aria-expanded", "false");
+}
+
+mapToolVisibilityToggle.addEventListener("click", function(e) {
+    e.stopPropagation();
+    const isOpen = mapToolVisibilityPanel.classList.toggle("open");
+    mapToolVisibilityToggle.setAttribute("aria-expanded", String(isOpen));
+});
 
 // Handle player selection
 playerSelect.addEventListener("change", function() {
@@ -435,6 +465,9 @@ playerSelect.addEventListener("change", function() {
 
 measureTool.addEventListener("click", function(e) {
     e.stopPropagation();
+    closeMapToolVisibilityPanel();
+    if(typeof setMapPinAdding === "function")
+        setMapPinAdding(false);
     toggleMeasureTool();
 });
 
@@ -455,16 +488,21 @@ playerToolVisibilityButton.addEventListener("click", function(e) {
 
 laserTool.addEventListener("click", function(e) {
     e.stopPropagation();
+    closeMapToolVisibilityPanel();
     toggleLaserPointer();
 });
 
+mapPinToolButton.addEventListener("click", closeMapToolVisibilityPanel);
+
 // Close panel when clicking outside
 document.addEventListener("click", function(e) {
-    const playerTools = document.getElementById("player-tools");
     if(!playerTools.contains(e.target)) {
         playerToolsPanel.classList.remove("open");
         playerToolsToggle.classList.remove("active");
+        playerToolsToggle.setAttribute("aria-expanded", "false");
     }
+    if(!document.getElementById("map-tool-bar").contains(e.target))
+        closeMapToolVisibilityPanel();
 });
 
 // Initialize on page load

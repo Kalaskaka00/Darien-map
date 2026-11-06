@@ -43,7 +43,7 @@ border:
 # Brevoy
 *Brevoy is one of the larger large nations in the [[Darien]] region and as such wields significant influence. They have a strong military tradition and have become known for their iron working and swords.*
 ## Terrain & Geography
-Brevoy has a large coast to the north, but it is quite dangerous during the winter months to travel there. To the east is a mountain chain known as [[Icerime peak]] which is only passable through a few mountain passes. To the south are the wasteland known as the [[Stolen Lands]]. To the west are a few mountains and an open plain with a border to [[Numeria]].
+Brevoy has a large coast to the north towards the [[Frozen Sea]], but it is quite dangerous during the winter months to travel there. To the east is a mountain chain known as [[Icerime Peaks]] which is only passable through a few mountain passes. To the south are the wasteland known as the [[Stolen Lands]] and the [[Nalmarches]]. To the west are a few mountains and an open plain with a border to [[Numeria]].
 
 Brevoy has a temperate climate with a lot of plains to the south, colder tundras to the north and a few forests spread around. The harsh mountains to the west and east are however practically uninhabited. The more southern regions are less densley populated as you get closer to the [[Stolen Lands]] and the sparse south east.
 ## Economy

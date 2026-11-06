@@ -91,7 +91,7 @@
     },
     {
         "id": "new_tradeRoute_1793300138243",
-        "name": "Path of Daggers",
+        "name": "Route of Perils",
         "type": "tradeRoute",
         "class": "minor",
         "article": null,
@@ -135,6 +135,34 @@
             [
                 488,
                 444
+            ],
+            [
+                478,
+                480
+            ],
+            [
+                516,
+                511
+            ],
+            [
+                522,
+                541
+            ],
+            [
+                580,
+                568
+            ],
+            [
+                613,
+                594
+            ],
+            [
+                673,
+                590
+            ],
+            [
+                688,
+                625
             ]
         ],
         "mode": "water"

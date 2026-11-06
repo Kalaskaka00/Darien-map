@@ -7,9 +7,9 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/base.css?v=map-tool-dock-1">
     <link rel="stylesheet" href="css/editor.css">
-    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/map.css?v=region-label-2">
     <link rel="stylesheet" href="css/ping.css">
     <link rel="stylesheet" href="css/npc.css?v=local-year-2">
     <link rel="stylesheet" href="css/deity.css?v=text-color-1">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/image-viewer.css">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/wiki.css?v=tab-reordering-1">
-    <link rel="stylesheet" href="css/player-tools.css?v=player-tool-visibility-2">
+    <link rel="stylesheet" href="css/player-tools.css?v=map-tool-feedback-2">
     <link rel="stylesheet" href="css/player-presence.css">
     <link rel="stylesheet" href="css/notepad.css?v=global-notepads-1">
 </head>
@@ -30,6 +30,42 @@
 
     <div id="map-frame">
         <div id="map"></div>
+        <div id="map-tool-bar" role="group" aria-label="Map tools">
+            <button id="measure-tool" class="map-tool-button" type="button" aria-label="Measure distance" data-tooltip="Measure distance" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M4 20 20 4"></path>
+                    <path d="m6.8 17.2 2.1 2.1M9.8 14.2l2.1 2.1M12.8 11.2l2.1 2.1M15.8 8.2l2.1 2.1"></path>
+                </svg>
+            </button>
+            <button id="laser-tool" class="map-tool-button" type="button" aria-label="Laser pointer" data-tooltip="Laser pointer" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="m4 15 7-7 5 5-7 7z"></path>
+                    <path d="m11 8 2-2 5 5-2 2M17 7l2-2M19 10h3M20 14l2 1"></path>
+                </svg>
+            </button>
+            <button id="map-pin-tool" class="map-tool-button" type="button" aria-label="Add map pin" data-tooltip="Add map pin" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"></path>
+                    <circle cx="12" cy="10" r="2.5"></circle>
+                </svg>
+            </button>
+            <button id="map-tool-visibility-toggle" class="map-tool-button" type="button" aria-label="Tool visibility: Everyone" data-tooltip="Tool visibility: Everyone" aria-expanded="false" aria-controls="map-tool-visibility-panel">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z"></path>
+                    <circle cx="12" cy="12" r="2.5"></circle>
+                </svg>
+            </button>
+            <section id="map-tool-visibility-panel" aria-label="Tool visibility">
+                <p id="map-pin-status" class="map-pin-tool-status" role="status" hidden></p>
+                <div id="player-tool-visibility-control">
+                    <span class="player-status-label">Show tools to others:</span>
+                    <button id="player-tool-visibility" type="button" aria-label="Show tools to others: Everyone">
+                        Everyone
+                    </button>
+                </div>
+                <button id="map-pin-retry" type="button" hidden>Retry loading pins</button>
+            </section>
+        </div>
     </div>
 
     <nav id="wiki-tabs" aria-label="Open articles">
@@ -173,7 +209,7 @@
         <button id="notepad-retry" type="button" hidden>Retry connection</button>
     </section>
 
-    <button id="player-tools-toggle" aria-label="Player tools">
+    <button id="player-tools-toggle" aria-label="Player settings" aria-expanded="false" aria-controls="player-tools-panel">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <circle cx="9" cy="8" r="3"></circle>
             <path d="M3.5 19a5.5 5.5 0 0 1 11 0"></path>
@@ -187,15 +223,6 @@
             <div class="player-status-label">Logged in as:</div>
             <div id="player-status-display">No one</div>
         </div>
-
-        <div id="player-tool-visibility-control">
-            <span class="player-status-label">Show to others:</span>
-            <button id="player-tool-visibility" type="button" aria-label="Show to others: Everyone">
-                Everyone
-            </button>
-        </div>
-        <button id="measure-tool" type="button">Measure distance</button>
-        <button id="laser-tool" type="button" aria-pressed="false">Laser pointer</button>
 
         <div id="player-login">
             <select id="player-select">
@@ -326,14 +353,15 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <!-- Config -->
-<script src="js/config.js?v=snap"></script>
+<script src="js/config.js?v=region-layer-1"></script>
 <script src="js/gm.js"></script>
 
 <!-- Map -->
 <script src="js/map/map.js"></script>
 <script src="js/map/ping.js"></script>
 <script src="js/map/layers.js"></script>
-<script src="js/map/world.js?v=tab-persistence-2"></script>
+<script src="js/map/pins.js?v=map-pin-feedback-3"></script>
+<script src="js/map/world.js?v=region-labels-1"></script>
 <script src="js/map/navigation.js?v=article-share-3"></script>
 <script src="js/renderers/lineRenderer.js?v=snap-2"></script>
 <script src="js/map/layers/roadStyles.js"></script>
@@ -363,20 +391,21 @@
 <script src="js/wiki/articles/campaigns.js"></script>
 <script src="js/wiki/articles/settlements.js?v=snap-4"></script>
 <script src="js/wiki/articles/nations.js?v=nation-highlights-3"></script>
+<script src="js/wiki/articles/regions.js?v=region-article-4"></script>
 <script src="js/wiki/articles.js"></script>
 <script src="js/wiki/sidebar.js?v=image-expansion-1"></script>
 <script src="js/wiki/permissions.js?v=article-share-3"></script>
 <script src="js/ui/imageViewer.js"></script>
 <script src="js/ui/article.js?v=nation-summary-2"></script>
-<script src="js/ui/playerTools.js?v=player-tool-visibility-2"></script>
+<script src="js/ui/playerTools.js?v=map-tool-feedback-1"></script>
 <script src="js/ui/playerPresence.js"></script>
-<script src="js/ui/notepad.js?v=global-notepads-2"></script>
+<script src="js/ui/notepad.js?v=global-notepads-3"></script>
 <script src="js/wiki/wiki.js"></script>
 <script src="js/ui/localOptions.js?v=local-year-2"></script>
 <script src="js/wiki/search.js"></script>
 <script src="js/wiki/history.js"></script>
 <script src="js/wiki/directory.js?v=preview"></script>
-<script src="js/wiki/tabs.js?v=tab-reordering-1"></script>
+<script src="js/wiki/tabs.js?v=tab-reordering-2"></script>
 <script src="js/wiki/share.js?v=article-share-4"></script>
 
 <!-- Editor -->

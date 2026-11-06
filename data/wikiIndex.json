@@ -1,6 +1,22 @@
 [
     {
         "id": null,
+        "name": "Texts",
+        "category": "Unknown",
+        "file": "Write Aid.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": []
+    },
+    {
+        "id": null,
         "name": "Roadmap",
         "category": "Unknown",
         "file": "Roadmap.md",
@@ -37,6 +53,7 @@
             "Jamandi Aldori",
             "Kesten Garess",
             "Siphon",
+            "Stolen Lands",
             "Summerborn",
             "Velmine"
         ]
@@ -146,6 +163,7 @@
             "Silvana Ashford",
             "Siphon",
             "Stag Lord",
+            "Stolen Lands",
             "Vacho",
             "Velmine",
             "Zayne Copper"
@@ -227,6 +245,29 @@
             "Odak One Eye",
             "Oliveria",
             "Yarek Gray"
+        ]
+    },
+    {
+        "id": "sandors_reach",
+        "name": "Sandors Reach",
+        "category": "settlement",
+        "file": "Settlements/Sandors Reach.md",
+        "map": {
+            "x": 1269,
+            "y": 385,
+            "icon": "Village"
+        },
+        "view": null,
+        "border": null,
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Mivon",
+            "Sandor"
         ]
     },
     {
@@ -508,6 +549,7 @@
         "startYear": null,
         "endYear": null,
         "references": [
+            "Boggy Ridge",
             "Dwarven Keeps",
             "Rare Materials"
         ]
@@ -531,6 +573,7 @@
         "startYear": null,
         "endYear": null,
         "references": [
+            "Boggy Ridge",
             "Brass Wheels",
             "Dwarven Keeps",
             "Kings Road"
@@ -605,6 +648,7 @@
         "startYear": null,
         "endYear": null,
         "references": [
+            "Boggy Ridge",
             "Pitax",
             "Thieflings"
         ]
@@ -665,6 +709,7 @@
             "Magie",
             "Nentrah",
             "Silvana Ashford",
+            "Stolen Lands",
             "Summerborn",
             "Whirl Palett",
             "Xia",
@@ -690,6 +735,7 @@
         "startYear": null,
         "endYear": null,
         "references": [
+            "Boggy Ridge",
             "Kings Road",
             "Numeria",
             "Starfall"
@@ -717,6 +763,444 @@
             "Brass Wheels",
             "Grainseller family",
             "Touvette"
+        ]
+    },
+    {
+        "id": "stolen_lands",
+        "name": "Stolen Lands",
+        "category": "region",
+        "file": "Regions/Stolen Lands.md",
+        "map": null,
+        "view": {
+            "x": 960,
+            "y": 575,
+            "zoom": 1.3
+        },
+        "border": [
+            [
+                708,
+                805
+            ],
+            [
+                674,
+                805
+            ],
+            [
+                646,
+                814
+            ],
+            [
+                611,
+                800
+            ],
+            [
+                604,
+                783
+            ],
+            [
+                574,
+                760
+            ],
+            [
+                568,
+                746
+            ],
+            [
+                508,
+                757
+            ],
+            [
+                494,
+                854
+            ],
+            [
+                489,
+                903
+            ],
+            [
+                479,
+                947
+            ],
+            [
+                461,
+                1028
+            ],
+            [
+                545,
+                1068
+            ],
+            [
+                595,
+                1081
+            ],
+            [
+                651,
+                1096
+            ],
+            [
+                645,
+                1018
+            ],
+            [
+                661,
+                964
+            ],
+            [
+                662,
+                906
+            ],
+            [
+                674,
+                862
+            ],
+            [
+                696,
+                840
+            ]
+        ],
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Bree Caley",
+            "Brevoy",
+            "Candelmore",
+            "Candle Mages",
+            "Claire Nightshield",
+            "Dream Realm",
+            "Embeth",
+            "Nalmarches",
+            "Pitax",
+            "Silvana Ashford",
+            "Stag Lord",
+            "Summerborn",
+            "Thundarak",
+            "War of the beards"
+        ]
+    },
+    {
+        "id": "nalmarches",
+        "name": "Nalmarches",
+        "category": "region",
+        "file": "Regions/Nalmarches.md",
+        "map": null,
+        "view": {
+            "x": 756,
+            "y": 652,
+            "zoom": 2
+        },
+        "border": [
+            [
+                721,
+                758
+            ],
+            [
+                694,
+                726
+            ],
+            [
+                670,
+                736
+            ],
+            [
+                623,
+                715
+            ],
+            [
+                592,
+                715
+            ],
+            [
+                578,
+                756
+            ],
+            [
+                609,
+                780
+            ],
+            [
+                622,
+                801
+            ],
+            [
+                660,
+                807
+            ]
+        ],
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Boggy Ridge",
+            "Brevoy",
+            "Pitax",
+            "Stolen Lands"
+        ]
+    },
+    {
+        "id": "icerime_peaks",
+        "name": "Icerime Peaks",
+        "category": "region",
+        "file": "Regions/Icerime Peaks.md",
+        "map": null,
+        "view": {
+            "x": 1198,
+            "y": 754,
+            "zoom": 2
+        },
+        "border": [
+            [
+                780,
+                1136
+            ],
+            [
+                776,
+                1129
+            ],
+            [
+                735,
+                1128
+            ],
+            [
+                729,
+                1135
+            ],
+            [
+                738,
+                1150
+            ],
+            [
+                779,
+                1153
+            ]
+        ],
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Brevoy",
+            "Frozen Sea",
+            "The Wastes"
+        ]
+    },
+    {
+        "id": "frozen_sea",
+        "name": "Frozen Sea",
+        "category": "region",
+        "file": "Regions/Frozen Sea.md",
+        "map": null,
+        "view": {
+            "x": 950,
+            "y": 717,
+            "zoom": 0.3
+        },
+        "border": [
+            [
+                1052,
+                1364
+            ],
+            [
+                989,
+                1337
+            ],
+            [
+                891,
+                1263
+            ],
+            [
+                839,
+                1244
+            ],
+            [
+                820,
+                1210
+            ],
+            [
+                814,
+                1179
+            ],
+            [
+                788,
+                1149
+            ],
+            [
+                845,
+                1106
+            ],
+            [
+                861,
+                1058
+            ],
+            [
+                898,
+                1090
+            ],
+            [
+                960,
+                1081
+            ],
+            [
+                993,
+                1030
+            ],
+            [
+                979,
+                953
+            ],
+            [
+                949,
+                942
+            ],
+            [
+                970,
+                925
+            ],
+            [
+                1001,
+                896
+            ],
+            [
+                1016,
+                855
+            ],
+            [
+                1044,
+                791
+            ],
+            [
+                1039,
+                634
+            ],
+            [
+                1051,
+                582
+            ],
+            [
+                1053,
+                596
+            ],
+            [
+                1053,
+                980
+            ],
+            [
+                1053,
+                1172
+            ]
+        ],
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Brevoy",
+            "Numeria"
+        ]
+    },
+    {
+        "id": "boggy_ridge",
+        "name": "Boggy Ridge",
+        "category": "region",
+        "file": "Regions/Boggy Ridge.md",
+        "map": null,
+        "view": {
+            "x": 650,
+            "y": 735,
+            "zoom": 1.6
+        },
+        "border": [
+            [
+                763,
+                490
+            ],
+            [
+                733,
+                475
+            ],
+            [
+                713,
+                488
+            ],
+            [
+                719,
+                551
+            ],
+            [
+                711,
+                560
+            ],
+            [
+                702,
+                639
+            ],
+            [
+                715,
+                690
+            ],
+            [
+                695,
+                709
+            ],
+            [
+                710,
+                737
+            ],
+            [
+                730,
+                763
+            ],
+            [
+                752,
+                750
+            ],
+            [
+                759,
+                729
+            ],
+            [
+                740,
+                713
+            ],
+            [
+                749,
+                637
+            ],
+            [
+                737,
+                601
+            ],
+            [
+                753,
+                567
+            ],
+            [
+                751,
+                538
+            ]
+        ],
+        "color": null,
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Great Gate",
+            "Manchu Tribes",
+            "Nalmarches",
+            "Numeria",
+            "Pitax"
         ]
     },
     {
@@ -858,9 +1342,11 @@
         "startYear": null,
         "endYear": null,
         "references": [
+            "Evercrown family",
             "Jarlek Grin",
             "Meel'a",
             "Pitax",
+            "Sleeping Realm",
             "Thieflings",
             "Turtahir",
             "Vital Delivery"
@@ -1009,6 +1495,7 @@
             "Magie",
             "Nentrah",
             "Silvana Ashford",
+            "Stolen Lands",
             "Whirl Palett",
             "Yarslav Crain"
         ]
@@ -1155,6 +1642,33 @@
             "Milo Grainseller",
             "Touvette",
             "Vein Grainseller"
+        ]
+    },
+    {
+        "id": "evercrown_family",
+        "name": "Evercrown family",
+        "category": "family",
+        "file": "Organisations/Families/Evercrown family.md",
+        "map": null,
+        "view": {
+            "x": 666,
+            "y": 636,
+            "zoom": 2
+        },
+        "border": null,
+        "color": "#c4cd0e",
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Agamoos Evercrown",
+            "Farlamin Mistshaper",
+            "Pitax",
+            "Pitax City",
+            "Sleeping Realm",
+            "The Rill War"
         ]
     },
     {
@@ -1437,6 +1951,7 @@
             "Jonas Arc",
             "Mivon",
             "Silvana Ashford",
+            "Stolen Lands",
             "The Wastes"
         ]
     },
@@ -1618,7 +2133,8 @@
             "Claire Nightshield",
             "Pitax",
             "Silvana Ashford",
-            "Siphon"
+            "Siphon",
+            "Stolen Lands"
         ]
     },
     {
@@ -1639,6 +2155,7 @@
         "endYear": null,
         "references": [
             "Brunno Meadowmane",
+            "Stolen Lands",
             "Vacho",
             "Yelgolor Remoudou"
         ]
@@ -1660,6 +2177,7 @@
         "references": [
             "Nentrah",
             "Stag Lord",
+            "Stolen Lands",
             "Waking World"
         ]
     },
@@ -1684,7 +2202,8 @@
             "Conleth Umbra",
             "Harlequin",
             "Joker",
-            "Lord of Stories"
+            "Lord of Stories",
+            "Stolen Lands"
         ]
     },
     {
@@ -1710,6 +2229,7 @@
             "Joker",
             "Mime",
             "Nentrah",
+            "Stolen Lands",
             "The Magical Anorchrism",
             "Wyndee",
             "Xia",
@@ -1769,6 +2289,7 @@
             "Lord of Stories",
             "Mime",
             "Pitax",
+            "Stolen Lands",
             "Xia"
         ]
     },
@@ -1795,6 +2316,7 @@
             "Dwen'zur Raincleanser",
             "Embeth",
             "Pitax",
+            "Stolen Lands",
             "Waaaghhh"
         ]
     },
@@ -1849,6 +2371,7 @@
             "Mivon",
             "Pixana Boldshard",
             "Silvana Ashford",
+            "Stolen Lands",
             "Tiv",
             "Varnhold"
         ]
@@ -1876,6 +2399,7 @@
             "Conleth Umbra",
             "Dwarven Keeps",
             "Silvana Ashford",
+            "Stolen Lands",
             "Thundarak",
             "Varnhold"
         ]
@@ -1929,6 +2453,7 @@
             "Cephal Lorentus",
             "Daedove Wildguard",
             "Malora Grainseller",
+            "Stolen Lands",
             "Ura Clawt",
             "Vaegarian host",
             "Varnhold",
@@ -1957,6 +2482,7 @@
             "Conleth Umbra",
             "Ebus",
             "Silvana Ashford",
+            "Stolen Lands",
             "Thundarak"
         ]
     },
@@ -1999,6 +2525,7 @@
         "references": [
             "Brevoy",
             "Maegar Varn",
+            "Stolen Lands",
             "Vaegarian host",
             "Varnhold"
         ]
@@ -2025,6 +2552,7 @@
             "Karri",
             "Maegar Varn",
             "Numeria",
+            "Stolen Lands",
             "Varnhold"
         ]
     },
@@ -2081,6 +2609,7 @@
             "Maegar Varn",
             "Silvana Ashford",
             "Stag Lord",
+            "Stolen Lands",
             "Tandeen Dazzlehand",
             "The Wastes",
             "Varnhold"
@@ -2109,6 +2638,7 @@
             "Pitax",
             "Silvana Ashford",
             "Stag Lord",
+            "Stolen Lands",
             "Zara"
         ]
     },
@@ -2153,6 +2683,7 @@
             "Chorrad Troll King",
             "Claire Nightshield",
             "Silvana Ashford",
+            "Stolen Lands",
             "Summerborn",
             "Tandeen Dazzlehand",
             "Vacho"
@@ -2448,6 +2979,7 @@
         "visibility": null,
         "related": null,
         "gmReferences": [
+            "Stolen Lands",
             "Xiander"
         ],
         "startYear": null,
@@ -2535,6 +3067,7 @@
             "Brevoy",
             "Movh Bearer",
             "Shrowm",
+            "Stolen Lands",
             "Yelgolor Remoudou"
         ]
     },
@@ -2561,6 +3094,7 @@
             "Maegar Varn",
             "Silvana Ashford",
             "Stag Lord",
+            "Stolen Lands",
             "Tandeen Dazzlehand",
             "Varnhold",
             "Velmine"
@@ -2623,6 +3157,7 @@
             "Silvana Ashford",
             "Siphon",
             "Stag Lord",
+            "Stolen Lands",
             "The Rill War",
             "Xer"
         ]
@@ -2670,7 +3205,8 @@
         "endYear": null,
         "references": [
             "Odak One Eye",
-            "Serenity"
+            "Serenity",
+            "Stolen Lands"
         ]
     },
     {
@@ -2696,7 +3232,8 @@
             "Joker",
             "Mime",
             "Serenity",
-            "Silvana Ashford"
+            "Silvana Ashford",
+            "Stolen Lands"
         ]
     },
     {
@@ -2716,6 +3253,7 @@
         "references": [
             "Artarp Rein",
             "Serenity",
+            "Stolen Lands",
             "Yarek Gray"
         ]
     },
@@ -2764,7 +3302,8 @@
             "Mime",
             "Oliveria",
             "Serenity",
-            "Silvana Ashford"
+            "Silvana Ashford",
+            "Stolen Lands"
         ]
     },
     {
@@ -2783,7 +3322,8 @@
         "endYear": null,
         "references": [
             "Ninne",
-            "Odak One Eye"
+            "Odak One Eye",
+            "Stolen Lands"
         ]
     },
     {
@@ -2887,6 +3427,7 @@
             "Balrotho",
             "n'Neb",
             "Shrowm",
+            "Stolen Lands",
             "Summerborn"
         ]
     },
@@ -2907,6 +3448,7 @@
         "startYear": null,
         "endYear": null,
         "references": [
+            "Stolen Lands",
             "Vacho"
         ]
     },
@@ -2925,6 +3467,7 @@
         "startYear": null,
         "endYear": null,
         "references": [
+            "Stolen Lands",
             "Vacho"
         ]
     },
@@ -3032,6 +3575,7 @@
             "Nentrah",
             "Silvana Ashford",
             "Sleeping Realm",
+            "Stolen Lands",
             "Whirl Palett",
             "Yarslav Crain"
         ]
@@ -3280,6 +3824,7 @@
             "Divine Artifacts",
             "Peck Arck",
             "Silvana Ashford",
+            "Stolen Lands",
             "Varnhold",
             "Xiander"
         ]
@@ -3312,6 +3857,7 @@
             "n'Neb",
             "Pitax",
             "Silvana Ashford",
+            "Stolen Lands",
             "Velmine"
         ]
     },
@@ -3338,6 +3884,7 @@
             "Myron",
             "Ox",
             "Silvana Ashford",
+            "Stolen Lands",
             "Summerborn",
             "Xer"
         ]
@@ -3410,7 +3957,9 @@
             "Bree Caley",
             "Claire Nightshield",
             "n'Neb",
+            "Nalmarches",
             "Silvana Ashford",
+            "Stolen Lands",
             "Tandeen Dazzlehand"
         ]
     },
@@ -3547,6 +4096,7 @@
             "Pitax",
             "Silvana Ashford",
             "Stag Lord",
+            "Stolen Lands",
             "Summerborn",
             "Thundarak",
             "Udoon family",
@@ -4050,8 +4600,10 @@
             "Devastation of Daggermark",
             "Manchu Tribes",
             "Mivon",
+            "Nalmarches",
             "Numeria",
             "Pitax City",
+            "Stolen Lands",
             "The Rill War",
             "Thirdenlin",
             "Touvette",
@@ -4271,9 +4823,11 @@
         "endYear": null,
         "references": [
             "Battle of Fingers",
+            "Boggy Ridge",
             "Brevoy",
             "Dwarven Keeps",
             "Erven",
+            "Frozen Sea",
             "Kings Road",
             "Manchu Tribes",
             "Mivon",
@@ -4371,6 +4925,7 @@
             "Milor",
             "Numeria",
             "Pitax",
+            "Stolen Lands",
             "The Rill War",
             "The Wastes"
         ]
@@ -4802,6 +5357,7 @@
             "Mivon",
             "Pitax",
             "Rendeen",
+            "Stolen Lands",
             "Touvette",
             "Vanee"
         ]
@@ -5010,12 +5566,16 @@
             "Bann",
             "Beeret family",
             "Dunden",
+            "Frozen Sea",
+            "Icerime Peaks",
             "Kings Road",
             "Mivon",
+            "Nalmarches",
             "New Steveten",
             "Numeria",
             "Pitax",
             "Sandor",
+            "Stolen Lands",
             "Swordlords of Brevoy",
             "Talia Andureen",
             "The Rill War",
@@ -5921,6 +6481,7 @@
             "Siphon",
             "Sparrow",
             "Stag Lord",
+            "Stolen Lands",
             "Summerborn",
             "Talia Andureen",
             "Tandeen Dazzlehand",

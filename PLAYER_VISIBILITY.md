@@ -138,3 +138,11 @@ The player tools panel has one **Show to others** setting for the measure distan
 - **Only me**: measurements and laser pointer remain local to the user.
 
 The selection is saved in localStorage.
+
+## Map Pins
+
+Use **Add map pin** in the player tools panel, choose Public or Private, then click a map location and enter a title and notes. Public pins are blue and editable by anyone using the app. Private pins appear in a separate map layer named for their owner; the owner and GM can view and edit them. A GM's private pins are visible only in GM mode. Use the map layer control to show or hide each layer.
+
+Pins are stored in the shared Supabase `darien_map_pins` table. Apply `supabase/migrations/20261031100000_map_pins.sql` before using this feature.
+
+**Privacy limitation:** As with the shared notepads, this app has no authenticated user accounts. Private pin visibility and editing restrictions are enforced by the application UI, not by database authorization; anyone with direct access to the public Supabase API can read or change stored pins.

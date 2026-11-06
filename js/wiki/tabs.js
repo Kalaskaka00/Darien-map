@@ -193,6 +193,11 @@ function activateWikiTab(tab){
 
     saveActiveWikiTabScroll();
 
+    const previousArticle = getCurrentArticle();
+
+    if(previousArticle && previousArticle.file !== tab.article.file)
+        getArticleType(previousArticle.category)?.onClose?.(previousArticle);
+
     activeWikiTabId = tab.id;
 
     if(tab.directory){
@@ -206,6 +211,7 @@ function activateWikiTab(tab){
 
     closeDirectory?.();
     setCurrentArticle(tab.article);
+    getArticleType(tab.article.category)?.onOpen?.(tab.article);
     tab.scrollRestorePending = true;
     tab.scrollIntentStart = null;
     wikiSidebar.scrollTop = 0;

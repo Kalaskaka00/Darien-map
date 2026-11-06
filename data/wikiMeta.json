@@ -1,8 +1,78 @@
 {
-    "latestBuild": "2026-10-30T18:11:26.934Z",
-    "articleCount": 198,
-    "latestChange": "Now possible to change order of wiki tabs, new settlement icons, campaign article type, added trade routes",
+    "latestBuild": "2026-11-06T18:02:37.897Z",
+    "articleCount": 206,
+    "latestChange": "Notepad V3, Added Map Pins, Changed Tool Buttons UI, Added regions",
     "changelog": [
+        {
+            "date": "2026-11-06T18:02:37.897Z",
+            "articleCount": 206,
+            "changes": "Notepad V3, Added Map Pins, Changed Tool Buttons UI, Added regions"
+        },
+        {
+            "date": "2026-11-05T19:24:45.725Z",
+            "articleCount": 206,
+            "changes": "Added region articles and map labels"
+        },
+        {
+            "date": "2026-11-05T19:24:25.718Z",
+            "articleCount": 206,
+            "changes": "Added region articles and map labels"
+        },
+        {
+            "date": "2026-11-05T19:22:46.384Z",
+            "articleCount": 206,
+            "changes": "Added region articles and map labels"
+        },
+        {
+            "date": "2026-11-05T17:58:56.477Z",
+            "articleCount": 205,
+            "changes": "Added region articles and map labels"
+        },
+        {
+            "date": "2026-11-05T17:58:32.630Z",
+            "articleCount": 205,
+            "changes": "Added region articles and map labels"
+        },
+        {
+            "date": "2026-11-05T16:45:00.935Z",
+            "articleCount": 204,
+            "changes": "Added region articles and map labels"
+        },
+        {
+            "date": "2026-11-03T19:42:17.658Z",
+            "articleCount": 203,
+            "changes": "Added region articles and map labels"
+        },
+        {
+            "date": "2026-11-03T18:52:56.934Z",
+            "articleCount": 203,
+            "changes": "Added region articles and map labels"
+        },
+        {
+            "date": "2026-11-03T17:54:26.173Z",
+            "articleCount": 202,
+            "changes": "Added region articles and map labels"
+        },
+        {
+            "date": "2026-11-03T17:41:32.046Z",
+            "articleCount": 202,
+            "changes": "Added region articles and map labels"
+        },
+        {
+            "date": "2026-11-01T15:08:06.598Z",
+            "articleCount": 201,
+            "changes": "Now possible to change order of wiki tabs, new settlement icons, campaign article type, added trade routes"
+        },
+        {
+            "date": "2026-11-01T15:07:28.926Z",
+            "articleCount": 201,
+            "changes": "Now possible to change order of wiki tabs, new settlement icons, campaign article type, added trade routes"
+        },
+        {
+            "date": "2026-10-31T11:38:31.111Z",
+            "articleCount": 200,
+            "changes": "Now possible to change order of wiki tabs, new settlement icons, campaign article type, added trade routes"
+        },
         {
             "date": "2026-10-30T18:11:26.934Z",
             "articleCount": 198,

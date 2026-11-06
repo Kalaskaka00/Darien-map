@@ -2,6 +2,8 @@ const layers = {
 
     nations: L.layerGroup(),
 
+    regions: L.layerGroup(),
+
     settlements: L.layerGroup(),
 
     rivers: L.layerGroup(),
@@ -28,6 +30,7 @@ const mapObjects = {
 
 const layerLabels = {
     nations: "Nations",
+    regions: "Regions",
     settlements: "Settlements",
     rivers: "Rivers",
     roads: "Roads",
@@ -105,6 +108,17 @@ function initializeLayers(){
 function registerMapObject(type, id, layer){
 
     mapObjects[type][id] = layer;
+
+}
+
+function registerLayer(name, label, layer = L.layerGroup()){
+
+    if(layers[name])
+        throw new Error(`Map layer "${name}" is already registered.`);
+
+    layers[name] = layer;
+    layerLabels[name] = label;
+    return layer;
 
 }
 

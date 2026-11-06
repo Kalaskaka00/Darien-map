@@ -16,6 +16,7 @@ const CONFIG = {
         },
         layerOrder: [
             "nations",
+            "regions",
             "settlements",
             "tradeRoutes",
             "roads",
@@ -23,6 +24,7 @@ const CONFIG = {
         ],
         layerVisibility: {
             nations: true,
+            regions: true,
             rivers: true,
             roads: true,
             settlements: true,

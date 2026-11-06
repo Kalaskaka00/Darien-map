@@ -29,6 +29,10 @@ async function loadWorld() {
         .forEach(addNation);
     updateLabels();
 
+    world
+        .filter(item => item.category === "region")
+        .forEach(addRegion);
+
     console.log("World:", world);
 
     console.log(

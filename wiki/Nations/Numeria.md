@@ -75,7 +75,7 @@ border:
 # Numeria
 *Numera describes a huge area vaguely unified. They're known for their harsh climate and exotic furs.*
 ## Terrain & Geography
-Numeria is bordered to the north by a large open sea that's frozen much of the year. To the west is vast wilderness. To the south Numeria borders som large rivers, swamps, mountains and beyond those the [[Manchu Tribes]]. Lastly to the east Numeria borders [[Brevoy]].
+Numeria is bordered to the north by the [[Frozen Sea]]. To the west is vast wilderness. To the south Numeria borders som large rivers, swamps, mountains and beyond those the [[Manchu Tribes]] whom are separated by the [[Boggy Ridge]]. Lastly to the east Numeria borders [[Brevoy]].
 
 Numeria has a harsh and cold climate with temperatures in much of the area rarely being above freezing. Inside the vast expanses of Numeria are dense and deep forests, large mountains and lakes and a lot of hills.
 ## Economy
