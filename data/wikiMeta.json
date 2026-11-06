@@ -1,8 +1,13 @@
 {
-    "latestBuild": "2026-11-06T18:38:04.176Z",
+    "latestBuild": "2026-11-06T18:43:16.908Z",
     "articleCount": 206,
-    "latestChange": "Notepad V3, Added Map Pins, Changed Tool Buttons UI, Added regions",
+    "latestChange": "test",
     "changelog": [
+        {
+            "date": "2026-11-06T18:43:16.908Z",
+            "articleCount": 206,
+            "changes": "test"
+        },
         {
             "date": "2026-11-06T18:38:04.176Z",
             "articleCount": 206,
