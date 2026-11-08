@@ -11,13 +11,12 @@ image: DovesSymbol.png
 nations: 
   - [[Brevoy]]
   - [[Daggermark]]
-  - [[Galt]]
   - [[Gralton]]
+  - [[Kronharth]]
   - [[Manchu Tribes]]
   - [[Mivon]]
   - [[Numeria]]
   - [[The Wastes]]
-  - 
   - [[Touvette]]
 
 color: "#FFFFFF"

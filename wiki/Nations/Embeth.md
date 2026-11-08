@@ -4,15 +4,15 @@ name: Embeth
 category: nation
 
 races:
-  - Centaur
+  - Centaurs
   - Eladrin
-  - Fairy
+  - Fairies
   - Firbolg
   - Harengon
   - Owlin
-  - Satyr
-  - Shifter
-  - Wood Elf
+  - Satyrs
+  - Shifters
+  - Wood Elves
 
 color: "#62C46A"
 
@@ -54,11 +54,6 @@ border:
   - [445, 734]
 ---
 # Embeth
-**Capital:** -
-
-**Common Races:** Centaur, Firbolg, Wood Elf
-**Uncommon Races:** Eladrin, Fairy, Half-Elf, Human, Harengon, Owlin, Satyr, Shifter
-
 *Embeth is a wild dense forest filled to the brim with wild tribes and magical critters. It has quite a few fey inside of it, making it close to the magical. Whenever someone tries to settle the land in the forest has in the past been face by resistance by booth the inhabitants and the land itself.*
 ## Terrain & Geography
 The area is filled with dense forest, a few hills and some lakes and smaller rivers, the forest is surrounded by large rivers in each direction. The forest is neighbored by [[Pitax]] and the [[Stolen Lands]] in the north over the river. To the west is [[Touvette]]  and [[Gralton]] over the river. To the east is [[Mivon]] over the river. 

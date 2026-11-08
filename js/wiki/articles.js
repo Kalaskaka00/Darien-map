@@ -1,4 +1,30 @@
 let currentArticle = null;
+const articleFrontmatterBase = new WeakMap();
+const articleFrontmatterKeys = new WeakMap();
+const articleFrontmatterSourceKeys = new WeakMap();
+
+function applyArticleFrontmatter(article, frontmatter){
+    if(!articleFrontmatterBase.has(article)){
+        articleFrontmatterBase.set(article, {...article});
+        articleFrontmatterSourceKeys.set(article, new Set(Object.keys(frontmatter)));
+    }
+
+    const base = articleFrontmatterBase.get(article);
+    const sourceKeys = articleFrontmatterSourceKeys.get(article);
+    const previousKeys = articleFrontmatterKeys.get(article) || [];
+    previousKeys.forEach(key => {
+        if(!sourceKeys.has(key) && Object.prototype.hasOwnProperty.call(base, key))
+            article[key] = base[key];
+        else
+            delete article[key];
+    });
+
+    const nextKeys = Object.keys(frontmatter);
+    nextKeys.forEach(key => {
+        article[key] = frontmatter[key];
+    });
+    articleFrontmatterKeys.set(article, nextKeys);
+}
 
 // Normalize apostrophe characters for consistent matching
 function normalizeArticleName(name){

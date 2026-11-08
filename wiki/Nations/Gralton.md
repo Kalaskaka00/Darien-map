@@ -8,9 +8,9 @@ ruler: The guild council
 races:
   - Aarakocra
   - Dragonborn
-  - Halfling
-  - Human
-  - Triton
+  - Halflings
+  - Humans
+  - Tritons
 
 image: GraltonBanner.png
 color: "#FA5050"
@@ -50,7 +50,7 @@ border:
 # Gralton
 *Gralton is often described as the harbor of the [[Darien]] region and is the entry and exit of international trade through the [[Kings Road]] and therefor wields significant wealth and influence. Gralton can be thought of as a nation of guilds.*
 ## Terrain & Geography
-To the north is Graltons only land border where it borders [[Touvette]] and [[Embeth]]. To the east is the inland seas with [[Galt]] on the opposite end. To the south outside the coast are [[The Isles]]. To the west across a small inland sea rests [[Daggermark]].
+To the north is Graltons only land border where it borders [[Touvette]] and [[Embeth]]. To the east is the inland seas with [[Kronharth]] on the opposite end. To the south outside the coast are [[The Isles]]. To the west across a small inland sea rests [[Daggermark]].
 
 Gralton has a warmer temperateclimate with the coasts ensuring mild winters and summers. The lands themselves are mostly plains and farmlands with soem hills scattered throughout. Most people live at the coasts or the large rives passing through Gralton.
 ## Economy
@@ -83,7 +83,7 @@ Gralton has no noble classes or other high society, the status in Gralton is mor
 
 **[[Manchu Tribes]]:** The [[Manchu Tribes]] are viewed with great distrust. There is often a fear that the [[Manchu Tribes]] may invade Gralton if given the chance.
 
-**[[Galt]]:** [[Galt]] are strategic adversaries of Gralton. The nation represent everything which people in Gralton see as wrong in culture and politics. Furthermore there is a general fear that their fledgling navy might come to challenge Graltons one day.
+**[[Kronharth]]:** [[Kronharth]] are strategic adversaries of Gralton. The nation represent everything which people in Gralton see as wrong in culture and politics. Furthermore there is a general fear that their fledgling navy might come to challenge Graltons one day.
 
 **[[Daggermark]]:** Gralton has a limited relationship with [[Daggermark]] being the only nation allowed to trade with [[Daggermark]]. The trading is however severely limited to the port of [[Nerrez]].
 ## History

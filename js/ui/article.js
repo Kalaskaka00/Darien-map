@@ -828,6 +828,24 @@ async function hoverArticle(event,page){
 
 async function getArticleData(article){
 
+    if(article.category === "pc"){
+        const response = await fetch("wiki/" + article.file);
+        if(!response.ok)
+            throw new Error(`Unable to load article data for "${article.name}": ${response.status}`);
+
+        const markdown = await response.text();
+        const localData = extractFrontmatter(markdown).data;
+        const revisionState = await loadWikiArticleRevision(article.file, {
+            ...article,
+            ...localData,
+            player: article.player || localData.player
+        });
+        const articleMarkdown = revisionState.revision
+            ? mergeWikiArticleRevision(markdown, revisionState.revision.proposed_markdown)
+            : markdown;
+        return extractFrontmatter(articleMarkdown).data;
+    }
+
     if(articleCache[article.file])
         return articleCache[article.file];
 

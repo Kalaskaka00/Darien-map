@@ -280,7 +280,10 @@ function refreshMapPins() {
         .catch(error => {
             console.error("Could not load map pins:", error);
             mapPinLoadError = true;
-            setMapPinError("Map pins could not be loaded. Check Supabase setup and retry.");
+            const missingTable = error?.code === "PGRST205" || error?.code === "42P01";
+            setMapPinError(missingTable
+                ? "The map pin table is missing in Supabase. Run supabase/migrations/20261031100000_map_pins.sql in the Supabase SQL Editor, then retry."
+                : "Map pins could not be loaded. Check Supabase setup and retry.");
             mapPinRetry.hidden = false;
         });
     return mapPinRefreshPromise;

@@ -16,12 +16,12 @@ nations:
   - [[Brevoy]]
   - [[Daggermark]]
   - [[Dwarven Keeps]]
-  - [[Galt]]
   - [[Gralton]]
-  - [[Touvette]]
+  - [[Kronharth]]
   - [[Mivon]]
   - [[Numeria]]
   - [[Pitax]]
+  - [[Touvette]]
 
 color: "#000000"
 ---

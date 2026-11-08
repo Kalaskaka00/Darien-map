@@ -10,14 +10,14 @@ birth: 3755
 death: 
 family: 
 organisations: [[Brass Wheels]]
-origin: [[Galt]]
+origin: [[Kronharth]]
 
 color: "#E00061"
 --- 
 # Asha Rakker
 *Looking to make a deal? I am sure we can come to an agreement.*
 
-Asha is long working merchant creating trade networks between [[Galt]], [[Gralton]] and [[Pitax]]. She has made an special name for herself for procuring and transporting noble goods. She is known to be calculating, cunning and patient.
+Asha is long working merchant creating trade networks between [[Kronharth]], [[Gralton]] and [[Pitax]]. She has made an special name for herself for procuring and transporting noble goods. She is known to be calculating, cunning and patient.
 ## Relations
 - [[Jarlek Grin]] is a rival of Ashas.
 - [[Maegar Varn]] and the [[Varn family]] have made a lot of business with Asha.

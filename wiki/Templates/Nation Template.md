@@ -3,6 +3,12 @@ id: <% tp.file.title.toLowerCase().replace(/ /g,"_") %>
 name: <% tp.file.title %>
 category: nation
 
+capital: [[
+ruler: [[
+races:
+  - 
+
+image: .png
 color: 
 
 view: 

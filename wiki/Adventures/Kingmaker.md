@@ -343,3 +343,8 @@ With all the crises going on at once te protagonists took three immediate action
 1. They sent [[Cephal Lorentus]] to slow down the [[Mivon]] delegation.
 2. They temporarily calmed the protesting crowds.
 3. They set out towards [[Candelmore]].
+
+**Session 52:** *Candlemore fey attacks*
+Pressing the dread Turbo button on the boat made by [[Felrick Kindhelm]], [[Silvana Ashford]], [[Bree Caley]] and [[Conleth Umbra]] arrived at [[Candelmore]] at record speeds just in time to aid [[Annj Bearer]], [[Magie]] and [[Derk]] in a battle against fey.
+
+Explaining that [[Ihara Absul]] had been put in a deep sleep witch had immobilized the other [[Candle Mages]] the protagonists set out to defeat the source of some of the issues and fought [[Wyndee]].

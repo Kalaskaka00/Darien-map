@@ -1,12 +1,20 @@
 async function loadArticle(file){
 
+    hideWikiWriteAid();
+    hideWikiLinkSuggestions();
+    updateWikiArticleEditButton(null);
+
     const response = await fetch("wiki/" + file);
+    if(!response.ok)
+        throw new Error(`Unable to load article "${file}": ${response.status}`);
 
-    let markdown = await response.text();
+    let articleMarkdown = await response.text();
+    if(getCurrentArticle()?.file !== file)
+        return;
 
-    const parsed = extractFrontmatter(markdown);
+    let parsed = extractFrontmatter(articleMarkdown);
 
-    const article = parsed.data;
+    let article = parsed.data;
 
     console.log(article);
 
@@ -15,17 +23,25 @@ async function loadArticle(file){
     console.log("Frontmatter:", article);
 
     if(worldArticle){
-
-        Object.entries(article).forEach(([key, value]) => {
-
-            if(value !== "")
-                worldArticle[key] = value;
-
-        });
+        applyArticleFrontmatter(worldArticle, article);
 
     }
 
-    markdown = parsed.content;
+    let revisionState = null;
+    if(worldArticle){
+        revisionState = await loadWikiArticleRevision(file, worldArticle);
+        if(getCurrentArticle()?.file !== file)
+            return;
+
+        if(revisionState.revision){
+            articleMarkdown = mergeWikiArticleRevision(articleMarkdown, revisionState.revision.proposed_markdown);
+            parsed = extractFrontmatter(articleMarkdown);
+            article = parsed.data;
+            applyArticleFrontmatter(worldArticle, article);
+        }
+    }
+
+    let markdown = parsed.content;
 
     const folder = getArticleFolder(file);
 
@@ -40,6 +56,10 @@ async function loadArticle(file){
     renderSidebar(worldArticle || article);
 
     await renderArticle(worldArticle || article, markdown);
+    if(worldArticle){
+        renderWikiArticleEditControls(worldArticle, articleMarkdown, revisionState);
+        updateWikiArticleEditButton(worldArticle, revisionState);
+    }
 
 }
 

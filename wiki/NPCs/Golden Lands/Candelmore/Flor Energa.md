@@ -10,7 +10,7 @@ birth: 3498
 death: 
 family: 
 organisations: [[Candle Mages]]
-origin: [[Galt]]
+origin: [[Kronharth]]
 
 color: "#211DA1"
 --- 

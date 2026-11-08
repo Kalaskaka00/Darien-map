@@ -10,14 +10,14 @@ birth: 3821
 death: 
 family: [[Varn family]]
 organisations: [[Vaegarian host]]
-origin: [[Galt]]
+origin: [[Kronharth]]
 
 color: "#BF902E"
 --- 
 # Maegar Varn
 *Living a life doubting and second guessing is no life at all.*
 
-Maegar Varn hails as a noble from [[Galt]] from a minor noble family. He was far from the line of succession and had an eye for adventure, this led him to set out. On the road he met his now trust second in command [[Cephal Lorentus]] and the two of them formed the [[Vaegarian host]].
+Maegar Varn hails as a noble from [[Kronharth]] from a minor noble family. He was far from the line of succession and had an eye for adventure, this led him to set out. On the road he met his now trust second in command [[Cephal Lorentus]] and the two of them formed the [[Vaegarian host]].
 
 Due to his work with the [[Vaegarian host]] Maegar has garnered quite some renown for being a skilled tactician and capable fighter.
 

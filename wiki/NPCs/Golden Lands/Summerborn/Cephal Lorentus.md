@@ -10,14 +10,14 @@ birth: 3803
 death: 
 family: 
 organisations: [[Vaegarian host]]
-origin: [[Galt]]
+origin: [[Kronharth]]
 
 color: "#BF902E"
 --- 
 # Cephal Lorentus
 *I can not stand all the incompetent people whom surround me.*
 
-Cephal hails from a farming family in [[Galt]] but managed due to his magics and personal talent advance in life.
+Cephal hails from a farming family in [[Kronharth]] but managed due to his magics and personal talent advance in life.
 
 He would eventually be recognized by [[Maegar Varn]] for his talents and the two would form the [[Vaegarian host]] with Cephal as its second in command. Cephal has from his work there become known as a ruthless and genius strategist.
 

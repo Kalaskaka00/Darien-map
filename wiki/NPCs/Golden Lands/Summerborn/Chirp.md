@@ -10,7 +10,7 @@ birth: 3822
 death: 
 family: 
 organisations: 
-origin: [[Mivon]]
+origin: [[Kronharth]]
 
 color: "#E00061"
 --- 

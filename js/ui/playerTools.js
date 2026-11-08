@@ -13,7 +13,7 @@ const PLAYER_TOOL_VISIBILITY_KEY = "darien-map-measurement-visibility";
 const PLAYER_TOOL_VISIBILITY_STAGES = [
     {value: "everyone", label: "Everyone"},
     {value: "gm", label: "GM only"},
-    {value: "private", label: "Only me"}
+    ...(!isGM ? [{value: "private", label: "Only me"}] : [])
 ];
 const measurementSessionId = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
 const remoteMeasurements = new Map();
@@ -27,8 +27,13 @@ const editorPanel = document.getElementById("editor-panel");
 
 const kilometersToMiles = 0.621371;
 
-if(!PLAYER_TOOL_VISIBILITY_STAGES.some(stage => stage.value === playerToolVisibility))
+if(isGM && playerToolVisibility === "private") {
+    playerToolVisibility = "gm";
+    localStorage.setItem(PLAYER_TOOL_VISIBILITY_KEY, playerToolVisibility);
+} else if(!PLAYER_TOOL_VISIBILITY_STAGES.some(stage => stage.value === playerToolVisibility)) {
     playerToolVisibility = "everyone";
+    localStorage.setItem(PLAYER_TOOL_VISIBILITY_KEY, playerToolVisibility);
+}
 
 function getMeasurementReadoutContent(points) {
     const distanceInMapUnits = points.slice(1).reduce((total, point, index) => {
@@ -408,8 +413,11 @@ function updatePlayerToolVisibilityButton() {
                     ? CONFIG.players[currentPlayer] || "#808080"
                     : "#808080";
     mapToolVisibilityToggle.style.setProperty("--tool-visibility-color", visibilityColor);
-    mapToolVisibilityToggle.setAttribute("aria-label", `Tool visibility: ${stage.label}`);
-    mapToolVisibilityToggle.dataset.tooltip = `Tool visibility: ${stage.label}`;
+    mapToolVisibilityToggle.setAttribute(
+        "aria-label",
+        `Tool visibility: ${stage.label}. Right-click to cycle visibility.`
+    );
+    mapToolVisibilityToggle.dataset.tooltip = `Tool visibility: ${stage.label} (right-click to cycle)`;
     mapToolVisibilityToggle.dataset.visibility = stage.value;
 }
 
@@ -457,6 +465,26 @@ mapToolVisibilityToggle.addEventListener("click", function(e) {
     mapToolVisibilityToggle.setAttribute("aria-expanded", String(isOpen));
 });
 
+function advancePlayerToolVisibility() {
+    const currentIndex = PLAYER_TOOL_VISIBILITY_STAGES.findIndex(
+        stage => stage.value === playerToolVisibility
+    );
+    playerToolVisibility = PLAYER_TOOL_VISIBILITY_STAGES[
+        (currentIndex + 1) % PLAYER_TOOL_VISIBILITY_STAGES.length
+    ].value;
+    localStorage.setItem(PLAYER_TOOL_VISIBILITY_KEY, playerToolVisibility);
+    updatePlayerToolVisibilityButton();
+    if(measurementPoints.length > 0)
+        publishMeasurement(true);
+    updateLaserPointerVisibility();
+}
+
+mapToolVisibilityToggle.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    advancePlayerToolVisibility();
+});
+
 // Handle player selection
 playerSelect.addEventListener("change", function() {
     const selectedPlayer = this.value || null;
@@ -473,17 +501,7 @@ measureTool.addEventListener("click", function(e) {
 
 playerToolVisibilityButton.addEventListener("click", function(e) {
     e.stopPropagation();
-    const currentIndex = PLAYER_TOOL_VISIBILITY_STAGES.findIndex(
-        stage => stage.value === playerToolVisibility
-    );
-    playerToolVisibility = PLAYER_TOOL_VISIBILITY_STAGES[
-        (currentIndex + 1) % PLAYER_TOOL_VISIBILITY_STAGES.length
-    ].value;
-    localStorage.setItem(PLAYER_TOOL_VISIBILITY_KEY, playerToolVisibility);
-    updatePlayerToolVisibilityButton();
-    if(measurementPoints.length > 0)
-        publishMeasurement(true);
-    updateLaserPointerVisibility();
+    advancePlayerToolVisibility();
 });
 
 laserTool.addEventListener("click", function(e) {

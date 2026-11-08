@@ -128,6 +128,8 @@ function closeDirectory(){
 
 function openDirectoryView(){
 
+    if(typeof updateWikiArticleEditButton === "function")
+        updateWikiArticleEditButton(null);
     directoryOpen = true;
     directoryButton.classList.add("active");
     renderDirectory();

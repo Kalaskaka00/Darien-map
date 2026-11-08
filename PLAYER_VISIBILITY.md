@@ -146,3 +146,24 @@ Use **Add map pin** in the player tools panel, choose Public or Private, then cl
 Pins are stored in the shared Supabase `darien_map_pins` table. Apply `supabase/migrations/20261031100000_map_pins.sql` before using this feature.
 
 **Privacy limitation:** As with the shared notepads, this app has no authenticated user accounts. Private pin visibility and editing restrictions are enforced by the application UI, not by database authorization; anyone with direct access to the public Supabase API can read or change stored pins.
+
+## Wiki Article Revisions
+
+Players can suggest edits to the PC article whose frontmatter `player` matches
+their selected player name. The GM can submit revisions to any wiki article.
+Suggested public Markdown appears in the wiki immediately. GM-only
+`<!--GM ... -->` sections are not sent to shared storage and are preserved in
+the local file when a revision is approved.
+
+Before using this feature, apply
+`supabase/migrations/20261107100000_pc_article_edits.sql` followed by
+`supabase/migrations/20261107120000_wiki_article_edits.sql`. During
+`publish.ps1`, each pending revision is displayed as a diff against the local
+Markdown file. Approve it to update the local file and include it in the
+upload, reject it to discard it and restore the published article, or quit to
+stop the upload. Approved revisions remain visible until the upload succeeds.
+
+**Privacy and identity limitation:** The app does not authenticate player
+accounts. The selected player name and article ownership check are enforced by
+the app UI only; anyone with direct access to the public Supabase API can read
+or change submitted revisions. Use this only with a trusted group.

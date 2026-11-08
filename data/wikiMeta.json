@@ -1,8 +1,38 @@
 {
-    "latestBuild": "2026-11-06T18:43:16.908Z",
-    "articleCount": 206,
-    "latestChange": "test",
+    "latestBuild": "2026-11-08T09:12:35.156Z",
+    "articleCount": 208,
+    "latestChange": "map pin fix, added ability to edit articles",
     "changelog": [
+        {
+            "date": "2026-11-08T09:12:35.156Z",
+            "articleCount": 208,
+            "changes": "map pin fix, added ability to edit articles"
+        },
+        {
+            "date": "2026-11-07T16:04:11.739Z",
+            "articleCount": 208,
+            "changes": "test"
+        },
+        {
+            "date": "2026-11-07T15:55:15.921Z",
+            "articleCount": 208,
+            "changes": "test"
+        },
+        {
+            "date": "2026-11-07T15:24:42.509Z",
+            "articleCount": 208,
+            "changes": "test"
+        },
+        {
+            "date": "2026-11-07T15:07:37.482Z",
+            "articleCount": 208,
+            "changes": "test"
+        },
+        {
+            "date": "2026-11-07T10:12:16.963Z",
+            "articleCount": 207,
+            "changes": "test"
+        },
         {
             "date": "2026-11-06T18:43:16.908Z",
             "articleCount": 206,

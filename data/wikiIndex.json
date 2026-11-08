@@ -1,7 +1,7 @@
 [
     {
         "id": null,
-        "name": "Texts",
+        "name": "Write Aid",
         "category": "Unknown",
         "file": "Write Aid.md",
         "map": null,
@@ -1459,6 +1459,7 @@
             "Brevoy",
             "Daggermark",
             "Gralton",
+            "Kronharth",
             "Manchu Tribes",
             "Mivon",
             "Numeria",
@@ -1556,6 +1557,7 @@
             "Daggermark",
             "Dwarven Keeps",
             "Gralton",
+            "Kronharth",
             "Mivon",
             "Nerrez",
             "Numeria",
@@ -2108,6 +2110,7 @@
             "Brass Wheels",
             "Gralton",
             "Jarlek Grin",
+            "Kronharth",
             "Maegar Varn",
             "Pitax"
         ]
@@ -2432,36 +2435,6 @@
         ]
     },
     {
-        "id": "maegar_varn",
-        "name": "Maegar Varn",
-        "category": "npc",
-        "file": "NPCs/Golden Lands/Varnhold/Maegar Varn.md",
-        "map": null,
-        "view": null,
-        "border": null,
-        "color": "#BF902E",
-        "visibility": null,
-        "related": null,
-        "gmReferences": [
-            "Bann"
-        ],
-        "startYear": null,
-        "endYear": null,
-        "references": [
-            "Brave Wish",
-            "Brevoy",
-            "Cephal Lorentus",
-            "Daedove Wildguard",
-            "Malora Grainseller",
-            "Stolen Lands",
-            "Ura Clawt",
-            "Vaegarian host",
-            "Varnhold",
-            "Velmine",
-            "Zayne Copper"
-        ]
-    },
-    {
         "id": "dwen'zur_raincleanser",
         "name": "Dwen'zur Raincleanser",
         "category": "npc",
@@ -2506,28 +2479,6 @@
             "Embeth",
             "Maegar Varn",
             "Vaegarian host"
-        ]
-    },
-    {
-        "id": "cephal_lorentus",
-        "name": "Cephal Lorentus",
-        "category": "npc",
-        "file": "NPCs/Golden Lands/Varnhold/Cephal Lorentus.md",
-        "map": null,
-        "view": null,
-        "border": null,
-        "color": "#BF902E",
-        "visibility": null,
-        "related": null,
-        "gmReferences": [],
-        "startYear": null,
-        "endYear": null,
-        "references": [
-            "Brevoy",
-            "Maegar Varn",
-            "Stolen Lands",
-            "Vaegarian host",
-            "Varnhold"
         ]
     },
     {
@@ -2761,6 +2712,37 @@
             "Chirp",
             "Keldithas Beeret",
             "Reina Palett"
+        ]
+    },
+    {
+        "id": "maegar_varn",
+        "name": "Maegar Varn",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Summerborn/Maegar Varn.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#BF902E",
+        "visibility": null,
+        "related": null,
+        "gmReferences": [
+            "Bann"
+        ],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Brave Wish",
+            "Brevoy",
+            "Cephal Lorentus",
+            "Daedove Wildguard",
+            "Kronharth",
+            "Malora Grainseller",
+            "Stolen Lands",
+            "Ura Clawt",
+            "Vaegarian host",
+            "Varnhold",
+            "Velmine",
+            "Zayne Copper"
         ]
     },
     {
@@ -3043,10 +3025,33 @@
         "endYear": null,
         "references": [
             "Errard Specher",
+            "Kronharth",
             "Magrie Beeret",
-            "Mivon",
             "Pixana Boldshard",
             "Reina Palett"
+        ]
+    },
+    {
+        "id": "cephal_lorentus",
+        "name": "Cephal Lorentus",
+        "category": "npc",
+        "file": "NPCs/Golden Lands/Summerborn/Cephal Lorentus.md",
+        "map": null,
+        "view": null,
+        "border": null,
+        "color": "#BF902E",
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Brevoy",
+            "Kronharth",
+            "Maegar Varn",
+            "Stolen Lands",
+            "Vaegarian host",
+            "Varnhold"
         ]
     },
     {
@@ -3642,6 +3647,7 @@
             "Derk",
             "Ihara Absul",
             "Joker",
+            "Kronharth",
             "Lord of Stories",
             "Magie",
             "Nentrah",
@@ -4922,7 +4928,9 @@
         "references": [
             "Brevoy",
             "Embeth",
+            "Kronharth",
             "Milor",
+            "Mivon independence conflict",
             "Numeria",
             "Pitax",
             "Stolen Lands",
@@ -5078,6 +5086,133 @@
         ]
     },
     {
+        "id": "kronharth",
+        "name": "Kronharth",
+        "category": "nation",
+        "file": "Nations/Kronharth.md",
+        "map": null,
+        "view": {
+            "x": 1166,
+            "y": 201,
+            "zoom": 1.3
+        },
+        "border": [
+            [
+                282,
+                1170
+            ],
+            [
+                273,
+                1151
+            ],
+            [
+                278,
+                1132
+            ],
+            [
+                320,
+                1089
+            ],
+            [
+                335,
+                1071
+            ],
+            [
+                323,
+                999
+            ],
+            [
+                285,
+                979
+            ],
+            [
+                223,
+                990
+            ],
+            [
+                169,
+                1039
+            ],
+            [
+                113,
+                1079
+            ],
+            [
+                105,
+                1115
+            ],
+            [
+                72,
+                1155
+            ],
+            [
+                55,
+                1173
+            ],
+            [
+                92,
+                1242
+            ],
+            [
+                114,
+                1249
+            ],
+            [
+                129,
+                1284
+            ],
+            [
+                126,
+                1302
+            ],
+            [
+                209,
+                1343
+            ],
+            [
+                233,
+                1379
+            ],
+            [
+                286,
+                1353
+            ],
+            [
+                319,
+                1310
+            ],
+            [
+                317,
+                1264
+            ],
+            [
+                259,
+                1238
+            ],
+            [
+                265,
+                1181
+            ]
+        ],
+        "color": "#D223D9",
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": null,
+        "endYear": null,
+        "references": [
+            "Bann",
+            "Embeth",
+            "Mivon",
+            "Mivon independence conflict",
+            "Rendeen",
+            "Sandor",
+            "Thirdenlin",
+            "Vanee",
+            "Xiander"
+        ]
+    },
+    {
         "id": "gralton",
         "name": "Gralton",
         "category": "nation",
@@ -5203,6 +5338,7 @@
             "Embeth",
             "Garent",
             "Kings Road",
+            "Kronharth",
             "Manchu Tribes",
             "Nerrez",
             "Sandor",
@@ -5631,8 +5767,10 @@
             "Devastation of Daggermark",
             "Dwarven Keeps",
             "Kingmaker",
+            "Kronharth",
             "Manchu Tribes",
             "Mivon",
+            "Mivon independence conflict",
             "Numeria",
             "Pitax",
             "Roughen Fort",
@@ -5878,6 +6016,30 @@
         "startYear": 0,
         "endYear": 0,
         "references": []
+    },
+    {
+        "id": null,
+        "name": "Mivon independence conflict",
+        "category": "history",
+        "file": "History/Mivon independence conflict.md",
+        "map": null,
+        "view": {
+            "x": 1180,
+            "y": 255,
+            "zoom": 0.85
+        },
+        "border": null,
+        "color": "#B01313",
+        "visibility": null,
+        "related": null,
+        "gmReferences": [],
+        "startYear": 3820,
+        "endYear": 3822,
+        "references": [
+            "Divine Artifacts",
+            "Kronharth",
+            "Mivon"
+        ]
     },
     {
         "id": null,
@@ -6427,6 +6589,7 @@
             "Errard Specher",
             "Evergreen",
             "Farlamin Mistshaper",
+            "Felrick Kindhelm",
             "Flor Energa",
             "Garbin Sunheart",
             "Gildi Crank",
