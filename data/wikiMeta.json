@@ -1,8 +1,18 @@
 {
-    "latestBuild": "2026-11-08T09:12:35.156Z",
+    "latestBuild": "2026-11-15T10:24:37.996Z",
     "articleCount": 208,
-    "latestChange": "map pin fix, added ability to edit articles",
+    "latestChange": "fixed bug with layer order, added party marker, added there be dragons layer",
     "changelog": [
+        {
+            "date": "2026-11-15T10:24:37.996Z",
+            "articleCount": 208,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-14T21:11:27.994Z",
+            "articleCount": 208,
+            "changes": "map pin fix, added ability to edit articles"
+        },
         {
             "date": "2026-11-08T09:12:35.156Z",
             "articleCount": 208,

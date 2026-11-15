@@ -35,6 +35,8 @@ async function loadRivers(){
         .sort((left, right) => riverStyles[left.class].weight - riverStyles[right.class].weight)
         .forEach(addRiver);
 
+    orderLineLayers(layers.rivers);
+
 }
 
 function downloadRiversFile(){

@@ -216,3 +216,18 @@ text-shadow:
     width: 16px;
     transform: translateY(1px) rotate(-42deg);
 }
+.decoration-marker {
+    background: transparent;
+    border: 0;
+}
+
+.decoration-marker img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.decoration-marker.is-mirrored img {
+    transform: scaleX(-1);
+}

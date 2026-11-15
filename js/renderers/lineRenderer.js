@@ -134,6 +134,8 @@ function orderLineLayers(layer){
 
     });
 
+    applyLayerOrder();
+
 }
 
 function drawLine(object, options){

@@ -2,9 +2,8 @@
 visibility: gm
 --- 
 ## Check
-- Map pins
-- PC article - Players can edit (and aids that describes for players)
 - Edit articles 
+- Party marker
 ## Non coding work
 - PCs
 - Deity stories
@@ -16,11 +15,9 @@ visibility: gm
 - Clean up and speed up code
 - Lines don't render of screen
 - Not able to select roads and rivers
-- Bug with layer order trade routes load in under roads
 - Limt Zoom out
-## Map
-- Weather
-- Party marker
+- All texts load when reloading layers
+- Decoration Icons
 ## Tools
 - Travel calculator
 ## UI
@@ -28,6 +25,6 @@ visibility: gm
 ## Wiki
 - Arrows changing pictures on several picture articles
 - Story article time (cursive in timeline)
-- Places article type Places
+- Places article type
 - Article text visible to some players
 - Webb Links to articles

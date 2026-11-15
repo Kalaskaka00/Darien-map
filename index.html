@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="css/base.css?v=map-tool-dock-1">
     <link rel="stylesheet" href="css/editor.css">
-    <link rel="stylesheet" href="css/map.css?v=region-label-2">
+    <link rel="stylesheet" href="css/map.css?v=there-be-dragons-1">
     <link rel="stylesheet" href="css/ping.css">
     <link rel="stylesheet" href="css/npc.css?v=local-year-2">
     <link rel="stylesheet" href="css/deity.css?v=text-color-1">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/image-viewer.css">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/wiki.css?v=wiki-link-autocomplete-1">
-    <link rel="stylesheet" href="css/player-tools.css?v=map-tool-feedback-2">
+    <link rel="stylesheet" href="css/player-tools.css?v=party-marker-1">
     <link rel="stylesheet" href="css/player-presence.css">
     <link rel="stylesheet" href="css/notepad.css?v=global-notepads-1">
 </head>
@@ -67,6 +67,14 @@
             </button>
             <section id="map-tool-visibility-panel" aria-label="Tool visibility">
                 <p id="map-pin-status" class="map-pin-tool-status" role="status" hidden></p>
+                <section class="party-marker-controls" aria-label="Party location history">
+                    <span>Party location history</span>
+                    <div>
+                        <button id="party-marker-previous" type="button" aria-label="Previous party location">← Previous</button>
+                        <button id="party-marker-next" type="button" aria-label="Next party location">Next →</button>
+                    </div>
+                    <p id="party-marker-status" role="status">Drag the marker to move the party.</p>
+                </section>
                 <div id="player-tool-visibility-control">
                     <span class="player-status-label">Show tools to others:</span>
                     <button id="player-tool-visibility" type="button" aria-label="Show tools to others: Everyone">
@@ -164,6 +172,9 @@
         </button>
         <button id="move-settlement">
             Move Settlement
+        </button>
+        <button id="show-all-decorations">
+            Show All Decorations
         </button>
 
     </div>
@@ -364,14 +375,16 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <!-- Config -->
-<script src="js/config.js?v=region-layer-1"></script>
+<script src="js/config.js?v=there-be-dragons-1"></script>
 <script src="js/gm.js"></script>
 
 <!-- Map -->
 <script src="js/map/map.js"></script>
 <script src="js/map/ping.js"></script>
 <script src="js/map/layers.js"></script>
+<script src="js/map/layers/decorations.js"></script>
 <script src="js/map/pins.js?v=map-pin-feedback-3"></script>
+<script src="js/map/partyMarker.js?v=party-marker-1"></script>
 <script src="js/map/world.js?v=region-labels-1"></script>
 <script src="js/map/navigation.js?v=article-share-3"></script>
 <script src="js/renderers/lineRenderer.js?v=snap-2"></script>
@@ -435,6 +448,7 @@
 <script src="js/editor/build/drawTradeRoute.js"></script>
 <script src="js/editor/build/editShape.js"></script>
 <script src="js/editor/build/moveSettlement.js"></script>
+<script src="js/editor/build/showAllDecorations.js"></script>
 
 <!-- Start -->
 <script src="js/main.js"></script>

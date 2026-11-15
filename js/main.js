@@ -4,6 +4,10 @@ function initializeApplication(){
 
     initializeMapPins();
 
+    initializePartyMarker();
+
+    initializeDecorations();
+
     initializeLayers();
 
     loadWorld();

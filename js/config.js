@@ -20,7 +20,8 @@ const CONFIG = {
             "settlements",
             "tradeRoutes",
             "roads",
-            "rivers"
+            "rivers",
+            "decorations"
         ],
         layerVisibility: {
             nations: true,
@@ -28,7 +29,13 @@ const CONFIG = {
             rivers: true,
             roads: true,
             settlements: true,
-            tradeRoutes: true
+            tradeRoutes: true,
+            decorations: true
+        },
+        decorations: {
+            minimum: 1,
+            maximum: 5,
+            iconSize: 96
         },
         parchmentOverhang: {
             horizontal: 50,

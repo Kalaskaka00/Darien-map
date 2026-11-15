@@ -23,7 +23,7 @@ Barnur made a name for himself as "The Great Sledge" during [[The Rill War]].
 
 ## Relations
 - Barnur helped to train [[Jonas Arc]].
-- Barnur had a friendly rivalry with [[Korag]].
+- Barnur had a friendly rivalry with Korag.
 
 <!--GM
 ## GM info

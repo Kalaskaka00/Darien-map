@@ -1,0 +1,61 @@
+[
+    {
+        "id": "Felrick-balloon",
+        "coordinates": [551, 788],
+        "weight": 5,
+        "images": [
+            {
+                "src": "icons/Air Baloon 1.png",
+                "scale": 0.35
+            },
+            {
+                "src": "icons/Air Baloon 2.png",
+                "scale": 0.35
+            }
+        ]
+    },
+    {
+        "id": "VD-wagon",
+        "coordinates": [361, 602],
+        "weight": 5,
+        "images": [
+            {
+                "src": "icons/Wagon.png",
+                "scale": 0.3
+            }
+        ]
+    },
+    {
+        "id": "Baws-Boar",
+        "coordinates": [700, 797],
+        "weight": 3,
+        "images": [
+            {
+                "src": "icons/Pig.png",
+                "scale": 0.25
+            }
+        ]
+    },
+    {
+        "id": "Bandit-Camp",
+        "coordinates": [623, 764],
+        "weight": 4,
+        "images": [
+            {
+                "src": "icons/Campsite 1.png",
+                "scale": 0.25
+            }
+        ]
+    },
+    {
+        "id": "Wyndee-altar",
+        "coordinates": [563, 822],
+        "weight": 2,
+        "images": [
+            {
+                "src": "icons/Pentagram.png",
+                "scale": 0.3
+            }
+        ]
+    }
+]

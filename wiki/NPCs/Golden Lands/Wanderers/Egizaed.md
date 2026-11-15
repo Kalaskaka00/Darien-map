@@ -25,7 +25,7 @@ Egiazed was later forced to watch the lizardfolks be devestated by a [[Waaaghhh]
 ## Relations
 - [[Dwen'zur Raincleanser]] is someone Egiazed occasionally exchanges advice with.
 - [[Aelthot]] is someone Egizaed has advised many times over the years.
-- [[Bree Caley]] was taken in and eventually left to [[Korag]] as Egizaed protected the child as a favor to her parents.
+- [[Bree Caley]] was taken in and eventually left to Korag as Egizaed protected the child as a favor to her parents.
 
 <!--GM
 ## GM info

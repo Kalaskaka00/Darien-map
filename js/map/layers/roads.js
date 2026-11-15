@@ -36,6 +36,8 @@ async function loadRoads(){
         .sort((left, right) => roadStyles[left.class].weight - roadStyles[right.class].weight)
         .forEach(addRoad);
 
+    orderLineLayers(layers.roads);
+
 }
 
 function downloadRoadsFile(){

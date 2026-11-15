@@ -47,3 +47,8 @@ Some of the more extreme factions of Bann will sacrifice living creatures by cut
 
 Bann burials often consist of burning a creature in fire together with its weapon and armor, if it died fighting the weapons of the enemies are also often burned. A normal way to show respect at such burials are to drop some blood into the flames.
 ## A story
+In the most famous story of Bann he had taken the form as a mortal conqueror at the head of an orcish [[Waaaghhh]] in to elvish realms. The elves at the time had high walls which made an assault difficult.
+
+Using great cunning Bann had his army build a large goblin statue out of shit where it was clearly visible to the elven prince. After a week of the wind blowing the smell towards the palace the elven prince could no longer stand the insult and went to attack the orcish [[Waaaghhh]] seeing much of it already having left. They elves won easily.
+
+After their victory the elves headed back to their city just to see a large army of orcs emerging from the gate. The orcs had waited for the chance and breached the wall from the opposite side with the help of goblin miners. What happened next was a blood bath to the city and elvish army. In the end it is said that the elvish prince was buried in the shit statue.
