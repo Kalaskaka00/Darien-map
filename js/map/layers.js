@@ -6,6 +6,8 @@ const layers = {
 
     settlements: L.layerGroup(),
 
+    places: L.layerGroup(),
+
     rivers: L.layerGroup(),
 
     roads: L.layerGroup(),
@@ -20,6 +22,8 @@ const mapObjects = {
 
     settlements: {},
 
+    places: {},
+
     rivers: {},
 
     roads: {},
@@ -32,6 +36,7 @@ const layerLabels = {
     nations: "Nations",
     regions: "Regions",
     settlements: "Settlements",
+    places: "Places",
     rivers: "Rivers",
     roads: "Roads",
     tradeRoutes: "Trade Routes"
@@ -101,7 +106,12 @@ function initializeLayers(){
 
     L.control.layers(null, getOrderedOverlays()).addTo(map);
 
-    map.on("overlayadd", applyLayerOrder);
+    map.on("overlayadd", () => {
+
+        applyLayerOrder();
+        updateLabels();
+
+    });
 
 }
 

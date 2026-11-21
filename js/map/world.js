@@ -7,7 +7,7 @@ const currentYear = 3864;
 async function loadWorld() {
 
     const [indexResponse, metadataResponse] = await Promise.all([
-        fetch("data/wikiIndex.json"),
+        fetch("data/wikiIndex.json?v=places-sidebar-1"),
         fetch("data/wikiMeta.json?v=changelog-1")
     ]);
 
@@ -23,6 +23,11 @@ async function loadWorld() {
         .filter(item => item.map)
         .forEach(addCity);
     updateLabels();
+
+    world
+        .filter(item => item.category === "place")
+        .filter(item => item.map)
+        .forEach(addPlace);
 
         world
         .filter(item => item.category === "nation")

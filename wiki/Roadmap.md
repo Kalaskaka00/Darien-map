@@ -2,7 +2,7 @@
 visibility: gm
 --- 
 ## Check
-- Edit articles 
+- Edit articles - Changelog
 - Party marker
 ## Non coding work
 - PCs
@@ -15,8 +15,6 @@ visibility: gm
 - Clean up and speed up code
 - Lines don't render of screen
 - Not able to select roads and rivers
-- Limt Zoom out
-- All texts load when reloading layers
 - Decoration Icons
 ## Tools
 - Travel calculator
@@ -25,6 +23,7 @@ visibility: gm
 ## Wiki
 - Arrows changing pictures on several picture articles
 - Story article time (cursive in timeline)
-- Places article type
 - Article text visible to some players
 - Webb Links to articles
+- More pictures
+- Export to pdf

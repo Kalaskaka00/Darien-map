@@ -7,6 +7,10 @@ const CONFIG = {
     },
 
     map: {
+        zoom: {
+            minimum: -0.5,
+            maximum: 3.5
+        },
         kilometersPerMapUnit: 1,
         snapDistance: 5,
         realtime: {
@@ -18,6 +22,7 @@ const CONFIG = {
             "nations",
             "regions",
             "settlements",
+            "places",
             "tradeRoutes",
             "roads",
             "rivers",
@@ -29,6 +34,7 @@ const CONFIG = {
             rivers: true,
             roads: true,
             settlements: true,
+            places: true,
             tradeRoutes: true,
             decorations: true
         },

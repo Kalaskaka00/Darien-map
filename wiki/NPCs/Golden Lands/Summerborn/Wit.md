@@ -42,5 +42,5 @@ Wit eventually left [[Dragonlair]] and went to the [[Golden Lands]] to make a ne
 **Other information:** 
 Wit often claims to be part of a highly exclusive gang, Silvana is a honorary member.
 
-Wit is a member of the [[Thieflings]], a loose group mostly consisting of tieflings. The group is criminals, freedom fighters, smugglers etc. that loosely helps one another and shares information and exchanges favors. The [[Thiefligns]] mostly operate in and around [[Pitax]].
+Wit is a member of the [[Thieflings]], a loose group mostly consisting of tieflings. The group is criminals, freedom fighters, smugglers etc. that loosely helps one another and shares information and exchanges favors. The [[Thieflings]] mostly operate in and around [[Pitax]].
 -->

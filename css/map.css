@@ -75,6 +75,23 @@
          1px  1px 0 black;
 }
 
+.place-label {
+    padding: 2px 6px;
+    border: 1px solid #6f5328;
+    border-radius: 3px;
+    background: #f3ead1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
+    color: #3d5261;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.place-label.leaflet-tooltip-top::before {
+    border-top-color: #f3ead1;
+}
+
 .nation-label{
     background: transparent;
     border: none;
@@ -230,4 +247,91 @@ text-shadow:
 
 .decoration-marker.is-mirrored img {
     transform: scaleX(-1);
+}
+
+.place-pin-marker {
+    background: transparent;
+    border: 0;
+}
+
+.place-pin-icon {
+    display: block;
+    overflow: visible;
+}
+
+.place-card {
+    margin-bottom: 25px;
+    border: 3px solid #6f5328;
+    background: rgba(255, 255, 255, .45);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
+}
+
+.place-banner {
+    padding: 14px 18px;
+    background: var(--place-banner);
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .8);
+}
+
+.place-banner h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.place-location {
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+.place-location .wikilink {
+    color: inherit;
+}
+
+.place-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.place-types span {
+    padding: 3px 8px;
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 12px;
+    background: var(--place-type-color);
+    color: var(--place-type-text-color);
+    font-size: 13px;
+}
+
+.place-types-dual {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+}
+
+.place-types-dual span {
+    justify-self: center;
+}
+
+#wiki-preview .place-card {
+    width: 300px;
+    margin: 0;
+}
+
+#wiki-preview .place-banner {
+    padding: 10px 12px;
+}
+
+#wiki-preview .place-banner h2 {
+    font-size: 1.2rem;
+}
+
+#wiki-preview .place-location {
+    font-size: .9rem;
+}
+
+#wiki-preview .place-types span {
+    font-size: 11px;
 }

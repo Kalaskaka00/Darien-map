@@ -161,10 +161,8 @@ async function writeApprovedRevision(revision){
     if(proposedData.category !== localData.category)
         throw new Error(`Article category does not match the proposal for ${revision.article_file}.`);
     if(revision.proposed_by !== "GM" &&
-        (localData.category !== "pc" ||
-            localData.player !== revision.proposed_by ||
-            proposedData.player !== localData.player))
-        throw new Error(`Player ownership does not match the proposal for ${revision.article_file}.`);
+        proposedData.player !== localData.player)
+        throw new Error(`Player assignment does not match the proposal for ${revision.article_file}.`);
     if(hasGMNotes(revision.proposed_markdown))
         throw new Error(`Proposal unexpectedly contains GM-only notes: ${revision.article_file}`);
 

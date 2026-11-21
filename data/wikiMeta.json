@@ -1,8 +1,103 @@
 {
-    "latestBuild": "2026-11-15T10:24:37.996Z",
-    "articleCount": 208,
-    "latestChange": "fixed bug with layer order, added party marker, added there be dragons layer",
+    "latestBuild": "2026-11-21T16:59:33.892Z",
+    "articleCount": 217,
+    "latestChange": "added palces article type, added summary of unlinked articles, limited zoom, fixed bug with settlement names, added ability for players to edit any article and a changelog",
     "changelog": [
+        {
+            "date": "2026-11-21T16:59:33.892Z",
+            "articleCount": 217,
+            "changes": "added palces article type, added summary of unlinked articles, limited zoom, fixed bug with settlement names, added ability for players to edit any article and a changelog"
+        },
+        {
+            "date": "2026-11-21T09:11:03.466Z",
+            "articleCount": 216,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-20T16:49:29.019Z",
+            "articleCount": 215,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-18T19:11:05.000Z",
+            "articleCount": 214,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-18T19:04:21.208Z",
+            "articleCount": 214,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-18T18:58:01.118Z",
+            "articleCount": 214,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-18T18:55:42.995Z",
+            "articleCount": 214,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-18T18:54:52.332Z",
+            "articleCount": 214,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-17T19:06:30.019Z",
+            "articleCount": 213,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-15T19:24:58.866Z",
+            "articleCount": 212,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-15T18:30:04.859Z",
+            "articleCount": 211,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-15T18:14:55.593Z",
+            "articleCount": 211,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-15T14:40:17.823Z",
+            "articleCount": 210,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-15T14:39:11.567Z",
+            "articleCount": 210,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-15T14:38:38.934Z",
+            "articleCount": 210,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-15T14:37:05.584Z",
+            "articleCount": 210,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-15T14:32:29.826Z",
+            "articleCount": 210,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-15T14:31:47.460Z",
+            "articleCount": 210,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
+        {
+            "date": "2026-11-15T14:31:40.144Z",
+            "articleCount": 210,
+            "changes": "fixed bug with layer order, added party marker, added there be dragons layer"
+        },
         {
             "date": "2026-11-15T10:24:37.996Z",
             "articleCount": 208,

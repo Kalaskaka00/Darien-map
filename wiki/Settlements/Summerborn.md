@@ -33,6 +33,6 @@ Summerborn was founded when the three adventurers [[Claire Nightshield]], [[Silv
 ## Organizations/Groups
 - 
 ## Notable Locations 
-- Stag Keep originates from the state of [[Oulry]] until it was taken over by the [[Stag Lord]] and later by [[Golden Lands]]. It is now serves as the government building ruling the barony.
+- Stag Keep originates from the [[City State of Oulry]] until it was taken over by the [[Stag Lord]] and later by [[Golden Lands]]. It is now serves as the government building ruling the barony.
 - [[Claire Nightshield]]s grave is a small but strong tree commemorating the fall of one of the three first baronesses of the [[Golden Lands]]. It has become a site of pilgrimage for many druids and worshipers of [[Rendeen]].
 - The Sleeping Dragon Inn is the most important Inn in town and tends to draw many visitors and residents alike. It is run by [[Adsatra Sagebrook]] and [[Movh Bearer]].

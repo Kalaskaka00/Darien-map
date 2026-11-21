@@ -5,7 +5,7 @@ category: npc
 image: Evergreen.jpg
 
 fullname: Evergreen
-race: [[Old God]]
+race: [[Old Gods]]
 birth: 
 death: 3863
 family: 

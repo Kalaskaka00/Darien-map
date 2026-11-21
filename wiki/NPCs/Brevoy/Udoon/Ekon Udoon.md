@@ -11,7 +11,7 @@ death:
 family: [[Udoon family]]
 organisations: 
   - [[Northhall Adventure Guild]]
-  - [[Vorpal Shards]]
+  - Vorpal Shards
 origin: [[Brevoy]]
 
 color: "#BF902E"
@@ -19,7 +19,7 @@ color: "#BF902E"
 # Ekon Udoon
 *Pleasure to make your acquaintance, would you join me for a drink?*
 
-Ekon is the first born child and heir to the [[Udoon family]]. He is known for his charm and musical skill and part time work as an adventurer for the [[Vorpal Shards]] in the [[Northhall Adventure Guild]]. He is however also known as a bit of a.... "charmer" and with a difficulty to stay put.
+Ekon is the first born child and heir to the [[Udoon family]]. He is known for his charm and musical skill and part time work as an adventurer for the Vorpal Shards in the [[Northhall Adventure Guild]]. He is however also known as a bit of a.... "charmer" and with a difficulty to stay put.
 
 ## Relations
 - [[Thorin Udoon]] and [[Maameo Udoon]] are Ekons father and mother.

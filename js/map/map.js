@@ -5,7 +5,8 @@ const height = 1058;
 // Skapa kartan
 const map = L.map('map', {
     crs: L.CRS.Simple,
-    minZoom: -2,
+    minZoom: CONFIG.map.zoom.minimum,
+    maxZoom: CONFIG.map.zoom.maximum,
     zoomSnap: 0
 });
 

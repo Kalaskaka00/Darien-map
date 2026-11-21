@@ -14,5 +14,6 @@ color:
 # <% tp.file.title %>
 Battle/War "#B01313"
 Magic/Divine "#211DA1"
+Political "#1DA147"
 
 Description

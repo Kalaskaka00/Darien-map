@@ -30,7 +30,7 @@ Harlequin was the second member of the Jesters. She originates from [[Pitax]] wh
 **Personality traits:**
  - I am always on the verge of laughter.
  - The world is boring and needs a bit of crazy.
- - [[The Lord of Stories]] is my lord and I would without a doubt die for them.
+ - [[Lord of Stories]] is my lord and I would without a doubt die for them.
  - I am quite unstable.
  
 **Other information:** 

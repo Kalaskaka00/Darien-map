@@ -32,7 +32,7 @@ Mime kept watch during an assault in the [[Aldori family]] household where mime 
 **Personality traits:**
  - I am a sadist who enjoy seeing people suffer.
  - The world is a joke.
- - [[The Lord of Stories]] is my lord and I would without a doubt die for them.
+ - [[Lord of Stories]] is my lord and I would without a doubt die for them.
  - My wish to inflict suffering can at times put me in dumb situations.
  
 **Other information:** 

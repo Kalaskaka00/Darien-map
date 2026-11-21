@@ -303,6 +303,64 @@
 
 }
 
+.wiki-article-changelog{
+
+    margin:.5rem 0 1rem;
+
+}
+
+.wiki-article-changelog button{
+
+    margin:0;
+
+}
+
+.wiki-article-changelog-details{
+
+    margin-top:.6rem;
+    border:1px solid rgba(111, 83, 40, .35);
+    border-radius:4px;
+    overflow:auto;
+
+}
+
+.wiki-article-changelog-details[hidden]{
+
+    display:none;
+
+}
+
+.wiki-article-changelog-details pre{
+
+    margin:0;
+    padding:.45rem .65rem;
+    white-space:pre-wrap;
+    overflow-wrap:anywhere;
+    font:13px/1.45 Consolas, monospace;
+
+}
+
+.wiki-article-changelog-removed{
+
+    background:#f8dfdc;
+    color:#8b1e18;
+
+}
+
+.wiki-article-changelog-added{
+
+    background:#e2f1df;
+    color:#245d2c;
+
+}
+
+.wiki-article-changelog-details p{
+
+    margin:.5rem .65rem;
+    font-size:.85rem;
+
+}
+
 .wiki-article-edit-error{
 
     color:#9b1c1c;
@@ -1368,5 +1426,31 @@
 .directory-article a:hover{
 
     text-decoration: underline;
+
+}
+
+.unlinked-article-sources{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:.1rem .75rem;
+    margin:.2rem 0 .7rem;
+    padding:0;
+    list-style:none;
+
+}
+
+.unlinked-article-sources li{
+
+    margin:0;
+
+}
+
+.unlinked-article-sources a,
+.unlinked-article-sources a:hover{
+
+    color:inherit;
+    font-weight:normal;
+    text-decoration:none;
 
 }

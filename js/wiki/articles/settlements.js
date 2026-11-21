@@ -222,14 +222,17 @@ marker.on("click", function(e){
 //Labels Zoom
 function updateLabels() {
 
-    layers.settlements.eachLayer(layer => {
+    const showLabels = map.getZoom() >= 1;
 
-        if (map.getZoom() >= 1) {
-            layer.openTooltip();
-        } else {
-            layer.closeTooltip();
-        }
+    [layers.settlements, layers.places].forEach(layerGroup => {
 
+        layerGroup.eachLayer(layer => {
+            if(showLabels) {
+                layer.openTooltip();
+            } else {
+                layer.closeTooltip();
+            }
+        });
     });
 
 }

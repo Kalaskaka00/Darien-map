@@ -14,12 +14,12 @@ origin: [[Embeth]]
 
 color: "#13B057"
 --- 
-# Egiazed
+# Egizaed
 *Approach as a friend*
 
-Egizaed is a close friend to the lizardfolk tribes in the Stolen Lands. He is known for his friendly demeanor and knowing people.
+Egizaed is a close friend to the lizardfolk tribes in the [[Stolen Lands]]. He is known for his friendly demeanor and knowing people.
 
-Egizaed moved in to the [[Stolen Lands]] after the [[Candle Mages]] were neutralized and developed friendly relations with [[Pitax]], the lizardfolk and the city state of Oulry. Egizaed tried to act as a peacemaker but failed continually. Egizaed was injured severely when trying to stop a battle, losing his wings.
+Egizaed moved in to the [[Stolen Lands]] after the [[Candle Mages]] were neutralized and developed friendly relations with [[Pitax]], the lizardfolk and the [[City State of Oulry]]. Egizaed tried to act as a peacemaker but failed continually. Egizaed was injured severely when trying to stop a battle, losing his wings.
 
 Egiazed was later forced to watch the lizardfolks be devestated by a [[Waaaghhh]], where he couldn´t reach the battle in time.  Since Egizaed has acted as an advisor and tried to protect the lizardfolk tribes.
 ## Relations

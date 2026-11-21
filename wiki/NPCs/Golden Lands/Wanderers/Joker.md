@@ -31,7 +31,7 @@ Joker was the last joker to join the Jesters after leaving the [[Candle Mages]].
 **Personality traits:**
  - I am a showman and enjoy being flashy.
  - Strength is what matters.
- - [[The Lord of Stories]] is my lord and I would without a doubt die for them.
+ - [[Lord of Stories]] is my lord and I would without a doubt die for them.
  - My joy for showmanship and flashiness sometimes mean I go overboard or say things i shouldn't.
  
 **Other information:** 

@@ -58,7 +58,7 @@ async function loadWikiArticleRevision(articleFile, expectedArticle){
     try{
         result = await wikiArticleEditsSupabase
             .from(WIKI_ARTICLE_EDITS_TABLE)
-            .select("article_file, proposed_markdown, proposed_by, submitted_at, status")
+            .select("article_file, proposed_markdown, base_markdown, proposed_by, submitted_at, status")
             .eq("article_file", articleFile)
             .maybeSingle();
     }catch(error){
@@ -83,12 +83,7 @@ async function loadWikiArticleRevision(articleFile, expectedArticle){
         : expectedArticle.category;
     if(
         proposedArticle.category !== expectedCategory ||
-        (!submittedByGM && (
-            expectedArticle.category !== "pc" ||
-            typeof proposedArticle.player !== "string" ||
-            proposedArticle.player !== data.proposed_by ||
-            proposedArticle.player !== expectedArticle.player
-        )) ||
+        (!submittedByGM && proposedArticle.player !== expectedArticle.player) ||
         hasWikiArticleGMNotes(data.proposed_markdown)
     ){
         const invalidRevisionError = new Error(`The shared revision for "${articleFile}" is invalid.`);
@@ -106,22 +101,139 @@ function formatWikiArticleEditDate(value){
         : "date unknown";
 }
 
+function getWikiArticleEditDiff(baseMarkdown, proposedMarkdown){
+    const baseContent = extractFrontmatter(stripWikiArticleGMNotes(baseMarkdown)).content;
+    const proposedContent = extractFrontmatter(stripWikiArticleGMNotes(proposedMarkdown)).content;
+    const baseLines = baseContent.split("\n");
+    const proposedLines = proposedContent.split("\n");
+    let prefixLength = 0;
+    while(prefixLength < baseLines.length &&
+        prefixLength < proposedLines.length &&
+        baseLines[prefixLength] === proposedLines[prefixLength])
+        prefixLength++;
+
+    let baseEnd = baseLines.length;
+    let proposedEnd = proposedLines.length;
+    while(baseEnd > prefixLength &&
+        proposedEnd > prefixLength &&
+        baseLines[baseEnd - 1] === proposedLines[proposedEnd - 1]){
+        baseEnd--;
+        proposedEnd--;
+    }
+
+    const removedLines = baseLines.slice(prefixLength, baseEnd);
+    const addedLines = proposedLines.slice(prefixLength, proposedEnd);
+    const columns = addedLines.length + 1;
+    const cellCount = (removedLines.length + 1) * columns;
+    let operations = [];
+
+    if(cellCount <= 1000000){
+        const lengths = new Uint32Array(cellCount);
+        for(let removedIndex = removedLines.length - 1; removedIndex >= 0; removedIndex--){
+            for(let addedIndex = addedLines.length - 1; addedIndex >= 0; addedIndex--){
+                const cell = removedIndex * columns + addedIndex;
+                lengths[cell] = removedLines[removedIndex] === addedLines[addedIndex]
+                    ? lengths[cell + columns + 1] + 1
+                    : Math.max(lengths[cell + columns], lengths[cell + 1]);
+            }
+        }
+
+        let removedIndex = 0;
+        let addedIndex = 0;
+        while(removedIndex < removedLines.length && addedIndex < addedLines.length){
+            if(removedLines[removedIndex] === addedLines[addedIndex]){
+                removedIndex++;
+                addedIndex++;
+            }else if(lengths[(removedIndex + 1) * columns + addedIndex] >=
+                lengths[removedIndex * columns + addedIndex + 1]){
+                operations.push({type: "removed", line: removedLines[removedIndex++]});
+            }else{
+                operations.push({type: "added", line: addedLines[addedIndex++]});
+            }
+        }
+        while(removedIndex < removedLines.length)
+            operations.push({type: "removed", line: removedLines[removedIndex++]});
+        while(addedIndex < addedLines.length)
+            operations.push({type: "added", line: addedLines[addedIndex++]});
+    }else{
+        operations = [
+            ...removedLines.map(line => ({type: "removed", line})),
+            ...addedLines.map(line => ({type: "added", line}))
+        ];
+    }
+
+    return operations;
+}
+
+function renderWikiArticleChangeLog(revision){
+    if(revision?.status !== "pending" || typeof revision.base_markdown !== "string")
+        return null;
+
+    const changes = getWikiArticleEditDiff(
+        revision.base_markdown,
+        revision.proposed_markdown
+    );
+    if(!changes.length)
+        return null;
+
+    const changelog = document.createElement("section");
+    changelog.className = "wiki-article-changelog";
+    const toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.textContent = "View changelog";
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-controls", "wiki-article-changelog-details");
+
+    const details = document.createElement("div");
+    details.id = "wiki-article-changelog-details";
+    details.className = "wiki-article-changelog-details";
+    details.hidden = true;
+    const visibleChanges = changes.slice(0, 500);
+    let activeType = null;
+    let activeLines = [];
+    const flush = () => {
+        if(!activeLines.length)
+            return;
+        const block = document.createElement("pre");
+        block.className = `wiki-article-changelog-${activeType}`;
+        const prefix = activeType === "removed" ? "- " : "+ ";
+        block.textContent = activeLines.map(line => `${prefix}${line}`).join("\n");
+        details.append(block);
+        activeLines = [];
+    };
+
+    visibleChanges.forEach(change => {
+        if(change.type !== activeType){
+            flush();
+            activeType = change.type;
+        }
+        activeLines.push(change.line);
+    });
+    flush();
+    if(changes.length > visibleChanges.length){
+        const note = document.createElement("p");
+        note.textContent = `Showing the first ${visibleChanges.length} of ${changes.length} changed lines.`;
+        details.append(note);
+    }
+
+    toggle.addEventListener("click", () => {
+        details.hidden = !details.hidden;
+        toggle.setAttribute("aria-expanded", String(!details.hidden));
+        toggle.textContent = details.hidden ? "View changelog" : "Hide changelog";
+    });
+    changelog.append(toggle, details);
+    return changelog;
+}
+
 function canEditWikiArticle(article, revisionState){
     return Boolean(article && (
         isGM ||
-        (article.category === "pc" &&
-            currentPlayer &&
-            article.player === currentPlayer &&
-            revisionState?.revision?.status !== "approved")
+        (currentPlayer && revisionState?.revision?.status !== "approved")
     ));
 }
 
 function isValidWikiArticleEdit(article, markdown){
-    if(!isGM && (
-        article.category !== "pc" ||
-        !currentPlayer ||
-        article.player !== currentPlayer
-    ))
+    if(!isGM && !currentPlayer)
         return false;
 
     const parsed = extractFrontmatter(markdown);
@@ -164,6 +276,10 @@ function renderWikiArticleEditControls(article, markdown, revisionState){
     controls.hidden = !hasStatus;
 
     const canEdit = canEditWikiArticle(article, revisionState);
+    const changelog = renderWikiArticleChangeLog(revision);
+    if(changelog)
+        controls.append(changelog);
+
     if(canEdit){
         const form = document.createElement("form");
         form.className = "wiki-article-edit-form";
@@ -251,7 +367,11 @@ function renderWikiArticleEditControls(article, markdown, revisionState){
                     .upsert({
                         article_file: article.file,
                         proposed_markdown: stripWikiArticleGMNotes(proposedMarkdown),
-                        base_markdown: stripWikiArticleGMNotes(markdown),
+                        base_markdown: stripWikiArticleGMNotes(
+                            revisionState.revision?.status === "pending"
+                                ? revisionState.revision.base_markdown
+                                : markdown
+                        ),
                         proposed_by: isGM ? "GM" : currentPlayer,
                         submitted_at: new Date().toISOString(),
                         status: "pending"
@@ -275,7 +395,7 @@ function renderWikiArticleEditControls(article, markdown, revisionState){
         });
     }
 
-    articleElement.prepend(controls);
+    articleElement.append(controls);
 }
 
 function replaceWikiArticleGMNotes(markdown, replaceBlock){

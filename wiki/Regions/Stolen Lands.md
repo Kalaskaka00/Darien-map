@@ -42,5 +42,5 @@ The Stolen Lands where for a long time a home of the [[Dream Realm]] until aroun
   - {{year:3100}} Giant lands led by [[Thundarak]] fallen into a deep slumber.
   - {{year:3200}} A land of [[Pitax]]ian expeditions and research.
   - {{year:3500}} The [[Candle Mages]] founded [[Candelmore]] and were cursed into forgetfulness.
-  - {{year:3600}} The city state of [[Oulry]] starts a lucrative trade empire and is destroyed.
+  - {{year:3600}} The city state of [[City State of Oulry]] starts a lucrative trade empire and is destroyed.
   - {{year:3861}} The [[Stag Lord]] starts creating a bandit empire until he is defeated by [[Silvana Ashford]], [[Bree Caley]] and [[Claire Nightshield]] and the [[Golden Lands]] are founded.

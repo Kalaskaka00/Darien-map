@@ -37,7 +37,7 @@ Meel'a is from [[Longstalk Cavern Colony]], in where she was a gatherer. She exp
 
 **Personality traits:**
  - Calm demeanor. Prefers not to take fights if she can, EXCEPT [[Maegar Varn]] related fights. 
- - Likes puns, always with a deadpan delivery though. Cares for animals, but never in a caring tone. Same with humanoids Likes creatures that need help, like [[Garbin]]
+ - Likes puns, always with a deadpan delivery though. Cares for animals, but never in a caring tone. Same with humanoids Likes creatures that need help, like [[Garbin Sunheart]]
  
 **Other information:** 
 

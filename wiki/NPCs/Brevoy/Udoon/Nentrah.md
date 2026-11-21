@@ -24,7 +24,7 @@ Nentrah would spend the next 1000 years destroying kingdoms which would rise in 
 - A cyclops kingdom led by [[Thundarak]]
 - A [[Pitax]] colony
 - The [[Candle Mages]]
-- City state of [[Oulry]]
+- The [[City State of Oulry]]
 - The [[Stag Lord]] and his gang
 
 Eventually when trying to fell the [[Golden Lands]] she was captured by [[Silvana Ashford]], [[Bree Caley]] and [[Conleth Umbra]] during the siege of [[Summerborn]].

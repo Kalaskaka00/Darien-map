@@ -1,0 +1,77 @@
+---
+visibility: gm
+--- 
+# New Campaign
+## Downtime
+### Players
+- **Obligatory** Write PC articles
+- ***Recommended*** Describe one to three events that has happened in the downtime
+- *Optional* Write epilogues ideas for any NPCs you have ideas for
+### GM
+ - Go through player ideas
+ - Go through and update NPCs
+## PC requirements
+ - **Obligatory** The PC must be likable
+ - **Obligatory** The PC must have at least one allied NPC or organisation, like:
+	 - Patron
+	 - Mentor
+	 - Ally
+	 - Friend
+	 - Comrade-in-Arms
+	 - Merchant
+	 - Informant
+	 - Sibling/Family/Clan Member
+ - **Obligatory** The PC must have at least one rival NPC or organisation, like:
+	 - Person of Authority
+	 - Superior
+	 - Feuder (Family feud, religious feud, territorial feud, corporate rivalry, gang war, martial art styles, racial war)
+	 - Former ally/friend
+	 - Rival
+	 - Merchant
+	 - Mole
+	 - Sibling/Family/Clan Member
+ - **Obligatory** The PC must have 1-2 long term goals, like:
+	 - Overthrow the regime
+	 - World domination
+	 - Crush the rebellion
+	 - Retire in incredible luxury
+ - **Obligatory** The PC must have 1-2 medium term goals, like:
+	 - Convert as many unbelievers to the PCs belief as possible
+	 - Meet an Elf
+	 - Buy a starship (or pay off an existing one)
+	 - Become a famous swordsman
+	 - Wander the Earth, Kung-Fu style
+	 - Rescue (a person I know) from enslavement
+ - **Obligatory** The PC must have 2-4 short term goals, like:
+	 - Get a better suit of armor
+	 - Learn new spells
+	 - Get of this planet
+	 - Join the rebellion
+	 - Find a job
+	 - Get into a brawl
+	 - Take down some bad guys
+ - **Obligatory** Give your character some quirks and traits, like:
+	 - Accent and ways of speaking
+	 - Temperament and disposition
+	 - Mannerisms, how they act
+ - **Obligatory** Give your character some weaknesses, like:
+	 - Physical: handicap, age, missing limbs
+	 - Belief-based: nationalism, codes of honor, religious
+	 - Social group: education, illiteracy, being a minority, reputation
+	 - Psychological: addictions, compulsive behavior, phobias
+ - **Obligatory** Write down 5-10 things you're character thinks is right or wrong in certain circumstances, like:
+	 - Lying: Is it ever okay to misrepresent the truth? Any skeletons in the closet? 
+	 - Cheating: Does the character ever break the rules? Why? Stealing: Is it okay to take things? From whom might it be okay? 
+	 - Killing: How does the character feel about the taking of lives? Under what circumstances might it be acceptable or unacceptable? 
+	 - Authority: Is the character a control freak or are they most comfortable being directed by others? Are they a righteous upholder of the law? Do they ever question orders? 
+	 - Regime/Politics: Does the character approve or disapprove of the current governing force? Are they actively protecting or actively trying to replace the current regime? Are they involved in politics at all? 
+	 - Philosophy: Do the ends justify the means? Are we free to choose our actions or does fate rule our destiny? 
+	 - The Law: What form of law does the character practice or approve of anarchy, honor systems/self rule, personal codes, written law? Should one obey and uphold the law without question or should the laws be subject to creative interpretation? Does the character have a personal honor system or set of unique beliefs? 
+	 - The Unknown: How does the character react to foreigners/aliens? Are they open to new cultures or do they ridicule or fear them? Are things from other cultures to be appreciated or destroyed as heretical? 
+	 - Other People: How does the character regard other people? With suspicion? As tools and obstacles? With respect? How does the character feel about the rich, the poor, the powerful and the weak? 
+	 - Habits: Does the character have any particular habits or vices? Are there any habits or vices the character finds morally reprehensible? 
+	 - Secrets: Does the character have any secrets or secret goals? Why? Under what circumstances might their secret be told? 
+	 - Class: Where does the character sit in the game setting’s class hierarchy? How does the character feel about those in lower classes? Do they ignore them, regard them as animals, look down upon them with contempt or view them with kindness, as under their direct care and responsibility, or in a symbiotic relationship? How about those in the classes above? Do they view them as evil or as something to aspire to? 
+	 - Campaign Specifics: Say your game involves psionics (extrasensory perceptions like mind reading and clairvoyance) that are considered immoral to know and use. Both the GM and player would need to know how the character feels about psionics.
+ - ***Recommended*** Add at least one place/settlement/organisation/historical event/detail that is relevant to your PC to the world
+## Pitches
