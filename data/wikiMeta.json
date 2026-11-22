@@ -1,8 +1,18 @@
 {
-    "latestBuild": "2026-11-21T16:59:33.892Z",
+    "latestBuild": "2026-11-22T14:10:10.895Z",
     "articleCount": 217,
-    "latestChange": "added palces article type, added summary of unlinked articles, limited zoom, fixed bug with settlement names, added ability for players to edit any article and a changelog",
+    "latestChange": "Added session 51",
     "changelog": [
+        {
+            "date": "2026-11-22T14:10:10.895Z",
+            "articleCount": 217,
+            "changes": "Added session 51"
+        },
+        {
+            "date": "2026-11-22T14:09:32.078Z",
+            "articleCount": 217,
+            "changes": "added palces article type, added summary of unlinked articles, limited zoom, fixed bug with settlement names, added ability for players to edit any article and a changelog"
+        },
         {
             "date": "2026-11-21T16:59:33.892Z",
             "articleCount": 217,

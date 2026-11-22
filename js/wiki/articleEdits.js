@@ -237,8 +237,10 @@ function isValidWikiArticleEdit(article, markdown){
         return false;
 
     const parsed = extractFrontmatter(markdown);
+    const sourceKeys = articleFrontmatterSourceKeys.get(article);
     const expectedCategory = article.category === "Unknown" ? undefined : article.category;
     return parsed.data.category === expectedCategory &&
+        (!sourceKeys?.has("name") || parsed.data.name === article.name) &&
         (isGM || parsed.data.player === article.player) &&
         !hasWikiArticleGMNotes(markdown);
 }

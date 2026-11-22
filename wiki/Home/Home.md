@@ -6,5 +6,5 @@ Darien in the year {{year:current}} is a land of [[PCs Summary|adventures]], [[O
 
 Darien is a land with a tumultuous [[The Timeline|History]] including wars between [[Nations Summary|nations]], [[NPCs Summary|people]] making a name for themselves, [[Organisations Summary|groups]] working, [[Families Summary|families]] scheming and [[Deities Summary|gods]] falling.
 ## Adventures
-- In [[Kingmaker]] we got to follow [[Claire Nightshield]], [[Silvana Ashford]], [[Bree Caley]] and [[Conleth Umbra]] on their quest to fund the nation of the [[Golden Lands]] and the troubles they faced.
+- In [[Kingmaker]] we got to follow [[Claire Nightshield]], [[Silvana Ashford]], [[Bree Caley]] and [[Conleth Umbra]] on their quest to fund the nation of the [[Golden Lands]] and the troubles they faced fighting [[Nentrah]] and the [[Lord of Stories]].
 - In [[Vital Delivery]] we got to follow [[Turtahir]], [[Meel'a]] and [[Agamoos Evercrown]] as they ventured all the way from [[Gralton]] to the [[Golden Lands]] to deliver a package.

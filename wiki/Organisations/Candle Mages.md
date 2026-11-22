@@ -35,7 +35,7 @@ The organisation consists of mages all trying to learn and create magic and wond
 - Master of death [[Ihara Absul]]
 - Master of transmutation [[Magie]]
 - Master of visions [[Whirl Palett]]
-- Master of creation [[Yarslav Crain]]
 - Trainee [[Annj Bearer]]
 ## Former members
 - Master of behavior [[Joker|Jandeen Faelmin]]
+- Master of creation [[Yarslav Crain]]

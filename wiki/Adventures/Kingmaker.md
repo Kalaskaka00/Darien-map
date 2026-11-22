@@ -344,7 +344,9 @@ With all the crises going on at once te protagonists took three immediate action
 2. They temporarily calmed the protesting crowds.
 3. They set out towards [[Candelmore]].
 
-**Session 52:** *Candlemore fey attacks*
+**Session 52 & 53:** *Candlemore fey attacks*
 Pressing the dread Turbo button on the boat made by [[Felrick Kindhelm]], [[Silvana Ashford]], [[Bree Caley]] and [[Conleth Umbra]] arrived at [[Candelmore]] at record speeds just in time to aid [[Annj Bearer]], [[Magie]] and [[Derk]] in a battle against fey.
 
-Explaining that [[Ihara Absul]] had been put in a deep sleep witch had immobilized the other [[Candle Mages]] the protagonists set out to defeat the source of some of the issues and fought [[Wyndee]].
+Explaining that [[Ihara Absul]] had been put in a deep sleep witch had immobilized the other [[Candle Mages]] the protagonists set out to defeat the source of some of the issues and fought [[Wyndee]]. After defeating her [[Silvana Ashford]] found a special medallion of [[Wyndee]].
+
+In trying to get back control [[Yarslav Crain]] died when [[Ihara Absul]] tried to resurect him. The living [[Candle Mages]] headed for [[Summerborn]] with the protagonists and [[Myron]] leaving the others in [[Derk]]s shack.

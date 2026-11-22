@@ -153,18 +153,55 @@ async function loadRevisions(){
     return request("GET", query.toString());
 }
 
+async function rejectInvalidPendingRevision(revision, reason){
+    if(revision.status !== "pending")
+        throw new Error(reason);
+
+    console.error(`Cannot approve ${revision.article_file}: ${reason}`);
+    const answer = await reviewPrompt.question("Reject this invalid revision? [y]es / [n]o / [q]uit: ");
+    const decision = answer.trim().toLowerCase();
+    if(decision === "q")
+        throw new Error("Review stopped. No further revisions were processed.");
+    if(decision !== "y" && decision !== "yes")
+        throw new Error(`Invalid revision was kept; ${revision.article_file} was not changed locally.`);
+
+    const deleted = await request("DELETE", new URLSearchParams({
+        article_file: `eq.${revision.article_file}`,
+        status: "eq.pending",
+        submitted_at: `eq.${revision.submitted_at}`
+    }).toString());
+    if(!deleted?.length)
+        throw new Error("The revision changed during review. It was not rejected; review the latest version on the next upload.");
+    console.log("Rejected invalid revision. The local article remains unchanged.");
+}
+
 async function writeApprovedRevision(revision){
     const articlePath = getLocalArticlePath(revision.article_file);
     const localMarkdown = fs.readFileSync(articlePath, "utf8");
     const localData = parseArticle(localMarkdown, revision.article_file);
-    const proposedData = parseArticle(revision.proposed_markdown, revision.article_file);
+    let proposedData;
+    try{
+        proposedData = parseArticle(revision.proposed_markdown, revision.article_file);
+    }catch(error){
+        await rejectInvalidPendingRevision(revision, error.message);
+        return;
+    }
+
+    let validationError = null;
     if(proposedData.category !== localData.category)
-        throw new Error(`Article category does not match the proposal for ${revision.article_file}.`);
-    if(revision.proposed_by !== "GM" &&
+        validationError = new Error(`Article category does not match the proposal for ${revision.article_file}.`);
+    else if(revision.proposed_by !== "GM" &&
         proposedData.player !== localData.player)
-        throw new Error(`Player assignment does not match the proposal for ${revision.article_file}.`);
-    if(hasGMNotes(revision.proposed_markdown))
-        throw new Error(`Proposal unexpectedly contains GM-only notes: ${revision.article_file}`);
+        validationError = new Error(`Player assignment does not match the proposal for ${revision.article_file}.`);
+    else if(Object.prototype.hasOwnProperty.call(localData, "name") &&
+        proposedData.name !== localData.name)
+        validationError = new Error(`Article name does not match the proposal for ${revision.article_file}.`);
+    else if(hasGMNotes(revision.proposed_markdown))
+        validationError = new Error(`Proposal unexpectedly contains GM-only notes: ${revision.article_file}`);
+    if(validationError){
+        await rejectInvalidPendingRevision(revision, validationError.message);
+        return;
+    }
 
     const approvedMarkdown = mergeGMNotes(localMarkdown, revision.proposed_markdown);
     if(revision.status === "pending"){

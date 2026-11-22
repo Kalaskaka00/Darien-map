@@ -10,17 +10,23 @@ function applyArticleFrontmatter(article, frontmatter){
     }
 
     const base = articleFrontmatterBase.get(article);
-    const sourceKeys = articleFrontmatterSourceKeys.get(article);
     const previousKeys = articleFrontmatterKeys.get(article) || [];
+    const nextKeys = Object.keys(frontmatter);
+    const nextKeySet = new Set(nextKeys);
     previousKeys.forEach(key => {
-        if(!sourceKeys.has(key) && Object.prototype.hasOwnProperty.call(base, key))
+        if((!nextKeySet.has(key) ||
+            (key === "name" && frontmatter.name !== base.name)) &&
+            Object.prototype.hasOwnProperty.call(base, key))
             article[key] = base[key];
         else
             delete article[key];
     });
 
-    const nextKeys = Object.keys(frontmatter);
     nextKeys.forEach(key => {
+        if(key === "name" &&
+            typeof base.name === "string" &&
+            frontmatter.name !== base.name)
+            return;
         article[key] = frontmatter[key];
     });
     articleFrontmatterKeys.set(article, nextKeys);
@@ -35,10 +41,14 @@ function normalizeArticleName(name){
 
 function getArticle(name){
 
+    if(typeof name !== "string" || !name.trim())
+        return;
+
     const normalized = normalizeArticleName(name);
 
     return world.find(
-        article => normalizeArticleName(article.name) === normalized
+        article => typeof article.name === "string" &&
+            normalizeArticleName(article.name) === normalized
     );
 
 }

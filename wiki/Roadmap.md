@@ -3,7 +3,6 @@ visibility: gm
 --- 
 ## Check
 - Edit articles - Changelog
-- Party marker
 ## Non coding work
 - PCs
 - Deity stories
@@ -16,6 +15,7 @@ visibility: gm
 - Lines don't render of screen
 - Not able to select roads and rivers
 - Decoration Icons
+- Middle click tool buttons
 ## Tools
 - Travel calculator
 ## UI
